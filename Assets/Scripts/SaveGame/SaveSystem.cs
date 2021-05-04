@@ -1,32 +1,22 @@
-﻿using UnityEngine;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public static class SaveSystem {
-    public static void SavePlayer(Player player) {
-        BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/player.orbital";
-        FileStream stream = new FileStream(path, FileMode.Create);
-
-        PlayerData data = new PlayerData(player);
-
-        formatter.Serialize(stream, data);
-        stream.Close();
+public class SaveSystem : MonoBehaviour {
+    public void Save(int health, int maxHealth, Vector2 position) {
+        PlayerPrefs.DeleteKey("health");
+        PlayerPrefs.DeleteKey("maxHealth");
+        PlayerPrefs.DeleteKey("positionX");
+        PlayerPrefs.DeleteKey("positionY");
+        PlayerPrefs.SetInt("health", health);
+        PlayerPrefs.SetInt("maxHealth", maxHealth);
+        PlayerPrefs.SetFloat("positionX", position.x);
+        PlayerPrefs.SetFloat("positionY", position.y);
     }
 
-    public static PlayerData LoadPlayer() {
-        string path = Application.persistentDataPath + "/player.orbital";
-        if (File.Exists(path)) {
-            BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
-
-            PlayerData data = formatter.Deserialize(stream) as PlayerData;
-            stream.Close();
-
-            return data;
-        } 
-
-        Debug.LogError("Save file not found in" + path);
-        return null;
+    public void Load() {
+        DataStorage.health = PlayerPrefs.GetInt("health");
+        DataStorage.maxHealth = PlayerPrefs.GetInt("maxHealth");
+        DataStorage.position = new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"));
     }
 }

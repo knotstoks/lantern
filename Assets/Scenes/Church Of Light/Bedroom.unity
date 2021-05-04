@@ -1675,6 +1675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: Mess Hall
+  position: {x: 3.48, y: 1.15}
 --- !u!61 &619944326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3867,12 +3868,12 @@ PrefabInstance:
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.53
+      value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.3
+      value: -6.79
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}

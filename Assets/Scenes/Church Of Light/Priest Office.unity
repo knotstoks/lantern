@@ -281,6 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: Main Hall
+  position: {x: 7.03, y: 4.3}
 --- !u!61 &829474413
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3937,12 +3938,12 @@ PrefabInstance:
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.89
+      value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.08
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}

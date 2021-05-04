@@ -27,6 +27,9 @@ public class Player : MonoBehaviour{
     void Start() {
         invulTime = 0.5f;
         rb = gameObject.GetComponent<Rigidbody2D>();
+        health = DataStorage.health;
+        maxHealth = DataStorage.maxHealth;
+        transform.position = DataStorage.position;
         interactIcon.enabled = false;
         dialogueBox.enabled = false;
         dialogueText.SetActive(false);
@@ -76,6 +79,9 @@ public class Player : MonoBehaviour{
                 hearts[i].enabled = false;
             }
         }
+
+        DataStorage.health = this.health;
+        DataStorage.maxHealth = this.maxHealth;
     }
 
     public void FixedUpdate() {
@@ -139,27 +145,7 @@ public class Player : MonoBehaviour{
             }
         }
     }
-
-    public int getMaxHP() { //for saving
-        return this.maxHealth;
-    }
-
-    //Saves the Player Data
-    public void SavePlayer() {
-        SaveSystem.SavePlayer(this);
-        this.health = maxHealth; //Heals to full
-    }
-
-    //Loads the Player Data
-    public void LoadPlayer() {
-        PlayerData data = SaveSystem.LoadPlayer();
-
-        this.health = data.maxHealth;
-        this.maxHealth = data.maxHealth;
-
-        transform.position = new Vector2(data.position[0], data.position[1]);
-    }
-
+    
     //Toggles whether player is in dialogue or not
     public void ToggleDialogue() {
         if (!inDialogue) {
@@ -168,11 +154,5 @@ public class Player : MonoBehaviour{
         } 
 
         inDialogue = !inDialogue;
-    }
-
-    //Does the logic to transfer health from scene to scene
-    public void HealthSetter(int health, int maxHealth) {
-        this.health = health;
-        this.maxHealth = maxHealth;
     }
 }
