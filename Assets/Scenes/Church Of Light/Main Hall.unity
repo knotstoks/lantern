@@ -248,6 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: Priest Office
+  position: {x: 0.29, y: -5.5}
 --- !u!61 &108485821
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -361,12 +362,12 @@ PrefabInstance:
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.39
+      value: -7.14
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.51
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
@@ -412,6 +413,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002714659163028178, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: health
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002714659163028178, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: maxHealth
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6826475666516902370, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
@@ -3384,6 +3395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: Dojo
+  position: {x: -7.75, y: -8.55}
 --- !u!61 &1752468138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3455,6 +3467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: Mess Hall
+  position: {x: 17.04, y: -3.06}
 --- !u!61 &1884754483
 BoxCollider2D:
   m_ObjectHideFlags: 0
