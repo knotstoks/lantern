@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Bullet
   - Invincible
+  - SceneManager
+  - DungeonSceneManager
   layers:
   - Default
   - TransparentFX
