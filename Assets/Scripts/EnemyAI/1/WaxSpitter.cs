@@ -12,6 +12,11 @@ public class WaxSpitter : Enemy {
     }
 
     void Update() {
+        if (health <= 0) {
+            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
+            Destroy(gameObject);
+        }
+
         if (spitTime > 0) {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             spitTime -= Time.deltaTime;

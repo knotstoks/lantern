@@ -15,9 +15,8 @@ public class Wave {
 }
 public class Manager1 : MonoBehaviour {
     private int currWave;
-    private bool waveComplete;
     private bool complete;
-    private GameObject[] checkEnemies;
+    private int numOfEnemies;
     [SerializeField] private Wave[] waves;
     //Range of positions to spawn enemies
     [SerializeField] private float minX;
@@ -28,16 +27,15 @@ public class Manager1 : MonoBehaviour {
     private void Start() {
         currWave = -1;
         complete = false;
+        numOfEnemies = -1;
         StartCoroutine(StartRoom());
     }
     private void Update() {
         //Checks whether to spawn next wave
-        if (waveComplete) {
+        if (numOfEnemies == 0) {
             if (currWave == waves.Length - 1) {
-                waveComplete = false;
                 complete = true;
             } else {
-                waveComplete = false;
                 NextWave();
             }
         }
@@ -49,17 +47,11 @@ public class Manager1 : MonoBehaviour {
         }
     }
 
-    private void FixedUpdate() {
-        //Check to see if all the enemies died
-        checkEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if (checkEnemies.Length == 0) {
-            waveComplete = true;
-        }
-    }
-
     private void NextWave() {
         Debug.Log("Wave: " + currWave);
         currWave += 1;
+        numOfEnemies = waves[currWave].smalls + waves[currWave].mediums + waves[currWave].bigs;
+
         //Spawn the enemies
         GameObject[] smallies = waves[currWave].smallEnemies;
         GameObject[] mediumies = waves[currWave].mediumEnemies;
@@ -86,6 +78,10 @@ public class Manager1 : MonoBehaviour {
     //Waits a while before starting the wave system
     private IEnumerator StartRoom() {
         yield return 1000;
-        waveComplete = true;
+        numOfEnemies = 0;
+    }
+
+    public void EnemiesNow(int n) {
+        numOfEnemies += n;
     }
 }

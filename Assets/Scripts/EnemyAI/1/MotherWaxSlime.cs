@@ -26,6 +26,7 @@ public class MotherWaxSlime : Enemy {
         }
 
         if (health <= 0) {
+            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(1);
             Instantiate(childSlime, transform.position + new Vector3(0.5f, 0, 0), transform.rotation);
             Instantiate(childSlime, transform.position - new Vector3(0.5f, 0, 0), transform.rotation);
             Destroy(gameObject);

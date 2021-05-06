@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
 public class SavePoint : Interactable {
-    [SerializeField] private float posX;
-    [SerializeField] private float posY;
+    public float posX;
+    public float posY;
     [SerializeField] private GameObject saveScreen;
     private bool open;
 

@@ -14,6 +14,7 @@ public class CandlingHive : Enemy {
 
     void Update() {
         if (health <= 0) {
+            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
             Destroy(gameObject);
         }
 
@@ -21,6 +22,7 @@ public class CandlingHive : Enemy {
             spawnTime -= Time.deltaTime;
         } else {
             Instantiate(child, new Vector3(rb.position.x + Random.Range(-2f, 2f), rb.position.y + Random.Range(-2f, 2f), 0), transform.rotation);
+            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(1);
             spawnTime = respawnTime;
         }
     }

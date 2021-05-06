@@ -10,7 +10,6 @@ public class Enemy : MonoBehaviour {
     [SerializeField] protected float thrust;
     [SerializeField] protected float knockTime;
 
-
     public void Damage(int damage) {
         health -= damage;
     }

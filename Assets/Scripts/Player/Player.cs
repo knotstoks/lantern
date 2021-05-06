@@ -2,8 +2,8 @@
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour{
-    [SerializeField] private int health;
-    [SerializeField] private int maxHealth;
+    public int health;
+    public int maxHealth;
     [SerializeField] private Image[] hearts;
     [SerializeField] private Sprite fullHeart;
     [SerializeField] private Sprite halfHeart;

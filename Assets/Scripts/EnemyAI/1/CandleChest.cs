@@ -12,6 +12,7 @@ public class CandleChest : Enemy {
 
     private void Update() {
         if (health <= 0) {
+            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
             Destroy(gameObject);
         }
 
