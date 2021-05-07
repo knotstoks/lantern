@@ -9,6 +9,7 @@ TagManager:
   - Invincible
   - SceneManager
   - DungeonSceneManager
+  - DialogueManager
   layers:
   - Default
   - TransparentFX

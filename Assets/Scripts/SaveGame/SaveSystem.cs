@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SaveSystem : MonoBehaviour {
 
@@ -18,10 +16,9 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetInt("maxHealth", player.maxHealth);
         PlayerPrefs.SetFloat("positionX", savePoint.posX);
         PlayerPrefs.SetFloat("positionY", savePoint.posY);
-        PlayerPrefs.SetInt("tutorialDone", DataStorage.tutorialDone);
-        PlayerPrefs.SetInt("firstTalk", DataStorage.firstTalk);
-        PlayerPrefs.SetInt("secondTalk", DataStorage.secondTalk);
-        PlayerPrefs.SetInt("thirdTalk", DataStorage.thirdTalk);
+        PlayerPrefs.SetInt("introSceneDone", DataStorage.introSceneDone);
+        PlayerPrefs.SetInt("tutorialDojo", DataStorage.tutorialDojo);
+        PlayerPrefs.SetInt("progress", DataStorage.progress);
         PlayerPrefs.SetInt("completedDungeonOne", DataStorage.completedDungeonOne);
         PlayerPrefs.SetInt("completedDungeonTwo", DataStorage.completedDungeonTwo);
     }
@@ -30,5 +27,10 @@ public class SaveSystem : MonoBehaviour {
         DataStorage.health = PlayerPrefs.GetInt("health");
         DataStorage.maxHealth = PlayerPrefs.GetInt("maxHealth");
         DataStorage.position = new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"));
+        DataStorage.introSceneDone = PlayerPrefs.GetInt("introSceneDone");
+        DataStorage.tutorialDojo = PlayerPrefs.GetInt("tutorialDojo");
+        DataStorage.progress = PlayerPrefs.GetInt("progress");
+        DataStorage.completedDungeonOne = PlayerPrefs.GetInt("completedDungeonOne");
+        DataStorage.completedDungeonTwo = PlayerPrefs.GetInt("completedDungeonTwo");
     }
 }

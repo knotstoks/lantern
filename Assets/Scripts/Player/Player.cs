@@ -13,7 +13,9 @@ public class Player : MonoBehaviour{
     [SerializeField] private GameObject bullet;
     [SerializeField] private float bulletSpeed; 
     [SerializeField] private float fireDelay;
-    [SerializeField] private Image interactIcon; //Image for the interactable check
+    public Image interactIcon; //Image for the interactable check
+    public GameObject interactName; //GameObject for the interact icon
+    public Text interactText; //Text for the interact icon
     public Image dialogueBox; //Dialogue Box for Text
     public GameObject dialogueText; //Text Object
     public bool allowCombat; //Scene will set this
@@ -30,10 +32,9 @@ public class Player : MonoBehaviour{
         health = DataStorage.health;
         maxHealth = DataStorage.maxHealth;
         transform.position = DataStorage.position;
+        updateHealth();
         interactIcon.enabled = false;
         dialogueBox.enabled = false;
-        dialogueText.SetActive(false);
-        updateHealth();
     }
 
     void Update() {
@@ -128,11 +129,14 @@ public class Player : MonoBehaviour{
     //Interactions Part
     public void OpenInteractableIcon() {
         interactIcon.enabled = true;
+        interactName.SetActive(true);
     }
 
     public void CloseInteractableIcon() {
         interactIcon.enabled = false;
+        interactName.SetActive(false);
     }
+    
     public void CheckInteraction() {
         RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, 0, Vector2.zero);
 

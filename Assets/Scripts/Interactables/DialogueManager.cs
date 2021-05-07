@@ -1,11 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour {
-    [SerializeField] private Text nameText;
-    [SerializeField] private Text dialogueText;
+    public Text nameText;
+    public Text dialogueText;
+    public Text interactText;
     private Queue<string> sentences;
     private Player player;
     private void Start() {
