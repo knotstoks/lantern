@@ -10,12 +10,11 @@ public class BedroomTutorial : MonoBehaviour {
     private int line;
 
     private IEnumerator Start() {
+        DataStorage.saveValues["introSceneDone"] = 0;
         yield return 0.2;
-        Debug.Log(PlayerPrefs.GetInt("introSceneDone"));
         line = -1;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
-        player.inDialogue = true;
 
         if ((int) DataStorage.saveValues["introSceneDone"] == 0) {
             //Start the Intro Cutscene and bedroom starting dialogue

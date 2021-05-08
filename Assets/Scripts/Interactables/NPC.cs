@@ -7,7 +7,7 @@ public class NPC : Interactable {
     [SerializeField] private string NPCDesc;
     [SerializeField] private Dialogue[] dialogue;
     [SerializeField] private Dialogue[] repeatedDialogue;
-    [SerializeField] private string reference;
+    [SerializeField] private string reference; 
     private Player player;
     public bool repeat;
     public void Start() {

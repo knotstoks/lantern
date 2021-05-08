@@ -27,6 +27,12 @@ public class Player : MonoBehaviour{
     private Vector2 move;
 
     void Start() {
+        //Destroy Later
+        DataStorage.saveValues["health"] = 6;
+        DataStorage.saveValues["maxHealth"] = 6;
+        DataStorage.saveValues["position"] = new Vector2(0, 0);
+
+
         invulTime = 0.5f;
         rb = gameObject.GetComponent<Rigidbody2D>();
         health = (int) DataStorage.saveValues["health"];
@@ -35,6 +41,8 @@ public class Player : MonoBehaviour{
         updateHealth();
         interactIcon.enabled = false;
         dialogueBox.enabled = false;
+        inDialogue = false;
+        allowCombat = false;
     }
 
     void Update() {

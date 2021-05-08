@@ -11,6 +11,8 @@ public class DataStorage : MonoBehaviour {
 
     Vector2 position;
 
+    string currScene;
+
     int introSceneDone; 0 for not done, 1 for done: triggers bedroom tutorial
 
     int tutorialDojo; 0 for tutorial to trigger, 1 for talking to the Senior Warden to fire at the dummies, 2 for finishing the tutorial

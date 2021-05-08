@@ -11,6 +11,7 @@ public class Portal : Interactable {
     }
     public override void Interact() {
         DataStorage.saveValues["position"] = position;
+        DataStorage.saveValues["currScene"] = nextScene;
         SceneManager.LoadScene(nextScene);
     }
 }

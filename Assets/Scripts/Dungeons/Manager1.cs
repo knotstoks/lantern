@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 //Shows how many different types of enemies to spawn in every wave
 public class Wave {
-    public GameObject[] smallEnemies;
+    public GameObject[] smallEnemies; 
     public GameObject[] mediumEnemies;
-    public GameObject[] bigEnemies;
+    public GameObject[] bigEnemies; 
     public int smalls;
-    public int mediums;
+    public int mediums; 
     public int bigs;
 }
 public class Manager1 : MonoBehaviour {
@@ -73,7 +73,7 @@ public class Manager1 : MonoBehaviour {
                 new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY)), 
                 Quaternion.identity);
         }
-    }    
+    }
 
     //Waits a while before starting the wave system
     private IEnumerator StartRoom() {

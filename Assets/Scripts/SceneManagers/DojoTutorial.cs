@@ -10,8 +10,10 @@ public class DojoTutorial : MonoBehaviour {
     private int numOfDummies;
     public GameObject seniorWardenFrankie;
     private int dojoInt = (int) DataStorage.saveValues["tutorialDojo"];
+    private Player player;
     private IEnumerator Start() {
         yield return 0.2;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         if (dojoInt == 0) {
             triggerDummies = false;
             portalOut.SetActive(false);
@@ -35,6 +37,7 @@ public class DojoTutorial : MonoBehaviour {
                 Instantiate(dummy, dummyPositions[1], Quaternion.identity);
                 Instantiate(dummy, dummyPositions[2], Quaternion.identity);
                 DataStorage.saveValues["tutorialDojo"] = 1;
+                player.allowCombat = true;
             }
         }
     }

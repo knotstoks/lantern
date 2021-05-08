@@ -22,15 +22,4 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetInt("completedDungeonOne", (int) DataStorage.saveValues["completedDungeonOne"]);
         PlayerPrefs.SetInt("completedDungeonTwo", (int) DataStorage.saveValues["completedDungeonTwo"]);
     }
-
-    public void Load() {
-        DataStorage.saveValues["health"] = PlayerPrefs.GetInt("health");
-        DataStorage.saveValues["maxHealth"] = PlayerPrefs.GetInt("maxHealth");
-        DataStorage.saveValues["position"] = new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"));
-        DataStorage.saveValues["introSceneDone"] = PlayerPrefs.GetInt("introSceneDone");
-        DataStorage.saveValues["tutorialDojo"] = PlayerPrefs.GetInt("tutorialDojo");
-        DataStorage.saveValues["progress"] = PlayerPrefs.GetInt("progress");
-        DataStorage.saveValues["completedDungeonOne"] = PlayerPrefs.GetInt("completedDungeonOne");
-        DataStorage.saveValues["completedDungeonTwo"] = PlayerPrefs.GetInt("completedDungeonTwo");
-    }
 }
