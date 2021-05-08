@@ -29,9 +29,9 @@ public class Player : MonoBehaviour{
     void Start() {
         invulTime = 0.5f;
         rb = gameObject.GetComponent<Rigidbody2D>();
-        health = DataStorage.health;
-        maxHealth = DataStorage.maxHealth;
-        transform.position = DataStorage.position;
+        health = (int) DataStorage.saveValues["health"];
+        maxHealth = (int) DataStorage.saveValues["maxHealth"];
+        transform.position = (Vector2) DataStorage.saveValues["position"];
         updateHealth();
         interactIcon.enabled = false;
         dialogueBox.enabled = false;
@@ -81,8 +81,8 @@ public class Player : MonoBehaviour{
             }
         }
 
-        DataStorage.health = this.health;
-        DataStorage.maxHealth = this.maxHealth;
+        DataStorage.saveValues["health"] = this.health;
+        DataStorage.saveValues["maxHealth"] = this.maxHealth;
     }
 
     public void FixedUpdate() {

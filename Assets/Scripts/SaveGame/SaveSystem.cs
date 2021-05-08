@@ -16,21 +16,21 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetInt("maxHealth", player.maxHealth);
         PlayerPrefs.SetFloat("positionX", savePoint.posX);
         PlayerPrefs.SetFloat("positionY", savePoint.posY);
-        PlayerPrefs.SetInt("introSceneDone", DataStorage.introSceneDone);
-        PlayerPrefs.SetInt("tutorialDojo", DataStorage.tutorialDojo);
-        PlayerPrefs.SetInt("progress", DataStorage.progress);
-        PlayerPrefs.SetInt("completedDungeonOne", DataStorage.completedDungeonOne);
-        PlayerPrefs.SetInt("completedDungeonTwo", DataStorage.completedDungeonTwo);
+        PlayerPrefs.SetInt("introSceneDone", (int) DataStorage.saveValues["introSceneDone"]);
+        PlayerPrefs.SetInt("tutorialDojo", (int) DataStorage.saveValues["tutorialDojo"]);
+        PlayerPrefs.SetInt("progress", (int) DataStorage.saveValues["progress"]);
+        PlayerPrefs.SetInt("completedDungeonOne", (int) DataStorage.saveValues["completedDungeonOne"]);
+        PlayerPrefs.SetInt("completedDungeonTwo", (int) DataStorage.saveValues["completedDungeonTwo"]);
     }
 
     public void Load() {
-        DataStorage.health = PlayerPrefs.GetInt("health");
-        DataStorage.maxHealth = PlayerPrefs.GetInt("maxHealth");
-        DataStorage.position = new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"));
-        DataStorage.introSceneDone = PlayerPrefs.GetInt("introSceneDone");
-        DataStorage.tutorialDojo = PlayerPrefs.GetInt("tutorialDojo");
-        DataStorage.progress = PlayerPrefs.GetInt("progress");
-        DataStorage.completedDungeonOne = PlayerPrefs.GetInt("completedDungeonOne");
-        DataStorage.completedDungeonTwo = PlayerPrefs.GetInt("completedDungeonTwo");
+        DataStorage.saveValues["health"] = PlayerPrefs.GetInt("health");
+        DataStorage.saveValues["maxHealth"] = PlayerPrefs.GetInt("maxHealth");
+        DataStorage.saveValues["position"] = new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"));
+        DataStorage.saveValues["introSceneDone"] = PlayerPrefs.GetInt("introSceneDone");
+        DataStorage.saveValues["tutorialDojo"] = PlayerPrefs.GetInt("tutorialDojo");
+        DataStorage.saveValues["progress"] = PlayerPrefs.GetInt("progress");
+        DataStorage.saveValues["completedDungeonOne"] = PlayerPrefs.GetInt("completedDungeonOne");
+        DataStorage.saveValues["completedDungeonTwo"] = PlayerPrefs.GetInt("completedDungeonTwo");
     }
 }

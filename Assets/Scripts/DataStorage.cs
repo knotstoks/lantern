@@ -1,12 +1,29 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class DataStorage : MonoBehaviour {
-    public static int health;
-    public static int maxHealth;
-    public static Vector2 position;
-    public static int introSceneDone; //0 for not done, 1 for done: triggers bedroom tutorial
-    public static int tutorialDojo; //0 for tutorial to the 
-    public static int progress;
-    public static int completedDungeonOne;
-    public static int completedDungeonTwo;
+    public static Hashtable saveValues = new Hashtable();
+    /*
+    int health;
+
+    int maxHealth;
+
+    Vector2 position;
+
+    int introSceneDone; 0 for not done, 1 for done: triggers bedroom tutorial
+
+    int tutorialDojo; 0 for tutorial to trigger, 1 for talking to the Senior Warden to fire at the dummies, 2 for finishing the tutorial
+
+    int progress; 
+    0 - havent done anything, havent talked
+    1 - talked about first dungeon
+    2 - came back from first dungeon
+    3 - talked about second dungeon
+    4 - came back from second dungeon
+    
+
+    int completedDungeonOne;
+    int completedDungeonTwo;
+    */
 }

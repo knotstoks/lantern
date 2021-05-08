@@ -17,20 +17,20 @@ public class BedroomTutorial : MonoBehaviour {
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
         player.inDialogue = true;
 
-        if (DataStorage.introSceneDone == 0) {
+        if ((int) DataStorage.saveValues["introSceneDone"] == 0) {
             //Start the Intro Cutscene and bedroom starting dialogue
             StartBedRoomTutorial();
         }
     } 
 
     private void Update() {
-        if (DataStorage.introSceneDone == 0 && Input.GetKeyDown(KeyCode.E)) {
+        if ((int) DataStorage.saveValues["introSceneDone"] == 0 && Input.GetKeyDown(KeyCode.E)) {
             if (line == lines.Length - 1) {
                 //Sets the marker for finishing the intro scene and disables the text boxes
                 player.inDialogue = false;
                 player.dialogueBox.enabled = false;
                 player.dialogueText.SetActive(false);
-                DataStorage.introSceneDone = 1;
+                DataStorage.saveValues["introSceneDone"] = 1;
                 player.inDialogue = false;
             } else {
                 NextLine();

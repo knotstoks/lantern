@@ -12,7 +12,7 @@ public class DungeonPortal : Interactable {
 
     public override void Interact() {
         if (open) {
-            DataStorage.position = position;
+            DataStorage.saveValues["position"] = position;
             SceneManager.LoadScene(nextScene);
         }
     }
