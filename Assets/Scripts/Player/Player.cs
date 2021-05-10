@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour{
@@ -20,11 +21,13 @@ public class Player : MonoBehaviour{
     public GameObject dialogueText; //Text Object
     public bool allowCombat; //Scene will set this
     public bool inDialogue; //Scene will set this
+    public Animator animator;
     private float invulTime; //if its > 0, cannot be damaged. < 0 can be damaged.
     private Vector2 boxSize = new Vector2(2.5f, 2.5f); //Box for raycasting
     private Rigidbody2D rb;
     private float lastFire;
-    private Vector2 move;
+    private Vector2 move; //for movement and animation
+    private Vector2 shootVector; //for shooting and animation
 
     void Start() {
         //Destroy Later
@@ -50,17 +53,13 @@ public class Player : MonoBehaviour{
             invulTime -= Time.deltaTime;
         }
 
-        if (allowCombat) {
-            float shootHori = Input.GetAxis("HorizontalShoot");
-            float shootVert = Input.GetAxis("VerticalShoot");
-            if ((shootHori != 0 || shootVert != 0) && Time.time > lastFire + fireDelay) {
-                    Shoot(shootHori, shootVert);
-                    lastFire = Time.time;
-            }
-        }
-
         if (Input.GetKeyDown(KeyCode.E)) { //Checks when you press 'E' if you can interact with anything
             CheckInteraction();
+        }
+
+        if (health <= 0) {
+            animator.SetTrigger("Dead");
+            StartCoroutine(KillPlayer());
         }
     }
 
@@ -99,8 +98,31 @@ public class Player : MonoBehaviour{
             move.x = Input.GetAxisRaw("Horizontal");
             move.y = Input.GetAxisRaw("Vertical");
 
+            animator.SetFloat("Horizontal", move.x);
+            animator.SetFloat("Vertical", move.y);
+            animator.SetFloat("Speed", move.sqrMagnitude);
+
+            if (move.x == -1f || move.x == 1f || move.y == 1f || move.y == -1f) {
+                animator.SetFloat("LastMoveX", move.x);
+                animator.SetFloat("LastMoveY", move.y);
+            }
+
             Vector2 clampedMovement = Vector2.ClampMagnitude(move, 1);
             rb.MovePosition(rb.position + (clampedMovement * speed * Time.fixedDeltaTime));
+        }
+
+        if (allowCombat) {
+            shootVector.x = Input.GetAxisRaw("HorizontalShoot");
+            shootVector.y = Input.GetAxisRaw("VerticalShoot");
+
+            animator.SetFloat("HoriShoot", shootVector.x);
+            animator.SetFloat("VertShoot", shootVector.y);
+            animator.SetFloat("ShootSpeed", shootVector.sqrMagnitude);
+
+            if ((shootVector.x != 0 || shootVector.y != 0) && Time.time > lastFire + fireDelay) {
+                    Shoot(shootVector.x, shootVector.y);
+                    lastFire = Time.time;
+            }
         }
     }
 
@@ -166,5 +188,12 @@ public class Player : MonoBehaviour{
         } 
 
         inDialogue = !inDialogue;
+    }
+
+    //Coroutine to kill Player
+    private IEnumerator KillPlayer() {
+        //Let the animation Play Out
+        yield return new WaitForSeconds(2);
+        //Go to "You Lose" screen
     }
 }

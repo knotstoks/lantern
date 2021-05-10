@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -51,7 +50,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["completedDungeonOne"] = 0;
         DataStorage.saveValues["completedDungeonTwo"] = 0;
 
-        SceneManager.LoadScene("Bedroom");
+        SceneManager.LoadScene("IntroCutscene");
     }
 
     public void LoadGame() {
@@ -87,7 +86,6 @@ public class MainMenu : MonoBehaviour {
 
     private IEnumerator ReallyQuitGame() {
         yield return new WaitForSeconds(2);
-        Debug.Log("Game has quit");
         Application.Quit();
     }
 
