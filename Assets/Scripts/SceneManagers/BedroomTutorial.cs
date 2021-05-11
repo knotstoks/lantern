@@ -29,6 +29,7 @@ public class BedroomTutorial : MonoBehaviour {
                 player.inDialogue = false;
                 player.dialogueBox.enabled = false;
                 player.dialogueText.SetActive(false);
+                player.dialogueImage.enabled = false;
                 DataStorage.saveValues["introSceneDone"] = 1;
                 player.inDialogue = false;
             } else {
@@ -42,6 +43,7 @@ public class BedroomTutorial : MonoBehaviour {
         player.inDialogue = true;
         player.dialogueBox.enabled = true;
         player.dialogueText.SetActive(true);
+        player.dialogueImage.enabled = true;
         dialogueManager.dialogueText.text = lines[line];
         dialogueManager.nameText.text = "Lumin";
     }

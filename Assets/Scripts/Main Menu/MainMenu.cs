@@ -9,6 +9,8 @@ public class MainMenu : MonoBehaviour {
     [SerializeField] private GameObject standardSet;
     [SerializeField] private GameObject newGameWarning;
     [SerializeField] private GameObject quitScreen;
+    [SerializeField] private GameObject optionsMenu;
+    [SerializeField] private GameObject credits;
     [SerializeField] private Animator animator;
     private void Start() {
         standardSet.SetActive(true);
@@ -18,6 +20,8 @@ public class MainMenu : MonoBehaviour {
         }
         newGameWarning.SetActive(false);
         quitScreen.SetActive(false);
+        optionsMenu.SetActive(false);
+        credits.SetActive(false);
     }
 
     public void PlayGame() {
@@ -96,6 +100,26 @@ public class MainMenu : MonoBehaviour {
 
     public void CloseQuitScreen() {
         quitScreen.SetActive(false);
+        standardSet.SetActive(true);
+    }
+
+    public void OpenCredits() {
+        standardSet.SetActive(false);
+        credits.SetActive(true);
+    }
+
+    public void CloseCredits() {
+        credits.SetActive(false);
+        standardSet.SetActive(true);
+    }
+
+    public void OpenOptions() {
+        standardSet.SetActive(false);
+        optionsMenu.SetActive(true);
+    }
+
+    public void CloseOptions() {
+        optionsMenu.SetActive(false);
         standardSet.SetActive(true);
     }
 }

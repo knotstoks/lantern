@@ -16,7 +16,7 @@ public class Wave {
 public class Manager1 : MonoBehaviour {
     private int currWave;
     private bool complete;
-    private int numOfEnemies;
+    public int numOfEnemies;
     [SerializeField] private Wave[] waves;
     //Range of positions to spawn enemies
     [SerializeField] private float minX;
@@ -24,7 +24,9 @@ public class Manager1 : MonoBehaviour {
     [SerializeField] private float maxX;
     [SerializeField] private float maxY;
 
-    private void Start() {
+    private IEnumerator Start() {
+        yield return new WaitForSeconds(0.2f);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().allowCombat = true;
         currWave = -1;
         complete = false;
         numOfEnemies = -1;
@@ -33,8 +35,9 @@ public class Manager1 : MonoBehaviour {
     private void Update() {
         //Checks whether to spawn next wave
         if (numOfEnemies == 0) {
-            if (currWave == waves.Length - 1) {
+            if (currWave == waves.Length) {
                 complete = true;
+                Debug.Log("Room is complete!");
             } else {
                 NextWave();
             }
@@ -48,8 +51,8 @@ public class Manager1 : MonoBehaviour {
     }
 
     private void NextWave() {
-        Debug.Log("Wave: " + currWave);
         currWave += 1;
+        Debug.Log("Wave: " + currWave);
         numOfEnemies = waves[currWave].smalls + waves[currWave].mediums + waves[currWave].bigs;
 
         //Spawn the enemies
@@ -78,7 +81,7 @@ public class Manager1 : MonoBehaviour {
     //Waits a while before starting the wave system
     private IEnumerator StartRoom() {
         yield return 1000;
-        numOfEnemies = 0;
+        NextWave();
     }
 
     public void EnemiesNow(int n) {

@@ -41,5 +41,8 @@ public class DialogueManager : MonoBehaviour {
         player.ToggleDialogue();
         player.dialogueBox.enabled = false;
         player.dialogueText.SetActive(false);
+        player.dialogueImage.enabled = false;
+        player.interactText.enabled = true;
+        player.interactIcon.enabled = true;
     }
 }

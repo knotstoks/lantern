@@ -19,6 +19,7 @@ public class Player : MonoBehaviour{
     public Text interactText; //Text for the interact icon
     public Image dialogueBox; //Dialogue Box for Text
     public GameObject dialogueText; //Text Object
+    public Image dialogueImage; //Lantern image in text box
     public bool allowCombat; //Scene will set this
     public bool inDialogue; //Scene will set this
     public Animator animator;
@@ -44,6 +45,7 @@ public class Player : MonoBehaviour{
         updateHealth();
         interactIcon.enabled = false;
         dialogueBox.enabled = false;
+        dialogueImage.enabled = false;
         inDialogue = false;
         allowCombat = false;
     }
@@ -183,8 +185,11 @@ public class Player : MonoBehaviour{
     //Toggles whether player is in dialogue or not
     public void ToggleDialogue() {
         if (!inDialogue) {
+            interactIcon.enabled = false;
+            interactText.enabled = false;
             dialogueBox.enabled = true;
             dialogueText.SetActive(true);
+            dialogueImage.enabled = true;
         } 
 
         inDialogue = !inDialogue;

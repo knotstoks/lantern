@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 81b8a92d76388f54fbefd67d98f9bac3
   - enabled: 1
     path: Assets/Scenes/Church Of Light/Main Hall.unity

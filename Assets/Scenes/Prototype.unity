@@ -5226,16 +5226,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   descriptorDesc: Booooook
-  dialogue:
-    name: Book Title
+  noChangeDialogue:
+    name: Book
     sentences:
-    - It's a book!
-    - 'This is a '
-    - "kys\t"
-    - fourth!
-    - 'ur mom lol
-
-'
+    - "It is a book\t"
+    - I hate life!
+  changeDialogue: []
+  changeOvertime: 0
+  reference: 
 --- !u!212 &1962737852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5363,6 +5361,7 @@ MonoBehaviour:
     sentences: []
   repeatedDialogue: []
   reference: tutorialDojo
+  repeat: 0
 --- !u!61 &1972596790
 BoxCollider2D:
   m_ObjectHideFlags: 0
