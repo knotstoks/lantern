@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaxSlime
+  m_Controller: {fileID: 9100000, guid: bf6e89ddb13872f4fa39fcf75da6a42b, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 1694c01f229ce7a4ca8fe9b9d222db65, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1808d4c463991c54caf942aadf5c7a08, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4525d7a96d4ce924aa08726c22c2528a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e6f2df5408c89e048b5d75cdaa99b682, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 43784115a2969fc46ad1857ae977a5ac, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 016ff9afda42b564bba801a591fbaf14, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 671626c85e3012d469d32c059ca291d0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: cdbd2f10595125547ac12b9babddc84a, type: 2}

@@ -2,8 +2,12 @@
 
 //TODO: Sprite, Animation
 public class Candling : Enemy {
+    [SerializeField] private Animator animator;
     private Transform target;
+    private Rigidbody2D rb;
+    private Vector2 move;
     private void Start() {
+        rb = gameObject.GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
@@ -14,5 +18,8 @@ public class Candling : Enemy {
         }
 
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+
+        animator.SetFloat("Hori", target.position.x - transform.position.x);
+        animator.SetFloat("Vert", target.position.y - transform.position.y);
     }
 }
