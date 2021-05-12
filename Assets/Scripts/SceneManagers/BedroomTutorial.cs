@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class BedroomTutorial : MonoBehaviour {
+public class BedroomTutorial : SceneManger {
 
     private Player player;
     private DialogueManager dialogueManager;
@@ -10,20 +10,21 @@ public class BedroomTutorial : MonoBehaviour {
     private int line;
 
     private IEnumerator Start() {
-        DataStorage.saveValues["introSceneDone"] = 0;
+        DataStorage.saveValues["introSceneDone"] = 0; //DELETE AFTER
+        reference = "introSceneDone";
         yield return 0.2;
         line = -1;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
 
-        if ((int) DataStorage.saveValues["introSceneDone"] == 0) {
+        if (referenceInt == 0) {
             //Start the Intro Cutscene and bedroom starting dialogue
             StartBedRoomTutorial();
         }
     } 
 
     private void Update() {
-        if ((int) DataStorage.saveValues["introSceneDone"] == 0 && Input.GetKeyDown(KeyCode.E)) {
+        if (referenceInt == 0 && Input.GetKeyDown(KeyCode.E)) {
             if (line == lines.Length - 1) {
                 //Sets the marker for finishing the intro scene and disables the text boxes
                 player.inDialogue = false;

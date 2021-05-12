@@ -23,13 +23,16 @@ public class Player : MonoBehaviour{
     public bool allowCombat; //Scene will set this
     public bool inDialogue; //Scene will set this
     public Animator animator;
+    public GameObject pauseMenu;
+    public GameObject quitMenu;
+    public Image blackBackground; //for pause menu
     private float invulTime; //if its > 0, cannot be damaged. < 0 can be damaged.
-    private Vector2 boxSize = new Vector2(2.5f, 2.5f); //Box for raycasting
+    private Vector2 boxSize = new Vector2(2.5f, 2.5f); //Box for raycasting interactables
     private Rigidbody2D rb;
     private float lastFire;
     private Vector2 move; //for movement and animation
     private Vector2 shootVector; //for shooting and animation
-
+    
     void Start() {
         //Destroy Later
         DataStorage.saveValues["health"] = 6;
@@ -48,6 +51,9 @@ public class Player : MonoBehaviour{
         dialogueImage.enabled = false;
         inDialogue = false;
         allowCombat = false;
+        pauseMenu.SetActive(false);
+        quitMenu.SetActive(false);
+        blackBackground.enabled = false;
     }
 
     void Update() {

@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PriestOffice : MonoBehaviour {
-    private int progress = (int) DataStorage.saveValues["progress"];
+public class PriestOffice : SceneManger {
     [SerializeField] private GameObject headPriest;
     void Start() {
-        
+        reference = "progress";
     }
 }
