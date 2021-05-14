@@ -27,7 +27,7 @@ public class Player : MonoBehaviour{
     public GameObject quitMenu;
     public Image blackBackground; //for pause menu
     private float invulTime; //if its > 0, cannot be damaged. < 0 can be damaged.
-    private Vector2 boxSize = new Vector2(2.5f, 2.5f); //Box for raycasting interactables
+    private Vector2 boxSize = new Vector2(2f, 2f); //Box for raycasting interactables
     private Rigidbody2D rb;
     private float lastFire;
     private Vector2 move; //for movement and animation
@@ -38,14 +38,13 @@ public class Player : MonoBehaviour{
         new int[] {0, -1}, //South
         new int[] {-1, 0}, //West
     };
-
-    private ManageScene manager;
     
     private void Start() {
         //Destroy Later
         DataStorage.saveValues["health"] = 6;
         DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(0, 0);
+        DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
+        DataStorage.saveValues["facingDirection"] = 2;
 
 
         invulTime = 0.5f;
@@ -54,8 +53,8 @@ public class Player : MonoBehaviour{
         maxHealth = (int) DataStorage.saveValues["maxHealth"];
         transform.position = (Vector2) DataStorage.saveValues["position"];
         updateHealth();
-        manager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<ManageScene>();
         interactIcon.enabled = false;
+        interactName.SetActive(false);
         dialogueBox.enabled = false;
         dialogueImage.enabled = false;
         inDialogue = false;
@@ -63,8 +62,8 @@ public class Player : MonoBehaviour{
         pauseMenu.SetActive(false);
         quitMenu.SetActive(false);
         blackBackground.enabled = false;
-        animator.SetFloat("LastMoveX", directions[manager.facingDirection][0]);
-        animator.SetFloat("LastMoveY", directions[manager.facingDirection][1]);
+        animator.SetFloat("LastMoveX", directions[(int) DataStorage.saveValues["facingDirection"]][0]);
+        animator.SetFloat("LastMoveY", directions[(int) DataStorage.saveValues["facingDirection"]][1]);
     }
 
     void Update() {
@@ -203,11 +202,10 @@ public class Player : MonoBehaviour{
     public void ToggleDialogue() {
         if (!inDialogue) {
             interactIcon.enabled = false;
-            interactText.enabled = false;
             dialogueBox.enabled = true;
             dialogueText.SetActive(true);
             dialogueImage.enabled = true;
-        } 
+        }
 
         inDialogue = !inDialogue;
     }

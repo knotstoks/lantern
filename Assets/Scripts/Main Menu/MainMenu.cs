@@ -46,13 +46,14 @@ public class MainMenu : MonoBehaviour {
         PlayerPrefs.SetInt("savePresent", 1);
         DataStorage.saveValues["health"] = 6;
         DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(0, 0);
+        DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
         DataStorage.saveValues["currScene"] = "Bedroom";
         DataStorage.saveValues["introSceneDone"] = 0;
         DataStorage.saveValues["tutorialDojo"] = 0;
         DataStorage.saveValues["progress"] = 0;
         DataStorage.saveValues["completedDungeonOne"] = 0;
         DataStorage.saveValues["completedDungeonTwo"] = 0;
+        DataStorage.saveValues["facingDirection"] = 2;
 
         SceneManager.LoadScene("IntroCutscene");
     }
