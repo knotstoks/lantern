@@ -5234,7 +5234,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1741420924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5247,7 +5247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf899e252088304e9b55e4854f6bdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reference: 
+  facingDirection: 2
   lines:
   - eh cb time to wake up la
   - i go dwn nbcb

@@ -2,7 +2,7 @@
 using UnityEngine;
 
 //0 for tutorial to trigger, 1 for talking to the Senior Warden to fire at the dummies, 2 for finishing the tutorial
-public class DojoTutorial : SceneManger {
+public class DojoTutorial : ManageScene {
     public GameObject portalOut;
     public bool triggerDummies; //boolean to see if dummies were triggered
     public GameObject dummy;

@@ -32,8 +32,16 @@ public class Player : MonoBehaviour{
     private float lastFire;
     private Vector2 move; //for movement and animation
     private Vector2 shootVector; //for shooting and animation
+    private int[][] directions = new int[][] {
+        new int[] {0, 1}, //North
+        new int[] {1, 0}, //East
+        new int[] {0, -1}, //South
+        new int[] {-1, 0}, //West
+    };
+
+    private ManageScene manager;
     
-    void Start() {
+    private void Start() {
         //Destroy Later
         DataStorage.saveValues["health"] = 6;
         DataStorage.saveValues["maxHealth"] = 6;
@@ -46,6 +54,7 @@ public class Player : MonoBehaviour{
         maxHealth = (int) DataStorage.saveValues["maxHealth"];
         transform.position = (Vector2) DataStorage.saveValues["position"];
         updateHealth();
+        manager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<ManageScene>();
         interactIcon.enabled = false;
         dialogueBox.enabled = false;
         dialogueImage.enabled = false;
@@ -54,6 +63,8 @@ public class Player : MonoBehaviour{
         pauseMenu.SetActive(false);
         quitMenu.SetActive(false);
         blackBackground.enabled = false;
+        animator.SetFloat("LastMoveX", directions[manager.facingDirection][0]);
+        animator.SetFloat("LastMoveY", directions[manager.facingDirection][1]);
     }
 
     void Update() {

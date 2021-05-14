@@ -1674,7 +1674,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03ddaf016adb9334e9ae3fef180bfa4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneDesc: 
   nextScene: Mess Hall
   position: {x: 3.48, y: 1.15}
 --- !u!61 &619944326

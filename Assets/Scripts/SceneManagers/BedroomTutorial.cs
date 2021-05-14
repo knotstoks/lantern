@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class BedroomTutorial : SceneManger {
+public class BedroomTutorial : ManageScene {
 
     private Player player;
     private DialogueManager dialogueManager;
