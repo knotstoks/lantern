@@ -4,7 +4,6 @@ using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class NPC : Interactable {
-    [SerializeField] private string NPCDesc;
     [SerializeField] private Dialogue[] dialogue;
     [SerializeField] private Dialogue[] repeatedDialogue;
     [SerializeField] private string reference; 
@@ -12,7 +11,6 @@ public class NPC : Interactable {
     public bool repeat;
     public void Start() {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        objDesc = NPCDesc;
         repeat = false;
     }
     

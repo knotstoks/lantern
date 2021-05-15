@@ -7,10 +7,11 @@ public class DojoTutorial : MonoBehaviour {
     public bool triggerDummies; //boolean to see if dummies were triggered
     public GameObject dummy;
     public Vector2[] dummyPositions;
-    private int numOfDummies;
+    public int numOfDummies;
     public GameObject seniorWardenFrankie;
     private Player player;
     private IEnumerator Start() {
+        DataStorage.saveValues["tutorialDojo"] = 0; //Delete after!
         yield return 0.2;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         if ((int) DataStorage.saveValues["tutorialDojo"] == 0) {
@@ -22,16 +23,27 @@ public class DojoTutorial : MonoBehaviour {
     }
 
     private void Update() {
+        //Just came in and talked to Frankie
+        if ((int) DataStorage.saveValues["tutorialDojo"] == 0 && seniorWardenFrankie.GetComponent<NPC>().repeat) {
+            DataStorage.saveValues["tutorialDojo"] = 1;
+            numOfDummies = 3;
+        }
+
+        //Finish destroying the dummies
         if (numOfDummies == 0 && (int) DataStorage.saveValues["tutorialDojo"] == 1) {
-            portalOut.SetActive(true);
+            seniorWardenFrankie.GetComponent<NPC>().repeat = false;
             DataStorage.saveValues["tutorialDojo"] = 2;
+        }
+
+        if (seniorWardenFrankie.GetComponent<NPC>().repeat && (int) DataStorage.saveValues["tutorialDojo"] == 2) {
+            portalOut.SetActive(true);
+            player.allowCombat = false;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player") {
-            if (seniorWardenFrankie.GetComponent<NPC>().repeat && !triggerDummies) { //if talked to frankie and havent summoned dummies
-                numOfDummies = 3;
+            if (!triggerDummies && (int) DataStorage.saveValues["tutorialDojo"] == 1) { //if talked to frankie and havent summoned dummies
                 Instantiate(dummy, dummyPositions[0], Quaternion.identity);
                 Instantiate(dummy, dummyPositions[1], Quaternion.identity);
                 Instantiate(dummy, dummyPositions[2], Quaternion.identity);
