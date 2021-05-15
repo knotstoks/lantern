@@ -6,7 +6,9 @@ using UnityEngine;
 public class NPC : Interactable {
     [SerializeField] private Dialogue[] dialogue;
     [SerializeField] private Dialogue[] repeatedDialogue;
-    [SerializeField] private string reference; 
+    [SerializeField] private string reference;
+    public Animator animator;
+    public int defaultFacing;
     private Player player;
     public bool repeat;
     public void Start() {
@@ -15,6 +17,8 @@ public class NPC : Interactable {
     }
     
     public override void Interact() {
+        FindObjectOfType<DialogueManager>().talkingTo = this;
+
         if (!player.inDialogue) {
             if (!repeat) {
                 repeat = true;

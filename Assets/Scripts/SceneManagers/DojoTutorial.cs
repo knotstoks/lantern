@@ -48,6 +48,7 @@ public class DojoTutorial : MonoBehaviour {
                 Instantiate(dummy, dummyPositions[1], Quaternion.identity);
                 Instantiate(dummy, dummyPositions[2], Quaternion.identity);
                 DataStorage.saveValues["tutorialDojo"] = 1;
+                triggerDummies = true;
                 player.allowCombat = true;
             }
         }

@@ -9,13 +9,22 @@ public class DialogueManager : MonoBehaviour {
     private Queue<string> names;
     private Queue<string> sentences;
     private Player player;
+    private GameObject gameObjectPlayer;
+    public NPC talkingTo;
     private void Start() {
         sentences = new Queue<string>();
         names = new Queue<string>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        gameObjectPlayer = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void StartDialogue(Dialogue dialogue) {
+
+        if (talkingTo != null) {
+            talkingTo.animator.SetFloat("FacingHori", gameObjectPlayer.transform.position.x - talkingTo.transform.position.x);
+            talkingTo.animator.SetFloat("FacingVert", gameObjectPlayer.transform.position.y - talkingTo.transform.position.y);
+        }
+
         player.interactIcon.enabled = false;
         player.interactText.enabled = false;
         player.ToggleDialogue();
@@ -54,5 +63,9 @@ public class DialogueManager : MonoBehaviour {
         player.interactIcon.enabled = false;
         player.interactName.SetActive(false);
         player.interactText.enabled = true;
+
+        talkingTo.animator.SetInteger("Facing", talkingTo.defaultFacing);
+
+        talkingTo = null;
     }
 }
