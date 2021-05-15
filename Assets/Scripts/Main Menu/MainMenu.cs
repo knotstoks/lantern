@@ -22,6 +22,14 @@ public class MainMenu : MonoBehaviour {
         quitScreen.SetActive(false);
         optionsMenu.SetActive(false);
         credits.SetActive(false);
+
+        if (PlayerPrefs.HasKey("volume")) {
+            //Set the Options volume slider to that value
+        } else {
+            //Set the Options volume to 1, PlayerPrefs to 1
+
+            PlayerPrefs.SetFloat("volume", 1f);
+        }
     }
 
     public void PlayGame() {

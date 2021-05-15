@@ -4358,6 +4358,10 @@ MonoBehaviour:
     - "You\u2019ll make a fine Warden, Lumin. Go forth and make the world a brighter
       place. Pope Caecus' Office's door is located in the Main Hall."
   reference: tutorialDojo
+  animator: {fileID: 1334554077}
+  defaultFacing:
+  - 0
+  - -1
   repeat: 0
 --- !u!61 &1334554075
 BoxCollider2D:

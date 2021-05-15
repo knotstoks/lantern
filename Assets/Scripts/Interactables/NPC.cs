@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class NPC : Interactable {
@@ -8,12 +6,14 @@ public class NPC : Interactable {
     [SerializeField] private Dialogue[] repeatedDialogue;
     [SerializeField] private string reference;
     public Animator animator;
-    public int defaultFacing;
+    public float[] defaultFacing;
     private Player player;
-    public bool repeat;
+    [HideInInspector] public bool repeat;
     public void Start() {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         repeat = false;
+        animator.SetFloat("FacingHori", defaultFacing[0]);
+        animator.SetFloat("FacingVert", defaultFacing[1]);
     }
     
     public override void Interact() {

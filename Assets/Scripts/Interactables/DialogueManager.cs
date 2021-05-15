@@ -64,7 +64,8 @@ public class DialogueManager : MonoBehaviour {
         player.interactName.SetActive(false);
         player.interactText.enabled = true;
 
-        talkingTo.animator.SetInteger("Facing", talkingTo.defaultFacing);
+        talkingTo.animator.SetFloat("FacingHori", talkingTo.defaultFacing[0]);
+        talkingTo.animator.SetFloat("FacingVert", talkingTo.defaultFacing[1]);
 
         talkingTo = null;
     }
