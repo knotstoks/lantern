@@ -161,9 +161,9 @@ public class Player : MonoBehaviour{
         }
     }
 
-    public void IncreaseMaxHealth() {
-        maxHealth++;
-        health++;
+    public void SetMaxHealth(int n) {
+        maxHealth = n;
+        health = n;
         updateHealth();
     }
 
