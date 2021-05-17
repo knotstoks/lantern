@@ -155,6 +155,7 @@ MonoBehaviour:
   maxX: 8
   maxY: 3
   resetTime: 3
+  animator: {fileID: 1983465472895642848}
 --- !u!95 &1983465472895642848
 Animator:
   serializedVersion: 3

@@ -16,7 +16,9 @@ public class Candling : Enemy {
             GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
             Destroy(gameObject);
         }
+    }
 
+    private void FixedUpdate() {
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
         animator.SetFloat("Hori", target.position.x - transform.position.x);

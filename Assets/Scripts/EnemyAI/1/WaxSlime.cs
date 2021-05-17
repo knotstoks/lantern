@@ -7,6 +7,7 @@ public class WaxSlime : Enemy {
     [SerializeField] private float maxX;
     [SerializeField] private float maxY;
     [SerializeField] private float resetTime; //time the slime pauses at each point
+    [SerializeField] private Animator animator;
     private float waitTime; //time variable
     private Vector2 pos;
     void Start() {
@@ -26,6 +27,14 @@ public class WaxSlime : Enemy {
         if (health <= 0) {
             GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
             Destroy(gameObject);
+        }
+
+        if (((Vector2) transform.position - pos).magnitude < 0.01) { 
+            animator.SetFloat("Hori", 0);
+            animator.SetFloat("Vert", -1);
+        } else {
+            animator.SetFloat("Hori", pos.x - transform.position.x);
+            animator.SetFloat("Vert", pos.y - transform.position.y);
         }
     }
 }
