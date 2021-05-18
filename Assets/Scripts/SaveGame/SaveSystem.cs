@@ -1,25 +1,21 @@
 ﻿using UnityEngine;
 
 public class SaveSystem : MonoBehaviour {
-
     private Player player;
-    private SavePoint savePoint;
 
     private void Start() {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        savePoint = GameObject.FindGameObjectWithTag("SavePoint").GetComponent<SavePoint>();
     }
-    public void Save() {
-        player.Heal(player.maxHealth);
-
-        PlayerPrefs.SetInt("health", player.maxHealth);
+    public void Save(float posX, float posY, float facingDirection, string currScene) {
+        PlayerPrefs.SetInt("health", player.health);
         PlayerPrefs.SetInt("maxHealth", player.maxHealth);
-        PlayerPrefs.SetFloat("positionX", savePoint.posX);
-        PlayerPrefs.SetFloat("positionY", savePoint.posY);
+        PlayerPrefs.SetFloat("positionX", posX);
+        PlayerPrefs.SetFloat("positionY", posY);
+        PlayerPrefs.SetFloat("facingDirection", facingDirection);
         PlayerPrefs.SetInt("introSceneDone", (int) DataStorage.saveValues["introSceneDone"]);
         PlayerPrefs.SetInt("tutorialDojo", (int) DataStorage.saveValues["tutorialDojo"]);
         PlayerPrefs.SetInt("progress", (int) DataStorage.saveValues["progress"]);
-        PlayerPrefs.SetInt("completedDungeonOne", (int) DataStorage.saveValues["completedDungeonOne"]);
-        PlayerPrefs.SetInt("completedDungeonTwo", (int) DataStorage.saveValues["completedDungeonTwo"]);
+        PlayerPrefs.SetInt("completedWaxDungeon", (int) DataStorage.saveValues["completedWaxDungeon"]);
+        PlayerPrefs.SetString("currScene", currScene);
     }
 }

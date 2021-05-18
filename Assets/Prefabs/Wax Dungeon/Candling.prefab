@@ -124,6 +124,7 @@ MonoBehaviour:
   damage: 1
   thrust: 2
   knockTime: 0.2
+  canPush: 1
   animator: {fileID: 7990233164441766476}
 --- !u!61 &10364032236427378
 BoxCollider2D:

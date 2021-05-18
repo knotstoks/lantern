@@ -55,13 +55,12 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["health"] = 6;
         DataStorage.saveValues["maxHealth"] = 6;
         DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
+        DataStorage.saveValues["facingDirection"] = 2;
         DataStorage.saveValues["currScene"] = "Bedroom";
         DataStorage.saveValues["introSceneDone"] = 0;
         DataStorage.saveValues["tutorialDojo"] = 0;
         DataStorage.saveValues["progress"] = 0;
-        DataStorage.saveValues["completedDungeonOne"] = 0;
-        DataStorage.saveValues["completedDungeonTwo"] = 0;
-        DataStorage.saveValues["facingDirection"] = 2;
+        DataStorage.saveValues["completedWaxDungeon"] = 0;
 
         SceneManager.LoadScene("IntroCutscene");
     }
@@ -82,8 +81,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["introSceneDone"] = PlayerPrefs.GetInt("introSceneDone");
         DataStorage.saveValues["tutorialDojo"] = PlayerPrefs.GetInt("tutorialDojo");
         DataStorage.saveValues["progress"] = PlayerPrefs.GetInt("progress");
-        DataStorage.saveValues["completedDungeonOne"] = PlayerPrefs.GetInt("completedDungeonOne");
-        DataStorage.saveValues["completedDungeonTwo"] = PlayerPrefs.GetInt("completedDungeonTwo");
+        DataStorage.saveValues["completedWaxDungeon"] = PlayerPrefs.GetInt("completedWaxDungeon");
 
         SceneManager.LoadScene(PlayerPrefs.GetString("currScene"));
     }

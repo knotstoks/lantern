@@ -2039,6 +2039,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3002714659163028177, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028178, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: speed
@@ -2053,6 +2058,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayerID
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826475666516902370, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 10.497986
       objectReference: {fileID: 0}
     - target: {fileID: 9067023955241712930, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
@@ -2237,12 +2247,10 @@ MonoBehaviour:
   numOfEnemies: 0
   waves:
   - smallEnemies:
-    - {fileID: 1110464256833252204, guid: 86664d6d0cbe9de418e89adba9d6c0ad, type: 3}
-    mediumEnemies:
-    - {fileID: 2851278667411721008, guid: c13650fe34885354396f0272a967b409, type: 3}
-    bigEnemies:
-    - {fileID: 6342428482607714840, guid: 3c65d3912689c5c428fc9617061b62fd, type: 3}
-    smalls: 2
+    - {fileID: 3997245991357428926, guid: d27186a10c4b7b54781135f890b8aa26, type: 3}
+    mediumEnemies: []
+    bigEnemies: []
+    smalls: 1
     mediums: 0
     bigs: 0
   minX: -7

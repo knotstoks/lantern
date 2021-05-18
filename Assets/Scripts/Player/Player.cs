@@ -22,6 +22,7 @@ public class Player : MonoBehaviour{
     public Image dialogueImage; //Lantern image in text box
     public bool allowCombat; //Scene will set this
     public bool inDialogue; //Scene will set this
+    public bool canPause; //checks if can pause the game
     public Animator animator;
     public GameObject pauseMenu;
     public GameObject quitMenu;
@@ -64,6 +65,7 @@ public class Player : MonoBehaviour{
         blackBackground.enabled = false;
         animator.SetFloat("LastMoveX", directions[(int) DataStorage.saveValues["facingDirection"]][0]);
         animator.SetFloat("LastMoveY", directions[(int) DataStorage.saveValues["facingDirection"]][1]);
+        canPause = true;
     }
 
     void Update() {

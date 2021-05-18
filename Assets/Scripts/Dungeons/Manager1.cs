@@ -16,7 +16,6 @@ public class Wave {
 public class Manager1 : MonoBehaviour {
     public int currWave;
     private bool complete;
-    private bool runCheck;
     public int numOfEnemies;
     [SerializeField] private Wave[] waves;
     //Range of positions to spawn enemies
@@ -34,17 +33,6 @@ public class Manager1 : MonoBehaviour {
         StartCoroutine(StartRoom());
     }
     private void Update() {
-        //Checks whether to spawn next wave
-        if (numOfEnemies == 0) {
-            runCheck = true;
-            numOfEnemies = -1;
-        }
-
-        if (runCheck) {
-            runCheck = false;
-            CheckSpawn();
-        }
-
         //Finish the whole room
         if (complete) {
             complete = false;
@@ -61,7 +49,7 @@ public class Manager1 : MonoBehaviour {
                 NextWave();
             } else if (currWave == waves.Length) {
                 complete = true;
-                currWave += 1;
+                numOfEnemies = -1;
             }
         }
     }
@@ -93,10 +81,13 @@ public class Manager1 : MonoBehaviour {
     //Waits a while before starting the wave system
     private IEnumerator StartRoom() {
         yield return 1000;
-        numOfEnemies = 0;
+        CheckSpawn();
     }
 
     public void EnemiesNow(int n) {
         numOfEnemies += n;
+        if (numOfEnemies == 0) {
+            CheckSpawn();
+        }
     }
 }

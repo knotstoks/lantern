@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2851278667411721010}
   - component: {fileID: 2851278667411721011}
   - component: {fileID: 2851278667411721023}
+  - component: {fileID: 6839418539915531041}
   m_Layer: 0
   m_Name: CandlingHive
   m_TagString: Enemy
@@ -73,12 +74,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: be4964f5dd8115c4e9e2f68c7e788198, type: 3}
+  m_Sprite: {fileID: -8071187470718593569, guid: e0c0cf16570341d43ad6b6938e36741c,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.875, y: 1.40625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -122,14 +124,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1.875, y: 1.40625}
+    newSize: {x: 1.875, y: 1.40625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.875, y: 1.40625}
   m_EdgeRadius: 0
 --- !u!114 &2851278667411721023
 MonoBehaviour:
@@ -148,5 +150,25 @@ MonoBehaviour:
   damage: 0
   thrust: 0
   knockTime: 0
+  canPush: 0
   child: {fileID: 1110464256833252204, guid: 86664d6d0cbe9de418e89adba9d6c0ad, type: 3}
   respawnTime: 8
+--- !u!95 &6839418539915531041
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2851278667411721008}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6da73fce327bdd2499d2f06bd9ccb221, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -1,14 +1,18 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
+//Shoots a laser beam, mounted to a wall
 public class WaxSpitter : Enemy {
     [SerializeField] private float resetSpitTime;
-    private Transform target;
+    [SerializeField] private Animator animator;
+    private int facingDirection; //0 - 3, NESW
     private float spitTime;
 
 
     void Start() {
         spitTime = resetSpitTime;
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        facingDirection = Random.Range(0, 3);
+        animator.SetFloat("facingDirection", facingDirection);
     }
 
     void Update() {
@@ -18,13 +22,17 @@ public class WaxSpitter : Enemy {
         }
 
         if (spitTime > 0) {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             spitTime -= Time.deltaTime;
         } else {
             //Trigger the spit
-
+            StartCoroutine(Spit(facingDirection));
         }
     }
 
-    //Make a coroutine for the spit
+    private IEnumerator Spit(int direction) {
+        //TODO: Instantiate the laser
+
+        facingDirection = Random.Range(0, 3); //Sets new direction
+        yield return null;
+    }
 }

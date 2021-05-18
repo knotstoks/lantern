@@ -4342,8 +4342,8 @@ MonoBehaviour:
     sentences:
     - 'Very well done, your affinity for the light is impressive. There is nothing
       more for me to teach you. You are ready, Lumin, Warden of the Light. '
-    - Pope Caecus has specially requested to see you after today's training. I believe
-      he has some sort of assignment for you.
+    - Priest Caecus has specially requested to see you after today's training. I
+      believe he has some sort of assignment for you.
   repeatedDialogue:
   - names: []
     sentences: []
@@ -4356,7 +4356,7 @@ MonoBehaviour:
     - Senior Warden Frankie
     sentences:
     - "You\u2019ll make a fine Warden, Lumin. Go forth and make the world a brighter
-      place. Pope Caecus' Office's door is located in the Main Hall."
+      place. Priest Caecus' Office's door is located in the Main Hall."
   reference: tutorialDojo
   animator: {fileID: 1334554077}
   defaultFacing:

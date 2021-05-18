@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-
-//TODO: Sprite, Animation and Particles for Explosion
 public class MiniWaxBomber : Enemy { //Super fast and explodes
+    [SerializeField] private Animator animator;
     private Transform target;
 
     private void Start() {
@@ -20,6 +19,9 @@ public class MiniWaxBomber : Enemy { //Super fast and explodes
         if (Vector2.Distance(transform.position, target.position) > 0) {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
+
+        animator.SetFloat("Hori", target.position.x - transform.position.x);
+        animator.SetFloat("Vert", target.position.y - transform.position.y);
     }
 
     private IEnumerator Explosion() {

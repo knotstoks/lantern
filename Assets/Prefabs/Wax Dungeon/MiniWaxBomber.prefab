@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5963633122755876885}
   - component: {fileID: 1380155776544065570}
   - component: {fileID: 6454077399876530053}
+  - component: {fileID: 9100494641205765333}
   m_Layer: 0
   m_Name: MiniWaxBomber
   m_TagString: Enemy
@@ -73,7 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d63aa54c78d277144963fae630b98950, type: 3}
+  m_Sprite: {fileID: -108739330335703010, guid: 9006670e6caf37e4b9668fa84901579c,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,18 +99,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0073601305, y: -0.14724582}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.75, y: 0.90625}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.7276743, y: 0.6171607}
   m_EdgeRadius: 0
 --- !u!50 &1380155776544065570
 Rigidbody2D:
@@ -120,7 +122,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 6913372488123444881}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -148,3 +150,24 @@ MonoBehaviour:
   damage: 1
   thrust: 2
   knockTime: 0.2
+  canPush: 1
+  animator: {fileID: 9100494641205765333}
+--- !u!95 &9100494641205765333
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6913372488123444881}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9518b737be3d08c43bb76e85d8e272ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
