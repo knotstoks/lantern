@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour{
     public int health;
@@ -217,5 +218,6 @@ public class Player : MonoBehaviour{
         //Let the animation Play Out
         yield return new WaitForSeconds(2);
         //Go to "You Lose" screen
+        SceneManager.LoadScene("LosingScreenPrototype");
     }
 }

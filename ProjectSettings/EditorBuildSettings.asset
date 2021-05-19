@@ -6,27 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 81b8a92d76388f54fbefd67d98f9bac3
+    path: Assets/Scenes/Prototypes/PlayTestingMainMenu.unity
+    guid: 5a6a43623e0702b479f7351d9266c8d6
   - enabled: 1
-    path: Assets/Scenes/Church Of Light/MainHall.unity
-    guid: 7f5caa1307cc2a641a23b86594efe4da
+    path: Assets/Scenes/Prototypes/CombatPrototype.unity
+    guid: 9f8e8c057aa5ca049923ff338c6439e8
   - enabled: 1
-    path: Assets/Scenes/Church Of Light/PriestOffice.unity
-    guid: f8d6d0e7b2262bd4d8cdb4cc4d254619
-  - enabled: 1
-    path: Assets/Scenes/Church Of Light/MessHall.unity
-    guid: fd2a7c8df9a83324898a65196e83820b
-  - enabled: 1
-    path: Assets/Scenes/Church Of Light/Dojo.unity
-    guid: 937105ba68c70d04abf74b9f6f31666d
-  - enabled: 1
-    path: Assets/Scenes/IntroCutscene.unity
-    guid: 4596f6134a1a51543bd15e7273d65326
-  - enabled: 1
-    path: Assets/Scenes/Prototype.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Church Of Light/Bedroom.unity
-    guid: cb9ec0a8dc582384ca6da759d7a57538
+    path: Assets/Scenes/Prototypes/LosingScreenPrototype.unity
+    guid: 3780f6617383acb45ab9a7919a8b42fc
   m_configObjects: {}

@@ -19,15 +19,15 @@ public class Manager1 : MonoBehaviour {
     public int numOfEnemies;
     [SerializeField] private Wave[] waves;
     //Range of positions to spawn enemies
-    [SerializeField] private float minX;
-    [SerializeField] private float minY;
-    [SerializeField] private float maxX;
-    [SerializeField] private float maxY;
+    public float minX;
+    public float minY;
+    public float maxX;
+    public float maxY;
 
     private IEnumerator Start() {
         currWave = -1;
         complete = false;
-        numOfEnemies = -1;
+        numOfEnemies = 0;
         yield return new WaitForSeconds(0.2f);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().allowCombat = true;
         StartCoroutine(StartRoom());
@@ -80,7 +80,7 @@ public class Manager1 : MonoBehaviour {
 
     //Waits a while before starting the wave system
     private IEnumerator StartRoom() {
-        yield return 1000;
+        yield return new WaitForSeconds(2);
         CheckSpawn();
     }
 

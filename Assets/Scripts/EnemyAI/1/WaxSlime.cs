@@ -2,16 +2,19 @@
 
 //TODO: Sprite, Animation
 public class WaxSlime : Enemy {
-    [SerializeField] private float minX;
-    [SerializeField] private float minY;
-    [SerializeField] private float maxX;
-    [SerializeField] private float maxY;
+    private float minX, minY, maxX, maxY;
     [SerializeField] private float resetTime; //time the slime pauses at each point
     [SerializeField] private Animator animator;
     private float waitTime; //time variable
     private Vector2 pos;
+    private Manager1 dungeonManager;
     void Start() {
         waitTime = resetTime;
+        dungeonManager = GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>();
+        minX = dungeonManager.minX;
+        minY = dungeonManager.minY;
+        maxX = dungeonManager.maxX;
+        maxY = dungeonManager.maxY;
         Vector2 pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
     }
 
