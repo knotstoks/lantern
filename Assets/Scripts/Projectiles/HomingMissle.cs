@@ -1,32 +1,26 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class NormalBullet : MonoBehaviour {
+public class HomingMissle : MonoBehaviour {
     [SerializeField] private float lifeTime;
-    [SerializeField] private Animator animator;
+    [SerializeField] private float speed;
+    private Transform target;
     private Rigidbody2D rb;
-
-    // Start is called before the first frame update
-    void Start() {
+    private void Start() {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
         rb = gameObject.GetComponent<Rigidbody2D>();
         StartCoroutine(DeathDelay());
     }
-
     private void FixedUpdate() {
-        float hori = rb.velocity.x;
-        float vert = rb.velocity.y;
-
-        animator.SetFloat("BHori", hori);
-        animator.SetFloat("BVert", vert);
+        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }
-
-    IEnumerator DeathDelay() {
+    private IEnumerator DeathDelay() {
         yield return new WaitForSeconds(lifeTime);
         Destroy(gameObject);
     }
-
     public void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Enemy") { //Damages Enemies
+        if (other.tag == "Player") { //Damages Player
             other.GetComponent<Enemy>().Damage(1);
             Destroy(gameObject);
         }

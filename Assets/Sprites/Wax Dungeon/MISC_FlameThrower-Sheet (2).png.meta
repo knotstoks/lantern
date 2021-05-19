@@ -1,0 +1,1256 @@
+fileFormatVersion: 2
+guid: b045683ac0595cb4b9119cc38dedaff5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2321186341653564898
+    second: MISC_FlameThrower-Sheet (2)_0
+  - first:
+      213: 3991039061960208746
+    second: MISC_FlameThrower-Sheet (2)_1
+  - first:
+      213: 4385942624652335564
+    second: MISC_FlameThrower-Sheet (2)_2
+  - first:
+      213: 7373312961476140266
+    second: MISC_FlameThrower-Sheet (2)_3
+  - first:
+      213: 331307770244185110
+    second: MISC_FlameThrower-Sheet (2)_4
+  - first:
+      213: -8141609772889321078
+    second: MISC_FlameThrower-Sheet (2)_5
+  - first:
+      213: -5019908974670616441
+    second: MISC_FlameThrower-Sheet (2)_6
+  - first:
+      213: -3664173917125139175
+    second: MISC_FlameThrower-Sheet (2)_7
+  - first:
+      213: -8689705778642886175
+    second: MISC_FlameThrower-Sheet (2)_8
+  - first:
+      213: 5407833028355467108
+    second: MISC_FlameThrower-Sheet (2)_9
+  - first:
+      213: 4479549348451166885
+    second: MISC_FlameThrower-Sheet (2)_10
+  - first:
+      213: -5414525432424474266
+    second: MISC_FlameThrower-Sheet (2)_11
+  - first:
+      213: -4125508386004543384
+    second: MISC_FlameThrower-Sheet (2)_12
+  - first:
+      213: 7504750821389208848
+    second: MISC_FlameThrower-Sheet (2)_13
+  - first:
+      213: 5203016445566180369
+    second: MISC_FlameThrower-Sheet (2)_14
+  - first:
+      213: -5226759313928068479
+    second: MISC_FlameThrower-Sheet (2)_15
+  - first:
+      213: -2346094305374706220
+    second: MISC_FlameThrower-Sheet (2)_16
+  - first:
+      213: 1273561318331280517
+    second: MISC_FlameThrower-Sheet (2)_17
+  - first:
+      213: 4747304824595349849
+    second: MISC_FlameThrower-Sheet (2)_18
+  - first:
+      213: 7005577842355615681
+    second: MISC_FlameThrower-Sheet (2)_19
+  - first:
+      213: 2261547606062020773
+    second: MISC_FlameThrower-Sheet (2)_20
+  - first:
+      213: -129117472306887616
+    second: MISC_FlameThrower-Sheet (2)_21
+  - first:
+      213: 4037351066548818161
+    second: MISC_FlameThrower-Sheet (2)_22
+  - first:
+      213: 8392066352725696131
+    second: MISC_FlameThrower-Sheet (2)_23
+  - first:
+      213: -7414084626990368146
+    second: MISC_FlameThrower-Sheet (2)_24
+  - first:
+      213: -5014444095663821817
+    second: MISC_FlameThrower-Sheet (2)_25
+  - first:
+      213: 5370754995964986472
+    second: MISC_FlameThrower-Sheet (2)_26
+  - first:
+      213: -3064918328416593310
+    second: MISC_FlameThrower-Sheet (2)_27
+  - first:
+      213: -2824424679022170841
+    second: MISC_FlameThrower-Sheet (2)_28
+  - first:
+      213: -7899166273372715834
+    second: MISC_FlameThrower-Sheet (2)_29
+  - first:
+      213: 4481249942533324343
+    second: MISC_FlameThrower-Sheet (2)_30
+  - first:
+      213: -364366347242519751
+    second: MISC_FlameThrower-Sheet (2)_31
+  - first:
+      213: -781589919506442369
+    second: MISC_FlameThrower-Sheet (2)_32
+  - first:
+      213: -299000467569743856
+    second: MISC_FlameThrower-Sheet (2)_33
+  - first:
+      213: -470275377677147233
+    second: MISC_FlameThrower-Sheet (2)_34
+  - first:
+      213: -8187843603107778639
+    second: MISC_FlameThrower-Sheet (2)_35
+  - first:
+      213: 5498240528228038417
+    second: MISC_FlameThrower-Sheet (2)_36
+  - first:
+      213: -4971080414675214119
+    second: MISC_FlameThrower-Sheet (2)_37
+  - first:
+      213: 5710063434266360656
+    second: MISC_FlameThrower-Sheet (2)_38
+  - first:
+      213: -414294734700310766
+    second: MISC_FlameThrower-Sheet (2)_39
+  - first:
+      213: -6096998573521217860
+    second: MISC_FlameThrower-Sheet (2)_40
+  - first:
+      213: 1737768425967214853
+    second: MISC_FlameThrower-Sheet (2)_41
+  - first:
+      213: 6243710812907958934
+    second: MISC_FlameThrower-Sheet (2)_42
+  - first:
+      213: 5303686291541040399
+    second: MISC_FlameThrower-Sheet (2)_43
+  - first:
+      213: 901996566371956892
+    second: MISC_FlameThrower-Sheet (2)_44
+  - first:
+      213: -6258206062728423537
+    second: MISC_FlameThrower-Sheet (2)_45
+  - first:
+      213: -6477498368179023005
+    second: MISC_FlameThrower-Sheet (2)_46
+  - first:
+      213: -5892205828324925161
+    second: MISC_FlameThrower-Sheet (2)_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 104
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edcfb7fda2863020800000000000000
+      internalID: 2321186341653564898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 104
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61b8d4a1e4036730800000000000000
+      internalID: 3991039061960208746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 104
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc995a3549ffddc30800000000000000
+      internalID: 4385942624652335564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 101
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec919ea215435660800000000000000
+      internalID: 7373312961476140266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 101
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c3bb469aa099400800000000000000
+      internalID: 331307770244185110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 103
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8155133c01330f80800000000000000
+      internalID: -8141609772889321078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 105
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78866f75263b55ab0800000000000000
+      internalID: -5019908974670616441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 105
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915218a6c3d362dc0800000000000000
+      internalID: -3664173917125139175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_8
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 105
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1e45562a6f76780800000000000000
+      internalID: -8689705778642886175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_9
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 105
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467a0c3cc7b7c0b40800000000000000
+      internalID: 5407833028355467108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_10
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 105
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aaa344166e8a2e30800000000000000
+      internalID: 4479549348451166885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_11
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 98
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669550d7ecdbbd4b0800000000000000
+      internalID: -5414525432424474266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 72
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868dd461bff3fb6c0800000000000000
+      internalID: -4125508386004543384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_13
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 72
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d89b43c1b362860800000000000000
+      internalID: 7504750821389208848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_14
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 72
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cdc76f3e3d43840800000000000000
+      internalID: 5203016445566180369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_15
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 69
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1826ad6b812d677b0800000000000000
+      internalID: -5226759313928068479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 69
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5e29ec8aff07fd0800000000000000
+      internalID: -2346094305374706220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 71
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c60da75499ca110800000000000000
+      internalID: 1273561318331280517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_18
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 73
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951018ee590d1e140800000000000000
+      internalID: 4747304824595349849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 73
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c734f33eefc83160800000000000000
+      internalID: 7005577842355615681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_20
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 73
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a836f5c091a26f10800000000000000
+      internalID: 2261547606062020773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_21
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 73
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0440ad0d758453ef0800000000000000
+      internalID: -129117472306887616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_22
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 73
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0df2b776d870830800000000000000
+      internalID: 4037351066548818161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 66
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e19bd72eb967470800000000000000
+      internalID: 8392066352725696131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 40
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6afd813051eb1990800000000000000
+      internalID: -7414084626990368146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_25
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 40
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c27e3a9ad196ab0800000000000000
+      internalID: -5014444095663821817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_26
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 40
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864c52e9631c88a40800000000000000
+      internalID: 5370754995964986472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 37
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a1529d4093775d0800000000000000
+      internalID: -3064918328416593310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_28
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 37
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d690808b0adc8d0800000000000000
+      internalID: -2824424679022170841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_29
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 39
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c48fdd3026806290800000000000000
+      internalID: -7899166273372715834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_30
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 38
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e307e7419903e30800000000000000
+      internalID: 4481249942533324343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_31
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 35
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933c088dcb281faf0800000000000000
+      internalID: -364366347242519751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_32
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 35
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77dac7fb1c3725f0800000000000000
+      internalID: -781589919506442369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_33
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 35
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01864dea8acb9dbf0800000000000000
+      internalID: -299000467569743856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_34
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 35
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93e0fe190f3979f0800000000000000
+      internalID: -470275377677147233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_35
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 33
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf6e40cf9fee5e80800000000000000
+      internalID: -8187843603107778639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_36
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 8
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11730b621acad4c40800000000000000
+      internalID: 5498240528228038417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_37
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 8
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0e16563bc230bb0800000000000000
+      internalID: -4971080414675214119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_38
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 8
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bb464b0783e3f40800000000000000
+      internalID: 5710063434266360656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_39
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 4
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f8fd14221204af0800000000000000
+      internalID: -414294734700310766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_40
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 5
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb65435c91c136ba0800000000000000
+      internalID: -6096998573521217860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_41
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 6
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5016aa32d2bcd1810800000000000000
+      internalID: 1737768425967214853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_42
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 2
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692f4ab57ed16a650800000000000000
+      internalID: 6243710812907958934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_43
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 0
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d996ff49a7a9940800000000000000
+      internalID: 5303686291541040399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_44
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98f83f1919848c00800000000000000
+      internalID: 901996566371956892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_45
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8750eb4eb26629a0800000000000000
+      internalID: -6258206062728423537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_46
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363548bad8d4b16a0800000000000000
+      internalID: -6477498368179023005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISC_FlameThrower-Sheet (2)_47
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 0
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711e433740eaa3ea0800000000000000
+      internalID: -5892205828324925161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

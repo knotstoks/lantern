@@ -1,0 +1,872 @@
+fileFormatVersion: 2
+guid: edd79ee00a3b1ae4b9ebc051e17abc75
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1059364468059807407
+    second: MOB_CandleChest-Sheet_0
+  - first:
+      213: -7129360086231330920
+    second: MOB_CandleChest-Sheet_1
+  - first:
+      213: -2174738000772499628
+    second: MOB_CandleChest-Sheet_2
+  - first:
+      213: -3419303998540927135
+    second: MOB_CandleChest-Sheet_3
+  - first:
+      213: 259588406856502205
+    second: MOB_CandleChest-Sheet_4
+  - first:
+      213: 6820552098251745861
+    second: MOB_CandleChest-Sheet_5
+  - first:
+      213: -2491638826463556605
+    second: MOB_CandleChest-Sheet_6
+  - first:
+      213: 7253279674115848683
+    second: MOB_CandleChest-Sheet_7
+  - first:
+      213: 3495115475036510661
+    second: MOB_CandleChest-Sheet_8
+  - first:
+      213: -6913088784729157542
+    second: MOB_CandleChest-Sheet_9
+  - first:
+      213: 7111711614966942530
+    second: MOB_CandleChest-Sheet_10
+  - first:
+      213: 2370622742422262260
+    second: MOB_CandleChest-Sheet_11
+  - first:
+      213: 792906035187563797
+    second: MOB_CandleChest-Sheet_12
+  - first:
+      213: -4514628047140975859
+    second: MOB_CandleChest-Sheet_13
+  - first:
+      213: 2112684177992378292
+    second: MOB_CandleChest-Sheet_14
+  - first:
+      213: 1505690416434809403
+    second: MOB_CandleChest-Sheet_15
+  - first:
+      213: 7939790728950391311
+    second: MOB_CandleChest-Sheet_16
+  - first:
+      213: 128154666063172428
+    second: MOB_CandleChest-Sheet_17
+  - first:
+      213: -8652700741778552462
+    second: MOB_CandleChest-Sheet_18
+  - first:
+      213: -813484948601116301
+    second: MOB_CandleChest-Sheet_19
+  - first:
+      213: 7438737262133887016
+    second: MOB_CandleChest-Sheet_20
+  - first:
+      213: 9159472971336380474
+    second: MOB_CandleChest-Sheet_21
+  - first:
+      213: -3151790058100048326
+    second: MOB_CandleChest-Sheet_22
+  - first:
+      213: -8371498113876115555
+    second: MOB_CandleChest-Sheet_23
+  - first:
+      213: -1810618590321843454
+    second: MOB_CandleChest-Sheet_24
+  - first:
+      213: 4143809081572642091
+    second: MOB_CandleChest-Sheet_25
+  - first:
+      213: 201377453694705846
+    second: MOB_CandleChest-Sheet_26
+  - first:
+      213: -6651434109045644041
+    second: MOB_CandleChest-Sheet_27
+  - first:
+      213: 3038367551464213195
+    second: MOB_CandleChest-Sheet_28
+  - first:
+      213: -2312042300273991887
+    second: MOB_CandleChest-Sheet_29
+  - first:
+      213: 281436025236548826
+    second: MOB_CandleChest-Sheet_30
+  - first:
+      213: -360419703324536339
+    second: MOB_CandleChest-Sheet_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 202
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae1066fe5e93be00800000000000000
+      internalID: 1059364468059807407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 200
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f455846cc6f0d90800000000000000
+      internalID: -7129360086231330920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 199
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45779608f47c1d1e0800000000000000
+      internalID: -2174738000772499628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 201
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f25eb21213c80d0800000000000000
+      internalID: -3419303998540927135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 202
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbcd7ad74e3a9300800000000000000
+      internalID: 259588406856502205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 200
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a275c1ff777ae50800000000000000
+      internalID: 6820552098251745861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 199
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c811840bbeb6dd0800000000000000
+      internalID: -2491638826463556605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 201
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be97c302f63d8a460800000000000000
+      internalID: 7253279674115848683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 138
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c99582b105218030800000000000000
+      internalID: 3495115475036510661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 136
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a505b7d9066cf00a0800000000000000
+      internalID: -6913088784729157542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 135
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bcf1bc800e1b260800000000000000
+      internalID: 7111711614966942530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 137
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f19a8af2d426e020800000000000000
+      internalID: 2370622742422262260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 138
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d3e9786d7f00b00800000000000000
+      internalID: 792906035187563797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 137
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b852de5b1d851c0800000000000000
+      internalID: -4514628047140975859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 135
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7e2dff013c15d10800000000000000
+      internalID: 2112684177992378292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 137
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a8e4dc47945e410800000000000000
+      internalID: 1505690416434809403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 73
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f022706e99dcf2e60800000000000000
+      internalID: 7939790728950391311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 73
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4311036dfb47c100800000000000000
+      internalID: 128154666063172428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 73
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279c782f48e6be780800000000000000
+      internalID: -8652700741778552462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 73
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379e080dfbbe5b4f0800000000000000
+      internalID: -813484948601116301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 73
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820c3f6b024bb3760800000000000000
+      internalID: 7438737262133887016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 74
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30fb42732cfc1f70800000000000000
+      internalID: 9159472971336380474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 76
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3eb65c14a79244d0800000000000000
+      internalID: -3151790058100048326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 74
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fbf8cc1d672db80800000000000000
+      internalID: -8371498113876115555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 9
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203e5243cf36fd6e0800000000000000
+      internalID: -1810618590321843454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 9
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2dcc24a764c18930800000000000000
+      internalID: 4143809081572642091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 9
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0ee392abf6bc200800000000000000
+      internalID: 201377453694705846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 9
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4ea6b2beb51b3a0800000000000000
+      internalID: -6651434109045644041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 9
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca091aa0337a2a20800000000000000
+      internalID: 3038367551464213195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 10
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13fdd7217c9f9efd0800000000000000
+      internalID: -2312042300273991887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 12
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adce837e29cd7e300800000000000000
+      internalID: 281436025236548826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_CandleChest-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 10
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de11a4d70388ffaf0800000000000000
+      internalID: -360419703324536339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

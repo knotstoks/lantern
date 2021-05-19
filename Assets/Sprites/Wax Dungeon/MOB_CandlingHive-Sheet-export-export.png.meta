@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: e0c0cf16570341d43ad6b6938e36741c
+guid: da7c36afbad978d4b819bea8e22cc7cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8071187470718593569
-    second: MOB_CandlingHive-Sheet (2)_0
+      213: 9125757216175806957
+    second: MOB_CandlingHive-Sheet-export-export_0
   - first:
-      213: -8787009921150359032
-    second: MOB_CandlingHive-Sheet (2)_1
+      213: -1128135258053957215
+    second: MOB_CandlingHive-Sheet-export-export_1
   - first:
-      213: 8402645947367583288
-    second: MOB_CandlingHive-Sheet (2)_2
+      213: -6491834632114775951
+    second: MOB_CandlingHive-Sheet-export-export_2
   - first:
-      213: 3502152574498790324
-    second: MOB_CandlingHive-Sheet (2)_3
+      213: 3769096552925593170
+    second: MOB_CandlingHive-Sheet-export-export_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -99,7 +99,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MOB_CandlingHive-Sheet (2)_0
+      name: MOB_CandlingHive-Sheet-export-export_0
       rect:
         serializedVersion: 2
         x: 2
@@ -113,14 +113,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd51c3422c16dff80800000000000000
-      internalID: -8071187470718593569
+      spriteID: de9dd9876d335ae70800000000000000
+      internalID: 9125757216175806957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MOB_CandlingHive-Sheet (2)_1
+      name: MOB_CandlingHive-Sheet-export-export_1
       rect:
         serializedVersion: 2
         x: 66
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80aeff348054e0680800000000000000
-      internalID: -8787009921150359032
+      spriteID: 1a9a91db5fe0850f0800000000000000
+      internalID: -1128135258053957215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MOB_CandlingHive-Sheet (2)_2
+      name: MOB_CandlingHive-Sheet-export-export_2
       rect:
         serializedVersion: 2
         x: 130
@@ -155,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83e683258f13c9470800000000000000
-      internalID: 8402645947367583288
+      spriteID: 178583c1cce58e5a0800000000000000
+      internalID: -6491834632114775951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MOB_CandlingHive-Sheet (2)_3
+      name: MOB_CandlingHive-Sheet-export-export_3
       rect:
         serializedVersion: 2
         x: 194
@@ -176,8 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bb583816352a9030800000000000000
-      internalID: 3502152574498790324
+      spriteID: 25e774968558e4430800000000000000
+      internalID: 3769096552925593170
       vertices: []
       indices: 
       edges: []
