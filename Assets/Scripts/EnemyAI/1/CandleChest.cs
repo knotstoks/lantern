@@ -12,8 +12,8 @@ public class CandleChest : Enemy {
     private Rigidbody2D rb;
     private Vector2[] shootDirection = {
         new Vector2(0, 1), //Up
-        new Vector2(0, -1), //Down
         new Vector2(-1, 0), //Left
+        new Vector2(0, -1), //Down
         new Vector2(1, 0) //Right
     };
     private void Start() {
@@ -45,10 +45,10 @@ public class CandleChest : Enemy {
                 }
             } else {
                 if (y < 0) {
-                    StartCoroutine(Flamethrower(0));
+                    StartCoroutine(Flamethrower(2));
                     canMove = false;
                 } else {
-                    StartCoroutine(Flamethrower(2));
+                    StartCoroutine(Flamethrower(0));
                     canMove = false;
                 }
             }

@@ -3003,7 +3003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b57aac1aeda61240a72b771f7d5af87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadGameButton: {fileID: 0}
+  loadGameButton: {fileID: 485098726}
   standardSet: {fileID: 1986891416}
   newGameWarning: {fileID: 1710864981}
   quitScreen: {fileID: 1770640985}
@@ -3274,10 +3274,10 @@ RectTransform:
   m_Father: {fileID: 436411859}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00015259, y: 0.0025177}
-  m_SizeDelta: {x: 952.50024, y: 516.25494}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1361908568
 MonoBehaviour:

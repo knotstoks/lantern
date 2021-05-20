@@ -723,6 +723,9 @@ MonoBehaviour:
     type: 3}
   resetInvulTime: 3
   speed: 3
+  slowSpeed: 1
+  slowTime: 0
+  resetSlowTime: 2
   bullet: {fileID: 3111989442058738566, guid: d3c99120d7d5b3c4a9db6457e8f226a5, type: 3}
   bulletSpeed: 5
   fireDelay: 0.5

@@ -12,6 +12,9 @@ public class Player : MonoBehaviour{
     [SerializeField] private Sprite emptyHeart;
     [SerializeField] private float resetInvulTime;
     [SerializeField] private float speed;
+    [SerializeField] private float slowSpeed;
+    [SerializeField] private float slowTime;
+    [SerializeField] private float resetSlowTime;
     [SerializeField] private GameObject bullet;
     [SerializeField] private float bulletSpeed; 
     [SerializeField] private float fireDelay;
@@ -40,6 +43,7 @@ public class Player : MonoBehaviour{
         new int[] {0, -1}, //South
         new int[] {-1, 0}, //West
     };
+    private float tempSpeed;
     
     private void Start() {
         //Destroy Later
@@ -67,6 +71,8 @@ public class Player : MonoBehaviour{
         animator.SetFloat("LastMoveX", directions[(int) DataStorage.saveValues["facingDirection"]][0]);
         animator.SetFloat("LastMoveY", directions[(int) DataStorage.saveValues["facingDirection"]][1]);
         canPause = true;
+        slowTime = 0;
+        tempSpeed = speed;
     }
 
     void Update() {
@@ -114,6 +120,13 @@ public class Player : MonoBehaviour{
     }
 
     public void FixedUpdate() {
+        if (slowTime > 0) {
+            slowTime -= Time.deltaTime;
+            speed = slowSpeed;
+        } else {
+            speed = tempSpeed;
+        }
+
         if (!inDialogue) {
             //Movement
             move.x = Input.GetAxisRaw("Horizontal");
@@ -211,6 +224,10 @@ public class Player : MonoBehaviour{
         }
 
         inDialogue = !inDialogue;
+    }
+
+    public void SlowPlayer() {
+        slowTime = resetSlowTime;
     }
 
     //Coroutine to kill Player
