@@ -18,6 +18,9 @@ public class Manager1 : MonoBehaviour {
     private bool complete;
     public int numOfEnemies;
     [SerializeField] private Wave[] waves;
+    [SerializeField] private AudioSource musicAudioSource;
+    [SerializeField] private AudioSource sfx;
+    [SerializeField] private AudioClip[] sounds; //0 - main music, 1 - finished music, 2 - spawn sounds
     //Range of positions to spawn enemies
     public float minX;
     public float minY;
@@ -25,6 +28,14 @@ public class Manager1 : MonoBehaviour {
     public float maxY;
 
     private IEnumerator Start() {
+        //Delete after
+        PlayerPrefs.SetFloat("volume", 1);
+
+        musicAudioSource.volume = PlayerPrefs.GetFloat("volume");
+        sfx.volume = PlayerPrefs.GetFloat("volume");
+        musicAudioSource.loop = true;
+        musicAudioSource.clip = sounds[0];
+        musicAudioSource.Play();
         currWave = -1;
         complete = false;
         numOfEnemies = 0;
@@ -36,6 +47,9 @@ public class Manager1 : MonoBehaviour {
         //Finish the whole room
         if (complete) {
             complete = false;
+            musicAudioSource.clip = sounds[1];
+            musicAudioSource.loop = false;
+            musicAudioSource.Play();
             //Animation shaking of room + door opening
         }
     }
@@ -55,6 +69,7 @@ public class Manager1 : MonoBehaviour {
     }
 
     private void NextWave() {
+        sfx.Play();
         //Spawn the enemies
         GameObject[] smallies = waves[currWave].smallEnemies;
         GameObject[] mediumies = waves[currWave].mediumEnemies;

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TrainingDummy : Enemy {
     [SerializeField] private Sprite[] damaged;
+    private void Start() {
+        GetSprite();
+    }
     private void Update() {
         if (health == 4) {
             gameObject.GetComponent<SpriteRenderer>().sprite = damaged[0];

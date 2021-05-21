@@ -7,17 +7,22 @@ public class CandleChest : Enemy {
     [SerializeField] private GameObject fireBall;
     [SerializeField] private float fireBallSpeed;
     [SerializeField] private Animator animator;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip[] soundEffects; //0 for walking, 1 for fireball
     private float fireTime;
     private bool canMove;
     private Rigidbody2D rb;
     private Vector2[] shootDirection = {
         new Vector2(0, 1), //Up
-        new Vector2(-1, 0), //Left
+        new Vector2(1, 0), //Right
         new Vector2(0, -1), //Down
-        new Vector2(1, 0) //Right
+        new Vector2(-1, 0) //Left
     };
     private void Start() {
         GetSprite();
+        audioSource.clip = soundEffects[0];
+        audioSource.loop = true;
+        audioSource.Play();
         fireTime = resetTime;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -36,20 +41,20 @@ public class CandleChest : Enemy {
             fireTime = resetTime;
             float x = transform.position.x - target.position.x;
             float y = transform.position.y - target.position.y;
-            if (x < y) {
+            if (Mathf.Abs(x) > Mathf.Abs(y)) {
                 if (x < 0) {
-                    StartCoroutine(Flamethrower(3));
+                    StartCoroutine(Flamethrower(1));
                     canMove = false;   
                 } else {
-                    StartCoroutine(Flamethrower(1));
+                    StartCoroutine(Flamethrower(3));
                     canMove = false;
                 }
             } else {
                 if (y < 0) {
-                    StartCoroutine(Flamethrower(2));
+                    StartCoroutine(Flamethrower(0));
                     canMove = false;
                 } else {
-                    StartCoroutine(Flamethrower(0));
+                    StartCoroutine(Flamethrower(2));
                     canMove = false;
                 }
             }
@@ -64,9 +69,15 @@ public class CandleChest : Enemy {
     }
     private IEnumerator Flamethrower(int direction) {
         //Fire the flamethrower
+        audioSource.clip = soundEffects[1];
+        audioSource.loop = false;
+        audioSource.Play();
         GameObject projectile = Instantiate(fireBall, transform.position, Quaternion.identity) as GameObject;
         projectile.GetComponent<Rigidbody2D>().velocity = shootDirection[direction] * fireBallSpeed;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         canMove = true;
+        audioSource.clip = soundEffects[0];
+        audioSource.loop = true;
+        audioSource.Play();
     }
 }

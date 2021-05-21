@@ -6,9 +6,11 @@ public class FireBall : MonoBehaviour {
     [SerializeField] private Animator animator;
     [SerializeField] private float lifeTime;
     private Rigidbody2D rb;
-    private void Start() {
+    private IEnumerator Start() {
         rb = gameObject.GetComponent<Rigidbody2D>();
         StartCoroutine(DeathDelay());
+        yield return new WaitForSeconds(0.8f);
+        animator.SetBool("StartUp", true);
     }
     private void FixedUpdate() {
         animator.SetFloat("ShootHori", rb.velocity.x);

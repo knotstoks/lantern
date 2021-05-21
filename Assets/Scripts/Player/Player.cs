@@ -52,6 +52,7 @@ public class Player : MonoBehaviour{
         DataStorage.saveValues["maxHealth"] = 6;
         DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
         DataStorage.saveValues["facingDirection"] = 2;
+        PlayerPrefs.SetFloat("volume", 100f);
 
         invulTime = 0.5f;
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
@@ -198,10 +199,12 @@ public class Player : MonoBehaviour{
         updateHealth();
     }
     public void Damage(int amt) {
-        if (invulTime < 0) {
-            invulTime = resetInvulTime;
-            health -= amt;
-            updateHealth();
+        if (amt > 0) {
+            if (invulTime < 0) {
+                invulTime = resetInvulTime;
+                health -= amt;
+                updateHealth();
+            }
         }
     }
     public void SetMaxHealth(int n) {
