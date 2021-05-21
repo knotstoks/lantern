@@ -3,13 +3,14 @@ using UnityEngine;
 
 //TODO: Sprite, Animation
 public class MotherWaxSlime : Enemy {
+    [SerializeField] private Animator animator;
     private float minX, minY, maxX, maxY;
     [SerializeField] private float resetTime; //time the slime pauses at each point
     [SerializeField] private GameObject childSlime;
-    [SerializeField] private Animator animator;
     private float waitTime; //time variable
     private Vector2 pos;
     private Manager1 dungeonManager;
+    private bool spawned;
     void Start() {
         GetSprite();
         waitTime = resetTime;
@@ -19,6 +20,7 @@ public class MotherWaxSlime : Enemy {
         maxX = dungeonManager.maxX;
         maxY = dungeonManager.maxY;
         Vector2 pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+        spawned = false;
     }
 
     void Update() {
@@ -32,9 +34,9 @@ public class MotherWaxSlime : Enemy {
 
         if (health <= 0) {
             GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(1);
-            Instantiate(childSlime, transform.position + new Vector3(0.5f, 0, 0), transform.rotation);
-            Instantiate(childSlime, transform.position - new Vector3(0.5f, 0, 0), transform.rotation);
-            Destroy(gameObject);
+            damage = 0;
+            StartCoroutine(Death());
+            spawned = true;
         }
 
         if (((Vector2) transform.position - pos).magnitude < 0.01) { 
@@ -43,6 +45,15 @@ public class MotherWaxSlime : Enemy {
         } else {
             animator.SetFloat("Hori", pos.x - transform.position.x);
             animator.SetFloat("Vert", pos.y - transform.position.y);
+        }
+    }
+    private IEnumerator Death() {
+        if (!spawned) {
+            Instantiate(childSlime, transform.position + new Vector3(0.5f, 0, 0), transform.rotation);
+            Instantiate(childSlime, transform.position - new Vector3(0.5f, 0, 0), transform.rotation);
+            animator.SetTrigger("Death");
+            yield return new WaitForSeconds(0.6f);
+            Destroy(gameObject);
         }
     }
 }

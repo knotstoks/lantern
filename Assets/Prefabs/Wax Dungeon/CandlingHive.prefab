@@ -153,6 +153,7 @@ MonoBehaviour:
   canPush: 0
   child: {fileID: 1110464256833252204, guid: 86664d6d0cbe9de418e89adba9d6c0ad, type: 3}
   respawnTime: 8
+  animator: {fileID: 6839418539915531041}
 --- !u!95 &6839418539915531041
 Animator:
   serializedVersion: 3

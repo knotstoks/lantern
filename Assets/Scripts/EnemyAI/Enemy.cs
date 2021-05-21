@@ -14,7 +14,6 @@ public class Enemy : MonoBehaviour {
     protected void GetSprite() {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
-
     public void Damage(int damage) {
         health -= damage;
     }
@@ -26,7 +25,6 @@ public class Enemy : MonoBehaviour {
             StartCoroutine(KnockCoroutine(bullet));
         }
     }
-
     private void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.tag == "Player") {
             other.gameObject.GetComponent<Player>().Damage(damage);
@@ -38,7 +36,6 @@ public class Enemy : MonoBehaviour {
             }
         }
     }
-
     private IEnumerator KnockCoroutine(Rigidbody2D bullet) {
         Rigidbody2D enemy = this.GetComponent<Rigidbody2D>();
         Vector2 forceDirection = transform.position - bullet.transform.position;

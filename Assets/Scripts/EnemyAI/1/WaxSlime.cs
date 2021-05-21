@@ -1,10 +1,10 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
-//TODO: Sprite, Animation
 public class WaxSlime : Enemy {
+    [SerializeField] private Animator animator;
     private float minX, minY, maxX, maxY;
     [SerializeField] private float resetTime; //time the slime pauses at each point
-    [SerializeField] private Animator animator;
     private float waitTime; //time variable
     private Vector2 pos;
     private Manager1 dungeonManager;
@@ -29,8 +29,9 @@ public class WaxSlime : Enemy {
         }
 
         if (health <= 0) {
+            damage = 0;
             GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
-            Destroy(gameObject);
+            StartCoroutine(Death());
         }
 
         if (((Vector2) transform.position - pos).magnitude < 0.01) { 
@@ -40,5 +41,10 @@ public class WaxSlime : Enemy {
             animator.SetFloat("Hori", pos.x - transform.position.x);
             animator.SetFloat("Vert", pos.y - transform.position.y);
         }
+    }
+    private IEnumerator Death() {
+        animator.SetTrigger("Death");
+        yield return new WaitForSeconds(0.6f);
+        Destroy(gameObject);
     }
 }

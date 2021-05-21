@@ -1,10 +1,10 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CandlingHive : Enemy {
     [SerializeField] private GameObject child;
     [SerializeField] private float respawnTime;
+    [SerializeField] private Animator animator;
     private float spawnTime;
     private Rigidbody2D rb;
     void Start() {
@@ -12,11 +12,11 @@ public class CandlingHive : Enemy {
         spawnTime = respawnTime;
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
-
     void Update() {
         if (health <= 0) {
+            damage = 0;
             GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
-            Destroy(gameObject);
+            StartCoroutine(Death());
         }
 
         if (spawnTime > 0) {
@@ -26,5 +26,10 @@ public class CandlingHive : Enemy {
             GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(1);
             spawnTime = respawnTime;
         }
+    }
+    private IEnumerator Death() {
+        animator.SetTrigger("Death");
+        yield return new WaitForSeconds(0.6f);
+        Destroy(gameObject);
     }
 }

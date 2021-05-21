@@ -5,14 +5,13 @@ using UnityEngine;
 public class WaxSpitter : MonoBehaviour {
     [SerializeField] private float resetSpitTime;
     [SerializeField] private Animator animator;
-    [SerializeField] private int facingDirection; //0 - 3, NESW
+    [SerializeField] private int direction;
     private float spitTime;
 
 
     void Start() {
         spitTime = resetSpitTime;
-        facingDirection = Random.Range(0, 3);
-        animator.SetFloat("facingDirection", facingDirection);
+        animator.SetInteger("Direction", direction);
     }
 
     void Update() {
@@ -20,13 +19,7 @@ public class WaxSpitter : MonoBehaviour {
             spitTime -= Time.deltaTime;
         } else {
             //Trigger the spit
-            StartCoroutine(Spit(facingDirection));
+            animator.SetTrigger("Spit");
         }
-    }
-
-    private IEnumerator Spit(int direction) {
-        //TODO: Instantiate the laser
-        
-        yield return null;
     }
 }

@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class CandleChest : Enemy { 
-    private Transform target;
+public class CandleChest : Enemy {
+    [SerializeField] private Animator animator;
     [SerializeField] private float resetTime;
     [SerializeField] private GameObject fireBall;
     [SerializeField] private float fireBallSpeed;
-    [SerializeField] private Animator animator;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip[] soundEffects; //0 for walking, 1 for fireball
+    private Transform target;
     private float fireTime;
     private bool canMove;
     private Rigidbody2D rb;
@@ -28,11 +28,11 @@ public class CandleChest : Enemy {
         rb = gameObject.GetComponent<Rigidbody2D>();
         canMove = true;
     }
-
     private void Update() {
         if (health <= 0) {
+            damage = 0;
             GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
-            Destroy(gameObject);
+            StartCoroutine(Death());
         }
 
         if (fireTime > 0) {
@@ -79,5 +79,10 @@ public class CandleChest : Enemy {
         audioSource.clip = soundEffects[0];
         audioSource.loop = true;
         audioSource.Play();
+    }
+    private IEnumerator Death() {
+        animator.SetTrigger("Death");
+        yield return new WaitForSeconds(0.6f);
+        Destroy(gameObject);
     }
 }
