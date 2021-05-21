@@ -13,7 +13,6 @@ public class Player : MonoBehaviour{
     [SerializeField] private float resetInvulTime;
     [SerializeField] private float speed;
     [SerializeField] private float slowSpeed;
-    [SerializeField] private float slowTime;
     [SerializeField] private float resetSlowTime;
     [SerializeField] private GameObject bullet;
     [SerializeField] private float bulletSpeed; 
@@ -44,7 +43,9 @@ public class Player : MonoBehaviour{
         new int[] {-1, 0}, //West
     };
     private float tempSpeed;
-    
+    private float slowTime;
+    private SpriteRenderer spriteRenderer;
+    private bool blinking; //States if player is blinking if damaged
     private void Start() {
         //Destroy Later
         DataStorage.saveValues["health"] = 6;
@@ -52,8 +53,8 @@ public class Player : MonoBehaviour{
         DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
         DataStorage.saveValues["facingDirection"] = 2;
 
-
         invulTime = 0.5f;
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         rb = gameObject.GetComponent<Rigidbody2D>();
         health = (int) DataStorage.saveValues["health"];
         maxHealth = (int) DataStorage.saveValues["maxHealth"];
@@ -74,10 +75,41 @@ public class Player : MonoBehaviour{
         slowTime = 0;
         tempSpeed = speed;
     }
-
     void Update() {
+        if (blinking) {
+            if (invulTime > resetInvulTime * 0.99f) {
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0f);
+            } else if (invulTime > resetInvulTime * 0.91f) {
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
+            } else if (invulTime > resetInvulTime * 0.83f) {
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0f);
+            } else if (invulTime > resetInvulTime * 0.75f) {
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
+            } else if (invulTime > resetInvulTime * 0.67f) {
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0f);
+            } else if (invulTime > resetInvulTime * 0.59f) {
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
+            } else if (invulTime > resetInvulTime * 0.51f) {
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0f);
+            } else if (invulTime > resetInvulTime * 0.43f) {
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
+            } else if (invulTime > resetInvulTime * 0.35f) {
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0f);
+            } else if (invulTime > resetInvulTime * 0.27f) {
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
+            } else if (invulTime > resetInvulTime * 0.19f) {
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0f);
+            } else if (invulTime > resetInvulTime * 0.11f) {
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
+            }
+        }
+
         if (invulTime > 0) {
+            blinking = true;
             invulTime -= Time.deltaTime;
+        } else {
+            blinking = false;
+            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
         }
 
         if (Input.GetKeyDown(KeyCode.E)) { //Checks when you press 'E' if you can interact with anything
@@ -89,7 +121,6 @@ public class Player : MonoBehaviour{
             StartCoroutine(KillPlayer());
         }
     }
-
     private void updateHealth() {
         //Handles overheal
         if (health > maxHealth) {
@@ -118,7 +149,6 @@ public class Player : MonoBehaviour{
         DataStorage.saveValues["health"] = this.health;
         DataStorage.saveValues["maxHealth"] = this.maxHealth;
     }
-
     public void FixedUpdate() {
         if (slowTime > 0) {
             slowTime -= Time.deltaTime;
@@ -159,7 +189,6 @@ public class Player : MonoBehaviour{
             }
         }
     }
-
     public void Heal(int amt) {
         if (health + amt > maxHealth) {
             health = maxHealth;
@@ -168,7 +197,6 @@ public class Player : MonoBehaviour{
         }
         updateHealth();
     }
-
     public void Damage(int amt) {
         if (invulTime < 0) {
             invulTime = resetInvulTime;
@@ -176,31 +204,26 @@ public class Player : MonoBehaviour{
             updateHealth();
         }
     }
-
     public void SetMaxHealth(int n) {
         maxHealth = n;
         health = n;
         updateHealth();
     }
-
     void Shoot(float x, float y) {
         GameObject bullet = Instantiate(this.bullet, transform.position, transform.rotation) as GameObject;
         bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(
             (x < 0) ? Mathf.Floor(x) * bulletSpeed : Mathf.Ceil(x) * bulletSpeed,
             (y < 0) ? Mathf.Floor(y) * bulletSpeed : Mathf.Ceil(y) * bulletSpeed);
     }
-
     //Interactions Part
     public void OpenInteractableIcon() {
         interactIcon.enabled = true;
         interactName.SetActive(true);
     }
-
     public void CloseInteractableIcon() {
         interactIcon.enabled = false;
         interactName.SetActive(false);
     }
-    
     public void CheckInteraction() {
         RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, 0, Vector2.zero);
 
@@ -212,8 +235,7 @@ public class Player : MonoBehaviour{
                 }
             }
         }
-    }
-    
+    }    
     //Toggles whether player is in dialogue or not
     public void ToggleDialogue() {
         if (!inDialogue) {
@@ -225,13 +247,12 @@ public class Player : MonoBehaviour{
 
         inDialogue = !inDialogue;
     }
-
     public void SlowPlayer() {
         slowTime = resetSlowTime;
     }
-
     //Coroutine to kill Player
     private IEnumerator KillPlayer() {
+        inDialogue = true;
         //Let the animation Play Out
         yield return new WaitForSeconds(2);
         //Go to "You Lose" screen

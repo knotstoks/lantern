@@ -8,6 +8,7 @@ public class CandlingHive : Enemy {
     private float spawnTime;
     private Rigidbody2D rb;
     void Start() {
+        GetSprite();
         spawnTime = respawnTime;
         rb = gameObject.GetComponent<Rigidbody2D>();
     }

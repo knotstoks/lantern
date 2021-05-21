@@ -11,6 +11,7 @@ public class MotherWaxSlime : Enemy {
     private Vector2 pos;
     private Manager1 dungeonManager;
     void Start() {
+        GetSprite();
         waitTime = resetTime;
         dungeonManager = GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>();
         minX = dungeonManager.minX;

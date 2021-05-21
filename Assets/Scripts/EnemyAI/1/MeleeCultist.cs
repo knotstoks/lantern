@@ -6,6 +6,7 @@ public class MeleeCultist : Enemy {
     [SerializeField] private Animator animator;
     private float attackTime;
     private void Start() {
+        GetSprite();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 

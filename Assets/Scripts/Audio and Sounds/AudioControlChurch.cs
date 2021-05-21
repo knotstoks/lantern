@@ -1,19 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class AudioControl : MonoBehaviour {
+public class AudioControlChurch : MonoBehaviour {
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private Slider volumeSlider;
-
+    private static AudioControlChurch instance;
     private IEnumerator Start() {
         yield return new WaitForSeconds(0.5f);
         audioSource.volume = PlayerPrefs.GetFloat("volume");
     }
-
-    //adjusts the volume on slider
-    private void adjustVolume() {
-        PlayerPrefs.SetFloat("volume", volumeSlider.value);
+    private void Awake() {
+        if (instance != null) {
+            Destroy(gameObject);
+        } else {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 }

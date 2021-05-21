@@ -7,6 +7,7 @@ public class Candling : Enemy {
     private Rigidbody2D rb;
     private Vector2 move;
     private void Start() {
+        GetSprite();
         rb = gameObject.GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }

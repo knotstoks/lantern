@@ -17,6 +17,7 @@ public class CandleChest : Enemy {
         new Vector2(1, 0) //Right
     };
     private void Start() {
+        GetSprite();
         fireTime = resetTime;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = gameObject.GetComponent<Rigidbody2D>();

@@ -10,6 +10,10 @@ public class Enemy : MonoBehaviour {
     [SerializeField] protected float thrust;
     [SerializeField] protected float knockTime;
     [SerializeField] protected bool canPush;
+    protected SpriteRenderer spriteRenderer;
+    protected void GetSprite() {
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+    }
 
     public void Damage(int damage) {
         health -= damage;
@@ -18,6 +22,7 @@ public class Enemy : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Bullet") {
             Rigidbody2D bullet = other.GetComponent<Rigidbody2D>();
+            StartCoroutine(FlashRed());
             StartCoroutine(KnockCoroutine(bullet));
         }
     }
@@ -42,12 +47,16 @@ public class Enemy : MonoBehaviour {
         yield return new WaitForSeconds(knockTime);
         enemy.velocity = new Vector2();
     }
-
     private IEnumerator PushAway(Rigidbody2D other) {
         Rigidbody2D rb = this.GetComponent<Rigidbody2D>();
         Vector2 push = (gameObject.transform.position - other.transform.position).normalized;
         rb.velocity = push;
         yield return new WaitForSeconds(0.2f);
         rb.velocity = new Vector2();
+    }
+    private IEnumerator FlashRed() {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.2f);
+        spriteRenderer.color = Color.white;
     }
 }

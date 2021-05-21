@@ -7,6 +7,7 @@ public class MiniWaxBomber : Enemy { //Super fast and explodes
     private bool dead;
 
     private void Start() {
+        GetSprite();
         dead = false;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }

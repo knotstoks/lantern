@@ -2,10 +2,10 @@
 using UnityEngine;
 
 //Shoots a laser beam, mounted to a wall
-public class WaxSpitter : Enemy {
+public class WaxSpitter : MonoBehaviour {
     [SerializeField] private float resetSpitTime;
     [SerializeField] private Animator animator;
-    private int facingDirection; //0 - 3, NESW
+    [SerializeField] private int facingDirection; //0 - 3, NESW
     private float spitTime;
 
 
@@ -16,11 +16,6 @@ public class WaxSpitter : Enemy {
     }
 
     void Update() {
-        if (health <= 0) {
-            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
-            Destroy(gameObject);
-        }
-
         if (spitTime > 0) {
             spitTime -= Time.deltaTime;
         } else {
@@ -31,8 +26,7 @@ public class WaxSpitter : Enemy {
 
     private IEnumerator Spit(int direction) {
         //TODO: Instantiate the laser
-
-        facingDirection = Random.Range(0, 3); //Sets new direction
+        
         yield return null;
     }
 }

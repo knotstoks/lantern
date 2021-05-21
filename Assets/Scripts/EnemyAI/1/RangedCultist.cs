@@ -11,6 +11,7 @@ public class RangedCultist : Enemy {
     private float shootTime;
     private bool shooting;
     private void Start() {
+        GetSprite();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
