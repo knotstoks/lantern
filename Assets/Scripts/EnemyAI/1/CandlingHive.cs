@@ -7,15 +7,17 @@ public class CandlingHive : Enemy {
     [SerializeField] private Animator animator;
     private float spawnTime;
     private Rigidbody2D rb;
-    void Start() {
+    private bool died;
+    private void Start() {
         GetSprite();
         spawnTime = respawnTime;
         rb = gameObject.GetComponent<Rigidbody2D>();
+        died = false;
     }
     void Update() {
-        if (health <= 0) {
+        if (health <= 0 && !died) {
+            died = true;
             damage = 0;
-            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
             StartCoroutine(Death());
         }
 
@@ -30,6 +32,7 @@ public class CandlingHive : Enemy {
     private IEnumerator Death() {
         animator.SetTrigger("Death");
         yield return new WaitForSeconds(0.6f);
+        GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
         Destroy(gameObject);
     }
 }

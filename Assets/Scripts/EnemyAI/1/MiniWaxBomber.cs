@@ -16,7 +16,6 @@ public class MiniWaxBomber : Enemy { //Super fast and explodes
         if (health <= 0) {
             dead = true;
             StartCoroutine(Explosion());
-            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
             StartCoroutine(Death());
         }
 
@@ -40,7 +39,8 @@ public class MiniWaxBomber : Enemy { //Super fast and explodes
     }
     private IEnumerator Death() {
         animator.SetBool("Dead", true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.6f);
+        GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
         Destroy(gameObject);
     }
 }

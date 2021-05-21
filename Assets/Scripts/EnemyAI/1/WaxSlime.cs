@@ -8,6 +8,7 @@ public class WaxSlime : Enemy {
     private float waitTime; //time variable
     private Vector2 pos;
     private Manager1 dungeonManager;
+    private bool died;
     void Start() {
         GetSprite();
         waitTime = resetTime;
@@ -17,6 +18,7 @@ public class WaxSlime : Enemy {
         maxX = dungeonManager.maxX;
         maxY = dungeonManager.maxY;
         Vector2 pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+        died = false;
     }
 
     void Update() {
@@ -28,9 +30,9 @@ public class WaxSlime : Enemy {
             pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
         }
 
-        if (health <= 0) {
+        if (health <= 0 && !died) {
+            died = true;
             damage = 0;
-            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
             StartCoroutine(Death());
         }
 
@@ -45,6 +47,7 @@ public class WaxSlime : Enemy {
     private IEnumerator Death() {
         animator.SetTrigger("Death");
         yield return new WaitForSeconds(0.6f);
+        GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
         Destroy(gameObject);
     }
 }

@@ -11,6 +11,7 @@ public class MotherWaxSlime : Enemy {
     private Vector2 pos;
     private Manager1 dungeonManager;
     private bool spawned;
+    private bool died;
     void Start() {
         GetSprite();
         waitTime = resetTime;
@@ -21,6 +22,7 @@ public class MotherWaxSlime : Enemy {
         maxY = dungeonManager.maxY;
         Vector2 pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
         spawned = false;
+        died = false;
     }
 
     void Update() {
@@ -32,8 +34,8 @@ public class MotherWaxSlime : Enemy {
             pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
         }
 
-        if (health <= 0) {
-            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(1);
+        if (health <= 0 && !died) {
+            died = true;
             damage = 0;
             StartCoroutine(Death());
             spawned = true;
@@ -49,6 +51,7 @@ public class MotherWaxSlime : Enemy {
     }
     private IEnumerator Death() {
         if (!spawned) {
+            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(1);
             Instantiate(childSlime, transform.position + new Vector3(0.5f, 0, 0), transform.rotation);
             Instantiate(childSlime, transform.position - new Vector3(0.5f, 0, 0), transform.rotation);
             animator.SetTrigger("Death");

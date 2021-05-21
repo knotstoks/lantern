@@ -6,16 +6,18 @@ public class Candling : Enemy {
     private Transform target;
     private Rigidbody2D rb;
     private Vector2 move;
+    private bool died;
     private void Start() {
         GetSprite();
         rb = gameObject.GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        died = false;
     }
 
     private void Update() {
-        if (health <= 0) {
+        if (health <= 0 && !died) {
+            died = true;
             damage = 0;
-            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
             StartCoroutine(Death());
         }
     }
@@ -28,6 +30,7 @@ public class Candling : Enemy {
     private IEnumerator Death() {
         animator.SetTrigger("Death");
         yield return new WaitForSeconds(0.6f);
+        GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
         Destroy(gameObject);
     }
 }

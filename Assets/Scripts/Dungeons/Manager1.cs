@@ -21,6 +21,7 @@ public class Manager1 : MonoBehaviour {
     [SerializeField] private AudioSource musicAudioSource;
     [SerializeField] private AudioSource sfx;
     [SerializeField] private AudioClip[] sounds; //0 - main music, 1 - finished music, 2 - spawn sounds
+    [SerializeField] private GameObject spawnCircle;
     //Range of positions to spawn enemies
     public float minX;
     public float minY;
@@ -75,21 +76,24 @@ public class Manager1 : MonoBehaviour {
         GameObject[] mediumies = waves[currWave].mediumEnemies;
         GameObject[] bigies = waves[currWave].bigEnemies;
         for (int i = 0; i < waves[currWave].smalls; i++) {
-            Instantiate(smallies[Random.Range(0, smallies.Length)], 
+            GameObject circle = Instantiate(spawnCircle, 
                 new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY)), 
                 Quaternion.identity);
+            circle.GetComponent<SpawnCircle>().enemy = smallies[Random.Range(0, smallies.Length)];
         }
 
         for (int i = 0; i < waves[currWave].mediums; i++) {
-            Instantiate(mediumies[Random.Range(0, mediumies.Length)], 
+            GameObject circle = Instantiate(spawnCircle, 
                 new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY)), 
                 Quaternion.identity);
+            circle.GetComponent<SpawnCircle>().enemy = mediumies[Random.Range(0, mediumies.Length)];
         }
 
         for (int i = 0; i < waves[currWave].bigs; i++) {
-            Instantiate(bigies[Random.Range(0, bigies.Length)], 
+            GameObject circle = Instantiate(spawnCircle, 
                 new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY)), 
                 Quaternion.identity);
+            circle.GetComponent<SpawnCircle>().enemy = bigies[Random.Range(0, bigies.Length)];
         }
     }
 

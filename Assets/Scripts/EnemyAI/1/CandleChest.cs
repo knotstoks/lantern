@@ -12,6 +12,7 @@ public class CandleChest : Enemy {
     private float fireTime;
     private bool canMove;
     private Rigidbody2D rb;
+    private bool died;
     private Vector2[] shootDirection = {
         new Vector2(0, 1), //Up
         new Vector2(1, 0), //Right
@@ -27,11 +28,12 @@ public class CandleChest : Enemy {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = gameObject.GetComponent<Rigidbody2D>();
         canMove = true;
+        died = false;
     }
     private void Update() {
-        if (health <= 0) {
+        if (health <= 0 && !died) {
+            died = true;
             damage = 0;
-            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
             StartCoroutine(Death());
         }
 
@@ -83,6 +85,7 @@ public class CandleChest : Enemy {
     private IEnumerator Death() {
         animator.SetTrigger("Death");
         yield return new WaitForSeconds(0.6f);
+        GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
         Destroy(gameObject);
     }
 }

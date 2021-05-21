@@ -10,15 +10,17 @@ public class RangedCultist : Enemy {
     private Rigidbody2D rb;
     private float shootTime;
     private bool shooting;
+    private bool died;
     private void Start() {
         GetSprite();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = gameObject.GetComponent<Rigidbody2D>();
+        died = false;
     }
     private void Update() {
-        if (health <= 0) {
+        if (health <= 0 && !died) {
+            died = true;
             damage = 0;
-            GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
             StartCoroutine(Death());
         }
 
@@ -32,7 +34,7 @@ public class RangedCultist : Enemy {
         }
     }
     private void FixedUpdate() {
-        if (!shooting && (transform.position - target.position).sqrMagnitude < 5) {
+        if (!shooting && (transform.position - target.position).sqrMagnitude < 12) {
             rb.velocity = (transform.position - target.position).normalized * speed;
         } else {
             rb.velocity = new Vector2(0, 0);
@@ -60,6 +62,7 @@ public class RangedCultist : Enemy {
     private IEnumerator Death() {
         animator.SetTrigger("Death");
         yield return new WaitForSeconds(0.6f);
+        GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
         Destroy(gameObject);
     }
 }
