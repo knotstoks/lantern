@@ -20,7 +20,6 @@ public class Portal : Interactable {
         StartCoroutine(Next());
     }
     private IEnumerator Next() {
-        Debug.Log("worjing");
         yield return new WaitForSeconds(1);
         //SceneManager.LoadScene("LoadingScreen");
         SceneManager.LoadScene(nextScene);

@@ -4388,7 +4388,7 @@ MonoBehaviour:
     - Senior Warden Frankie
     - Senior Warden Frankie
     - Senior Warden Frankie
-    - 
+    - Senior Warden Frankie
     - 
     sentences:
     - 'Brightest morning, young Lumin. You have impressed us all with your valour
@@ -4403,6 +4403,7 @@ MonoBehaviour:
     - Here, try unleashing the lantern's power on some training dummies. Walk into
       the Sun Training Ground to start.
     - Use your arrow keys to fire a ball of light in the corresponding direction.
+      (You can hold down the arrow keys for continuous fire)
   - names: []
     sentences: []
   - names:
@@ -4418,9 +4419,11 @@ MonoBehaviour:
     sentences: []
   - names:
     - Senior Warden Frankie
+    - 
     sentences:
-    - Have you finished off all the dummies yet? (Walk into the Sun Moon Ground to
-      spawn the dummies and destroy all of them)
+    - Have you finished off all the dummies yet? (Walk into the Sun Training Ground
+      to spawn the dummies and destroy all of them)
+    - Use your arrow keys to shoot (You can hold down the key for continuous fire)
   - names:
     - Senior Warden Frankie
     sentences:
@@ -4445,7 +4448,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0060235336, y: -0.14460874}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4456,7 +4459,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4375, y: 0.90625}
+  m_Size: {x: 0.32907522, y: 0.6170325}
   m_EdgeRadius: 0
 --- !u!212 &1334554076
 SpriteRenderer:
@@ -5094,7 +5097,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977251203}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.43, y: 7.1, z: 10}
+  m_LocalPosition: {x: 4.43, y: 8.37, z: 10}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 1940746217}

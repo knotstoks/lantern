@@ -2397,12 +2397,12 @@ PrefabInstance:
     - target: {fileID: 7782576935869919905, guid: 9713cbc940e2fd249a99af349646b924,
         type: 3}
       propertyPath: waves.Array.data[0].bigs
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7782576935869919905, guid: 9713cbc940e2fd249a99af349646b924,
         type: 3}
       propertyPath: waves.Array.data[0].mediums
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7782576935869919905, guid: 9713cbc940e2fd249a99af349646b924,
         type: 3}
