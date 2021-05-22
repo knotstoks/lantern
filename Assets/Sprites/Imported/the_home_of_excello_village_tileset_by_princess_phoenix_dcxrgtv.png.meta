@@ -1,0 +1,1232 @@
+fileFormatVersion: 2
+guid: b7d807053085be64caa03d2852bfe549
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8420950920327164716
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_0
+  - first:
+      213: 6942247659230709781
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_1
+  - first:
+      213: -4311337987540875227
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_2
+  - first:
+      213: -3911223380415138630
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_3
+  - first:
+      213: 776906082795463039
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_4
+  - first:
+      213: 391366169912346777
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_5
+  - first:
+      213: -7346235717173982372
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_6
+  - first:
+      213: -903267032296346513
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_7
+  - first:
+      213: -1524925808551278932
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_8
+  - first:
+      213: 1358662042886116227
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_9
+  - first:
+      213: -7412074814447588031
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_10
+  - first:
+      213: 4573829312088177688
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_11
+  - first:
+      213: 3328541085743702748
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_12
+  - first:
+      213: 4754523461964074360
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_13
+  - first:
+      213: 2046731300656882565
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_14
+  - first:
+      213: -2835702418796356775
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_15
+  - first:
+      213: 568757815376211850
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_16
+  - first:
+      213: 3505923461338010213
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_17
+  - first:
+      213: 1516058780888073753
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_18
+  - first:
+      213: -6822653245764068515
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_19
+  - first:
+      213: 3474345925561295007
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_20
+  - first:
+      213: 6090060103961483939
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_21
+  - first:
+      213: -3044271260104589756
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_22
+  - first:
+      213: -8637330009448770505
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_23
+  - first:
+      213: 1652154304293242019
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_24
+  - first:
+      213: 5790668746143437031
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_25
+  - first:
+      213: -3122106860443776327
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_26
+  - first:
+      213: 2008294063663871588
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_27
+  - first:
+      213: 6402806577923719464
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_28
+  - first:
+      213: 4256914742424757954
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_29
+  - first:
+      213: 8926723029577193898
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_30
+  - first:
+      213: -4712691574034055201
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_31
+  - first:
+      213: 2205879734880413512
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_32
+  - first:
+      213: 243930965265951084
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_33
+  - first:
+      213: 105567968176226514
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_34
+  - first:
+      213: 4886835687375490605
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_35
+  - first:
+      213: -6932915223631993761
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_36
+  - first:
+      213: 7916117610875175703
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_37
+  - first:
+      213: -7154339472457341866
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_38
+  - first:
+      213: 6733995728617917497
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_39
+  - first:
+      213: 3454579266491092294
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_40
+  - first:
+      213: -2371855850802670057
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_41
+  - first:
+      213: -968048529222454054
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_42
+  - first:
+      213: -3326084268648195822
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_43
+  - first:
+      213: -1806060541126585812
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_44
+  - first:
+      213: -5381500132460876651
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_45
+  - first:
+      213: 6310825914163469726
+    second: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_46
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c237915fe3a3dd470800000000000000
+      internalID: 8420950920327164716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 160
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518cb37e671d75060800000000000000
+      internalID: 6942247659230709781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 129
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5288af951fc0b24c0800000000000000
+      internalID: -4311337987540875227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 208
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4372dde0b88b9c0800000000000000
+      internalID: -3911223380415138630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 171
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f712dd057ff18ca00800000000000000
+      internalID: 776906082795463039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 160
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9980bbe35796e6500800000000000000
+      internalID: 391366169912346777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_6
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 180
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5bce89898dec0a90800000000000000
+      internalID: -7346235717173982372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_7
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 197
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ca7aa7b63f673f0800000000000000
+      internalID: -903267032296346513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_8
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 160
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6c9787e0066dae0800000000000000
+      internalID: -1524925808551278932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3839804fdefead210800000000000000
+      internalID: 1358662042886116227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 146
+        width: 9
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d6b342a35032990800000000000000
+      internalID: -7412074814447588031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_11
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 161
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cf842b681897f30800000000000000
+      internalID: 4573829312088177688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_12
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 148
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2eb0c6b7a513e20800000000000000
+      internalID: 3328541085743702748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_13
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 160
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d01aae5e57bf140800000000000000
+      internalID: 4754523461964074360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_14
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 110
+        width: 96
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583a35e1643776c10800000000000000
+      internalID: 2046731300656882565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b5dee9caf85a8d0800000000000000
+      internalID: -2835702418796356775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_16
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 144
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8fe9bc3832a4e700800000000000000
+      internalID: 568757815376211850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_17
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 127
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56292ca10da87a030800000000000000
+      internalID: 3505923461338010213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_18
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 128
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9160275cd6f1a0510800000000000000
+      internalID: 1516058780888073753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 119
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b119c55011151a0800000000000000
+      internalID: -6822653245764068515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_20
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 128
+        width: 60
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9028ef163b573030800000000000000
+      internalID: 3474345925561295007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_21
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 115
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa1765e56d348450800000000000000
+      internalID: 6090060103961483939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ef88d0b6390c5d0800000000000000
+      internalID: -3044271260104589756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2
+        width: 32
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7341cf27e1a022880800000000000000
+      internalID: -8637330009448770505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_24
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a408851691ade610800000000000000
+      internalID: 1652154304293242019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_25
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 98
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e016d95b869c5050800000000000000
+      internalID: 5790668746143437031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_26
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 41
+        width: 45
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba40702a5c0ca4d0800000000000000
+      internalID: -3122106860443776327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_27
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 79
+        width: 15
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466f53d7fc4eedb10800000000000000
+      internalID: 2008294063663871588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_28
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 80
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8218daab8a65bd850800000000000000
+      internalID: 6402806577923719464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_29
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 94
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6e9557769931b30800000000000000
+      internalID: 4256914742424757954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_30
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 89
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa95f32bc4712eb70800000000000000
+      internalID: 8926723029577193898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf39b97bf7299eb0800000000000000
+      internalID: -4712691574034055201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_32
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 56
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847a7ce7eebdc9e10800000000000000
+      internalID: 2205879734880413512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_33
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 57
+        width: 37
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c692566abed926300800000000000000
+      internalID: 243930965265951084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_34
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 37
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0cdcaf18d077100800000000000000
+      internalID: 105567968176226514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_35
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 46
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ec7b58a2781d340800000000000000
+      internalID: 4886835687375490605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_36
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 19
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f546485165659cf90800000000000000
+      internalID: -6932915223631993761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_37
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713cd649603bbdd60800000000000000
+      internalID: 7916117610875175703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_38
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 6
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654ef95b72ea6bc90800000000000000
+      internalID: -7154339472457341866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_39
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 7
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cc44bdf65f37d50800000000000000
+      internalID: 6733995728617917497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_40
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 9
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d81ab2a8121ff20800000000000000
+      internalID: 3454579266491092294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_41
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 6
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716997a9ba9751fd0800000000000000
+      internalID: -2371855850802670057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_42
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 19
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad43b5addfcc092f0800000000000000
+      internalID: -968048529222454054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_43
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 16
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2199532eaff57d1d0800000000000000
+      internalID: -3326084268648195822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_44
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 9
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22dc4bb1859fe6e0800000000000000
+      internalID: -1806060541126585812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_45
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ca3f554221155b0800000000000000
+      internalID: -5381500132460876651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_home_of_excello_village_tileset_by_princess_phoenix_dcxrgtv_46
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 3
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d1b059bbe849750800000000000000
+      internalID: 6310825914163469726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
