@@ -650,6 +650,7 @@ MonoBehaviour:
   bullet: {fileID: 3111989442058738566, guid: d3c99120d7d5b3c4a9db6457e8f226a5, type: 3}
   bulletSpeed: 5
   fireDelay: 0.5
+  slowColour: {r: 0.6719473, g: 0.69783837, b: 0.9433962, a: 1}
   interactIcon: {fileID: 7337467098095251201}
   interactName: {fileID: 6760374961199553686}
   interactText: {fileID: 3559961489100252521}

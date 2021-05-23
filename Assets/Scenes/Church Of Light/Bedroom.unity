@@ -1723,7 +1723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899971443}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.37, y: -1.85, z: 104.84311}
+  m_LocalPosition: {x: 2.58, y: -1.4, z: 104.84311}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 679323186}
@@ -2944,12 +2944,12 @@ PrefabInstance:
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.86
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.46
+      value: -3.31
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
@@ -3375,7 +3375,7 @@ PrefabInstance:
     - target: {fileID: 288758185031170232, guid: 78d309fb46419e742be6e674b244d552,
         type: 3}
       propertyPath: m_Name
-      value: Portal
+      value: To Main Hall
       objectReference: {fileID: 0}
     - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
         type: 3}
@@ -3390,7 +3390,22 @@ PrefabInstance:
     - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
         type: 3}
       propertyPath: nextScene
-      value: Dojo
+      value: MessHall
+      objectReference: {fileID: 0}
+    - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
+        type: 3}
+      propertyPath: position.x
+      value: -7.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
+        type: 3}
+      propertyPath: position.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
+        type: 3}
+      propertyPath: facingDirection
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 288758185031170239, guid: 78d309fb46419e742be6e674b244d552,
         type: 3}

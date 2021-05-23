@@ -29,6 +29,11 @@ public class NormalBullet : MonoBehaviour {
             Destroy(gameObject);
         }
 
+        if (other.tag == "Boss") { //Damages Bosses
+            other.GetComponent<Boss>().Damage(1);
+            Destroy(gameObject);
+        }
+
         if (other.tag == "Invincible") { //Gets Destroyed when it hits something Invincible (eg. shields or walls)
             Destroy(gameObject);
         }

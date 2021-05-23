@@ -76,7 +76,7 @@ MonoBehaviour:
   position: {x: 0, y: 0}
   facingDirection: 1
   audioSource: {fileID: 3377689560034344779}
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 02aa17210e158784db2996eed4c3fee6, type: 3}
 --- !u!82 &3377689560034344779
 AudioSource:
   m_ObjectHideFlags: 0

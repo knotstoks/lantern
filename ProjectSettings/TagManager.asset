@@ -13,6 +13,7 @@ TagManager:
   - WaxDebuffer
   - WaxSpitter
   - SpitLaser
+  - Boss
   layers:
   - Default
   - TransparentFX

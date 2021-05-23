@@ -360,10 +360,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 100
-        width: 22
-        height: 23
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,10 +381,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 100
-        width: 22
-        height: 23
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,10 +402,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_2
       rect:
         serializedVersion: 2
-        x: 69
-        y: 100
-        width: 22
-        height: 23
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -423,10 +423,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_3
       rect:
         serializedVersion: 2
-        x: 101
-        y: 100
-        width: 22
-        height: 23
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,10 +444,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_4
       rect:
         serializedVersion: 2
-        x: 133
-        y: 100
-        width: 22
-        height: 23
+        x: 128
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,10 +465,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_5
       rect:
         serializedVersion: 2
-        x: 165
-        y: 100
-        width: 22
-        height: 23
+        x: 160
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -486,10 +486,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_6
       rect:
         serializedVersion: 2
-        x: 197
-        y: 100
-        width: 22
-        height: 23
+        x: 192
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -507,10 +507,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_7
       rect:
         serializedVersion: 2
-        x: 229
-        y: 100
-        width: 22
-        height: 23
+        x: 224
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,10 +528,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_8
       rect:
         serializedVersion: 2
-        x: 261
-        y: 100
-        width: 22
-        height: 23
+        x: 256
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,10 +549,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_9
       rect:
         serializedVersion: 2
-        x: 293
-        y: 100
-        width: 22
-        height: 23
+        x: 288
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -570,10 +570,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_10
       rect:
         serializedVersion: 2
-        x: 325
-        y: 100
-        width: 22
-        height: 23
+        x: 320
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -591,10 +591,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_11
       rect:
         serializedVersion: 2
-        x: 357
-        y: 100
-        width: 22
-        height: 23
+        x: 352
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -612,10 +612,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_12
       rect:
         serializedVersion: 2
-        x: 389
-        y: 100
-        width: 22
-        height: 23
+        x: 384
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -633,10 +633,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_13
       rect:
         serializedVersion: 2
-        x: 421
-        y: 100
-        width: 22
-        height: 23
+        x: 416
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -654,10 +654,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_14
       rect:
         serializedVersion: 2
-        x: 453
-        y: 100
-        width: 22
-        height: 23
+        x: 448
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -675,10 +675,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_15
       rect:
         serializedVersion: 2
-        x: 485
-        y: 100
-        width: 22
-        height: 20
+        x: 480
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -696,10 +696,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_16
       rect:
         serializedVersion: 2
-        x: 517
-        y: 100
-        width: 22
-        height: 17
+        x: 512
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -717,10 +717,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_17
       rect:
         serializedVersion: 2
-        x: 549
-        y: 100
-        width: 22
-        height: 14
+        x: 544
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -738,10 +738,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_18
       rect:
         serializedVersion: 2
-        x: 581
-        y: 100
-        width: 22
-        height: 11
+        x: 576
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -759,10 +759,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_19
       rect:
         serializedVersion: 2
-        x: 613
-        y: 100
-        width: 22
-        height: 9
+        x: 608
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -780,10 +780,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_20
       rect:
         serializedVersion: 2
-        x: 645
-        y: 100
-        width: 17
-        height: 6
+        x: 640
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -801,10 +801,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_21
       rect:
         serializedVersion: 2
-        x: 677
-        y: 100
-        width: 17
-        height: 4
+        x: 672
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -822,10 +822,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_22
       rect:
         serializedVersion: 2
-        x: 5
-        y: 68
-        width: 22
-        height: 23
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -843,10 +843,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_23
       rect:
         serializedVersion: 2
-        x: 37
-        y: 68
-        width: 22
-        height: 23
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -864,10 +864,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_24
       rect:
         serializedVersion: 2
-        x: 69
-        y: 68
-        width: 22
-        height: 23
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -885,10 +885,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_25
       rect:
         serializedVersion: 2
-        x: 101
-        y: 68
-        width: 22
-        height: 23
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -906,10 +906,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_26
       rect:
         serializedVersion: 2
-        x: 133
-        y: 68
-        width: 22
-        height: 23
+        x: 128
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -927,10 +927,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_27
       rect:
         serializedVersion: 2
-        x: 165
-        y: 68
-        width: 22
-        height: 23
+        x: 160
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -948,10 +948,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_28
       rect:
         serializedVersion: 2
-        x: 197
-        y: 68
-        width: 22
-        height: 23
+        x: 192
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -969,10 +969,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_29
       rect:
         serializedVersion: 2
-        x: 229
-        y: 68
-        width: 22
-        height: 23
+        x: 224
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -990,10 +990,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_30
       rect:
         serializedVersion: 2
-        x: 261
-        y: 68
-        width: 22
-        height: 23
+        x: 256
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1011,10 +1011,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_31
       rect:
         serializedVersion: 2
-        x: 293
-        y: 68
-        width: 22
-        height: 23
+        x: 288
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1032,10 +1032,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_32
       rect:
         serializedVersion: 2
-        x: 325
-        y: 68
-        width: 22
-        height: 23
+        x: 320
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1053,10 +1053,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_33
       rect:
         serializedVersion: 2
-        x: 357
-        y: 68
-        width: 22
-        height: 23
+        x: 352
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1074,10 +1074,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_34
       rect:
         serializedVersion: 2
-        x: 389
-        y: 68
-        width: 22
-        height: 23
+        x: 384
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1095,10 +1095,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_35
       rect:
         serializedVersion: 2
-        x: 421
-        y: 68
-        width: 22
-        height: 23
+        x: 416
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1116,10 +1116,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_36
       rect:
         serializedVersion: 2
-        x: 453
-        y: 68
-        width: 22
-        height: 23
+        x: 448
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1137,10 +1137,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_37
       rect:
         serializedVersion: 2
-        x: 485
-        y: 68
-        width: 22
-        height: 20
+        x: 480
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1158,10 +1158,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_38
       rect:
         serializedVersion: 2
-        x: 517
-        y: 68
-        width: 22
-        height: 17
+        x: 512
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1179,10 +1179,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_39
       rect:
         serializedVersion: 2
-        x: 549
-        y: 68
-        width: 22
-        height: 14
+        x: 544
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1200,10 +1200,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_40
       rect:
         serializedVersion: 2
-        x: 581
-        y: 68
-        width: 22
-        height: 11
+        x: 576
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1221,10 +1221,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_41
       rect:
         serializedVersion: 2
-        x: 613
-        y: 68
-        width: 22
-        height: 9
+        x: 608
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1242,10 +1242,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_42
       rect:
         serializedVersion: 2
-        x: 645
-        y: 68
-        width: 17
-        height: 6
+        x: 640
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1263,10 +1263,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_43
       rect:
         serializedVersion: 2
-        x: 677
-        y: 68
-        width: 17
-        height: 4
+        x: 672
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1284,10 +1284,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_44
       rect:
         serializedVersion: 2
-        x: 8
-        y: 36
-        width: 15
-        height: 23
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1305,10 +1305,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_45
       rect:
         serializedVersion: 2
-        x: 40
-        y: 36
-        width: 15
-        height: 23
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1326,10 +1326,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_46
       rect:
         serializedVersion: 2
-        x: 72
-        y: 36
-        width: 15
-        height: 23
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1347,10 +1347,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_47
       rect:
         serializedVersion: 2
-        x: 104
-        y: 36
-        width: 15
-        height: 23
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1368,10 +1368,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_48
       rect:
         serializedVersion: 2
-        x: 136
-        y: 36
-        width: 15
-        height: 23
+        x: 128
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1389,10 +1389,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_49
       rect:
         serializedVersion: 2
-        x: 168
-        y: 36
-        width: 15
-        height: 23
+        x: 160
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1410,10 +1410,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_50
       rect:
         serializedVersion: 2
-        x: 200
-        y: 36
-        width: 15
-        height: 23
+        x: 192
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1431,10 +1431,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_51
       rect:
         serializedVersion: 2
-        x: 232
-        y: 36
-        width: 15
-        height: 23
+        x: 224
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1452,10 +1452,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_52
       rect:
         serializedVersion: 2
-        x: 264
-        y: 36
-        width: 15
-        height: 23
+        x: 256
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1473,10 +1473,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_53
       rect:
         serializedVersion: 2
-        x: 296
-        y: 36
-        width: 15
-        height: 23
+        x: 288
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1494,10 +1494,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_54
       rect:
         serializedVersion: 2
-        x: 328
-        y: 36
-        width: 15
-        height: 23
+        x: 320
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1515,10 +1515,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_55
       rect:
         serializedVersion: 2
-        x: 360
-        y: 36
-        width: 15
-        height: 23
+        x: 352
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1536,10 +1536,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_56
       rect:
         serializedVersion: 2
-        x: 392
-        y: 36
-        width: 15
-        height: 23
+        x: 384
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1557,10 +1557,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_57
       rect:
         serializedVersion: 2
-        x: 424
-        y: 36
-        width: 15
-        height: 23
+        x: 416
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1578,10 +1578,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_58
       rect:
         serializedVersion: 2
-        x: 456
-        y: 36
-        width: 15
-        height: 23
+        x: 448
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1599,10 +1599,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_59
       rect:
         serializedVersion: 2
-        x: 488
-        y: 36
-        width: 15
-        height: 17
+        x: 480
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1620,10 +1620,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_60
       rect:
         serializedVersion: 2
-        x: 520
-        y: 36
-        width: 15
-        height: 15
+        x: 512
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1641,10 +1641,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_61
       rect:
         serializedVersion: 2
-        x: 552
-        y: 36
-        width: 15
-        height: 11
+        x: 544
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1662,10 +1662,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_62
       rect:
         serializedVersion: 2
-        x: 587
-        y: 36
-        width: 12
-        height: 9
+        x: 576
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1683,10 +1683,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_63
       rect:
         serializedVersion: 2
-        x: 619
-        y: 36
-        width: 12
-        height: 7
+        x: 608
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1704,10 +1704,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_64
       rect:
         serializedVersion: 2
-        x: 651
-        y: 36
-        width: 12
-        height: 5
+        x: 640
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1725,10 +1725,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_65
       rect:
         serializedVersion: 2
-        x: 683
-        y: 36
-        width: 4
-        height: 5
+        x: 672
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1746,10 +1746,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_66
       rect:
         serializedVersion: 2
-        x: 691
-        y: 37
-        width: 4
-        height: 4
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1767,10 +1767,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_67
       rect:
         serializedVersion: 2
-        x: 9
-        y: 4
-        width: 15
-        height: 23
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1788,10 +1788,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_68
       rect:
         serializedVersion: 2
-        x: 41
-        y: 4
-        width: 15
-        height: 23
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1809,10 +1809,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_69
       rect:
         serializedVersion: 2
-        x: 73
-        y: 4
-        width: 15
-        height: 23
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1830,10 +1830,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_70
       rect:
         serializedVersion: 2
-        x: 105
-        y: 4
-        width: 15
-        height: 23
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1851,10 +1851,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_71
       rect:
         serializedVersion: 2
-        x: 137
-        y: 4
-        width: 15
-        height: 23
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1872,10 +1872,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_72
       rect:
         serializedVersion: 2
-        x: 169
-        y: 4
-        width: 15
-        height: 23
+        x: 192
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1893,10 +1893,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_73
       rect:
         serializedVersion: 2
-        x: 201
-        y: 4
-        width: 15
-        height: 23
+        x: 224
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1914,10 +1914,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_74
       rect:
         serializedVersion: 2
-        x: 233
-        y: 4
-        width: 15
-        height: 23
+        x: 256
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1935,10 +1935,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_75
       rect:
         serializedVersion: 2
-        x: 265
-        y: 4
-        width: 15
-        height: 23
+        x: 288
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1956,10 +1956,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_76
       rect:
         serializedVersion: 2
-        x: 297
-        y: 4
-        width: 15
-        height: 23
+        x: 320
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1977,10 +1977,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_77
       rect:
         serializedVersion: 2
-        x: 329
-        y: 4
-        width: 15
-        height: 23
+        x: 352
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1998,10 +1998,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_78
       rect:
         serializedVersion: 2
-        x: 361
-        y: 4
-        width: 15
-        height: 23
+        x: 384
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2019,10 +2019,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_79
       rect:
         serializedVersion: 2
-        x: 393
-        y: 4
-        width: 15
-        height: 23
+        x: 416
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2040,10 +2040,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_80
       rect:
         serializedVersion: 2
-        x: 425
-        y: 4
-        width: 15
-        height: 23
+        x: 448
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2061,10 +2061,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_81
       rect:
         serializedVersion: 2
-        x: 457
-        y: 4
-        width: 15
-        height: 23
+        x: 480
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2082,10 +2082,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_82
       rect:
         serializedVersion: 2
-        x: 489
-        y: 4
-        width: 15
-        height: 17
+        x: 512
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2103,10 +2103,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_83
       rect:
         serializedVersion: 2
-        x: 521
-        y: 4
-        width: 15
-        height: 15
+        x: 544
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2124,10 +2124,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_84
       rect:
         serializedVersion: 2
-        x: 553
-        y: 4
-        width: 15
-        height: 11
+        x: 576
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2145,10 +2145,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_85
       rect:
         serializedVersion: 2
-        x: 585
-        y: 4
-        width: 12
-        height: 9
+        x: 608
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2166,10 +2166,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_86
       rect:
         serializedVersion: 2
-        x: 617
-        y: 4
-        width: 12
-        height: 7
+        x: 640
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2187,10 +2187,10 @@ TextureImporter:
       name: MOB_Spitter-SheetDeathAnim_87
       rect:
         serializedVersion: 2
-        x: 649
-        y: 4
-        width: 12
-        height: 5
+        x: 672
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2200,48 +2200,6 @@ TextureImporter:
       bones: []
       spriteID: c6ef0322edefa8b40800000000000000
       internalID: 5443443329640496748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MOB_Spitter-SheetDeathAnim_88
-      rect:
-        serializedVersion: 2
-        x: 681
-        y: 5
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c833a21473574660800000000000000
-      internalID: 7369951073209104582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MOB_Spitter-SheetDeathAnim_89
-      rect:
-        serializedVersion: 2
-        x: 689
-        y: 4
-        width: 4
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e067fb2a28faa3d20800000000000000
-      internalID: 3259110255967041038
       vertices: []
       indices: 
       edges: []

@@ -17,6 +17,7 @@ public class Player : MonoBehaviour{
     [SerializeField] private GameObject bullet;
     [SerializeField] private float bulletSpeed; 
     [SerializeField] private float fireDelay;
+    [SerializeField] private Color slowColour;
     public Image interactIcon; //Image for the interactable check
     public GameObject interactName; //GameObject for the interact icon
     public Text interactText; //Text for the interact icon
@@ -52,6 +53,7 @@ public class Player : MonoBehaviour{
         DataStorage.saveValues["maxHealth"] = 6;
         DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
         DataStorage.saveValues["facingDirection"] = 2;
+        DataStorage.saveValues["progress"] = 0;
         PlayerPrefs.SetFloat("volume", 100f);
 
         invulTime = 0.5f;
@@ -156,6 +158,7 @@ public class Player : MonoBehaviour{
             speed = slowSpeed;
         } else {
             speed = tempSpeed;
+            spriteRenderer.color = Color.white;
         }
 
         if (!inDialogue) {
@@ -252,6 +255,7 @@ public class Player : MonoBehaviour{
     }
     public void SlowPlayer() {
         slowTime = resetSlowTime;
+        spriteRenderer.color = slowColour;
     }
     //Coroutine to kill Player
     private IEnumerator KillPlayer() {
