@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Church Of Light/Dojo.unity
     guid: 937105ba68c70d04abf74b9f6f31666d
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreen.unity
+    guid: f55890de87ff63d4d989c77e6affad4d
   m_configObjects: {}

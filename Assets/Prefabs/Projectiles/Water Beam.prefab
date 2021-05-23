@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7472057318561800247}
   m_Layer: 0
   m_Name: Water Beam
-  m_TagString: Untagged
+  m_TagString: SpitLaser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
   direction: 0
   resetCountdownTime: 0
   onTime: 0
-  animator: {fileID: 0}
+  animator: {fileID: 6134567777931986076}
 --- !u!61 &7472057318561800247
 BoxCollider2D:
   m_ObjectHideFlags: 0

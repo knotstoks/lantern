@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: e64b5df53e0ae1c4eab79d36ffd4b04c
+guid: d37b8b31dd35eeb4385091a24e6e6a72
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3149320783299875629
-    second: MOB_WaxDebuffer-Sheet_0
+      213: 8378262565232037436
+    second: MOB_WaxDebuffer-Sheet_Idle_0
   - first:
-      213: -4207485797345458865
-    second: MOB_WaxDebuffer-Sheet_1
-  - first:
-      213: 2747176518345743637
-    second: MOB_WaxDebuffer-Sheet_2
+      213: -2285786545285169123
+    second: MOB_WaxDebuffer-Sheet_Idle_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -96,13 +93,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MOB_WaxDebuffer-Sheet_0
+      name: MOB_WaxDebuffer-Sheet_Idle_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 3
-        width: 24
-        height: 27
+        x: 8
+        y: 7
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,20 +107,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d23185c0192a4bb20800000000000000
-      internalID: 3149320783299875629
+      spriteID: c3ecb93c961954470800000000000000
+      internalID: 8378262565232037436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MOB_WaxDebuffer-Sheet_1
+      name: MOB_WaxDebuffer-Sheet_Idle_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 3
-        width: 24
-        height: 27
+        x: 40
+        y: 7
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,29 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4509b3a5f10c95c0800000000000000
-      internalID: -4207485797345458865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MOB_WaxDebuffer-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 3
-        width: 24
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51dda4ffc7eef1620800000000000000
-      internalID: 2747176518345743637
+      spriteID: d1009e76f314740e0800000000000000
+      internalID: -2285786545285169123
       vertices: []
       indices: 
       edges: []

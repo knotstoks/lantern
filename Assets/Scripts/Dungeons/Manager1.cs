@@ -22,6 +22,7 @@ public class Manager1 : MonoBehaviour {
     [SerializeField] private AudioSource sfx;
     [SerializeField] private AudioClip[] sounds; //0 - main music, 1 - finished music, 2 - spawn sounds
     [SerializeField] private GameObject spawnCircle;
+    [SerializeField] private GameObject[] disable;
     //Range of positions to spawn enemies
     public float minX;
     public float minY;
@@ -48,6 +49,19 @@ public class Manager1 : MonoBehaviour {
         //Finish the whole room
         if (complete) {
             complete = false;
+            for (int i = 0; i < disable.Length; i++) {
+                if (disable[i].tag == "WaxDebuffer") {
+                    StartCoroutine(disable[i].GetComponent<WaxDebuffer>().Death());
+                }
+
+                if (disable[i].tag == "WaxSpitter") {
+                    StartCoroutine(disable[i].GetComponent<WaxSpitter>().Death());
+                }
+
+                if (disable[i].tag == "SpitLaser") {
+                    Destroy(disable[i]);
+                }
+            }
             musicAudioSource.clip = sounds[1];
             musicAudioSource.loop = false;
             musicAudioSource.Play();

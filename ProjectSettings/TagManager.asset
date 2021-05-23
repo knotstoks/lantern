@@ -10,6 +10,9 @@ TagManager:
   - SceneManager
   - DungeonSceneManager
   - DialogueManager
+  - WaxDebuffer
+  - WaxSpitter
+  - SpitLaser
   layers:
   - Default
   - TransparentFX

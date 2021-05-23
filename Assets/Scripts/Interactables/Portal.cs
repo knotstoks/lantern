@@ -21,7 +21,6 @@ public class Portal : Interactable {
     }
     private IEnumerator Next() {
         yield return new WaitForSeconds(1);
-        //SceneManager.LoadScene("LoadingScreen");
-        SceneManager.LoadScene(nextScene);
+        SceneManager.LoadScene("LoadingScreen");
     }
 }

@@ -1,20 +1,12 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WaxDebuffer : MonoBehaviour {
     [SerializeField] private GameObject tear;
     [SerializeField] private float resetShootTime;
     [SerializeField] private float tearSpeed;
-    [SerializeField] private int direction; //0 - 3, NESW
     [SerializeField] private Animator animator;
     private float shootTime;
-    private Vector2[] shootDirection = {
-        new Vector2(0, 1), //Up
-        new Vector2(-1, 0), //Left
-        new Vector2(0, -1), //Down
-        new Vector2(1, 0) //Right
-    };
     private void Start() {
         animator.SetBool("Crying", false);
         shootTime = resetShootTime;
@@ -23,14 +15,21 @@ public class WaxDebuffer : MonoBehaviour {
         if (shootTime > 0) {
             shootTime -= Time.deltaTime;
         } else {
-            Cry();
+            StartCoroutine(Cry());
             shootTime = resetShootTime;
         }
     }
-    private void Cry() {
+    private IEnumerator Cry() {
         animator.SetBool("Crying", true);
+        yield return new WaitForSeconds(0.9f);
         GameObject projectile = Instantiate(tear, transform.position, Quaternion.identity) as GameObject;
-        projectile.GetComponent<Rigidbody2D>().velocity = shootDirection[direction] * tearSpeed;
+        projectile.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -1) * tearSpeed;
         animator.SetBool("Crying", false);
+    }
+    public IEnumerator Death() {
+        shootTime = 1000f;
+        animator.SetTrigger("Death");
+        yield return new WaitForSeconds(1.65f);
+        Destroy(gameObject);
     }
 }

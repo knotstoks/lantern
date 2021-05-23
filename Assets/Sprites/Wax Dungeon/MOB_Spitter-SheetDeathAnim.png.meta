@@ -1,0 +1,2264 @@
+fileFormatVersion: 2
+guid: 4fe3fb793c9aeef45ad0a8fe7d96adff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7078714946560150713
+    second: MOB_Spitter-SheetDeathAnim_0
+  - first:
+      213: -1534982812148309149
+    second: MOB_Spitter-SheetDeathAnim_1
+  - first:
+      213: -1898552037241501150
+    second: MOB_Spitter-SheetDeathAnim_2
+  - first:
+      213: -5874149714994657211
+    second: MOB_Spitter-SheetDeathAnim_3
+  - first:
+      213: 2229560988482043296
+    second: MOB_Spitter-SheetDeathAnim_4
+  - first:
+      213: 6565009266253970666
+    second: MOB_Spitter-SheetDeathAnim_5
+  - first:
+      213: 2598438193732871266
+    second: MOB_Spitter-SheetDeathAnim_6
+  - first:
+      213: -6941006341601008674
+    second: MOB_Spitter-SheetDeathAnim_7
+  - first:
+      213: 8110160069709320114
+    second: MOB_Spitter-SheetDeathAnim_8
+  - first:
+      213: -2353813357993058950
+    second: MOB_Spitter-SheetDeathAnim_9
+  - first:
+      213: -6019924470998015507
+    second: MOB_Spitter-SheetDeathAnim_10
+  - first:
+      213: -8702750373997852662
+    second: MOB_Spitter-SheetDeathAnim_11
+  - first:
+      213: -7189033086288834122
+    second: MOB_Spitter-SheetDeathAnim_12
+  - first:
+      213: -1333750709717001318
+    second: MOB_Spitter-SheetDeathAnim_13
+  - first:
+      213: 8623886245011509374
+    second: MOB_Spitter-SheetDeathAnim_14
+  - first:
+      213: -7420757397973517176
+    second: MOB_Spitter-SheetDeathAnim_15
+  - first:
+      213: 873639972952807887
+    second: MOB_Spitter-SheetDeathAnim_16
+  - first:
+      213: 3983156787461805157
+    second: MOB_Spitter-SheetDeathAnim_17
+  - first:
+      213: -6435966891399618339
+    second: MOB_Spitter-SheetDeathAnim_18
+  - first:
+      213: 5953096021626695554
+    second: MOB_Spitter-SheetDeathAnim_19
+  - first:
+      213: -6175320100395963451
+    second: MOB_Spitter-SheetDeathAnim_20
+  - first:
+      213: 4521539752106899297
+    second: MOB_Spitter-SheetDeathAnim_21
+  - first:
+      213: -6506976425110912790
+    second: MOB_Spitter-SheetDeathAnim_22
+  - first:
+      213: 8466689200343649577
+    second: MOB_Spitter-SheetDeathAnim_23
+  - first:
+      213: 5078938350612426099
+    second: MOB_Spitter-SheetDeathAnim_24
+  - first:
+      213: -7668368353591813778
+    second: MOB_Spitter-SheetDeathAnim_25
+  - first:
+      213: -4465070847811198951
+    second: MOB_Spitter-SheetDeathAnim_26
+  - first:
+      213: 8995112387100627158
+    second: MOB_Spitter-SheetDeathAnim_27
+  - first:
+      213: -3363959194662989246
+    second: MOB_Spitter-SheetDeathAnim_28
+  - first:
+      213: -5081661162755260328
+    second: MOB_Spitter-SheetDeathAnim_29
+  - first:
+      213: 51707871735829894
+    second: MOB_Spitter-SheetDeathAnim_30
+  - first:
+      213: -6860704082129710939
+    second: MOB_Spitter-SheetDeathAnim_31
+  - first:
+      213: 5120976463939337569
+    second: MOB_Spitter-SheetDeathAnim_32
+  - first:
+      213: -2163861513723008567
+    second: MOB_Spitter-SheetDeathAnim_33
+  - first:
+      213: -7191503552950693358
+    second: MOB_Spitter-SheetDeathAnim_34
+  - first:
+      213: -6935347037528462807
+    second: MOB_Spitter-SheetDeathAnim_35
+  - first:
+      213: 2722282915870607219
+    second: MOB_Spitter-SheetDeathAnim_36
+  - first:
+      213: 6171378483594812953
+    second: MOB_Spitter-SheetDeathAnim_37
+  - first:
+      213: -2171523805775269615
+    second: MOB_Spitter-SheetDeathAnim_38
+  - first:
+      213: -5022756071628747103
+    second: MOB_Spitter-SheetDeathAnim_39
+  - first:
+      213: 7347323750346642503
+    second: MOB_Spitter-SheetDeathAnim_40
+  - first:
+      213: -8080143738058783004
+    second: MOB_Spitter-SheetDeathAnim_41
+  - first:
+      213: -3841056997780540870
+    second: MOB_Spitter-SheetDeathAnim_42
+  - first:
+      213: -6495622066545282254
+    second: MOB_Spitter-SheetDeathAnim_43
+  - first:
+      213: -1529049895130704403
+    second: MOB_Spitter-SheetDeathAnim_44
+  - first:
+      213: 7164446612622625371
+    second: MOB_Spitter-SheetDeathAnim_45
+  - first:
+      213: 7252186792730099772
+    second: MOB_Spitter-SheetDeathAnim_46
+  - first:
+      213: 1511578538259085788
+    second: MOB_Spitter-SheetDeathAnim_47
+  - first:
+      213: -6858972386346477666
+    second: MOB_Spitter-SheetDeathAnim_48
+  - first:
+      213: -6473197611264802948
+    second: MOB_Spitter-SheetDeathAnim_49
+  - first:
+      213: -4558164627577748330
+    second: MOB_Spitter-SheetDeathAnim_50
+  - first:
+      213: 5598622670588759722
+    second: MOB_Spitter-SheetDeathAnim_51
+  - first:
+      213: -8579831587288141017
+    second: MOB_Spitter-SheetDeathAnim_52
+  - first:
+      213: -5254065802613403128
+    second: MOB_Spitter-SheetDeathAnim_53
+  - first:
+      213: 4874749948220548801
+    second: MOB_Spitter-SheetDeathAnim_54
+  - first:
+      213: 7643661207799649594
+    second: MOB_Spitter-SheetDeathAnim_55
+  - first:
+      213: -4392665056332061868
+    second: MOB_Spitter-SheetDeathAnim_56
+  - first:
+      213: 7929066621732347292
+    second: MOB_Spitter-SheetDeathAnim_57
+  - first:
+      213: -9109879678726999467
+    second: MOB_Spitter-SheetDeathAnim_58
+  - first:
+      213: -1195354532956717688
+    second: MOB_Spitter-SheetDeathAnim_59
+  - first:
+      213: -5425186282162302219
+    second: MOB_Spitter-SheetDeathAnim_60
+  - first:
+      213: -5963304821184788700
+    second: MOB_Spitter-SheetDeathAnim_61
+  - first:
+      213: 5442048833931033557
+    second: MOB_Spitter-SheetDeathAnim_62
+  - first:
+      213: 8956198478431285822
+    second: MOB_Spitter-SheetDeathAnim_63
+  - first:
+      213: 2632497560108957774
+    second: MOB_Spitter-SheetDeathAnim_64
+  - first:
+      213: 2885065907944234068
+    second: MOB_Spitter-SheetDeathAnim_65
+  - first:
+      213: -1254260476988223395
+    second: MOB_Spitter-SheetDeathAnim_66
+  - first:
+      213: -7246901864984848346
+    second: MOB_Spitter-SheetDeathAnim_67
+  - first:
+      213: -7702404681666530795
+    second: MOB_Spitter-SheetDeathAnim_68
+  - first:
+      213: -5876680589858637422
+    second: MOB_Spitter-SheetDeathAnim_69
+  - first:
+      213: 6831810938826362293
+    second: MOB_Spitter-SheetDeathAnim_70
+  - first:
+      213: -8805774283359552823
+    second: MOB_Spitter-SheetDeathAnim_71
+  - first:
+      213: 6451689450829975629
+    second: MOB_Spitter-SheetDeathAnim_72
+  - first:
+      213: -4682952929234328696
+    second: MOB_Spitter-SheetDeathAnim_73
+  - first:
+      213: -6673198225139110021
+    second: MOB_Spitter-SheetDeathAnim_74
+  - first:
+      213: -989452544141049130
+    second: MOB_Spitter-SheetDeathAnim_75
+  - first:
+      213: -6370701931459934582
+    second: MOB_Spitter-SheetDeathAnim_76
+  - first:
+      213: -5524164497676597910
+    second: MOB_Spitter-SheetDeathAnim_77
+  - first:
+      213: -7787314223510780787
+    second: MOB_Spitter-SheetDeathAnim_78
+  - first:
+      213: 1412399214310429343
+    second: MOB_Spitter-SheetDeathAnim_79
+  - first:
+      213: 6329783122836082766
+    second: MOB_Spitter-SheetDeathAnim_80
+  - first:
+      213: 8559050882599268485
+    second: MOB_Spitter-SheetDeathAnim_81
+  - first:
+      213: -5922213700583925138
+    second: MOB_Spitter-SheetDeathAnim_82
+  - first:
+      213: 8746116954824343448
+    second: MOB_Spitter-SheetDeathAnim_83
+  - first:
+      213: -4409255081984734142
+    second: MOB_Spitter-SheetDeathAnim_84
+  - first:
+      213: 1167450227380156206
+    second: MOB_Spitter-SheetDeathAnim_85
+  - first:
+      213: -3877064581932382332
+    second: MOB_Spitter-SheetDeathAnim_86
+  - first:
+      213: 5443443329640496748
+    second: MOB_Spitter-SheetDeathAnim_87
+  - first:
+      213: 7369951073209104582
+    second: MOB_Spitter-SheetDeathAnim_88
+  - first:
+      213: 3259110255967041038
+    second: MOB_Spitter-SheetDeathAnim_89
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc47ff3db5ac3260800000000000000
+      internalID: 7078714946560150713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363e199d345a2bae0800000000000000
+      internalID: -1534982812148309149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a40a82bfcf6a5e0800000000000000
+      internalID: -1898552037241501150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5480840f4f3da7ea0800000000000000
+      internalID: -5874149714994657211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad7a8308edf0fe10800000000000000
+      internalID: 2229560988482043296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec373e05299b1b50800000000000000
+      internalID: 6565009266253970666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_6
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264614425c18f0420800000000000000
+      internalID: 2598438193732871266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_7
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed36321e1879caf90800000000000000
+      internalID: -6941006341601008674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_8
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfc49a2d931d8070800000000000000
+      internalID: 8110160069709320114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_9
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d1141d833955fd0800000000000000
+      internalID: -2353813357993058950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_10
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de16b7ba69ee47ca0800000000000000
+      internalID: -6019924470998015507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_11
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08c5fcd4ae993780800000000000000
+      internalID: -8702750373997852662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_12
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b159354f7c6b3c90800000000000000
+      internalID: -7189033086288834122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_13
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b9468cbc09d7de0800000000000000
+      internalID: -1333750709717001318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_14
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70d94939d23ea770800000000000000
+      internalID: 8623886245011509374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_15
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 100
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cbf61a67c240990800000000000000
+      internalID: -7420757397973517176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_16
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 100
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc91f693deacf1c00800000000000000
+      internalID: 873639972952807887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_17
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 100
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564d8599ef3074730800000000000000
+      internalID: 3983156787461805157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_18
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 100
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd063f3263adea6a0800000000000000
+      internalID: -6435966891399618339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_19
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 100
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fa9d27a45ad9250800000000000000
+      internalID: 5953096021626695554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_20
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 100
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cba191461bdc4aa0800000000000000
+      internalID: -6175320100395963451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_21
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 100
+        width: 17
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167b32ac27cbfbe30800000000000000
+      internalID: 4521539752106899297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae04c63ba6392b5a0800000000000000
+      internalID: -6506976425110912790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_23
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d8e1228f8bf7570800000000000000
+      internalID: 8466689200343649577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_24
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dac5045830c7640800000000000000
+      internalID: 5078938350612426099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_25
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6910557c9b749590800000000000000
+      internalID: -7668368353591813778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_26
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910e24b88b1e802c0800000000000000
+      internalID: -4465070847811198951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_27
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d059d3de0f05dc70800000000000000
+      internalID: 8995112387100627158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_28
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242143b7fe0d051d0800000000000000
+      internalID: -3363959194662989246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_29
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8500315a8105a79b0800000000000000
+      internalID: -5081661162755260328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_30
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685d7ee0904b7b000800000000000000
+      internalID: 51707871735829894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_31
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a01693acf1e9c0a0800000000000000
+      internalID: -6860704082129710939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_32
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d7d3c36fc511740800000000000000
+      internalID: 5120976463939337569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_33
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9a66bfa6b68f1e0800000000000000
+      internalID: -2163861513723008567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_34
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2121a6dee95a23c90800000000000000
+      internalID: -7191503552950693358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_35
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92aee0a4d92b0cf90800000000000000
+      internalID: -6935347037528462807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_36
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 68
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377059283ed77c520800000000000000
+      internalID: 2722282915870607219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_37
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 68
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e5821980425a550800000000000000
+      internalID: 6171378483594812953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_38
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 68
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111f5779a923dd1e0800000000000000
+      internalID: -2171523805775269615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_39
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 68
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aec12de6f59b4ab0800000000000000
+      internalID: -5022756071628747103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_40
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 68
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744d33de500f6f560800000000000000
+      internalID: 7347323750346642503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_41
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 68
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6c8e6a4109ddf80800000000000000
+      internalID: -8080143738058783004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_42
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 68
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a323345e203d1bac0800000000000000
+      internalID: -3841056997780540870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_43
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 68
+        width: 17
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2333160552aead5a0800000000000000
+      internalID: -6495622066545282254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_44
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5d2ecb839b7cae0800000000000000
+      internalID: -1529049895130704403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_45
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a4f9d3c3a3d6360800000000000000
+      internalID: 7164446612622625371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_46
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c300579d671f4a460800000000000000
+      internalID: 7252186792730099772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_47
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9790ffba43af410800000000000000
+      internalID: 1511578538259085788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_48
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97da9b74f800d0a0800000000000000
+      internalID: -6858972386346477666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_49
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f77aba1159a26a0800000000000000
+      internalID: -6473197611264802948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_50
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6944a71eb652eb0c0800000000000000
+      internalID: -4558164627577748330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_51
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae44e7f7ad42bd40800000000000000
+      internalID: 5598622670588759722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_52
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723b30711a05ee880800000000000000
+      internalID: -8579831587288141017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_53
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80253b06dfec517b0800000000000000
+      internalID: -5254065802613403128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_54
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c62a88104796a340800000000000000
+      internalID: 4874749948220548801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_55
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35d452ee5db31a60800000000000000
+      internalID: 7643661207799649594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_56
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4536e04976e1a03c0800000000000000
+      internalID: -4392665056332061868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_57
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d53cc1514b90e60800000000000000
+      internalID: 7929066621732347292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_58
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 36
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5527deac2b4339180800000000000000
+      internalID: -9109879678726999467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_59
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 36
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d3672b26f396fe0800000000000000
+      internalID: -1195354532956717688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_60
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 36
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2d46bf1ddd5b4b0800000000000000
+      internalID: -5425186282162302219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_61
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 36
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42708ed2cd51e3da0800000000000000
+      internalID: -5963304821184788700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_62
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 36
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dbb9ccc49a068b40800000000000000
+      internalID: 5442048833931033557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_63
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 36
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e327acc601fca4c70800000000000000
+      internalID: 8956198478431285822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_64
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 36
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4080665592888420800000000000000
+      internalID: 2632497560108957774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_65
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 36
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c1b945820d90820800000000000000
+      internalID: 2885065907944234068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_66
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 37
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d501e45ddb8f79ee0800000000000000
+      internalID: -1254260476988223395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_67
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62856774625dd6b90800000000000000
+      internalID: -7246901864984848346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_68
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512f5f840cf8b1590800000000000000
+      internalID: -7702404681666530795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_69
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299fa07b326d17ea0800000000000000
+      internalID: -5876680589858637422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_70
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd8f553ad77fce50800000000000000
+      internalID: 6831810938826362293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_71
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca751cb1fa9bc580800000000000000
+      internalID: -8805774283359552823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_72
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d401bdd7f51098950800000000000000
+      internalID: 6451689450829975629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_73
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883ec194f1fc20fb0800000000000000
+      internalID: -4682952929234328696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_74
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fe0d202990463a0800000000000000
+      internalID: -6673198225139110021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_75
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2cd584722c442f0800000000000000
+      internalID: -989452544141049130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_76
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a868f65c858b697a0800000000000000
+      internalID: -6370701931459934582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_77
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65892b58a93653b0800000000000000
+      internalID: -5524164497676597910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_78
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d840b4109f6ede390800000000000000
+      internalID: -7787314223510780787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_79
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92930a2a99d99310800000000000000
+      internalID: 1412399214310429343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_80
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4058eda638e7d750800000000000000
+      internalID: 6329783122836082766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_81
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 4
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580b2df0e6bd7c670800000000000000
+      internalID: 8559050882599268485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_82
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 4
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a5ebc340210dda0800000000000000
+      internalID: -5922213700583925138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_83
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 4
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f73501803706970800000000000000
+      internalID: 8746116954824343448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_84
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 4
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24cc63a3ddd2fc2c0800000000000000
+      internalID: -4409255081984734142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_85
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 4
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2771ffdbcd933010800000000000000
+      internalID: 1167450227380156206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_86
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 4
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4870ca6ed46e13ac0800000000000000
+      internalID: -3877064581932382332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_87
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 4
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ef0322edefa8b40800000000000000
+      internalID: 5443443329640496748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_88
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 5
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c833a21473574660800000000000000
+      internalID: 7369951073209104582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOB_Spitter-SheetDeathAnim_89
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 4
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e067fb2a28faa3d20800000000000000
+      internalID: 3259110255967041038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

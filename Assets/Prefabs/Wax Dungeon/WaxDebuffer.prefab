@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1759502350424942081}
   m_Layer: 0
   m_Name: WaxDebuffer
-  m_TagString: Invincible
+  m_TagString: WaxDebuffer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4438167361607545371}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,13 +72,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3149320783299875629, guid: e64b5df53e0ae1c4eab79d36ffd4b04c,
+  m_Sprite: {fileID: -2064569906580383915, guid: 7275d57d128a99a44b1cc2f9143f2c44,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.75, y: 0.84375}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -116,7 +116,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tear: {fileID: 2589347258886990245, guid: fcdd8cc66b6cd554c80e88798b252c58, type: 3}
-  resetShootTime: 5
+  resetShootTime: 0
   tearSpeed: 2
-  direction: 0
   animator: {fileID: 4856498961467191999}

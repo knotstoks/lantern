@@ -6,9 +6,11 @@ public class SpitLaser : MonoBehaviour {
     [SerializeField] private float resetCountdownTime;
     [SerializeField] private float onTime;
     [SerializeField] private Animator animator;
+    private BoxCollider2D boxCollider;
     private float countdownTime;
     private bool done;
     private void Start() {
+        boxCollider = gameObject.GetComponent<BoxCollider2D>();
         countdownTime = resetCountdownTime;
         done = false;
         animator.SetInteger("Direction", -1);
@@ -34,5 +36,10 @@ public class SpitLaser : MonoBehaviour {
         animator.SetTrigger("Reset");
         done = false;
         countdownTime = resetCountdownTime;
+    }
+    public void OnTriggerEnter2D(Collider2D other) {
+        if (other.tag == "Player") { //Damages Player
+            other.GetComponent<Player>().Damage(1);
+        }
     }
 }

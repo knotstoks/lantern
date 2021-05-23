@@ -3279,7 +3279,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6566,7 +6566,8 @@ MonoBehaviour:
       must come from within you.
     - Here, try unleashing the lantern's power on some training dummies. Walk into
       the Sun Training Ground to start.
-    - Use your arrow keys to fire a ball of light in the corresponding direction.
+    - Use your arrow keys to fire a ball of light in the corresponding direction
+      (You can hold down the arrow keys for continuous fire).
   - names: []
     sentences: []
   - names:
@@ -6582,9 +6583,12 @@ MonoBehaviour:
     sentences: []
   - names:
     - Senior Warden Frankie
+    - 
     sentences:
-    - Have you finished off all the dummies yet? (Walk into the Sun Moon Ground to
-      spawn the dummies and destroy all of them)
+    - Have you finished off all the dummies yet? (Walk into the Sun Training Ground
+      to spawn the dummies and destroy all of them)
+    - Use your arrow keys to fire a ball of light in the corresponding direction
+      (You can hold down the arrow keys for continuous fire).
   - names:
     - Senior Warden Frankie
     sentences:

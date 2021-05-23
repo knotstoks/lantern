@@ -6,6 +6,7 @@ public class WaxSpitter : MonoBehaviour {
     [SerializeField] private float resetSpitTime;
     [SerializeField] private Animator animator;
     [SerializeField] private int direction;
+    [SerializeField] private float spitForTime;
     private float spitTime;
 
 
@@ -19,7 +20,18 @@ public class WaxSpitter : MonoBehaviour {
             spitTime -= Time.deltaTime;
         } else {
             //Trigger the spit
-            animator.SetTrigger("Spit");
+            StartCoroutine(Spit());
+            spitTime = resetSpitTime;
         }
+    }
+    private IEnumerator Spit() {
+        animator.SetBool("Spit", true);
+        yield return new WaitForSeconds(spitForTime);
+        animator.SetBool("Spit", false);
+    }
+    public IEnumerator Death() {
+        animator.SetTrigger("Death");
+        yield return new WaitForSeconds(2.25f);
+        Destroy(gameObject);
     }
 }
