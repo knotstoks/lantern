@@ -114,12 +114,12 @@ TextureImporter:
       name: NPC_SeniorWardenFrankie-Sheet_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 98
-        width: 14
-        height: 29
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -135,12 +135,12 @@ TextureImporter:
       name: NPC_SeniorWardenFrankie-Sheet_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 98
-        width: 14
-        height: 27
-      alignment: 9
-      pivot: {x: 0.49573082, y: 0.5373306}
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -156,12 +156,12 @@ TextureImporter:
       name: NPC_SeniorWardenFrankie-Sheet_2
       rect:
         serializedVersion: 2
-        x: 10
-        y: 66
-        width: 12
-        height: 27
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -177,12 +177,12 @@ TextureImporter:
       name: NPC_SeniorWardenFrankie-Sheet_3
       rect:
         serializedVersion: 2
-        x: 42
-        y: 66
-        width: 12
-        height: 25
-      alignment: 9
-      pivot: {x: 0.5160325, y: 0.5461734}
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -198,12 +198,12 @@ TextureImporter:
       name: NPC_SeniorWardenFrankie-Sheet_4
       rect:
         serializedVersion: 2
-        x: 10
-        y: 34
-        width: 12
-        height: 27
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: NPC_SeniorWardenFrankie-Sheet_5
       rect:
         serializedVersion: 2
-        x: 42
-        y: 34
-        width: 12
-        height: 25
-      alignment: 9
-      pivot: {x: 0.4915937, y: 0.5322797}
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -240,12 +240,12 @@ TextureImporter:
       name: NPC_SeniorWardenFrankie-Sheet_6
       rect:
         serializedVersion: 2
-        x: 9
-        y: 2
-        width: 14
-        height: 29
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -261,12 +261,12 @@ TextureImporter:
       name: NPC_SeniorWardenFrankie-Sheet_7
       rect:
         serializedVersion: 2
-        x: 41
-        y: 2
-        width: 14
-        height: 27
-      alignment: 9
-      pivot: {x: 0.5, y: 0.52988863}
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

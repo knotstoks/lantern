@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,9 +6,9 @@ public class GolemBossRoom : MonoBehaviour {
     [SerializeField] private Dialogue introDialogue;
     [SerializeField] private Dialogue outroDialogue;
     [SerializeField] private Slider bossHPBar;
-    private Animator bossAnimator;
     private bool introDone;
     private bool fightCompleted;
+    private Golem golemBoss;
     private Player player;
     private DialogueManager dialogueManager;
     private int line;
@@ -20,8 +19,8 @@ public class GolemBossRoom : MonoBehaviour {
         yield return 0.5;
         line = 0;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        golemBoss = GameObject.FindGameObjectWithTag("Boss").GetComponent<Golem>();
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
-        bossAnimator = GameObject.FindGameObjectWithTag("Boss").GetComponent<Animator>();
         StartGolemIntro();
     } 
     private void FixedUpdate() {
@@ -54,11 +53,17 @@ public class GolemBossRoom : MonoBehaviour {
     private void StartBossFight() {
         //Set Golem Mini Boss Active with HP Bar
         bossHPBar.enabled = true;
-        bossAnimator.SetTrigger("Start");
-
+        golemBoss.start = true;
+        golemBoss.StartMoving();
     }
-    public void CompleteFight() {
+    public IEnumerator CompleteFight() {
         fightCompleted = true;
+        bossHPBar.enabled = false;
+        GameObject[] candlings = GameObject.FindGameObjectsWithTag("Enemy");
+        for (int i = 0; i < candlings.Length; i++) {
+            candlings[i].GetComponent<Candling>().Damage(100);
+        }
+        yield return new WaitForSeconds(5);
         dialogueManager.StartDialogue(outroDialogue);
     }
 }

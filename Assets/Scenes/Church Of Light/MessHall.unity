@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc28694460c8c8447b52578ef61f163c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objDesc: Talk to Chef Godfrey
+  objDesc: Talk to Brother Franz
   dialogue:
   - names:
     - Brother Franz
@@ -5861,7 +5861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055431870}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0090001, y: -4.4900002, z: 11.871}
+  m_LocalPosition: {x: -1.0090001, y: -4.3, z: 11.871}
   m_LocalScale: {x: 1.18, y: 1.18, z: 1.18}
   m_Children: []
   m_Father: {fileID: 1514162537}
@@ -6503,7 +6503,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400475253}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.413, y: -3.909, z: 11.871}
+  m_LocalPosition: {x: -1.413, y: -3.7189999, z: 11.871}
   m_LocalScale: {x: 1.18, y: 1.18, z: 1.18}
   m_Children: []
   m_Father: {fileID: 1514162537}
