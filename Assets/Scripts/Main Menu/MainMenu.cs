@@ -12,7 +12,10 @@ public class MainMenu : MonoBehaviour {
     [SerializeField] private GameObject optionsMenu;
     [SerializeField] private GameObject credits;
     [SerializeField] private Animator animator;
+    [SerializeField] private Slider volumeSlider;
+    [SerializeField] private GameObject audioManager;
     private void Start() {
+        // PlayerPrefs.DeleteKey("savePresent");
         standardSet.SetActive(true);
         hasSaveGame = PlayerPrefs.HasKey("savePresent");
         if (!hasSaveGame) {
@@ -25,13 +28,17 @@ public class MainMenu : MonoBehaviour {
 
         if (PlayerPrefs.HasKey("volume")) {
             //Set the Options volume slider to that value
+            volumeSlider.value = PlayerPrefs.GetFloat("volume");
         } else {
             //Set the Options volume to 1, PlayerPrefs to 1
-
+            volumeSlider.value = 1;
             PlayerPrefs.SetFloat("volume", 1f);
         }
     }
-
+    public void ChangeVolume() {
+        PlayerPrefs.SetFloat("volume", volumeSlider.value);
+        audioManager.GetComponent<AudioSource>().volume = volumeSlider.value;
+    }
     public void PlayGame() {
         if (!hasSaveGame) {
             RestartGame();
@@ -40,11 +47,9 @@ public class MainMenu : MonoBehaviour {
             newGameWarning.SetActive(true);
         }
     }
-
     private void RestartGame() {
         StartCoroutine(ReallyRestartGame());
     }
-
     private IEnumerator ReallyRestartGame() {
         //Pickup Lantern
         animator.SetBool("playGame", true);
@@ -68,70 +73,68 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["waxDungeonFourArms"] = 0;
 
         yield return new WaitForSeconds(3);
-        
+
         SceneManager.LoadScene("IntroCutscene");
     }
-
     public void LoadGame() {
         StartCoroutine(ReallyLoadGame());
     }
-
     private IEnumerator ReallyLoadGame() {
         //Pickup Lantern
         animator.SetBool("playGame", true);
 
-        yield return new WaitForSeconds(3);
-
         DataStorage.saveValues["health"] = PlayerPrefs.GetInt("health");
         DataStorage.saveValues["maxHealth"] = PlayerPrefs.GetInt("maxHealth");
         DataStorage.saveValues["position"] = new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"));
+        DataStorage.saveValues["facingDirection"] = 2;
+        DataStorage.saveValues["currScene"] = PlayerPrefs.GetString("currScene");
         DataStorage.saveValues["introSceneDone"] = PlayerPrefs.GetInt("introSceneDone");
-        DataStorage.saveValues["tutorialDojo"] = PlayerPrefs.GetInt("tutorialDojo");
+        DataStorage.saveValues["messHall"] = PlayerPrefs.GetInt("messHall");
         DataStorage.saveValues["progress"] = PlayerPrefs.GetInt("progress");
+        DataStorage.saveValues["tutorialDojo"] = PlayerPrefs.GetInt("tutorialDojo");
+        DataStorage.saveValues["blessings"] = PlayerPrefs.GetInt("blessings");
+        DataStorage.saveValues["usedBlessings"] = PlayerPrefs.GetInt("usedBlessings");
+
+        //For Wax Dungeon
         DataStorage.saveValues["completedWaxDungeon"] = PlayerPrefs.GetInt("completedWaxDungeon");
+        DataStorage.saveValues["waxDungeonGolem"] = PlayerPrefs.GetInt("waxDungeonGolem");
+        DataStorage.saveValues["waxDungeonFourArms"] = PlayerPrefs.GetInt("waxDungeonFourArms");
+
+        yield return new WaitForSeconds(3);
 
         SceneManager.LoadScene(PlayerPrefs.GetString("currScene"));
     }
-
     public void QuitScreenActive() {
         standardSet.SetActive(false);
         quitScreen.SetActive(true);
     }
-
     public void QuitGame() {
         StartCoroutine(ReallyQuitGame());
     }
-
     private IEnumerator ReallyQuitGame() {
         yield return new WaitForSeconds(2);
         Application.Quit();
     }
-
     public void CloseNewGameWarning() {
         newGameWarning.SetActive(false);
         standardSet.SetActive(true);
     }
-
     public void CloseQuitScreen() {
         quitScreen.SetActive(false);
         standardSet.SetActive(true);
     }
-
     public void OpenCredits() {
         standardSet.SetActive(false);
         credits.SetActive(true);
     }
-
     public void CloseCredits() {
         credits.SetActive(false);
         standardSet.SetActive(true);
     }
-
     public void OpenOptions() {
         standardSet.SetActive(false);
         optionsMenu.SetActive(true);
     }
-
     public void CloseOptions() {
         optionsMenu.SetActive(false);
         standardSet.SetActive(true);

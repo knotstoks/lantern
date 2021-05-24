@@ -16,10 +16,10 @@ public class MotherWaxSlime : Enemy {
         GetSprite();
         waitTime = resetTime;
         dungeonManager = GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>();
-        minX = dungeonManager.minX;
-        minY = dungeonManager.minY;
-        maxX = dungeonManager.maxX;
-        maxY = dungeonManager.maxY;
+        minX = dungeonManager.allMinX;
+        minY = dungeonManager.allMinY;
+        maxX = dungeonManager.allMaxX;
+        maxY = dungeonManager.allMaxY;
         Vector2 pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
         spawned = false;
         died = false;

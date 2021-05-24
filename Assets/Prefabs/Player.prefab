@@ -603,9 +603,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_Mass: 1000
+  m_LinearDrag: 1000000
+  m_AngularDrag: 1000000
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -651,6 +651,7 @@ MonoBehaviour:
   bulletSpeed: 5
   fireDelay: 0.5
   slowColour: {r: 0.6719473, g: 0.69783837, b: 0.9433962, a: 1}
+  saveSystem: {fileID: 0}
   interactIcon: {fileID: 7337467098095251201}
   interactName: {fileID: 6760374961199553686}
   interactText: {fileID: 3559961489100252521}
@@ -2203,7 +2204,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 860.8, y: -477.08}
+  m_AnchoredPosition: {x: 888, y: -423}
   m_SizeDelta: {x: 198.3934, y: 198.3934}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2298483669396474054
@@ -2469,7 +2470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 545.5999, y: -482}
+  m_AnchoredPosition: {x: 585, y: -441}
   m_SizeDelta: {x: 493.11487, y: 151.00783}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &457163586011680170

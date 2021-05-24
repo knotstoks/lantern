@@ -7,7 +7,7 @@ public class SaveSystem : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
     public void Save(float posX, float posY, int facingDirection, string currScene) {
-        PlayerPrefs.SetInt("health", player.health);
+        PlayerPrefs.SetInt("health", player.maxHealth);
         PlayerPrefs.SetInt("maxHealth", player.maxHealth);
         PlayerPrefs.SetFloat("positionX", posX);
         PlayerPrefs.SetFloat("positionY", posY);

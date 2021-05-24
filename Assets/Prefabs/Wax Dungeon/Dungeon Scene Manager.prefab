@@ -48,13 +48,17 @@ MonoBehaviour:
   currWave: 0
   numOfEnemies: 0
   waves:
-  - smallEnemies:
-    - {fileID: 527602860352092613, guid: eb8b73cee05378c449f70c87b7aaf90b, type: 3}
+  - smallEnemies: []
     mediumEnemies: []
     bigEnemies: []
     smalls: 1
     mediums: 0
     bigs: 0
+  spawnAreas:
+  - minX: 0
+    maxX: 0
+    minY: 0
+    maxY: 0
   musicAudioSource: {fileID: 7782576935869919935}
   sfx: {fileID: 7782576935869919934}
   sounds:
@@ -64,10 +68,10 @@ MonoBehaviour:
   spawnCircle: {fileID: 8276120239866179461, guid: f62c38e7c304f084b9bfae5733542291,
     type: 3}
   disable: []
-  minX: -7
-  minY: -5
-  maxX: 10
-  maxY: 3
+  allMinX: 0
+  allMaxX: 0
+  allMinY: 0
+  allMaxY: 0
 --- !u!82 &7782576935869919935
 AudioSource:
   m_ObjectHideFlags: 0

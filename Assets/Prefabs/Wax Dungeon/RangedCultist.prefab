@@ -48,11 +48,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  speed: 2
+  speed: 50
   damage: 0
   thrust: 1
   knockTime: 0.2
-  canPush: 0
   animator: {fileID: 527602860352092622}
   cultistArrow: {fileID: 5894913032939393719, guid: 836256155207cb74d9feecf8999745dd,
     type: 3}

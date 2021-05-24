@@ -2321,7 +2321,7 @@ PrefabInstance:
     - target: {fileID: 3131638829955600169, guid: 737801878281b2641aa88508d6b1807d,
         type: 3}
       propertyPath: m_Name
-      value: Church Audio Manager
+      value: ChurchAudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 8212664067831908077, guid: 737801878281b2641aa88508d6b1807d,
         type: 3}
@@ -2378,7 +2378,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9164609417423386214, guid: 737801878281b2641aa88508d6b1807d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 737801878281b2641aa88508d6b1807d, type: 3}
 --- !u!1 &1498836127
 GameObject:

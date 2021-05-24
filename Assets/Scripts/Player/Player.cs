@@ -33,7 +33,7 @@ public class Player : MonoBehaviour{
     public GameObject quitMenu;
     public Image blackBackground; //for pause menu
     private float invulTime; //if its > 0, cannot be damaged. < 0 can be damaged.
-    private Vector2 boxSize = new Vector2(2f, 2f); //Box for raycasting interactables
+    private Vector2 boxSize = new Vector2(1.8f, 1.8f); //Box for raycasting interactables
     private Rigidbody2D rb;
     private float lastFire;
     private Vector2 move; //for movement and animation
@@ -50,11 +50,11 @@ public class Player : MonoBehaviour{
     private bool blinking; //States if player is blinking if damaged
     private void Start() {
         //Destroy Later
-        // DataStorage.saveValues["health"] = 6;
-        // DataStorage.saveValues["maxHealth"] = 6;
-        // DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
-        // DataStorage.saveValues["facingDirection"] = 2;
-        // PlayerPrefs.SetFloat("volume", 100f);
+        DataStorage.saveValues["health"] = 6;
+        DataStorage.saveValues["maxHealth"] = 6;
+        DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
+        DataStorage.saveValues["facingDirection"] = 2;
+        PlayerPrefs.SetFloat("volume", 100f);
 
         invulTime = 0.5f;
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -270,7 +270,11 @@ public class Player : MonoBehaviour{
         //Go to "You Lose" screen
         DataStorage.saveValues["health"] = DataStorage.saveValues["maxHealth"];
         SaveGame(-11.2f, 2.2f, 3, "PriestOffice");
-        SceneManager.LoadScene("PriestOffice");
+        DataStorage.saveValues["position"] = new Vector2(-11.2f, 2.2f);
+        DataStorage.saveValues["facingDirection"] = 3;
+        DataStorage.saveValues["currScene"] = "PriestOffice";
+
+        SceneManager.LoadScene("LoadingScreen");
     }
     public void SaveGame(float posX, float posY, int facingDirection, string currScene) {
         saveSystem.Save(posX, posY, facingDirection, currScene);

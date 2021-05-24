@@ -1,9 +1,7 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-[System.Serializable]
 
+[System.Serializable]
 //Shows how many different types of enemies to spawn in every wave
 public class Wave {
     public GameObject[] smallEnemies; 
@@ -13,26 +11,36 @@ public class Wave {
     public int mediums; 
     public int bigs;
 }
+[System.Serializable]
+public class SpawnArea {
+    public float minX;
+    public float maxX;
+    public float minY;
+    public float maxY;
+}
 public class Manager1 : MonoBehaviour {
     public int currWave;
     private bool complete;
     public int numOfEnemies;
     [SerializeField] private Wave[] waves;
+    [SerializeField] private SpawnArea[] spawnAreas;
     [SerializeField] private AudioSource musicAudioSource;
     [SerializeField] private AudioSource sfx;
     [SerializeField] private AudioClip[] sounds; //0 - main music, 1 - finished music, 2 - spawn sounds
     [SerializeField] private GameObject spawnCircle;
     [SerializeField] private GameObject[] disable;
+    private int spawnInt;
     //Range of positions to spawn enemies
-    public float minX;
-    public float minY;
-    public float maxX;
-    public float maxY;
+    public float allMinX;
+    public float allMaxX;
+    public float allMinY;
+    public float allMaxY;
 
     private IEnumerator Start() {
         //Delete after
         PlayerPrefs.SetFloat("volume", 1);
 
+        spawnInt = 0;
         musicAudioSource.volume = PlayerPrefs.GetFloat("volume");
         sfx.volume = PlayerPrefs.GetFloat("volume");
         musicAudioSource.loop = true;
@@ -85,29 +93,35 @@ public class Manager1 : MonoBehaviour {
 
     private void NextWave() {
         sfx.Play();
-        //Spawn the enemies
+        // //Spawn the enemies
         GameObject[] smallies = waves[currWave].smallEnemies;
         GameObject[] mediumies = waves[currWave].mediumEnemies;
         GameObject[] bigies = waves[currWave].bigEnemies;
         for (int i = 0; i < waves[currWave].smalls; i++) {
             GameObject circle = Instantiate(spawnCircle, 
-                new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY)), 
+                new Vector2(Random.Range(spawnAreas[spawnInt].minX, spawnAreas[spawnInt].maxX), 
+                Random.Range(spawnAreas[spawnInt].minY, spawnAreas[spawnInt].maxY)), 
                 Quaternion.identity);
             circle.GetComponent<SpawnCircle>().enemy = smallies[Random.Range(0, smallies.Length)];
+            AdjustSpawnInt();
         }
 
         for (int i = 0; i < waves[currWave].mediums; i++) {
             GameObject circle = Instantiate(spawnCircle, 
-                new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY)), 
+                new Vector2(Random.Range(spawnAreas[spawnInt].minX, spawnAreas[spawnInt].maxX), 
+                Random.Range(spawnAreas[spawnInt].minY, spawnAreas[spawnInt].maxY)), 
                 Quaternion.identity);
             circle.GetComponent<SpawnCircle>().enemy = mediumies[Random.Range(0, mediumies.Length)];
+            AdjustSpawnInt();
         }
 
         for (int i = 0; i < waves[currWave].bigs; i++) {
             GameObject circle = Instantiate(spawnCircle, 
-                new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY)), 
+                new Vector2(Random.Range(spawnAreas[spawnInt].minX, spawnAreas[spawnInt].maxX), 
+                Random.Range(spawnAreas[spawnInt].minY, spawnAreas[spawnInt].maxY)), 
                 Quaternion.identity);
             circle.GetComponent<SpawnCircle>().enemy = bigies[Random.Range(0, bigies.Length)];
+            AdjustSpawnInt();
         }
     }
 
@@ -122,5 +136,12 @@ public class Manager1 : MonoBehaviour {
         if (numOfEnemies == 0) {
             CheckSpawn();
         }
+    }
+    private void AdjustSpawnInt() {
+        if (spawnInt + 1 < spawnAreas.Length) {
+            spawnInt++;
+        } else {
+            spawnInt = 0;
+        } 
     }
 }

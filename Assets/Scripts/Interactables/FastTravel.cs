@@ -21,9 +21,13 @@ public class FastTravel : Interactable {
         fastTravelUI.SetActive(isOpen);
         player.inDialogue = isOpen;
     }
-    public void MoveToScene(string sceneName) {
-        Debug.Log(sceneName);
-        DataStorage.saveValues["currScene"] = sceneName;
+    public void MoveToWaxDungeon() {
+        DataStorage.saveValues["currScene"] = "WD1.1";
+        DataStorage.saveValues["position"] = new Vector2(-9f, 0f);
+        DataStorage.saveValues["facingDirection"] = 1;
+        if ((int) DataStorage.saveValues["maxHealth"] != 6) {
+            DataStorage.saveValues["usedBlessings"] = 1;
+        }
         SceneManager.LoadScene("LoadingScreen");
     }
     public override void Interact() {
