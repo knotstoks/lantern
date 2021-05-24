@@ -54,6 +54,8 @@ public class Player : MonoBehaviour{
         DataStorage.saveValues["maxHealth"] = 6;
         DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
         DataStorage.saveValues["facingDirection"] = 2;
+        DataStorage.saveValues["progress"] = 1;
+        DataStorage.saveValues["blessings"] = 0;
         PlayerPrefs.SetFloat("volume", 100f);
 
         invulTime = 0.5f;

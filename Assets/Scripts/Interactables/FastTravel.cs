@@ -25,7 +25,7 @@ public class FastTravel : Interactable {
         DataStorage.saveValues["currScene"] = "WD1.1";
         DataStorage.saveValues["position"] = new Vector2(-9f, 0f);
         DataStorage.saveValues["facingDirection"] = 1;
-        if ((int) DataStorage.saveValues["maxHealth"] != 6) {
+        if ((int) DataStorage.saveValues["maxHealth"] != 6 && (int) DataStorage.saveValues["usedBlessings"] == 0) {
             DataStorage.saveValues["usedBlessings"] = 1;
         }
         SceneManager.LoadScene("LoadingScreen");

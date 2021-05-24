@@ -17,9 +17,5 @@ public class Tear : MonoBehaviour {
             other.GetComponent<Player>().SlowPlayer();
             Destroy(gameObject);
         }
-
-        if (other.tag == "Invincible") { //Gets Destroyed when it hits something Invincible (eg. shields or walls)
-            Destroy(gameObject);
-        }
     }
 }

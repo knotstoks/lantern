@@ -4075,7 +4075,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfx
       value: 
-      objectReference: {fileID: 8300000, guid: 02aa17210e158784db2996eed4c3fee6, type: 3}
+      objectReference: {fileID: 8300000, guid: 7eebef9228410d446b8e5333c5a25f64, type: 3}
     - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
         type: 3}
       propertyPath: objDesc

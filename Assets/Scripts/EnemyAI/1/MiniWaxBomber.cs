@@ -27,7 +27,7 @@ public class MiniWaxBomber : Enemy { //Super fast and explodes
         animator.SetFloat("Vert", target.position.y - transform.position.y);
     }
     private IEnumerator Explosion() {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(this.GetComponent<Rigidbody2D>().position, 2);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(this.GetComponent<Rigidbody2D>().position, 1);
         foreach (Collider2D col in hits) {
             if (col.gameObject.tag == "Player") {
                 col.gameObject.GetComponent<Player>().Damage(2);
