@@ -44,6 +44,12 @@ public class DataStorage : MonoBehaviour {
     0 - did not use blessings (easter egg available)
     1 - used blessings (no easter egg available)
 
+    int waxDungeonRoom;
+    0 to 8 - tracks what room the player is in for Wax Dungeon
+
+    int[] randWaxDungeonArray;
+    [] - Randomly generates what rooms the Player goes through
+
     int completedWaxDungeon;
     0 - haven't finished the Wax Dungeon
     1 - attempted but haven't finished Wax Dungeon
@@ -58,7 +64,5 @@ public class DataStorage : MonoBehaviour {
     0 - haven't seen four arms
     1 - fought and lost against four arms
     2 - fought and won four arms
-
-    int 
     */
 }

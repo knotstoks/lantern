@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Prototypes/PlayTestingMainMenu.unity
-    guid: 5a6a43623e0702b479f7351d9266c8d6
+    path: Assets/Scenes/MainMenu.unity
+    guid: 81b8a92d76388f54fbefd67d98f9bac3
   - enabled: 1
-    path: Assets/Scenes/Prototypes/CombatPrototype.unity
-    guid: 9f8e8c057aa5ca049923ff338c6439e8
-  - enabled: 1
-    path: Assets/Scenes/Prototypes/LosingScreenPrototype.unity
-    guid: 3780f6617383acb45ab9a7919a8b42fc
+    path: Assets/Scenes/LoadingScreen.unity
+    guid: f55890de87ff63d4d989c77e6affad4d
   - enabled: 1
     path: Assets/Scenes/IntroCutscene.unity
     guid: 4596f6134a1a51543bd15e7273d65326
@@ -24,9 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Church Of Light/Dojo.unity
     guid: 937105ba68c70d04abf74b9f6f31666d
   - enabled: 1
-    path: Assets/Scenes/LoadingScreen.unity
-    guid: f55890de87ff63d4d989c77e6affad4d
-  - enabled: 1
     path: Assets/Scenes/Church Of Light/MessHall.unity
     guid: fd2a7c8df9a83324898a65196e83820b
   - enabled: 1
@@ -36,6 +30,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Church Of Light/PriestOffice.unity
     guid: f8d6d0e7b2262bd4d8cdb4cc4d254619
   - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/WaxDunegonIntro.unity
+    guid: f332deb09b3f0a64cb9fe219b69ea5a6
+  - enabled: 1
     path: Assets/Scenes/Wax Dungeon/WD1.1.unity
     guid: f699cefeca25c1c418430e8549f12932
+  - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/WD1.2.unity
+    guid: 381ab4107f6abcc4c868c57fa150a8cc
+  - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/WD1.3.unity
+    guid: 7cd651d8f4eef4f41a2dad7714a534b6
+  - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/WD1.4.unity
+    guid: d14a0d08b279b58469addec6bcab8084
   m_configObjects: {}

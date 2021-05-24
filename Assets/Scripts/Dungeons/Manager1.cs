@@ -22,6 +22,7 @@ public class Manager1 : MonoBehaviour {
     public int currWave;
     private bool complete;
     public int numOfEnemies;
+    [SerializeField] private GameObject doorOut;
     [SerializeField] private Wave[] waves;
     [SerializeField] private SpawnArea[] spawnAreas;
     [SerializeField] private AudioSource musicAudioSource;

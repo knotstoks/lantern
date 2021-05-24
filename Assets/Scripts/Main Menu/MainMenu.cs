@@ -68,6 +68,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["usedBlessings"] = 0;
 
         //For Wax Dungeon
+        DataStorage.saveValues["waxDungeonRoom"] = 0;
         DataStorage.saveValues["completedWaxDungeon"] = 0;
         DataStorage.saveValues["waxDungeonGolem"] = 0;
         DataStorage.saveValues["waxDungeonFourArms"] = 0;
@@ -96,6 +97,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["usedBlessings"] = PlayerPrefs.GetInt("usedBlessings");
 
         //For Wax Dungeon
+        DataStorage.saveValues["waxDungeonRoom"] = PlayerPrefs.GetInt("waxDungeonRoom");
         DataStorage.saveValues["completedWaxDungeon"] = PlayerPrefs.GetInt("completedWaxDungeon");
         DataStorage.saveValues["waxDungeonGolem"] = PlayerPrefs.GetInt("waxDungeonGolem");
         DataStorage.saveValues["waxDungeonFourArms"] = PlayerPrefs.GetInt("waxDungeonFourArms");

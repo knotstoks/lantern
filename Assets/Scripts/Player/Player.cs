@@ -275,6 +275,7 @@ public class Player : MonoBehaviour{
         DataStorage.saveValues["position"] = new Vector2(-11.2f, 2.2f);
         DataStorage.saveValues["facingDirection"] = 3;
         DataStorage.saveValues["currScene"] = "PriestOffice";
+        DataStorage.saveValues["waxDungeonRoom"] = 0;
 
         SceneManager.LoadScene("LoadingScreen");
     }
