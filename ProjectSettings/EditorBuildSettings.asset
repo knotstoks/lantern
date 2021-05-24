@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Church Of Light/MessHall.unity
     guid: fd2a7c8df9a83324898a65196e83820b
+  - enabled: 1
+    path: Assets/Scenes/Church Of Light/MainHall.unity
+    guid: 7f5caa1307cc2a641a23b86594efe4da
+  - enabled: 1
+    path: Assets/Scenes/Church Of Light/PriestOffice.unity
+    guid: f8d6d0e7b2262bd4d8cdb4cc4d254619
+  - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/WD1.1.unity
+    guid: f699cefeca25c1c418430e8549f12932
   m_configObjects: {}

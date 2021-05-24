@@ -9,7 +9,6 @@ public class Enemy : MonoBehaviour {
     [SerializeField] protected int damage;
     [SerializeField] protected float thrust;
     [SerializeField] protected float knockTime;
-    [SerializeField] protected bool canPush;
     protected SpriteRenderer spriteRenderer;
     protected void GetSprite() {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
@@ -29,12 +28,6 @@ public class Enemy : MonoBehaviour {
         if (other.gameObject.tag == "Player") {
             other.gameObject.GetComponent<Player>().Damage(damage);
         }
-
-        if (other.gameObject.tag == "Enemy") {
-            if (canPush) {
-                StartCoroutine(PushAway(other.gameObject.GetComponent<Rigidbody2D>()));
-            }
-        }
     }
     private IEnumerator KnockCoroutine(Rigidbody2D bullet) {
         Rigidbody2D enemy = this.GetComponent<Rigidbody2D>();
@@ -43,13 +36,6 @@ public class Enemy : MonoBehaviour {
         enemy.velocity = force;
         yield return new WaitForSeconds(knockTime);
         enemy.velocity = new Vector2();
-    }
-    private IEnumerator PushAway(Rigidbody2D other) {
-        Rigidbody2D rb = this.GetComponent<Rigidbody2D>();
-        Vector2 push = (gameObject.transform.position - other.transform.position).normalized;
-        rb.velocity = push;
-        yield return new WaitForSeconds(0.2f);
-        rb.velocity = new Vector2();
     }
     private IEnumerator FlashRed() {
         spriteRenderer.color = Color.red;

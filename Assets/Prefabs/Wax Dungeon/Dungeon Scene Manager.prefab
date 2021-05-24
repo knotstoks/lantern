@@ -61,7 +61,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a3b3fc452e098d444bbf69b2304f024b, type: 3}
   - {fileID: 8300000, guid: 5dfcdd1a8cf032c4faa2b86840cc02ef, type: 3}
   - {fileID: 8300000, guid: 0dbc0bbe26c366945b12a8f9e052c0e2, type: 3}
-  spawnCircle: {fileID: 0}
+  spawnCircle: {fileID: 8276120239866179461, guid: f62c38e7c304f084b9bfae5733542291,
+    type: 3}
+  disable: []
   minX: -7
   minY: -5
   maxX: 10

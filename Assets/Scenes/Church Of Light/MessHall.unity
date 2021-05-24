@@ -321,7 +321,7 @@ MonoBehaviour:
     sentences:
     - There were some worms crawling in the chicken meat. I think I'll just add it
       to tonight's stew. More ingredients, more flavour, I always say!
-  reference: progress
+  reference: messHall
   animator: {fileID: 101844321}
   defaultFacing:
   - 0
@@ -1763,7 +1763,7 @@ MonoBehaviour:
     sentences:
     - There were some worms crawling in the chicken meat. I think I'll just add it
       to tonight's stew. More ingredients, more flavour, I always say!
-  reference: progress
+  reference: messHall
   animator: {fileID: 791319869}
   defaultFacing:
   - 1
@@ -1820,12 +1820,12 @@ PrefabInstance:
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.39
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.51
+      value: -7.5
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
@@ -9019,7 +9019,17 @@ PrefabInstance:
     - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
         type: 3}
       propertyPath: nextScene
-      value: Dojo
+      value: MainHall
+      objectReference: {fileID: 0}
+    - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
+        type: 3}
+      propertyPath: position.x
+      value: -7.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
+        type: 3}
+      propertyPath: position.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 288758185031170239, guid: 78d309fb46419e742be6e674b244d552,
         type: 3}

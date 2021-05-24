@@ -18,6 +18,7 @@ public class Player : MonoBehaviour{
     [SerializeField] private float bulletSpeed; 
     [SerializeField] private float fireDelay;
     [SerializeField] private Color slowColour;
+    [HideInInspector] public SaveSystem saveSystem;
     public Image interactIcon; //Image for the interactable check
     public GameObject interactName; //GameObject for the interact icon
     public Text interactText; //Text for the interact icon
@@ -49,16 +50,16 @@ public class Player : MonoBehaviour{
     private bool blinking; //States if player is blinking if damaged
     private void Start() {
         //Destroy Later
-        DataStorage.saveValues["health"] = 6;
-        DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
-        DataStorage.saveValues["facingDirection"] = 2;
-        DataStorage.saveValues["progress"] = 0;
-        PlayerPrefs.SetFloat("volume", 100f);
+        // DataStorage.saveValues["health"] = 6;
+        // DataStorage.saveValues["maxHealth"] = 6;
+        // DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
+        // DataStorage.saveValues["facingDirection"] = 2;
+        // PlayerPrefs.SetFloat("volume", 100f);
 
         invulTime = 0.5f;
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        rb = gameObject.GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
+        saveSystem = GetComponent<SaveSystem>();
         health = (int) DataStorage.saveValues["health"];
         maxHealth = (int) DataStorage.saveValues["maxHealth"];
         transform.position = (Vector2) DataStorage.saveValues["position"];
@@ -260,9 +261,18 @@ public class Player : MonoBehaviour{
     //Coroutine to kill Player
     private IEnumerator KillPlayer() {
         inDialogue = true;
+        //First time you die
+        if ((int) DataStorage.saveValues["blessings"] == 0) {
+            DataStorage.saveValues["blessings"] = 1;
+        }
         //Let the animation Play Out
         yield return new WaitForSeconds(2);
         //Go to "You Lose" screen
-        SceneManager.LoadScene("LosingScreenPrototype");
+        DataStorage.saveValues["health"] = DataStorage.saveValues["maxHealth"];
+        SaveGame(-11.2f, 2.2f, 3, "PriestOffice");
+        SceneManager.LoadScene("PriestOffice");
+    }
+    public void SaveGame(float posX, float posY, int facingDirection, string currScene) {
+        saveSystem.Save(posX, posY, facingDirection, currScene);
     }
 }

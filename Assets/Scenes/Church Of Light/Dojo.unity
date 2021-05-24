@@ -6721,12 +6721,12 @@ PrefabInstance:
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.12
+      value: -7.5
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.02
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
@@ -7008,7 +7008,7 @@ PrefabInstance:
     - target: {fileID: 288758185031170232, guid: 78d309fb46419e742be6e674b244d552,
         type: 3}
       propertyPath: m_Name
-      value: Portal
+      value: To Main Hall
       objectReference: {fileID: 0}
     - target: {fileID: 288758185031170237, guid: 78d309fb46419e742be6e674b244d552,
         type: 3}
@@ -7043,7 +7043,17 @@ PrefabInstance:
     - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
         type: 3}
       propertyPath: nextScene
-      value: Bedroom
+      value: MainHall
+      objectReference: {fileID: 0}
+    - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
+        type: 3}
+      propertyPath: position.x
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
+        type: 3}
+      propertyPath: position.y
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
         type: 3}

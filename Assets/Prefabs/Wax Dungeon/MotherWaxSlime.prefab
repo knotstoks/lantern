@@ -94,13 +94,13 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6342428482607714840}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 1000
+  m_AngularDrag: 1000
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -151,10 +151,10 @@ MonoBehaviour:
   thrust: 2
   knockTime: 0.2
   canPush: 1
+  animator: {fileID: 4249080351884866465}
   resetTime: 3
   childSlime: {fileID: 513805542070196737, guid: 0bfd57a1def16d649800ce3e9a7419d2,
     type: 3}
-  animator: {fileID: 4249080351884866465}
 --- !u!95 &4249080351884866465
 Animator:
   serializedVersion: 3

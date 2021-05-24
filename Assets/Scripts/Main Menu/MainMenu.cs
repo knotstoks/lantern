@@ -49,8 +49,6 @@ public class MainMenu : MonoBehaviour {
         //Pickup Lantern
         animator.SetBool("playGame", true);
 
-        yield return new WaitForSeconds(3);
-
         PlayerPrefs.SetInt("savePresent", 1);
         DataStorage.saveValues["health"] = 6;
         DataStorage.saveValues["maxHealth"] = 6;
@@ -58,10 +56,19 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["facingDirection"] = 2;
         DataStorage.saveValues["currScene"] = "Bedroom";
         DataStorage.saveValues["introSceneDone"] = 0;
-        DataStorage.saveValues["tutorialDojo"] = 0;
+        DataStorage.saveValues["messHall"] = 0;
         DataStorage.saveValues["progress"] = 0;
-        DataStorage.saveValues["completedWaxDungeon"] = 0;
+        DataStorage.saveValues["tutorialDojo"] = 0;
+        DataStorage.saveValues["blessings"] = 0;
+        DataStorage.saveValues["usedBlessings"] = 0;
 
+        //For Wax Dungeon
+        DataStorage.saveValues["completedWaxDungeon"] = 0;
+        DataStorage.saveValues["waxDungeonGolem"] = 0;
+        DataStorage.saveValues["waxDungeonFourArms"] = 0;
+
+        yield return new WaitForSeconds(3);
+        
         SceneManager.LoadScene("IntroCutscene");
     }
 

@@ -53,11 +53,11 @@ MonoBehaviour:
   thrust: 1
   knockTime: 0.2
   canPush: 0
+  animator: {fileID: 527602860352092622}
   cultistArrow: {fileID: 5894913032939393719, guid: 836256155207cb74d9feecf8999745dd,
     type: 3}
   arrowSpeed: 2
   shootResetTime: 5
-  animator: {fileID: 527602860352092622}
 --- !u!95 &527602860352092622
 Animator:
   serializedVersion: 3
@@ -85,18 +85,18 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527602860352092613}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 1000
+  m_AngularDrag: 1000
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &527602860352092616
 BoxCollider2D:

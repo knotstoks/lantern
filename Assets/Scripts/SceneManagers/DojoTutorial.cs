@@ -11,7 +11,7 @@ public class DojoTutorial : MonoBehaviour {
     public GameObject seniorWardenFrankie;
     private Player player;
     private IEnumerator Start() {
-        DataStorage.saveValues["tutorialDojo"] = 0; //Delete after!
+        // DataStorage.saveValues["tutorialDojo"] = 0; //Delete after!
         yield return 0.2;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         if ((int) DataStorage.saveValues["tutorialDojo"] == 0) {
@@ -38,6 +38,7 @@ public class DojoTutorial : MonoBehaviour {
         if (seniorWardenFrankie.GetComponent<NPC>().repeat && (int) DataStorage.saveValues["tutorialDojo"] == 2) {
             portalOut.SetActive(true);
             player.allowCombat = false;
+            DataStorage.saveValues["progress"] = 1;
         }
     }
 

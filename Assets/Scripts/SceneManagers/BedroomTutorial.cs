@@ -9,7 +9,7 @@ public class BedroomTutorial : MonoBehaviour {
     private int line;
 
     private IEnumerator Start() {
-        DataStorage.saveValues["introSceneDone"] = 0; //DELETE AFTER
+        // DataStorage.saveValues["introSceneDone"] = 0; //DELETE AFTER
         yield return 0.5;
         line = 0;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
@@ -24,7 +24,6 @@ public class BedroomTutorial : MonoBehaviour {
     private void Update() {
         if ((int) DataStorage.saveValues["introSceneDone"] == 0 && Input.GetKeyDown(KeyCode.E)) {
             if (line == 2) {
-
                 DataStorage.saveValues["introSceneDone"] = 1;
                 dialogueManager.DisplayNextSentence();
             } else {
