@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GolemBossRoom : MonoBehaviour {
-    [SerializeField] private Dialogue introDialogue;
+    [SerializeField] private Dialogue[] introDialogues;
     [SerializeField] private Dialogue outroDialogue;
     [SerializeField] private Slider bossHPBar;
     private bool introDone;
@@ -12,8 +12,10 @@ public class GolemBossRoom : MonoBehaviour {
     private Player player;
     private DialogueManager dialogueManager;
     private int line;
+    private int reference;
 
     private IEnumerator Start() {
+        reference = (int) DataStorage.saveValues["waxDungeonGolem"];
         introDone = false;
         fightCompleted = false;
         yield return 0.5;
@@ -23,10 +25,9 @@ public class GolemBossRoom : MonoBehaviour {
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
         StartGolemIntro();
     } 
-    private void FixedUpdate() {
+    private void Update() {
         if (!introDone && Input.GetKeyDown(KeyCode.E)) {
-            if (line == 2) { //edit this number!!!!!!!!!!!!!!!!!!!!!!
-
+            if (line == introDialogues[reference].names.Length) {
                 introDone = true;
                 line = 0;
                 dialogueManager.DisplayNextSentence();
@@ -38,7 +39,7 @@ public class GolemBossRoom : MonoBehaviour {
         }
 
         if (fightCompleted && Input.GetKeyDown(KeyCode.E)) {
-            if (line == 2) { //edit this number!!!!!!!!!!!!!!!!!!!!!
+            if (line == outroDialogue.names.Length) { //edit this number!!!!!!!!!!!!!!!!!!!!!
                 fightCompleted = false;
                 dialogueManager.DisplayNextSentence();
             } else {
@@ -48,7 +49,7 @@ public class GolemBossRoom : MonoBehaviour {
         }
     }
     private void StartGolemIntro() {
-        dialogueManager.StartDialogue(introDialogue);
+        dialogueManager.StartDialogue(introDialogues[reference]);
     }
     private void StartBossFight() {
         //Set Golem Mini Boss Active with HP Bar

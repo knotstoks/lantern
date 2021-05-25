@@ -49,14 +49,12 @@ public class Player : MonoBehaviour{
     private SpriteRenderer spriteRenderer;
     private bool blinking; //States if player is blinking if damaged
     private void Start() {
-        //Destroy Later
-        DataStorage.saveValues["health"] = 6;
-        DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
-        DataStorage.saveValues["facingDirection"] = 2;
-        DataStorage.saveValues["progress"] = 1;
-        DataStorage.saveValues["blessings"] = 0;
-        PlayerPrefs.SetFloat("volume", 100f);
+        //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
+        // DataStorage.saveValues["health"] = 6;
+        // DataStorage.saveValues["maxHealth"] = 6;
+        // DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
+        // DataStorage.saveValues["facingDirection"] = 2;
+        // PlayerPrefs.SetFloat("volume", 100f);
 
         invulTime = 0.5f;
         spriteRenderer = GetComponent<SpriteRenderer>();

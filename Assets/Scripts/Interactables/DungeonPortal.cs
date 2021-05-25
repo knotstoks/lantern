@@ -5,6 +5,7 @@ public class DungeonPortal : Interactable {
     private Vector2 pos;
     private int facingWay;
     private string nextScene;
+    private int nextRoom; //Keeps track what number room the player is on
     private static Vector2[] positions = {
         new Vector2(), //1.1
         new Vector2(), //1.2
@@ -35,15 +36,15 @@ public class DungeonPortal : Interactable {
     };
     private void Start() {
         int[] array = (int[]) DataStorage.saveValues["waxDungeonRandomArray"];
-        int currRoom = (int) DataStorage.saveValues["waxDungeonRoom"];
+        nextRoom = (int) DataStorage.saveValues["waxDungeonRoom"] + 1;
 
-        if (array[currRoom] == 18) { //Golem
+        if (array[nextRoom] == 18) { //Golem
             pos = positions[3];
             facingWay = facingDirections[3];
-        } else if (array[currRoom] == 19) { //FourArms
+        } else if (array[nextRoom] == 19) { //FourArms
             pos = positions[3];
             facingWay = facingDirections[3];
-        } else if (array[currRoom] == 20) { //Final Boss
+        } else if (array[nextRoom] == 20) { //Final Boss
             pos = positions[3];
             facingWay = facingDirections[3];
         } else {
@@ -51,33 +52,34 @@ public class DungeonPortal : Interactable {
             facingWay = facingDirections[3];
         }
 
-        if (array[currRoom] == 9) {
+        if (array[nextRoom] == 9) {
             nextScene = "WD1.1";
-        } else if (array[currRoom] == 10) {
+        } else if (array[nextRoom] == 10) {
             nextScene = "WD1.2";
-        } else if (array[currRoom] == 11) {
+        } else if (array[nextRoom] == 11) {
             nextScene = "WD1.3";
-        } else if (array[currRoom] == 12) {
+        } else if (array[nextRoom] == 12) {
             nextScene = "BossGolem";
-        } else if (array[currRoom] == 13) {
+        } else if (array[nextRoom] == 13) {
             nextScene = "WD1.4";
-        } else if (array[currRoom] == 14) {
+        } else if (array[nextRoom] == 14) {
             nextScene = "WD1.5";
-        } else if (array[currRoom] == 15) {
+        } else if (array[nextRoom] == 15) {
             nextScene = "WD1.6";
-        } else if (array[currRoom] == 16) {
+        } else if (array[nextRoom] == 16) {
             nextScene = "WD1.1"; //edit!!!!!!!!!!!!
-        } else if (array[currRoom] == 17) {
+        } else if (array[nextRoom] == 17) {
             nextScene = "WD1.7";
-        } else if (array[currRoom] == 18) {
+        } else if (array[nextRoom] == 18) {
             nextScene = "WD1.8";
-        } else if (array[currRoom] == 19) {
+        } else if (array[nextRoom] == 19) {
             nextScene = "WD1.9";
-        } else if (array[currRoom] == 20) {
+        } else if (array[nextRoom] == 20) {
             nextScene = "WD1.1"; //edit!!!!!!!!!!!!!
         }
     }
     public override void Interact() {
+        DataStorage.saveValues["waxDungeonRoom"] = nextRoom + 1;
         DataStorage.saveValues["facingDirection"] = facingWay;
         DataStorage.saveValues["position"] = pos;
         DataStorage.saveValues["currScene"] = nextScene;

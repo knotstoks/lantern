@@ -15,7 +15,6 @@ public class MainMenu : MonoBehaviour {
     [SerializeField] private Slider volumeSlider;
     [SerializeField] private GameObject audioManager;
     private void Start() {
-        // PlayerPrefs.DeleteKey("savePresent");
         standardSet.SetActive(true);
         hasSaveGame = PlayerPrefs.HasKey("savePresent");
         if (!hasSaveGame) {
@@ -68,7 +67,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["usedBlessings"] = 0;
 
         //For Wax Dungeon
-        DataStorage.saveValues["waxDungeonRoom"] = 0;
+        DataStorage.saveValues["waxDungeonRoom"] = -1;
         DataStorage.saveValues["completedWaxDungeon"] = 0;
         DataStorage.saveValues["waxDungeonGolem"] = 0;
         DataStorage.saveValues["waxDungeonFourArms"] = 0;
@@ -104,7 +103,7 @@ public class MainMenu : MonoBehaviour {
 
         yield return new WaitForSeconds(3);
 
-        SceneManager.LoadScene(PlayerPrefs.GetString("currScene"));
+        SceneManager.LoadScene(PlayerPrefs.GetString("LoadingScreen"));
     }
     public void QuitScreenActive() {
         standardSet.SetActive(false);
