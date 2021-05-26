@@ -40,9 +40,9 @@ public class PriestOffice : MonoBehaviour {
         //Blessing Tutorial
         if ((int) DataStorage.saveValues["blessings"] == 1 && Input.GetKeyDown(KeyCode.E)) {
             if (line == 10) {
-                DataStorage.saveValues["blessings"] = 2;
                 dialogueManager.DisplayNextSentence();
                 line = 0;
+                DataStorage.saveValues["blessings"] = 2;
             } else {
                 line++;
                 dialogueManager.DisplayNextSentence();

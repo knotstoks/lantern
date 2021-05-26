@@ -48,13 +48,16 @@ public class Player : MonoBehaviour{
     private float slowTime;
     private SpriteRenderer spriteRenderer;
     private bool blinking; //States if player is blinking if damaged
+    private AudioSource audioSource;
     private void Start() {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
-        // DataStorage.saveValues["health"] = 6;
-        // DataStorage.saveValues["maxHealth"] = 6;
-        // DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
-        // DataStorage.saveValues["facingDirection"] = 2;
-        // PlayerPrefs.SetFloat("volume", 100f);
+        DataStorage.saveValues["health"] = 6;
+        DataStorage.saveValues["maxHealth"] = 6;
+        DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
+        DataStorage.saveValues["facingDirection"] = 2;
+        PlayerPrefs.SetFloat("volume", 100f);
+        DataStorage.saveValues["progress"] = 3;
+        DataStorage.saveValues["blessings"] = 1;
 
         invulTime = 0.5f;
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -63,6 +66,7 @@ public class Player : MonoBehaviour{
         health = (int) DataStorage.saveValues["health"];
         maxHealth = (int) DataStorage.saveValues["maxHealth"];
         transform.position = (Vector2) DataStorage.saveValues["position"];
+        audioSource = GetComponent<AudioSource>();
         updateHealth();
         interactIcon.enabled = false;
         interactName.SetActive(false);
@@ -208,6 +212,7 @@ public class Player : MonoBehaviour{
                 invulTime = resetInvulTime;
                 health -= amt;
                 updateHealth();
+                audioSource.Play();
             }
         }
     }

@@ -24,23 +24,15 @@ public class Manager1 : MonoBehaviour {
     public int numOfEnemies;
     [SerializeField] private GameObject doorOut;
     [SerializeField] private Wave[] waves;
-    [SerializeField] private SpawnArea[] spawnAreas;
+    public SpawnArea[] spawnAreas;
     [SerializeField] private AudioSource musicAudioSource;
     [SerializeField] private AudioSource sfx;
     [SerializeField] private AudioClip[] sounds; //0 - main music, 1 - finished music, 2 - spawn sounds
     [SerializeField] private GameObject spawnCircle;
     [SerializeField] private GameObject[] disable;
     private int spawnInt;
-    //Range of positions to spawn enemies
-    public float allMinX;
-    public float allMaxX;
-    public float allMinY;
-    public float allMaxY;
-
     private IEnumerator Start() {
-        //Delete after
-        PlayerPrefs.SetFloat("volume", 1);
-
+        doorOut.SetActive(false);
         spawnInt = 0;
         musicAudioSource.volume = PlayerPrefs.GetFloat("volume");
         sfx.volume = PlayerPrefs.GetFloat("volume");
@@ -74,7 +66,8 @@ public class Manager1 : MonoBehaviour {
             musicAudioSource.clip = sounds[1];
             musicAudioSource.loop = false;
             musicAudioSource.Play();
-            //Animation shaking of room + door opening
+            //Animation of door opening
+            doorOut.SetActive(true);
         }
     }
 

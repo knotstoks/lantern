@@ -6,8 +6,8 @@ public class CandleChest : Enemy {
     [SerializeField] private float resetTime;
     [SerializeField] private GameObject fireBall;
     [SerializeField] private float fireBallSpeed;
+    [SerializeField] private AudioClip[] soundEffects; //0 for walking, 1 for fireball, 2 for hit
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip[] soundEffects; //0 for walking, 1 for fireball
     private Transform target;
     private float fireTime;
     private bool canMove;

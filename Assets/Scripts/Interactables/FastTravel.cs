@@ -50,7 +50,7 @@ public class FastTravel : Interactable {
         // randArray[8] = 20;
         // DataStorage.saveValues["waxDungeonRandomArray"] = randArray;
 
-        DataStorage.saveValues["currScene"] = "WD1.1";
+        DataStorage.saveValues["currScene"] = "WD1";
         DataStorage.saveValues["position"] = new Vector2(-9f, 0f);
         DataStorage.saveValues["facingDirection"] = 1;
 

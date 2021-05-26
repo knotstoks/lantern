@@ -7,8 +7,8 @@ public class DungeonPortal : Interactable {
     private string nextScene;
     private int nextRoom; //Keeps track what number room the player is on
     private static Vector2[] positions = {
-        new Vector2(), //1.1
-        new Vector2(), //1.2
+        new Vector2(-9, 0), //1.1
+        new Vector2(-9, 0), //1.2
         new Vector2(), //1.3
         new Vector2(), //Golem
         new Vector2(), //1.4
@@ -21,8 +21,8 @@ public class DungeonPortal : Interactable {
         new Vector2() //Final Boss
     };
     private static int[] facingDirections = {
-        //1.1
-        //1.2
+        1, //1.1
+        1 //1.2
         //1.3
         //Golem
         //1.4
@@ -53,29 +53,29 @@ public class DungeonPortal : Interactable {
         }
 
         if (array[nextRoom] == 9) {
-            nextScene = "WD1.1";
+            nextScene = "WD1";
         } else if (array[nextRoom] == 10) {
-            nextScene = "WD1.2";
+            nextScene = "WD2";
         } else if (array[nextRoom] == 11) {
-            nextScene = "WD1.3";
+            nextScene = "WD3";
         } else if (array[nextRoom] == 12) {
             nextScene = "BossGolem";
         } else if (array[nextRoom] == 13) {
-            nextScene = "WD1.4";
+            nextScene = "WD4";
         } else if (array[nextRoom] == 14) {
-            nextScene = "WD1.5";
+            nextScene = "WD5";
         } else if (array[nextRoom] == 15) {
-            nextScene = "WD1.6";
+            nextScene = "WD6";
         } else if (array[nextRoom] == 16) {
-            nextScene = "WD1.1"; //edit!!!!!!!!!!!!
+            nextScene = "WD1"; //edit!!!!!!!!!!!!
         } else if (array[nextRoom] == 17) {
-            nextScene = "WD1.7";
+            nextScene = "WD7";
         } else if (array[nextRoom] == 18) {
-            nextScene = "WD1.8";
+            nextScene = "WD8";
         } else if (array[nextRoom] == 19) {
-            nextScene = "WD1.9";
+            nextScene = "WD9";
         } else if (array[nextRoom] == 20) {
-            nextScene = "WD1.1"; //edit!!!!!!!!!!!!!
+            nextScene = "WD1"; //edit!!!!!!!!!!!!!
         }
     }
     public override void Interact() {

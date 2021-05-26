@@ -9,12 +9,14 @@ public class Enemy : MonoBehaviour {
     [SerializeField] protected int damage;
     [SerializeField] protected float thrust;
     [SerializeField] protected float knockTime;
+    [SerializeField] protected AudioSource hitAudioSource;
     protected SpriteRenderer spriteRenderer;
     protected void GetSprite() {
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
     public void Damage(int damage) {
         health -= damage;
+        hitAudioSource.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

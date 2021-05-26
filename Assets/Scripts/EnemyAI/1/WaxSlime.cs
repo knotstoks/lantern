@@ -3,25 +3,33 @@ using UnityEngine;
 
 public class WaxSlime : Enemy {
     [SerializeField] private Animator animator;
-    private float minX, minY, maxX, maxY;
     [SerializeField] private float resetTime; //time the slime pauses at each point
+    private float minX, minY, maxX, maxY;
     private float waitTime; //time variable
     private Vector2 pos;
     private Manager1 dungeonManager;
     private bool died;
-    void Start() {
+    private void Start() {
         GetSprite();
-        waitTime = resetTime;
+        waitTime = 0.2f;
         dungeonManager = GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>();
-        minX = dungeonManager.allMinX;
-        minY = dungeonManager.allMinY;
-        maxX = dungeonManager.allMaxX;
-        maxY = dungeonManager.allMaxY;
+        float x = transform.position.x;
+        float y = transform.position.y;
+        for (int i = 0; i < dungeonManager.spawnAreas.Length; i++) {
+            if (x >= dungeonManager.spawnAreas[i].minX && x < dungeonManager.spawnAreas[i].maxX 
+            && y >= dungeonManager.spawnAreas[i].minY && y < dungeonManager.spawnAreas[i].maxY) {
+                minX = dungeonManager.spawnAreas[i].minX;
+                maxX = dungeonManager.spawnAreas[i].maxX;
+                minY = dungeonManager.spawnAreas[i].minY;
+                maxY = dungeonManager.spawnAreas[i].maxY;
+                break;
+            }
+        }
         Vector2 pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
         died = false;
     }
 
-    void Update() {
+    private void Update() {
         transform.position = Vector2.MoveTowards(transform.position, pos, speed * Time.deltaTime);
         waitTime -= Time.deltaTime;
 

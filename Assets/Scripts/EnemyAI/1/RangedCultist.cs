@@ -57,7 +57,7 @@ public class RangedCultist : Enemy {
         animator.SetBool("Shooting", false);
         shooting = false;
         GameObject arrow = Instantiate(cultistArrow, transform.position, transform.rotation) as GameObject;
-        arrow.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x, aim.y - transform.position.y) * 5;
+        arrow.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x, aim.y - transform.position.y).normalized * 10;
     }
     private IEnumerator Death() {
         animator.SetTrigger("Death");

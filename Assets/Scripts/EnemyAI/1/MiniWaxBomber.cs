@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class MiniWaxBomber : Enemy { //Super fast and explodes
     [SerializeField] private Animator animator;
+    [SerializeField] private AudioSource explosion;
     private Transform target;
     private bool dead;
 
@@ -14,6 +15,7 @@ public class MiniWaxBomber : Enemy { //Super fast and explodes
 
     private void Update() {
         if (health <= 0) {
+            explosion.Play();
             dead = true;
             StartCoroutine(Explosion());
             StartCoroutine(Death());
