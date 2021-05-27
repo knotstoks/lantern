@@ -52,13 +52,11 @@ public class Player : MonoBehaviour{
     private AudioSource audioSource;
     private void Start() {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
-        // DataStorage.saveValues["health"] = 6;
-        // DataStorage.saveValues["maxHealth"] = 6;
-        // DataStorage.saveValues["position"] = new Vector2(4.2f, -4.5f);
-        // DataStorage.saveValues["facingDirection"] = 0;
-        // PlayerPrefs.SetFloat("volume", 100f);
-        // DataStorage.saveValues["progress"] = 3;
-        // DataStorage.saveValues["blessings"] = 1;
+        DataStorage.saveValues["health"] = 6;
+        DataStorage.saveValues["maxHealth"] = 6;
+        DataStorage.saveValues["position"] = new Vector2(7f, -8f);
+        DataStorage.saveValues["facingDirection"] = 0;
+        PlayerPrefs.SetFloat("volume", 100f);
 
         invulTime = 0.5f;
         spriteRenderer = GetComponent<SpriteRenderer>();

@@ -10,7 +10,7 @@ public class DungeonPortal : Interactable {
         new Vector2(-9, 0), //1.1
         new Vector2(-9, 0), //1.2
         new Vector2(), //1.3
-        new Vector2(), //Golem
+        new Vector2(7, -8), //Golem
         new Vector2(), //1.4
         new Vector2(), //1.5
         new Vector2(), //1.6
@@ -22,9 +22,9 @@ public class DungeonPortal : Interactable {
     };
     private static int[] facingDirections = {
         1, //1.1
-        1 //1.2
+        1, //1.2
         //1.3
-        //Golem
+        0 //Golem
         //1.4
         //1.5
         //1.6

@@ -16,29 +16,39 @@ Float: Vert - movement vertically
 **/
 
 public class Golem : Boss {
-    [SerializeField] private float resetSwitchAttackTime;
+    [SerializeField] private float resetAttackTime;
     [SerializeField] private float restTime;
     [SerializeField] private GameObject bloodBullet;
     [SerializeField] private Vector2 bulletTilt;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip[] sounds; //0 for footsteps, 1 for shooting, 2 for death
+    [SerializeField] private GameObject candling;
     public bool start;
     private Transform target;
     private GolemBossRoom golemBossRoom;
-    private float switchAttackTime;
+    private float attackTime;
     private Animator animator;
     private bool notAttacking;
+    private bool charging;
+    private int lastAttack;
     private void Start() {
+        GetSprite();
         slider.minValue = 0;
         slider.maxValue = health;
+        attackTime = -1f;
         start = false;
-        notAttacking = false;
+        notAttacking = true;
+        charging = false;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         golemBossRoom = GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<GolemBossRoom>();
         animator = GetComponent<Animator>();
         animator.SetInteger("Attack", 0);
+        lastAttack = -1;
     }
-    private void FixedUpdate() {
+    private void Update() {
         if (health <= 0) {
             damage = 0;
+            speed = 0;
             golemBossRoom.CompleteFight();
             Death();
         }
@@ -48,80 +58,103 @@ public class Golem : Boss {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
 
-        if (switchAttackTime < 0) {
+        if (attackTime < 0 && notAttacking && start) {
             DoRandomAttack();
             notAttacking = false;
         } else {
-            switchAttackTime -= Time.deltaTime;
+            attackTime -= Time.deltaTime;
         }
 
+        if (charging) {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, 2.5f * Time.deltaTime);
+        }
         
         animator.SetFloat("Hori", target.position.x - transform.position.x);
         animator.SetFloat("Vert", target.position.y - transform.position.y);
     }
     public void StartMoving() {
-        switchAttackTime = resetSwitchAttackTime;
+        attackTime = resetAttackTime;
+        notAttacking = true;
         animator.SetTrigger("Start");
     }
     private void DoRandomAttack() {
-        int rand = Random.Range(1, 4);
-        if (rand == 1) {
-            StartCoroutine(Charge());
-        } else if (rand == 2) {
-            StartCoroutine(ShootBloodBullet());
-        } else {
-            StartCoroutine(SpawnCandling());
+        if (start) {
+            int rand = Random.Range(1, 4);
+            while (rand == lastAttack) { //Don't trigger the same attack twice
+                rand = Random.Range(1, 4);
+            }
+            Debug.Log("triggered!" + rand);
+            if (rand == 1) {
+                StartCoroutine(Charge());
+            } else if (rand == 2) {
+                StartCoroutine(ShootBloodBullet());
+            } else {
+                StartCoroutine(SpawnCandling());
+            }
         }
     }
     private IEnumerator Charge() {
         //Getting ready to charge
 
+        yield return new WaitForSeconds(2f);
         //Charge
-
+        animator.SetTrigger("Charge");
+        charging = true;
+        yield return new WaitForSeconds(5f);
+        charging = false;
         //Breathing in and out heavily
         animator.SetTrigger("Rest");
         yield return new WaitForSeconds(restTime);
         //End
         animator.SetInteger("Attack", 0);
         animator.SetTrigger("Walking");
-        switchAttackTime = resetSwitchAttackTime;
+        attackTime = resetAttackTime;
         notAttacking = true;
     }
     private IEnumerator ShootBloodBullet() {
         //Getting ready to shoot
-
+        animator.SetInteger("Attack", 2);
+        yield return new WaitForSeconds(2f);
+        animator.SetTrigger("Shoot");
         //Shoot
+        ActuallyShoot(target.position);
+        yield return new WaitForSeconds(1f); //EDIT THIS
+        animator.SetTrigger("Rest");
+        yield return new WaitForSeconds(restTime);
+        //End
+        animator.SetInteger("Attack", 0);
+        animator.SetTrigger("Walking");
+        attackTime = resetAttackTime;
+        notAttacking = true;
+    }
+    private void ActuallyShoot(Vector2 aim) {
         GameObject projectile1 = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
         GameObject projectile2 = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
         GameObject projectile3 = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
-        Vector2 v1 = new Vector2(target.position.x - transform.position.x, target.position.y - transform.position.y);
-        Vector2 v2 = new Vector2(target.position.x - transform.position.x + bulletTilt.x, target.position.y - transform.position.y + bulletTilt.y);
-        Vector2 v3 = new Vector2(target.position.x - transform.position.x - bulletTilt.x, target.position.y - transform.position.y - bulletTilt.y);
-        projectile1.GetComponent<Rigidbody2D>().velocity = v1;
-        projectile2.GetComponent<Rigidbody2D>().velocity = v2;
-        projectile3.GetComponent<Rigidbody2D>().velocity = v3;
-        yield return new WaitForSeconds(restTime);
-        //End
-        animator.SetInteger("Attack", 0);
-        animator.SetTrigger("Walking");
-        switchAttackTime = resetSwitchAttackTime;
-        notAttacking = true;
+        projectile1.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x, aim.y - transform.position.y).normalized * 2;
+        projectile2.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x + bulletTilt.x, aim.y - transform.position.y + bulletTilt.y).normalized * 2;
+        projectile3.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x - bulletTilt.x, aim.y - transform.position.y - bulletTilt.y).normalized * 2;
     }
     private IEnumerator SpawnCandling() {
         //Getting ready to spawn
-
+        animator.SetInteger("Attack", 3);
+        yield return new WaitForSeconds(2.7f);
         //Spawn
-
+        Instantiate(candling, new Vector2(transform.position.x + Random.Range(-1f, 1f), transform.position.y + Random.Range(-1f, 1f)), Quaternion.identity);
+        animator.SetTrigger("Rest");
         yield return new WaitForSeconds(restTime);
         //End
         animator.SetInteger("Attack", 0);
         animator.SetTrigger("Walking");
-        switchAttackTime = resetSwitchAttackTime;
+        attackTime = resetAttackTime;
         notAttacking = true;
 
         yield return null;
     }
     private IEnumerator Death() {
+        if ((int) DataStorage.saveValues["waxDungeonGolem"] == 1) {
+            DataStorage.saveValues["waxDungeonGolem"] = 2;
+        }
         animator.SetTrigger("Death");
         //Wait for the animation to finish
         yield return new WaitForSeconds(5);

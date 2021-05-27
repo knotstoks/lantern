@@ -24,7 +24,7 @@ public class CandlingHive : Enemy {
         if (spawnTime > 0) {
             spawnTime -= Time.deltaTime;
         } else {
-            Instantiate(child, new Vector3(rb.position.x + Random.Range(-2f, 2f), rb.position.y + Random.Range(-2f, 2f), 0), transform.rotation);
+            Instantiate(child, new Vector2(rb.position.x + Random.Range(-2f, 2f), rb.position.y + Random.Range(-2f, 2f)), transform.rotation);
             GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(1);
             spawnTime = respawnTime;
         }

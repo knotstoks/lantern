@@ -3,9 +3,7 @@ using UnityEngine;
 
 public class BloodBullet : MonoBehaviour {
     [SerializeField] private float lifeTime;
-    private Rigidbody2D rb;
     private void Start() {
-        rb = gameObject.GetComponent<Rigidbody2D>();
         StartCoroutine(DeathDelay());
     }
     private IEnumerator DeathDelay() {
