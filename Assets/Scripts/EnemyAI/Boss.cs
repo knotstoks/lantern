@@ -23,6 +23,11 @@ public class Boss : MonoBehaviour {
             StartCoroutine(FlashRed());
         }
     }
+    private void OnCollisionStay2D(Collision2D other) {
+        if (other.gameObject.tag == "Player") {
+            other.gameObject.GetComponent<Player>().Damage(damage);
+        }
+    }
     public void Damage(int damage) {
         health -= damage;
         slider.value = health;

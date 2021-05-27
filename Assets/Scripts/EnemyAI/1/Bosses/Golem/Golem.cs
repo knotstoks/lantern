@@ -83,6 +83,7 @@ public class Golem : Boss {
             while (rand == lastAttack) { //Don't trigger the same attack twice
                 rand = Random.Range(1, 4);
             }
+            lastAttack = rand;
             Debug.Log("triggered!" + rand);
             if (rand == 1) {
                 StartCoroutine(Charge());
@@ -131,7 +132,7 @@ public class Golem : Boss {
         GameObject projectile1 = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
         GameObject projectile2 = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
         GameObject projectile3 = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
-        projectile1.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x, aim.y - transform.position.y).normalized * 2;
+        projectile1.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x, aim.y - transform.position.y).normalized * 5;
         projectile2.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x + bulletTilt.x, aim.y - transform.position.y + bulletTilt.y).normalized * 2;
         projectile3.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x - bulletTilt.x, aim.y - transform.position.y - bulletTilt.y).normalized * 2;
     }
@@ -140,7 +141,9 @@ public class Golem : Boss {
         animator.SetInteger("Attack", 3);
         yield return new WaitForSeconds(2.7f);
         //Spawn
-        Instantiate(candling, new Vector2(transform.position.x + Random.Range(-1f, 1f), transform.position.y + Random.Range(-1f, 1f)), Quaternion.identity);
+        for (int i = 0; i < 3; i++) {
+            Instantiate(candling, new Vector2(transform.position.x + Random.Range(-1f, 1f), transform.position.y + Random.Range(-1f, 1f)), Quaternion.identity);
+        }
         animator.SetTrigger("Rest");
         yield return new WaitForSeconds(restTime);
         //End

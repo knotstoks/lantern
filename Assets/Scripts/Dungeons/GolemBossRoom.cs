@@ -29,7 +29,7 @@ public class GolemBossRoom : MonoBehaviour {
         audioSource.loop = true;
         audioSource.clip = music[0];
         audioSource.Play();
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.05f);
         StartGolemIntro();
     } 
     private void Update() {

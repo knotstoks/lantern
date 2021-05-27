@@ -8352,7 +8352,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!212 &1903626948
 SpriteRenderer:
@@ -8448,11 +8448,11 @@ MonoBehaviour:
   damage: 2
   slider: {fileID: 775072646}
   hitAudioSource: {fileID: 1903626953}
-  resetAttackTime: 10
+  resetAttackTime: 2
   restTime: 3
   bloodBullet: {fileID: 2625608992931897471, guid: 5f2e6ff0d11535742b4080d0b613ba24,
     type: 3}
-  bulletTilt: {x: -5, y: 5}
+  bulletTilt: {x: -1, y: 1}
   audioSource: {fileID: 1903626951}
   sounds:
   - {fileID: 0}
