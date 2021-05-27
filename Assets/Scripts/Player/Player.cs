@@ -19,6 +19,7 @@ public class Player : MonoBehaviour{
     [SerializeField] private float fireDelay;
     [SerializeField] private Color slowColour;
     [HideInInspector] public SaveSystem saveSystem;
+    [SerializeField] private GameObject saveText;
     public Image interactIcon; //Image for the interactable check
     public GameObject interactName; //GameObject for the interact icon
     public Text interactText; //Text for the interact icon
@@ -51,13 +52,13 @@ public class Player : MonoBehaviour{
     private AudioSource audioSource;
     private void Start() {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
-        DataStorage.saveValues["health"] = 6;
-        DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
-        DataStorage.saveValues["facingDirection"] = 2;
-        PlayerPrefs.SetFloat("volume", 100f);
-        DataStorage.saveValues["progress"] = 3;
-        DataStorage.saveValues["blessings"] = 1;
+        // DataStorage.saveValues["health"] = 6;
+        // DataStorage.saveValues["maxHealth"] = 6;
+        // DataStorage.saveValues["position"] = new Vector2(4.2f, -4.5f);
+        // DataStorage.saveValues["facingDirection"] = 0;
+        // PlayerPrefs.SetFloat("volume", 100f);
+        // DataStorage.saveValues["progress"] = 3;
+        // DataStorage.saveValues["blessings"] = 1;
 
         invulTime = 0.5f;
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -76,6 +77,7 @@ public class Player : MonoBehaviour{
         allowCombat = false;
         pauseMenu.SetActive(false);
         quitMenu.SetActive(false);
+        saveText.SetActive(false);
         blackBackground.enabled = false;
         animator.SetFloat("LastMoveX", directions[(int) DataStorage.saveValues["facingDirection"]][0]);
         animator.SetFloat("LastMoveY", directions[(int) DataStorage.saveValues["facingDirection"]][1]);
@@ -184,7 +186,7 @@ public class Player : MonoBehaviour{
             rb.MovePosition(rb.position + (clampedMovement * speed * Time.fixedDeltaTime));
         }
 
-        if (allowCombat) {
+        if (allowCombat && !inDialogue) {
             shootVector.x = Input.GetAxisRaw("HorizontalShoot");
             shootVector.y = Input.GetAxisRaw("VerticalShoot");
 
@@ -266,23 +268,34 @@ public class Player : MonoBehaviour{
     //Coroutine to kill Player
     private IEnumerator KillPlayer() {
         inDialogue = true;
+        //ONLY FOR CURRENT BUILD!!!!!!!!!!
+        if ((int) DataStorage.saveValues["completedWaxDungeon"] == 0) {
+            DataStorage.saveValues["completedWaxDungeon"] = 1;
+        } 
+
         //First time you die
         if ((int) DataStorage.saveValues["blessings"] == 0) {
             DataStorage.saveValues["blessings"] = 1;
         }
-        //Let the animation Play Out
-        yield return new WaitForSeconds(2);
-        //Go to "You Lose" screen
+        //Go to "You Lose" screen #TODO: Track where the Player died
         DataStorage.saveValues["health"] = DataStorage.saveValues["maxHealth"];
         SaveGame(-11.2f, 2.2f, 3, "PriestOffice");
         DataStorage.saveValues["position"] = new Vector2(-11.2f, 2.2f);
         DataStorage.saveValues["facingDirection"] = 3;
         DataStorage.saveValues["currScene"] = "PriestOffice";
         DataStorage.saveValues["waxDungeonRoom"] = 0;
+        //Let the animation Play Out
+        yield return new WaitForSeconds(2);
 
         SceneManager.LoadScene("LoadingScreen");
     }
     public void SaveGame(float posX, float posY, int facingDirection, string currScene) {
         saveSystem.Save(posX, posY, facingDirection, currScene);
+        StartCoroutine(ShowSaveText());
+    }
+    private IEnumerator ShowSaveText() {
+        saveText.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        saveText.SetActive(false);
     }
 }

@@ -4029,7 +4029,7 @@ MonoBehaviour:
     sentences:
     - "Traditional training garb for an apprentice of our sect. It smells like it\u2019s
       never been washed."
-    - "Yuck.\r\nHonestly, I live amongst pigs.\r"
+    - "Yuck.\r Honestly, I live amongst pigs.\r"
   changeDialogue: []
   changeOvertime: 0
   reference: 

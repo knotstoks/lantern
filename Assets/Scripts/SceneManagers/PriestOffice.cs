@@ -49,6 +49,7 @@ public class PriestOffice : MonoBehaviour {
             }
         }
 
+        //Save game if finished tutorial and talked to priest
         if ((int) DataStorage.saveValues["progress"] == 1 && headPriest.GetComponent<NPC>().repeat) {
             DataStorage.saveValues["progress"] = 2;
             player.SaveGame(-11.2f, 2.2f, 3, "PriestOffice");

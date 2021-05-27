@@ -12,7 +12,7 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetFloat("positionX", posX);
         PlayerPrefs.SetFloat("positionY", posY);
         PlayerPrefs.SetString("currScene", currScene);
-        PlayerPrefs.SetFloat("facingDirection", facingDirection);
+        PlayerPrefs.SetInt("facingDirection", facingDirection);
         PlayerPrefs.SetInt("introSceneDone", (int) DataStorage.saveValues["introSceneDone"]);
         PlayerPrefs.SetInt("tutorialDojo", (int) DataStorage.saveValues["tutorialDojo"]);
         PlayerPrefs.SetInt("messHall", (int) DataStorage.saveValues["messHall"]);

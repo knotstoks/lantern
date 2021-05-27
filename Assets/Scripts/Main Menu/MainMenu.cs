@@ -86,7 +86,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["health"] = PlayerPrefs.GetInt("health");
         DataStorage.saveValues["maxHealth"] = PlayerPrefs.GetInt("maxHealth");
         DataStorage.saveValues["position"] = new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"));
-        DataStorage.saveValues["facingDirection"] = 2;
+        DataStorage.saveValues["facingDirection"] = PlayerPrefs.GetInt("facingDirection");
         DataStorage.saveValues["currScene"] = PlayerPrefs.GetString("currScene");
         DataStorage.saveValues["introSceneDone"] = PlayerPrefs.GetInt("introSceneDone");
         DataStorage.saveValues["messHall"] = PlayerPrefs.GetInt("messHall");
@@ -103,7 +103,7 @@ public class MainMenu : MonoBehaviour {
 
         yield return new WaitForSeconds(3);
 
-        SceneManager.LoadScene(PlayerPrefs.GetString("LoadingScreen"));
+        SceneManager.LoadScene("LoadingScreen");
     }
     public void QuitScreenActive() {
         standardSet.SetActive(false);

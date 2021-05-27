@@ -50,9 +50,9 @@ public class FastTravel : Interactable {
         // randArray[8] = 20;
         // DataStorage.saveValues["waxDungeonRandomArray"] = randArray;
 
-        DataStorage.saveValues["currScene"] = "WD1";
-        DataStorage.saveValues["position"] = new Vector2(-9f, 0f);
-        DataStorage.saveValues["facingDirection"] = 1;
+        DataStorage.saveValues["currScene"] = "WaxDungeonIntro";
+        DataStorage.saveValues["position"] = new Vector2(4.2f, -4.5f);
+        DataStorage.saveValues["facingDirection"] = 0;
 
         //Tracks if Player used Blessings
         if ((int) DataStorage.saveValues["maxHealth"] != 6 && (int) DataStorage.saveValues["usedBlessings"] == 0) {

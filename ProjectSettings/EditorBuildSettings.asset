@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Church Of Light/PriestOffice.unity
     guid: f8d6d0e7b2262bd4d8cdb4cc4d254619
   - enabled: 1
-    path: Assets/Scenes/Wax Dungeon/WaxDunegonIntro.unity
+    path: Assets/Scenes/Wax Dungeon/WaxDungeonIntro.unity
     guid: f332deb09b3f0a64cb9fe219b69ea5a6
   - enabled: 1
     path: Assets/Scenes/Wax Dungeon/WD1.unity
@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Wax Dungeon/WD4.unity
     guid: d14a0d08b279b58469addec6bcab8084
+  - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/BossGolem.unity
+    guid: d171d97172e7de043a8a54802881a9a0
   m_configObjects: {}

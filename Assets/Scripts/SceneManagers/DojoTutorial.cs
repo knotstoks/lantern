@@ -35,13 +35,13 @@ public class DojoTutorial : MonoBehaviour {
             DataStorage.saveValues["tutorialDojo"] = 2;
         }
 
+        //Finished the tutorial
         if (seniorWardenFrankie.GetComponent<NPC>().repeat && (int) DataStorage.saveValues["tutorialDojo"] == 2) {
             portalOut.SetActive(true);
             player.allowCombat = false;
             DataStorage.saveValues["progress"] = 1;
         }
     }
-
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player") {
             if (!triggerDummies && (int) DataStorage.saveValues["tutorialDojo"] == 1) { //if talked to frankie and havent summoned dummies

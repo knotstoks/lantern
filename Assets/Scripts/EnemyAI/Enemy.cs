@@ -7,8 +7,6 @@ public class Enemy : MonoBehaviour {
     [SerializeField] protected int health;
     [SerializeField] protected float speed;
     [SerializeField] protected int damage;
-    [SerializeField] protected float thrust;
-    [SerializeField] protected float knockTime;
     [SerializeField] protected AudioSource hitAudioSource;
     protected SpriteRenderer spriteRenderer;
     protected void GetSprite() {
@@ -23,21 +21,12 @@ public class Enemy : MonoBehaviour {
         if (other.tag == "Bullet") {
             Rigidbody2D bullet = other.GetComponent<Rigidbody2D>();
             StartCoroutine(FlashRed());
-            StartCoroutine(KnockCoroutine(bullet));
         }
     }
     private void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.tag == "Player") {
             other.gameObject.GetComponent<Player>().Damage(damage);
         }
-    }
-    private IEnumerator KnockCoroutine(Rigidbody2D bullet) {
-        Rigidbody2D enemy = this.GetComponent<Rigidbody2D>();
-        Vector2 forceDirection = transform.position - bullet.transform.position;
-        Vector2 force = forceDirection.normalized * thrust;
-        enemy.velocity = force;
-        yield return new WaitForSeconds(knockTime);
-        enemy.velocity = new Vector2();
     }
     private IEnumerator FlashRed() {
         spriteRenderer.color = Color.red;
