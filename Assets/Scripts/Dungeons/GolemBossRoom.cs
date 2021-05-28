@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GolemBossRoom : MonoBehaviour {
+    [SerializeField] private GameObject doorOut;
     [SerializeField] private Dialogue[] introDialogues;
     [SerializeField] private Dialogue outroDialogue;
     [SerializeField] private GameObject bossHPBar;
@@ -16,8 +17,9 @@ public class GolemBossRoom : MonoBehaviour {
     private AudioSource audioSource;
     private IEnumerator Start() {
         //DELETE AFTER!!!!!!!!!!!!!!!!
-        // DataStorage.saveValues["waxDungeonGolem"] = 0;
+        //DataStorage.saveValues["waxDungeonGolem"] = 0;
 
+        doorOut.SetActive(false);
         introDone = false;
         fightCompleted = false;
         line = 0;
@@ -82,5 +84,6 @@ public class GolemBossRoom : MonoBehaviour {
             candlings[i].GetComponent<Candling>().Damage(100);
         }
         dialogueManager.StartDialogue(outroDialogue);
+        doorOut.SetActive(true);
     }
 }

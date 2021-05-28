@@ -67,6 +67,11 @@ public class Golem : Boss {
         if (charging) {
             transform.position = Vector2.MoveTowards(transform.position, target.position, 2.5f * Time.deltaTime);
         }
+
+        //Enrage at 1/2 HP
+        if (health == 30) {
+            resetAttackTime = 5f;
+        }
         
         animator.SetFloat("Hori", target.position.x - transform.position.x);
         animator.SetFloat("Vert", target.position.y - transform.position.y);

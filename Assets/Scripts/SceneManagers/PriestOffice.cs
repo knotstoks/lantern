@@ -18,7 +18,6 @@ public class PriestOffice : MonoBehaviour {
         line = 0;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
-        Debug.Log(DataStorage.saveValues["progress"]);
         yield return new WaitForSeconds(0.05f);
 
         if ((int) DataStorage.saveValues["progress"] == 0) {
