@@ -6,7 +6,7 @@ public class Boss : MonoBehaviour {
     public int health;
     public float speed;
     public int damage;
-    public Slider slider;
+    public Slider slider; //health bar
     public AudioSource hitAudioSource;
     protected SpriteRenderer spriteRenderer;
     protected void GetSprite() {

@@ -10,7 +10,7 @@ public class PriestOffice : MonoBehaviour {
     private Player player;
     private DialogueManager dialogueManager;
     private int line;
-    private void Start() {
+    private IEnumerator Start() {
         // DataStorage.saveValues["progress"] = 3; //DELETE AFTER!!!!!!!!!
         // DataStorage.saveValues["blessings"] = 1; //DELETE AFTER!!!!
 
@@ -18,6 +18,8 @@ public class PriestOffice : MonoBehaviour {
         line = 0;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
+        Debug.Log(DataStorage.saveValues["progress"]);
+        yield return new WaitForSeconds(0.05f);
 
         if ((int) DataStorage.saveValues["progress"] == 0) {
             headPriest.SetActive(false);
@@ -39,10 +41,9 @@ public class PriestOffice : MonoBehaviour {
     private void Update() {
         //Blessing Tutorial
         if ((int) DataStorage.saveValues["blessings"] == 1 && Input.GetKeyDown(KeyCode.E)) {
-            if (line == 10) {
-                dialogueManager.DisplayNextSentence();
-                line = 0;
+            if (line == blessingDialogue.names.Length - 1) {
                 DataStorage.saveValues["blessings"] = 2;
+                dialogueManager.DisplayNextSentence();
             } else {
                 line++;
                 dialogueManager.DisplayNextSentence();

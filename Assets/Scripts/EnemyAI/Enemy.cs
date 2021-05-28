@@ -28,6 +28,11 @@ public class Enemy : MonoBehaviour {
             other.gameObject.GetComponent<Player>().Damage(damage);
         }
     }
+    private void OnCollisionStay2D(Collision2D other) {
+        if (other.gameObject.tag == "Player") {
+            other.gameObject.GetComponent<Player>().Damage(damage);
+        }
+    }
     private IEnumerator FlashRed() {
         spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.2f);

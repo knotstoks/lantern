@@ -52,11 +52,13 @@ public class Player : MonoBehaviour{
     private AudioSource audioSource;
     private void Start() {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
-        DataStorage.saveValues["health"] = 6;
-        DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(7f, -8f);
-        DataStorage.saveValues["facingDirection"] = 0;
-        PlayerPrefs.SetFloat("volume", 100f);
+        // DataStorage.saveValues["health"] = 6;
+        // DataStorage.saveValues["maxHealth"] = 6;
+        // DataStorage.saveValues["position"] = new Vector2(7f, -8f);
+        // DataStorage.saveValues["facingDirection"] = 0;
+        // PlayerPrefs.SetFloat("volume", 100f);
+        // DataStorage.saveValues["progress"] = 4;
+        // DataStorage.saveValues["blessings"] = 1;
 
         invulTime = 0.5f;
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -278,7 +280,7 @@ public class Player : MonoBehaviour{
         //Go to "You Lose" screen #TODO: Track where the Player died
         DataStorage.saveValues["health"] = DataStorage.saveValues["maxHealth"];
         SaveGame(-11.2f, 2.2f, 3, "PriestOffice");
-        DataStorage.saveValues["position"] = new Vector2(-11.2f, 2.2f);
+        DataStorage.saveValues["position"] = new Vector2(-10.2f, 2f);
         DataStorage.saveValues["facingDirection"] = 3;
         DataStorage.saveValues["currScene"] = "PriestOffice";
         DataStorage.saveValues["waxDungeonRoom"] = 0;

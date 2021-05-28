@@ -16,7 +16,7 @@ public class GolemBossRoom : MonoBehaviour {
     private AudioSource audioSource;
     private IEnumerator Start() {
         //DELETE AFTER!!!!!!!!!!!!!!!!
-        DataStorage.saveValues["waxDungeonGolem"] = 0;
+        // DataStorage.saveValues["waxDungeonGolem"] = 0;
 
         introDone = false;
         fightCompleted = false;

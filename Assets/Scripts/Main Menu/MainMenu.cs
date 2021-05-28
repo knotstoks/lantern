@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour {
     [SerializeField] private Slider volumeSlider;
     [SerializeField] private GameObject audioManager;
     private void Start() {
+        // PlayerPrefs.DeleteAll();
         standardSet.SetActive(true);
         hasSaveGame = PlayerPrefs.HasKey("savePresent");
         if (!hasSaveGame) {

@@ -19,7 +19,6 @@ public class Golem : Boss {
     [SerializeField] private float resetAttackTime;
     [SerializeField] private float restTime;
     [SerializeField] private GameObject bloodBullet;
-    [SerializeField] private Vector2 bulletTilt;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip[] sounds; //0 for footsteps, 1 for shooting, 2 for death
     [SerializeField] private GameObject candling;
@@ -115,10 +114,13 @@ public class Golem : Boss {
     private IEnumerator ShootBloodBullet() {
         //Getting ready to shoot
         animator.SetInteger("Attack", 2);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.4f);
         animator.SetTrigger("Shoot");
         //Shoot
-        ActuallyShoot(target.position);
+        for (int i = 0; i < 3; i++) {
+            ActuallyShoot(target.position);
+            yield return new WaitForSeconds(1f);
+        }
         yield return new WaitForSeconds(1f); //EDIT THIS
         animator.SetTrigger("Rest");
         yield return new WaitForSeconds(restTime);
@@ -129,21 +131,15 @@ public class Golem : Boss {
         notAttacking = true;
     }
     private void ActuallyShoot(Vector2 aim) {
-        GameObject projectile1 = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
-        GameObject projectile2 = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
-        GameObject projectile3 = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
-        projectile1.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x, aim.y - transform.position.y).normalized * 5;
-        projectile2.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x + bulletTilt.x, aim.y - transform.position.y + bulletTilt.y).normalized * 2;
-        projectile3.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x - bulletTilt.x, aim.y - transform.position.y - bulletTilt.y).normalized * 2;
+        GameObject projectile = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
+        projectile.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x, aim.y - transform.position.y).normalized * 5;
     }
     private IEnumerator SpawnCandling() {
         //Getting ready to spawn
         animator.SetInteger("Attack", 3);
         yield return new WaitForSeconds(2.7f);
         //Spawn
-        for (int i = 0; i < 3; i++) {
-            Instantiate(candling, new Vector2(transform.position.x + Random.Range(-1f, 1f), transform.position.y + Random.Range(-1f, 1f)), Quaternion.identity);
-        }
+        Instantiate(candling, new Vector2(transform.position.x + Random.Range(-1f, 1f), transform.position.y + Random.Range(-1f, 1f)), Quaternion.identity);
         animator.SetTrigger("Rest");
         yield return new WaitForSeconds(restTime);
         //End
