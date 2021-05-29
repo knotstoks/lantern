@@ -30,6 +30,7 @@ public class Manager1 : MonoBehaviour {
     [SerializeField] private AudioClip[] sounds; //0 - main music, 1 - finished music, 2 - spawn sounds
     [SerializeField] private GameObject spawnCircle;
     [SerializeField] private GameObject[] disable;
+    [SerializeField] private GameObject gate;
     private int spawnInt;
     private IEnumerator Start() {
         doorOut.SetActive(false);
@@ -68,6 +69,7 @@ public class Manager1 : MonoBehaviour {
             musicAudioSource.Play();
             //Animation of door opening
             doorOut.SetActive(true);
+            gate.GetComponent<Animator>().SetTrigger("Open");
         }
     }
 

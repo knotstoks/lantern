@@ -3389,6 +3389,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1166621228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 288758185031170232, guid: 78d309fb46419e742be6e674b244d552,
+    type: 3}
+  m_PrefabInstance: {fileID: 1414516213}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1414516213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9071,7 +9077,7 @@ MonoBehaviour:
   slider: {fileID: 775072646}
   hitAudioSource: {fileID: 1903626953}
   resetAttackTime: 2
-  restTime: 3
+  restTime: 1
   bloodBullet: {fileID: 2625608992931897471, guid: 5f2e6ff0d11535742b4080d0b613ba24,
     type: 3}
   audioSource: {fileID: 1903626951}
@@ -9081,6 +9087,7 @@ MonoBehaviour:
   - {fileID: 0}
   candling: {fileID: 8778221990329547578, guid: 0bb6d569d60f4b841b8adebe500437c2,
     type: 3}
+  puddle: {fileID: 872451287499997373, guid: b24210ce4b814d84da95fd03e2462f42, type: 3}
   start: 0
 --- !u!82 &1903626951
 AudioSource:
@@ -9300,6 +9307,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1301654517245915170, guid: e64bfecbcdef4ce4e8c53e31d3be7423,
+        type: 3}
+      propertyPath: doorOut
+      value: 
+      objectReference: {fileID: 1166621228}
     - target: {fileID: 1301654517245915170, guid: e64bfecbcdef4ce4e8c53e31d3be7423,
         type: 3}
       propertyPath: bossHPBar

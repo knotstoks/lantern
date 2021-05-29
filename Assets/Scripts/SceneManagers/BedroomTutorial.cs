@@ -9,7 +9,6 @@ public class BedroomTutorial : MonoBehaviour {
     private int line;
 
     private IEnumerator Start() {
-        // DataStorage.saveValues["introSceneDone"] = 0; //DELETE AFTER
         yield return new WaitForSeconds(0.05f);
         line = 0;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();

@@ -80,8 +80,10 @@ public class GolemBossRoom : MonoBehaviour {
         fightCompleted = true;
         bossHPBar.SetActive(false);
         GameObject[] candlings = GameObject.FindGameObjectsWithTag("Enemy");
-        for (int i = 0; i < candlings.Length; i++) {
-            candlings[i].GetComponent<Candling>().Damage(100);
+        if (candlings.Length != 0) {
+            for (int i = 0; i < candlings.Length; i++) {
+                candlings[i].GetComponent<GolemCandling>().Damage(100);
+            }
         }
         dialogueManager.StartDialogue(outroDialogue);
         doorOut.SetActive(true);

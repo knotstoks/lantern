@@ -22,6 +22,7 @@ public class Golem : Boss {
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip[] sounds; //0 for footsteps, 1 for shooting, 2 for death
     [SerializeField] private GameObject candling;
+    [SerializeField] private GameObject puddle;
     public bool start;
     private Transform target;
     private GolemBossRoom golemBossRoom;
@@ -30,7 +31,10 @@ public class Golem : Boss {
     private bool notAttacking;
     private bool charging;
     private int lastAttack;
+    private bool dead;
+    private float chargeSpeed = 2.5f;
     private void Start() {
+        dead = false;
         GetSprite();
         slider.minValue = 0;
         slider.maxValue = health;
@@ -45,11 +49,13 @@ public class Golem : Boss {
         lastAttack = -1;
     }
     private void Update() {
-        if (health <= 0) {
+        if (!dead && health <= 0) {
+            start = false;
+            dead = true;
             damage = 0;
             speed = 0;
             golemBossRoom.CompleteFight();
-            Death();
+            StartCoroutine(Death());
         }
 
         //Starts the Boss Fight
@@ -65,12 +71,12 @@ public class Golem : Boss {
         }
 
         if (charging) {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, 2.5f * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, target.position, chargeSpeed * Time.deltaTime);
         }
 
         //Enrage at 1/2 HP
         if (health == 30) {
-            resetAttackTime = 5f;
+            resetAttackTime = 3f;
         }
         
         animator.SetFloat("Hori", target.position.x - transform.position.x);
@@ -88,7 +94,6 @@ public class Golem : Boss {
                 rand = Random.Range(1, 4);
             }
             lastAttack = rand;
-            Debug.Log("triggered!" + rand);
             if (rand == 1) {
                 StartCoroutine(Charge());
             } else if (rand == 2) {
@@ -100,7 +105,7 @@ public class Golem : Boss {
     }
     private IEnumerator Charge() {
         //Getting ready to charge
-
+        animator.SetInteger("Attack", 1);
         yield return new WaitForSeconds(2f);
         //Charge
         animator.SetTrigger("Charge");
@@ -124,9 +129,8 @@ public class Golem : Boss {
         //Shoot
         for (int i = 0; i < 3; i++) {
             ActuallyShoot(target.position);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.7f);
         }
-        yield return new WaitForSeconds(1f); //EDIT THIS
         animator.SetTrigger("Rest");
         yield return new WaitForSeconds(restTime);
         //End
@@ -137,7 +141,7 @@ public class Golem : Boss {
     }
     private void ActuallyShoot(Vector2 aim) {
         GameObject projectile = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
-        projectile.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x, aim.y - transform.position.y).normalized * 5;
+        projectile.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x, aim.y - transform.position.y).normalized * 10;
     }
     private IEnumerator SpawnCandling() {
         //Getting ready to spawn
@@ -156,12 +160,16 @@ public class Golem : Boss {
         yield return null;
     }
     private IEnumerator Death() {
+        speed = 0f;
+        chargeSpeed = 0f;
         if ((int) DataStorage.saveValues["waxDungeonGolem"] == 1) {
             DataStorage.saveValues["waxDungeonGolem"] = 2;
         }
         animator.SetTrigger("Death");
         //Wait for the animation to finish
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(1.75f);
+        Instantiate(puddle, transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(0f);
         Destroy(gameObject);
     }
 }
