@@ -282,8 +282,8 @@ public class Player : MonoBehaviour{
         }
         //Go to "You Lose" screen #TODO: Track where the Player died
         DataStorage.saveValues["health"] = DataStorage.saveValues["maxHealth"];
-        SaveGame(-11.2f, 2.2f, 3, "PriestOffice");
-        DataStorage.saveValues["position"] = new Vector2(-10.2f, 2f);
+        SaveGame(-9.8f, 2.2f, 3, "PriestOffice");
+        DataStorage.saveValues["position"] = new Vector2(-9.8f, 2.2f);
         DataStorage.saveValues["facingDirection"] = 3;
         DataStorage.saveValues["currScene"] = "PriestOffice";
         DataStorage.saveValues["waxDungeonRoom"] = 0;
