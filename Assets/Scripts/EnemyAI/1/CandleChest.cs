@@ -84,8 +84,8 @@ public class CandleChest : Enemy {
     }
     private IEnumerator Death() {
         animator.SetTrigger("Death");
-        yield return new WaitForSeconds(0.6f);
         GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
+        yield return new WaitForSeconds(0.6f);
         Destroy(gameObject);
     }
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class WaxDungeonIntro : MonoBehaviour {
     [SerializeField] private Dialogue[] dialogues; //0 & 1 for tutorial (start and end), 2 for repeating it
@@ -11,7 +12,7 @@ public class WaxDungeonIntro : MonoBehaviour {
     private DialogueManager dialogueManager;
     private int tutorialInt;
     private AudioSource audioSource;
-    private void Start() {
+    private IEnumerator Start() {
         tutorialInt = 1;
         line = 0;
         inTutorialIntro = false;
@@ -20,6 +21,7 @@ public class WaxDungeonIntro : MonoBehaviour {
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
         audioSource = GetComponent<AudioSource>();
         audioSource.volume = PlayerPrefs.GetFloat("volume");
+        yield return new WaitForSeconds(0.2f);
 
         if ((int) DataStorage.saveValues["completedWaxDungeon"] == 0) { //Trigger first time
             StartDungeonTutorial();

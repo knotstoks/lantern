@@ -14,7 +14,7 @@ public class MiniWaxBomber : Enemy { //Super fast and explodes
     }
 
     private void Update() {
-        if (health <= 0) {
+        if (health <= 0 && !dead) {
             explosion.Play();
             dead = true;
             StartCoroutine(Explosion());
@@ -41,8 +41,8 @@ public class MiniWaxBomber : Enemy { //Super fast and explodes
     }
     private IEnumerator Death() {
         animator.SetBool("Dead", true);
-        yield return new WaitForSeconds(0.6f);
         GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
+        yield return new WaitForSeconds(0.6f);
         Destroy(gameObject);
     }
 }
