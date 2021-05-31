@@ -89,9 +89,9 @@ public class Golem : Boss {
     }
     private void DoRandomAttack() {
         if (start) {
-            int rand = Random.Range(1, 4);
+            int rand = Random.Range(1, 3);
             while (rand == lastAttack) { //Don't trigger the same attack twice
-                rand = Random.Range(1, 4);
+                rand = Random.Range(1, 3);
             }
             lastAttack = rand;
             if (rand == 1) {
@@ -106,7 +106,7 @@ public class Golem : Boss {
     private IEnumerator Charge() {
         //Getting ready to charge
         animator.SetInteger("Attack", 1);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.8f);
         //Charge
         animator.SetTrigger("Charge");
         charging = true;

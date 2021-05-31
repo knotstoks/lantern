@@ -34,6 +34,11 @@ public class NormalBullet : MonoBehaviour {
             Destroy(gameObject);
         }
 
+        if (other.tag == "Arm") { //Damages Four Arms
+            other.GetComponent<Arm>().Damage(1);
+            Destroy(gameObject);
+        }
+
         if (other.tag == "Invincible") { //Gets Destroyed when it hits something Invincible (eg. shields or walls)
             Destroy(gameObject);
         }

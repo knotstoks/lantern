@@ -227,7 +227,8 @@ public class Player : MonoBehaviour{
         updateHealth();
     }
     void Shoot(float x, float y) {
-        GameObject bullet = Instantiate(this.bullet, transform.position, transform.rotation) as GameObject;
+        Vector2 tempVector = new Vector2(transform.position.x, transform.position.y - 0.3f);
+        GameObject bullet = Instantiate(this.bullet, tempVector, transform.rotation) as GameObject;
         bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(
             (x < 0) ? Mathf.Floor(x) * bulletSpeed : Mathf.Ceil(x) * bulletSpeed,
             (y < 0) ? Mathf.Floor(y) * bulletSpeed : Mathf.Ceil(y) * bulletSpeed);

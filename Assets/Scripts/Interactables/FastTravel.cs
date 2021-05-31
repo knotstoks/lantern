@@ -22,34 +22,29 @@ public class FastTravel : Interactable {
         player.inDialogue = isOpen;
     }
     public void MoveToWaxDungeon() {
-        //Edit!!!!!!!!!!!!!!
-        // DataStorage.saveValues["currScene"] = "WaxDungeonIntro";
-        // DataStorage.saveValues["position"] = new Vector2(-9f, 0f);
-        // DataStorage.saveValues["facingDirection"] = 0;
+        //Generates the random array
+        int[] randArray = new int[9]; //9 - 11, 12 - 14, 15 - 17 || Bosses: 18, 19, 20
+        randArray[0] = Random.Range(9, 11);
+        randArray[1] = Random.Range(9, 11);
+        while (randArray[0] == randArray[1]) {
+            randArray[1] = Random.Range(9,11);
+        }
+        randArray[2] = 18;
+        randArray[3] = Random.Range(12, 14);
+        randArray[4] = Random.Range(12, 14);
+        while (randArray[3] == randArray[4]) {
+            randArray[4] = Random.Range(12,14);
+        }
+        randArray[5] = 19;
+        randArray[6] = Random.Range(15, 17);
+        randArray[7] = Random.Range(15, 17);
+        while (randArray[6] == randArray[7]) {
+            randArray[7] = Random.Range(15, 17);
+        }
+        randArray[8] = 20;
+        DataStorage.saveValues["waxDungeonRandomArray"] = randArray;
+
         DataStorage.saveValues["waxDungeonRoom"] = -1;
-
-        // //Generates the random array
-        // int[] randArray = new int[9]; //9 - 11, 12 - 14, 15 - 17 || Bosses: 18, 19, 20
-        // randArray[0] = Random.Range(9, 12);
-        // randArray[1] = Random.Range(9, 12);
-        // while (randArray[0] == randArray[1]) {
-        //     randArray[1] = Random.Range(9,12);
-        // }
-        // randArray[2] = 18;
-        // randArray[3] = Random.Range(12, 15);
-        // randArray[4] = Random.Range(12, 15);
-        // while (randArray[3] == randArray[4]) {
-        //     randArray[4] = Random.Range(12,15);
-        // }
-        // randArray[5] = 19;
-        // randArray[6] = Random.Range(9, 12);
-        // randArray[7] = Random.Range(9, 12);
-        // while (randArray[6] == randArray[7]) {
-        //     randArray[7] = Random.Range(9,12);
-        // }
-        // randArray[8] = 20;
-        // DataStorage.saveValues["waxDungeonRandomArray"] = randArray;
-
         DataStorage.saveValues["currScene"] = "WaxDungeonIntro";
         DataStorage.saveValues["position"] = new Vector2(4.2f, -4.5f);
         DataStorage.saveValues["facingDirection"] = 0;
