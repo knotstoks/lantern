@@ -15,11 +15,15 @@ public class MainMenu : MonoBehaviour {
     [SerializeField] private Slider volumeSlider;
     [SerializeField] private GameObject audioManager;
     private void Start() {
-        //PlayerPrefs.DeleteAll();
+        // PlayerPrefs.DeleteAll();
         standardSet.SetActive(true);
         hasSaveGame = PlayerPrefs.HasKey("savePresent");
         if (!hasSaveGame) {
             loadGameButton.enabled = false;
+            loadGameButton.GetComponentInChildren<Text>().text = "";
+        } else {
+            loadGameButton.enabled = true;
+            loadGameButton.GetComponentInChildren<Text>().text = "Load Game";
         }
         newGameWarning.SetActive(false);
         quitScreen.SetActive(false);
@@ -59,6 +63,8 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["maxHealth"] = 6;
         DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
         DataStorage.saveValues["facingDirection"] = 2;
+        DataStorage.saveValues["deaths"] = 0;
+        DataStorage.saveValues["blacksmith"] = 0;
         DataStorage.saveValues["currScene"] = "Bedroom";
         DataStorage.saveValues["introSceneDone"] = 0;
         DataStorage.saveValues["messHall"] = 0;
@@ -88,6 +94,8 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["maxHealth"] = PlayerPrefs.GetInt("maxHealth");
         DataStorage.saveValues["position"] = new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"));
         DataStorage.saveValues["facingDirection"] = PlayerPrefs.GetInt("facingDirection");
+        DataStorage.saveValues["deaths"] = PlayerPrefs.GetInt("deaths");
+        DataStorage.saveValues["blacksmith"] = PlayerPrefs.GetInt("blacksmith");
         DataStorage.saveValues["currScene"] = PlayerPrefs.GetString("currScene");
         DataStorage.saveValues["introSceneDone"] = PlayerPrefs.GetInt("introSceneDone");
         DataStorage.saveValues["messHall"] = PlayerPrefs.GetInt("messHall");

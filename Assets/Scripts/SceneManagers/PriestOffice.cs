@@ -7,6 +7,7 @@ public class PriestOffice : MonoBehaviour {
     [SerializeField] private GameObject blessingMenu;
     [SerializeField] private GameObject blessingOrb;
     [SerializeField] private Dialogue blessingDialogue;
+    [SerializeField] private Dialogue blacksmithDialogue;
     private Player player;
     private DialogueManager dialogueManager;
     private int line;
@@ -36,12 +37,29 @@ public class PriestOffice : MonoBehaviour {
             //Start Intro to Blessings cutscene
             StartBlessingTutorial();
         }
+
+        if ((int) DataStorage.saveValues["deaths"] >= 3) {
+            if ((int) DataStorage.saveValues["blacksmith"] == 0) {
+                StartBlacksmithTutorial();
+                DataStorage.saveValues["blacksmith"] = 1;
+            }
+        }
     }
     private void Update() {
         //Blessing Tutorial
         if ((int) DataStorage.saveValues["blessings"] == 1 && Input.GetKeyDown(KeyCode.E)) {
             if (line == blessingDialogue.names.Length - 1) {
                 DataStorage.saveValues["blessings"] = 2;
+                dialogueManager.DisplayNextSentence();
+            } else {
+                line++;
+                dialogueManager.DisplayNextSentence();
+            }
+        }
+
+        if ((int) DataStorage.saveValues["blacksmith"] == 1 && Input.GetKeyDown(KeyCode.E)) {
+            if (line == blacksmithDialogue.names.Length - 1) {
+                DataStorage.saveValues["blacksmith"] = 2;
                 dialogueManager.DisplayNextSentence();
             } else {
                 line++;
@@ -57,5 +75,8 @@ public class PriestOffice : MonoBehaviour {
     }
     private void StartBlessingTutorial() {
         dialogueManager.StartDialogue(blessingDialogue);
+    }
+    private void StartBlacksmithTutorial() {
+        dialogueManager.StartDialogue(blacksmithDialogue);
     }
 }

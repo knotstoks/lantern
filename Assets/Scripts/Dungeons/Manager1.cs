@@ -37,6 +37,7 @@ public class Manager1 : MonoBehaviour {
         spawnInt = 0;
         musicAudioSource.volume = PlayerPrefs.GetFloat("volume");
         sfx.volume = PlayerPrefs.GetFloat("volume");
+        sfx.clip = sounds[2];
         musicAudioSource.loop = true;
         musicAudioSource.clip = sounds[0];
         musicAudioSource.Play();

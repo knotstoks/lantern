@@ -16,6 +16,12 @@ public class DataStorage : MonoBehaviour {
     
     int facingDirection
 
+    int deaths;
+    after 3 deaths, trigger blacksmith
+
+    int blacksmith;
+    0 for haven't seen, 1 for in blacksmith dialogue with priest, 2 for priest told about it, 3 for seen blacksmith already
+
     int introSceneDone;
     0 for not done, 1 for done: triggers bedroom tutorial
 

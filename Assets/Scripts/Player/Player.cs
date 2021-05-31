@@ -54,13 +54,13 @@ public class Player : MonoBehaviour{
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
         // DataStorage.saveValues["health"] = 6;
         // DataStorage.saveValues["maxHealth"] = 6;
-        // DataStorage.saveValues["position"] = new Vector2(7f, -8f);
+        // DataStorage.saveValues["position"] = new Vector2(-9f, 0f);
         // DataStorage.saveValues["facingDirection"] = 0;
         // PlayerPrefs.SetFloat("volume", 1f);
         // DataStorage.saveValues["progress"] = 4;
         // DataStorage.saveValues["blessings"] = 1;
         // DataStorage.saveValues["tutorialDojo"] = 3;
-        // DataStorage.saveValues["waxDungeonGolem"] = 1;
+        // DataStorage.saveValues["waxDungeonGolem"] = 0;
         // DataStorage.saveValues["completedWaxDungeon"] = 0;
 
         invulTime = 0.5f;
@@ -271,6 +271,7 @@ public class Player : MonoBehaviour{
     }
     //Coroutine to kill Player
     private IEnumerator KillPlayer() {
+        DataStorage.saveValues["deaths"] = (int) DataStorage.saveValues["deaths"] + 1;
         inDialogue = true;
         //ONLY FOR CURRENT BUILD!!!!!!!!!!
         if ((int) DataStorage.saveValues["completedWaxDungeon"] == 0) {

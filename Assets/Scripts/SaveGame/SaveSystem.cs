@@ -11,6 +11,8 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetInt("maxHealth", player.maxHealth);
         PlayerPrefs.SetFloat("positionX", posX);
         PlayerPrefs.SetFloat("positionY", posY);
+        PlayerPrefs.SetInt("deaths", (int) DataStorage.saveValues["deaths"]);
+        PlayerPrefs.SetInt("blacksmith", (int) DataStorage.saveValues["blacksmith"]);
         PlayerPrefs.SetString("currScene", currScene);
         PlayerPrefs.SetInt("facingDirection", facingDirection);
         PlayerPrefs.SetInt("introSceneDone", (int) DataStorage.saveValues["introSceneDone"]);

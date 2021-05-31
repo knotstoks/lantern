@@ -148,11 +148,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  speed: 5
+  speed: 4
   damage: 1
   hitAudioSource: {fileID: 450860544304124511}
   animator: {fileID: 1983465472895642848}
-  resetTime: 3
+  resetTime: 8
 --- !u!95 &1983465472895642848
 Animator:
   serializedVersion: 3
