@@ -22,6 +22,12 @@ public class DataStorage : MonoBehaviour {
     int blacksmith;
     0 for haven't seen, 1 for in blacksmith dialogue with priest, 2 for priest told about it, 3 for seen blacksmith already
 
+    int upgrade;
+    0 for No Upgrade, 1 for Vampric Embrace, 2 for Fleet Foot, 3 for Nova Impact
+
+    int upgradeBar;
+    tracks upgrade progress till can trigger upgrade
+
     int introSceneDone;
     0 for not done, 1 for done: triggers bedroom tutorial
 

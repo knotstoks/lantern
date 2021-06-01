@@ -65,6 +65,8 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["facingDirection"] = 2;
         DataStorage.saveValues["deaths"] = 0;
         DataStorage.saveValues["blacksmith"] = 0;
+        DataStorage.saveValues["upgrade"] = 0;
+        DataStorage.saveValues["upgradeBar"] = 0;
         DataStorage.saveValues["currScene"] = "Bedroom";
         DataStorage.saveValues["introSceneDone"] = 0;
         DataStorage.saveValues["messHall"] = 0;
@@ -96,6 +98,8 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["facingDirection"] = PlayerPrefs.GetInt("facingDirection");
         DataStorage.saveValues["deaths"] = PlayerPrefs.GetInt("deaths");
         DataStorage.saveValues["blacksmith"] = PlayerPrefs.GetInt("blacksmith");
+        DataStorage.saveValues["upgrade"] = PlayerPrefs.GetInt("upgrade");
+        DataStorage.saveValues["upgradeBar"] = PlayerPrefs.GetInt("upgradeBar");
         DataStorage.saveValues["currScene"] = PlayerPrefs.GetString("currScene");
         DataStorage.saveValues["introSceneDone"] = PlayerPrefs.GetInt("introSceneDone");
         DataStorage.saveValues["messHall"] = PlayerPrefs.GetInt("messHall");

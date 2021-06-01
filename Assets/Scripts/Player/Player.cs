@@ -11,7 +11,7 @@ public class Player : MonoBehaviour{
     [SerializeField] private Sprite halfHeart;
     [SerializeField] private Sprite emptyHeart;
     [SerializeField] private float resetInvulTime;
-    [SerializeField] private float speed;
+    public float speed;
     [SerializeField] private float slowSpeed;
     [SerializeField] private float resetSlowTime;
     [SerializeField] private GameObject bullet;
@@ -20,6 +20,7 @@ public class Player : MonoBehaviour{
     [SerializeField] private Color slowColour;
     [HideInInspector] public SaveSystem saveSystem;
     [SerializeField] private GameObject saveText;
+    [SerializeField] private GameObject upgradeManager; //Manages upgrades for the player
     public Image interactIcon; //Image for the interactable check
     public GameObject interactName; //GameObject for the interact icon
     public Text interactText; //Text for the interact icon
@@ -47,21 +48,21 @@ public class Player : MonoBehaviour{
     };
     private float tempSpeed;
     private float slowTime;
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     private bool blinking; //States if player is blinking if damaged
     private AudioSource audioSource;
     private void Start() {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
-        // DataStorage.saveValues["health"] = 6;
-        // DataStorage.saveValues["maxHealth"] = 6;
-        // DataStorage.saveValues["position"] = new Vector2(-9f, 0f);
-        // DataStorage.saveValues["facingDirection"] = 0;
-        // PlayerPrefs.SetFloat("volume", 1f);
-        // DataStorage.saveValues["progress"] = 4;
-        // DataStorage.saveValues["blessings"] = 1;
-        // DataStorage.saveValues["tutorialDojo"] = 3;
-        // DataStorage.saveValues["waxDungeonGolem"] = 0;
-        // DataStorage.saveValues["completedWaxDungeon"] = 0;
+        DataStorage.saveValues["health"] = 6;
+        DataStorage.saveValues["maxHealth"] = 6;
+        DataStorage.saveValues["position"] = new Vector2(-9f, 0f);
+        DataStorage.saveValues["facingDirection"] = 0;
+        PlayerPrefs.SetFloat("volume", 1f);
+        DataStorage.saveValues["progress"] = 4;
+        DataStorage.saveValues["blessings"] = 1;
+        DataStorage.saveValues["tutorialDojo"] = 3;
+        DataStorage.saveValues["waxDungeonGolem"] = 0;
+        DataStorage.saveValues["completedWaxDungeon"] = 0;
 
         invulTime = 0.5f;
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -218,6 +219,10 @@ public class Player : MonoBehaviour{
                 health -= amt;
                 updateHealth();
                 audioSource.Play();
+
+                if (upgradeManager.GetComponent<Upgrades>().upgrade != 0) {
+                    upgradeManager.GetComponent<Upgrades>().LoseProgress();
+                } 
             }
         }
     }

@@ -13,6 +13,8 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetFloat("positionY", posY);
         PlayerPrefs.SetInt("deaths", (int) DataStorage.saveValues["deaths"]);
         PlayerPrefs.SetInt("blacksmith", (int) DataStorage.saveValues["blacksmith"]);
+        PlayerPrefs.SetInt("upgrade", (int) DataStorage.saveValues["upgrade"]);
+        PlayerPrefs.SetInt("upgradeBar", (int) DataStorage.saveValues["upgradeBar"]);
         PlayerPrefs.SetString("currScene", currScene);
         PlayerPrefs.SetInt("facingDirection", facingDirection);
         PlayerPrefs.SetInt("introSceneDone", (int) DataStorage.saveValues["introSceneDone"]);
