@@ -12,20 +12,17 @@ public class IntroCutscene : MonoBehaviour {
         StartCoroutine(DelayForVideo());
         StartCoroutine(FadeSkipText());
     }
-
     private void Update() {
         //Skip scene when 'Space' is pressed
         if (canSkip && Input.GetKeyDown(KeyCode.Space)) {
             SceneManager.LoadScene("Bedroom");
         }
     }
-
     //Coroutine to wait for the video to finish and then load the next scene
     private IEnumerator DelayForVideo() {
         yield return new WaitForSeconds(56); //Wait for cutscene to play out
         SceneManager.LoadScene("Bedroom");
     }
-
     //After 30s, fade the skip text away and disable skipping cutscene
     private IEnumerator FadeSkipText() {
         yield return new WaitForSeconds(30);

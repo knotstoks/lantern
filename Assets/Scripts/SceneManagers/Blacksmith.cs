@@ -1,18 +1,18 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Blacksmith : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class Blacksmith : MonoBehaviour {
+    [SerializeField] private GameObject canvas;
+    [SerializeField] private Text upgradeText;
+    private void Start() {
+        canvas.SetActive(false);
+        upgradeText.text = "";
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public IEnumerator DisplayChangeUpgrade(string t) {
+        upgradeText.text = t;
+        canvas.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        canvas.SetActive(false);
     }
 }

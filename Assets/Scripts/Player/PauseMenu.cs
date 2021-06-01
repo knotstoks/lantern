@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-
 public class PauseMenu : MonoBehaviour{
     private Player player;
     private bool isGamePaused; //boolean to check if game is paused

@@ -13,23 +13,37 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
     private Player player;
     private void Start() {
         player = GetComponentInParent<Player>();
+        slider.GetComponent<Slider>().gameObject.SetActive(false);
+        upgrade = (int) DataStorage.saveValues["upgrade"];
+        upgradeBar = (int) DataStorage.saveValues["upgradeBar"];
 
         if ((int) DataStorage.saveValues["blacksmith"] == 3) {
-            upgrade = (int) DataStorage.saveValues["upgrade"];
-            upgradeBar = (int) DataStorage.saveValues["updateBar"];
+            if (upgrade != 0) {
+                slider.GetComponent<Slider>().gameObject.SetActive(true);
+            }
             slider.value = upgradeBar;
-
         }
     }
     private void Update() {
-        if (upgradeBar == progressNeeded[upgrade] && Input.GetKeyDown(KeyCode.Space)) {
+        if (upgradeBar == progressNeeded[upgrade - 1] && Input.GetKeyDown(KeyCode.Space) && upgrade != 0) {
             DoUpgrade();
         }
     }
     public void ChangeUpgrade(int n) {
-        upgrade = n;
-        DataStorage.saveValues["upgrade"] = n;
-        slider.maxValue = progressNeeded[n];
+        if (n != 0) {
+            if (upgrade == 0) {
+                slider.GetComponent<Slider>().gameObject.SetActive(true);
+            }
+            upgradeBar = 0;
+            DataStorage.saveValues["upgradeBar"] = 0;
+            upgrade = n;
+            DataStorage.saveValues["upgrade"] = n;
+            slider.maxValue = progressNeeded[n];
+        } else {
+            upgrade = n;
+            DataStorage.saveValues["upgrade"] = n;
+            slider.GetComponent<Slider>().gameObject.SetActive(false);
+        }
     }
     public void ChargeUpgradeBar() {
         if (upgrade != 0) {

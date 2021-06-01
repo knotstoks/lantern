@@ -21,7 +21,6 @@ public class DojoTutorial : MonoBehaviour {
             triggerDummies = true;
         }
     }
-
     private void Update() {
         //Just came in and talked to Frankie
         if ((int) DataStorage.saveValues["tutorialDojo"] == 0 && seniorWardenFrankie.GetComponent<NPC>().repeat) {

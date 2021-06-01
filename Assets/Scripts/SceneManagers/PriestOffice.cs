@@ -14,7 +14,7 @@ public class PriestOffice : MonoBehaviour {
     private IEnumerator Start() {
         // DataStorage.saveValues["progress"] = 3; //DELETE AFTER!!!!!!!!!
         // DataStorage.saveValues["blessings"] = 1; //DELETE AFTER!!!!
-
+        
         blessingMenu.SetActive(false);
         line = 0;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
