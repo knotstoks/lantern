@@ -5,9 +5,8 @@ public class MeleeCultist : Enemy {
     [SerializeField] private Animator animator;
     private Transform target;
     private float attackTime;
-    private bool died;
     private void Start() {
-        GetSprite();
+        Initialize();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         died = false;
     }

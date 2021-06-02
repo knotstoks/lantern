@@ -31,11 +31,10 @@ public class Golem : Boss {
     private bool notAttacking;
     private bool charging;
     private int lastAttack;
-    private bool dead;
     private float chargeSpeed = 2.5f;
     private void Start() {
-        dead = false;
-        GetSprite();
+        died = false;
+        Initialize();
         slider.minValue = 0;
         slider.maxValue = health;
         attackTime = -1f;
@@ -49,9 +48,9 @@ public class Golem : Boss {
         lastAttack = -1;
     }
     private void Update() {
-        if (!dead && health <= 0) {
+        if (!died && health <= 0) {
             start = false;
-            dead = true;
+            died = true;
             damage = 0;
             speed = 0;
             golemBossRoom.CompleteFight();

@@ -10442,5 +10442,46 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3328845481680302514, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384639993287544603, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.1364008
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384639993287544603, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.1364008
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384639993287544603, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.745283
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447821799766108231, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447821799766108231, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168049695411364655, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168049695411364655, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -8924744748790823450, guid: 0be5788a99826454e957bf3f3c67c9f2,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff739d5aacc99f6469db80ad818d0730, type: 3}

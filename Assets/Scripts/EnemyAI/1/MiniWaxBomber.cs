@@ -5,23 +5,22 @@ public class MiniWaxBomber : Enemy { //Super fast and explodes
     [SerializeField] private Animator animator;
     [SerializeField] private AudioSource explosion;
     private Transform target;
-    private bool dead;
 
     private void Start() {
-        GetSprite();
-        dead = false;
+        Initialize();
+        died = false;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     private void Update() {
-        if (health <= 0 && !dead) {
+        if (health <= 0 && !died) {
             explosion.Play();
-            dead = true;
+            died = true;
             StartCoroutine(Explosion());
             StartCoroutine(Death());
         }
 
-        if (!dead && Vector2.Distance(transform.position, target.position) > 0) {
+        if (!died && Vector2.Distance(transform.position, target.position) > 0) {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
 

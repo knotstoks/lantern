@@ -12,7 +12,6 @@ public class CandleChest : Enemy {
     private float fireTime;
     private bool canMove;
     private Rigidbody2D rb;
-    private bool died;
     private Vector2[] shootDirection = {
         new Vector2(0, 1), //Up
         new Vector2(1, 0), //Right
@@ -20,7 +19,7 @@ public class CandleChest : Enemy {
         new Vector2(-1, 0) //Left
     };
     private void Start() {
-        GetSprite();
+        Initialize();
         audioSource.clip = soundEffects[0];
         audioSource.loop = true;
         audioSource.Play();

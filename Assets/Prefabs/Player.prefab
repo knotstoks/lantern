@@ -662,7 +662,7 @@ MonoBehaviour:
   slowColour: {r: 0.6719473, g: 0.69783837, b: 0.9433962, a: 1}
   saveSystem: {fileID: 0}
   saveText: {fileID: 8232173769569038472}
-  upgradeManager: {fileID: 0}
+  upgradeManager: {fileID: 5884099781950308498}
   interactIcon: {fileID: 7337467098095251201}
   interactName: {fileID: 6760374961199553686}
   interactText: {fileID: 3559961489100252521}
@@ -2271,7 +2271,7 @@ GameObject:
   - component: {fileID: 9168049695411364655}
   m_Layer: 0
   m_Name: Upgrades Manager
-  m_TagString: Untagged
+  m_TagString: Upgrades
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2303,8 +2303,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   superNova: {fileID: 0}
-  slider: {fileID: 0}
+  slider: {fileID: 3328845481680302514}
+  sliderImage: {fileID: 5217385678658260517}
+  sprites:
+  - {fileID: -8924744748790823450, guid: 0be5788a99826454e957bf3f3c67c9f2, type: 3}
+  - {fileID: 2399452942030021348, guid: 0be5788a99826454e957bf3f3c67c9f2, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   upgrade: 0
+  upgradeBar: 0
 --- !u!1 &6025488241683324180
 GameObject:
   m_ObjectHideFlags: 0
@@ -2856,7 +2865,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5215903654966725266
 RectTransform:
   m_ObjectHideFlags: 0

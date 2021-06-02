@@ -7,9 +7,8 @@ public class CandlingHive : Enemy {
     [SerializeField] private Animator animator;
     private float spawnTime;
     private Rigidbody2D rb;
-    private bool died;
     private void Start() {
-        GetSprite();
+        Initialize();
         spawnTime = respawnTime;
         rb = gameObject.GetComponent<Rigidbody2D>();
         died = false;

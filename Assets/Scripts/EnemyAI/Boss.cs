@@ -9,8 +9,11 @@ public class Boss : MonoBehaviour {
     public Slider slider; //health bar
     public AudioSource hitAudioSource;
     protected SpriteRenderer spriteRenderer;
-    protected void GetSprite() {
+    protected Upgrades upgradeManager;
+    protected bool died;
+    protected void Initialize() {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        upgradeManager = GameObject.FindGameObjectWithTag("Upgrades").GetComponent<Upgrades>();
     }
     private void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.tag == "Player") {
@@ -29,6 +32,7 @@ public class Boss : MonoBehaviour {
         }
     }
     public void Damage(int damage) {
+        upgradeManager.ChargeUpgradeBar();
         health -= damage;
         slider.value = health;
         hitAudioSource.Play();
