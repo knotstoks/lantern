@@ -1,8 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class Player : MonoBehaviour{
+public class Player : MonoBehaviour {
     public int health;
     public int maxHealth;
     [SerializeField] private Image[] hearts;
@@ -53,30 +53,20 @@ public class Player : MonoBehaviour{
     private void Start() {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
         DataStorage.saveValues["upgrade"] = 0;
-        DataStorage.saveValues["upgradeBar"] = 45;
+        DataStorage.saveValues["upgradeBar"] = 0;
         DataStorage.saveValues["health"] = 6;
         DataStorage.saveValues["maxHealth"] = 6;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        DataStorage.saveValues["position"] = new Vector2(-9f, 0f);
-=======
-        DataStorage.saveValues["position"] = new Vector2(7f, -8f);
->>>>>>> Stashed changes
-=======
-        DataStorage.saveValues["position"] = new Vector2(-9f, -4f);
->>>>>>> Stashed changes
+        DataStorage.saveValues["position"] = new Vector2(-9f, 2f);
         DataStorage.saveValues["facingDirection"] = 0;
         PlayerPrefs.SetFloat("volume", 1f);
-        DataStorage.saveValues["progress"] = 4;
+        DataStorage.saveValues["progress"] = 3;
         DataStorage.saveValues["blessings"] = 1;
         DataStorage.saveValues["tutorialDojo"] = 3;
-<<<<<<< Updated upstream
         DataStorage.saveValues["waxDungeonGolem"] = 0;
-=======
-        DataStorage.saveValues["waxDungeonGolem"] = 1;
->>>>>>> Stashed changes
         DataStorage.saveValues["completedWaxDungeon"] = 0;
-        DataStorage.saveValues["blacksmith"] = 3;
+        DataStorage.saveValues["blacksmith"] = 0;
+        DataStorage.saveValues["deaths"] = 3;
+        DataStorage.saveValues["blessings"] = 2;
 
 
         invulTime = 0.5f;

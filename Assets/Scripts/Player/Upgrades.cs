@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrace, 2 for Fleet Foot, 3 for Nova Impact
     [SerializeField] private GameObject superNova;
     [SerializeField] private Slider slider;
@@ -36,9 +35,9 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
         }
 
         if (upgradeBar == progressNeeded[upgrade] && upgrade != 0) {
-            sliderImage.sprite = sprites[upgrade + 1];
+            sliderImage.sprite = sprites[upgrade * 2];
         } else if (upgrade != 0 && upgradeBar < progressNeeded[upgrade]) {
-            sliderImage.sprite = sprites[upgrade];
+            sliderImage.sprite = sprites[upgrade * 2 - 1];
         }
     }
     public void ChangeUpgrade(int n) {
@@ -46,11 +45,11 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
             if (upgrade == 0) {
                 slider.GetComponent<Slider>().gameObject.SetActive(true);
             }
+            slider.maxValue = progressNeeded[n];
             upgradeBar = 0;
             DataStorage.saveValues["upgradeBar"] = 0;
             upgrade = n;
             DataStorage.saveValues["upgrade"] = n;
-            slider.maxValue = progressNeeded[n];
         } else {
             upgrade = n;
             DataStorage.saveValues["upgrade"] = n;
