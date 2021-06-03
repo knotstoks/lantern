@@ -751,7 +751,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 6741781093920069219}
   quitMenu: {fileID: 3346729690505848316}
   blackBackground: {fileID: 7668724869828505574}
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 3002714659163028179}
 --- !u!95 &3814385210919254229
 Animator:
   serializedVersion: 3

@@ -4039,8 +4039,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objDesc: Talk to Blacksmith Enzio
-  dialogue: []
-  repeatedDialogue: []
+  dialogue:
+  - names: []
+    sentences: []
+  - names: []
+    sentences: []
+  - names:
+    - Blacksmith Enzio
+    - Blacksmith Enzio
+    - Blacksmith Enzio
+    - Blacksmith Enzio
+    - Blacksmith Enzio
+    - 
+    - Lumin
+    sentences:
+    - Ah! You must be Lumin!
+    - "I had a chat with the Priest just now! He said he\u2019d send you to see me."
+    - You know, a Warden saved my father when he was a teenager while he was out
+      mining for coal. I have a great deal of respect for you all.
+    - "I\u2019d like to offer my services. During my travels, I have learned many
+      smithing techniques, and I can upgrade your Lantern to make it even more powerful."
+    - The possible upgrades that I can give you are found in the book on my right.
+      If you ever want me to remove the upgrades you have, you can use the anvil
+      on my left. You can only hold one upgrade at a time.
+    - Charge the special move meter by damaging mobs. When the meter is fully charged,
+      press 'Space' to unleash your lantern's upgraded power!
+    - Thank you Enzio, I will not forget your kindness.
+  - names:
+    - Blacksmith Enzio
+    sentences:
+    - Book to information on upgrades, anvil to remove upgrades! When you want to
+      select an upgrade, just walk to it and press 'E'! It's really that simple!
+  repeatedDialogue:
+  - names: []
+    sentences: []
+  - names: []
+    sentences: []
+  - names: []
+    sentences: []
+  - names:
+    - Blacksmith Enzio
+    sentences:
+    - Book to information on upgrades, anvil to remove upgrades! When you want to
+      select an upgrade, just walk to it and press 'E'! It's really that simple!
   reference: blacksmith
   animator: {fileID: 0}
   defaultFacing: []
@@ -4196,6 +4237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 270689049}
   upgradeText: {fileID: 1727683288}
+  blacksmithEnzio: {fileID: 0}
 --- !u!1 &1968627790
 GameObject:
   m_ObjectHideFlags: 0

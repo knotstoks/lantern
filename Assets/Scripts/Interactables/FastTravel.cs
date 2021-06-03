@@ -23,23 +23,23 @@ public class FastTravel : Interactable {
     }
     public void MoveToWaxDungeon() {
         //Generates the random array
-        int[] randArray = new int[9]; //9 - 11, 12 - 14, 15 - 17 || Bosses: 18, 19, 20
+        int[] randArray = new int[9]; //9 - 11, 13 - 15, 17 - 19 || Bosses: 12, 16, 20
         randArray[0] = Random.Range(9, 11);
         randArray[1] = Random.Range(9, 11);
         while (randArray[0] == randArray[1]) {
-            randArray[1] = Random.Range(9,11);
+            randArray[1] = Random.Range(9, 11);
         }
-        randArray[2] = 18;
-        randArray[3] = Random.Range(12, 14);
-        randArray[4] = Random.Range(12, 14);
+        randArray[2] = 12;
+        randArray[3] = Random.Range(13, 15);
+        randArray[4] = Random.Range(13, 15);
         while (randArray[3] == randArray[4]) {
-            randArray[4] = Random.Range(12,14);
+            randArray[4] = Random.Range(13, 15);
         }
-        randArray[5] = 19;
-        randArray[6] = Random.Range(15, 17);
-        randArray[7] = Random.Range(15, 17);
+        randArray[5] = 16;
+        randArray[6] = Random.Range(17, 19);
+        randArray[7] = Random.Range(17, 19);
         while (randArray[6] == randArray[7]) {
-            randArray[7] = Random.Range(15, 17);
+            randArray[7] = Random.Range(17, 19);
         }
         randArray[8] = 20;
         DataStorage.saveValues["waxDungeonRandomArray"] = randArray;
@@ -54,6 +54,9 @@ public class FastTravel : Interactable {
             DataStorage.saveValues["usedBlessings"] = 1;
         }
 
+        for (int i = 0; i < randArray.Length; i++) {
+            Debug.Log(randArray[i]);
+        }
         SceneManager.LoadScene("LoadingScreen");
     }
     public override void Interact() {
