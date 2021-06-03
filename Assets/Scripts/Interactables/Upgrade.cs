@@ -13,7 +13,9 @@ public class Upgrade : Interactable {
         blacksmith = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Blacksmith>();
     }
     public override void Interact() {
-        upgradeManager.ChangeUpgrade(upgradeNumber);
-        blacksmith.DisplayChangeUpgrade(upgradeTextDisplay);
+        if (upgradeManager.upgrade != upgradeNumber) {
+            upgradeManager.ChangeUpgrade(upgradeNumber);
+            StartCoroutine(blacksmith.DisplayChangeUpgrade(upgradeTextDisplay));
+        }
     }
 }

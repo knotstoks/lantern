@@ -9,12 +9,18 @@ public class Enemy : MonoBehaviour {
     [SerializeField] protected int damage;
     [SerializeField] protected AudioSource hitAudioSource;
     protected SpriteRenderer spriteRenderer;
-    protected void GetSprite() {
+    protected Upgrades upgradeManager;
+    protected bool died;
+    protected void Initialize() {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        upgradeManager = GameObject.FindGameObjectWithTag("Upgrades").GetComponent<Upgrades>();
     }
     public void Damage(int damage) {
-        health -= damage;
-        hitAudioSource.Play();
+        if (!died) {
+            upgradeManager.ChargeUpgradeBar();
+            health -= damage;
+            hitAudioSource.Play();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Wax Dungeon/WD2.unity
     guid: 381ab4107f6abcc4c868c57fa150a8cc
   - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/WD3.unity
+    guid: 7cd651d8f4eef4f41a2dad7714a534b6
+  - enabled: 1
     path: Assets/Scenes/Wax Dungeon/BossGolem.unity
     guid: d171d97172e7de043a8a54802881a9a0
   - enabled: 1

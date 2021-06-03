@@ -8,12 +8,11 @@ public class GolemCandling : Enemy {
     private Transform target;
     private Rigidbody2D rb;
     private Vector2 move;
-    private bool died;
     private void Start() {
         if (inIntro) {
             StopMoving();
         }
-        GetSprite();
+        Initialize();
         rb = gameObject.GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         died = false;

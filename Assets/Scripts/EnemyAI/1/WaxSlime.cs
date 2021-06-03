@@ -8,9 +8,8 @@ public class WaxSlime : Enemy {
     private float waitTime; //time variable
     private Vector2 pos;
     private Manager1 dungeonManager;
-    private bool died;
     private void Start() {
-        GetSprite();
+        Initialize();
         waitTime = 0.2f;
         dungeonManager = GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>();
         float x = transform.position.x;

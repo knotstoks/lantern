@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrainingDummy : Enemy {
     [SerializeField] private Sprite[] damaged;
     private void Start() {
-        GetSprite();
+        Initialize();
     }
     private void Update() {
         if (health == 4) {

@@ -14,6 +14,7 @@ TagManager:
   - WaxSpitter
   - SpitLaser
   - Boss
+  - Upgrades
   layers:
   - Default
   - TransparentFX
