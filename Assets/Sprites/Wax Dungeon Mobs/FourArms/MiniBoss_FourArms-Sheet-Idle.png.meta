@@ -1,79 +1,79 @@
 fileFormatVersion: 2
-guid: 48a82ecda18e4434a8aff80f83af1ffb
+guid: 98a380edc275fc84a935f4773972a857
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8552691400534187748
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_0
+      213: -6842333213597459640
+    second: MiniBoss_FourArms-Sheet-Idle_0
   - first:
-      213: -4721418715388547931
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_1
+      213: 5549180590520445096
+    second: MiniBoss_FourArms-Sheet-Idle_1
   - first:
-      213: -6023895170005892286
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_2
+      213: 532420876895738530
+    second: MiniBoss_FourArms-Sheet-Idle_2
   - first:
-      213: -7857309330524997786
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_3
+      213: -4334031626545789460
+    second: MiniBoss_FourArms-Sheet-Idle_3
   - first:
-      213: -1401667591138262956
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_4
+      213: -3741294036405442418
+    second: MiniBoss_FourArms-Sheet-Idle_4
   - first:
-      213: -6340306455861917131
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_5
+      213: -993692048053921974
+    second: MiniBoss_FourArms-Sheet-Idle_5
   - first:
-      213: 5950667562531973650
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_6
+      213: -1861949770052419922
+    second: MiniBoss_FourArms-Sheet-Idle_6
   - first:
-      213: -2803991557985727759
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_7
+      213: 3849555626954424196
+    second: MiniBoss_FourArms-Sheet-Idle_7
   - first:
-      213: 3822512787641697906
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_8
+      213: -598357522104274955
+    second: MiniBoss_FourArms-Sheet-Idle_8
   - first:
-      213: 5968336739730112727
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_9
+      213: -3147897669963280992
+    second: MiniBoss_FourArms-Sheet-Idle_9
   - first:
-      213: 7631432183865053561
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_10
+      213: -579798488929745819
+    second: MiniBoss_FourArms-Sheet-Idle_10
   - first:
-      213: 1502411377816441257
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_11
+      213: -7912204732101418877
+    second: MiniBoss_FourArms-Sheet-Idle_11
   - first:
-      213: 7503591003656393434
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_12
+      213: 3968242804165008963
+    second: MiniBoss_FourArms-Sheet-Idle_12
   - first:
-      213: -263928413762646749
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_13
+      213: 2635043805567902459
+    second: MiniBoss_FourArms-Sheet-Idle_13
   - first:
-      213: -5422818854873203195
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_14
+      213: 3186723017729759808
+    second: MiniBoss_FourArms-Sheet-Idle_14
   - first:
-      213: -5449514015561642225
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_15
+      213: 5950335905714433201
+    second: MiniBoss_FourArms-Sheet-Idle_15
   - first:
-      213: 2347101986983113077
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_16
+      213: 8764946514826903058
+    second: MiniBoss_FourArms-Sheet-Idle_16
   - first:
-      213: -2994106950617447479
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_17
+      213: -8891046757912102881
+    second: MiniBoss_FourArms-Sheet-Idle_17
   - first:
-      213: 2320306490967071950
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_18
+      213: -3555036206127408896
+    second: MiniBoss_FourArms-Sheet-Idle_18
   - first:
-      213: 678578316381967244
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_19
+      213: 410063028497906023
+    second: MiniBoss_FourArms-Sheet-Idle_19
   - first:
-      213: -319292418490111916
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_20
+      213: -7586611689938338816
+    second: MiniBoss_FourArms-Sheet-Idle_20
   - first:
-      213: -4246786062798947788
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_21
+      213: -7537054284078276534
+    second: MiniBoss_FourArms-Sheet-Idle_21
   - first:
-      213: 4767482673590726894
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_22
+      213: -8762681196332013738
+    second: MiniBoss_FourArms-Sheet-Idle_22
   - first:
-      213: 5874356335955968121
-    second: MiniBoss_FourArms-Sheet-Arms_Idle_23
+      213: 4354334560995649995
+    second: MiniBoss_FourArms-Sheet-Idle_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -104,7 +104,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -137,7 +137,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -149,19 +149,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -175,12 +163,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_0
+      name: MiniBoss_FourArms-Sheet-Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 1344
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -189,19 +177,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eed062c38341b670800000000000000
-      internalID: 8552691400534187748
+      spriteID: 84b9aa8c1362b01a0800000000000000
+      internalID: -6842333213597459640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_1
+      name: MiniBoss_FourArms-Sheet-Idle_1
       rect:
         serializedVersion: 2
-        x: 384
+        x: 448
         y: 1344
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -210,19 +198,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ac626981b62a7eb0800000000000000
-      internalID: -4721418715388547931
+      spriteID: 8a8a674a856a20d40800000000000000
+      internalID: 5549180590520445096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_2
+      name: MiniBoss_FourArms-Sheet-Idle_2
       rect:
         serializedVersion: 2
-        x: 768
+        x: 896
         y: 1344
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -231,19 +219,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2438b934243d66ca0800000000000000
-      internalID: -6023895170005892286
+      spriteID: 2aa5f5677f9836700800000000000000
+      internalID: 532420876895738530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_3
+      name: MiniBoss_FourArms-Sheet-Idle_3
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1344
         y: 1344
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -252,19 +240,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 667f1bf2bca35f290800000000000000
-      internalID: -7857309330524997786
+      spriteID: ce50e66c23d6ad3c0800000000000000
+      internalID: -4334031626545789460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_4
+      name: MiniBoss_FourArms-Sheet-Idle_4
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1792
         y: 1344
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -273,19 +261,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 450c60190c64c8ce0800000000000000
-      internalID: -1401667591138262956
+      spriteID: e8824c765e0441cc0800000000000000
+      internalID: -3741294036405442418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_5
+      name: MiniBoss_FourArms-Sheet-Idle_5
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 2240
         y: 1344
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -294,19 +282,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53a0c3beed4b208a0800000000000000
-      internalID: -6340306455861917131
+      spriteID: a479d9bd852b532f0800000000000000
+      internalID: -993692048053921974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_6
+      name: MiniBoss_FourArms-Sheet-Idle_6
       rect:
         serializedVersion: 2
         x: 0
         y: 896
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -315,19 +303,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21a6821ce94059250800000000000000
-      internalID: 5950667562531973650
+      spriteID: eaeb7669c860926e0800000000000000
+      internalID: -1861949770052419922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_7
+      name: MiniBoss_FourArms-Sheet-Idle_7
       rect:
         serializedVersion: 2
-        x: 384
+        x: 448
         y: 896
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -336,19 +324,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fa0111c8883619d0800000000000000
-      internalID: -2803991557985727759
+      spriteID: 48f79b7627e5c6530800000000000000
+      internalID: 3849555626954424196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_8
+      name: MiniBoss_FourArms-Sheet-Idle_8
       rect:
         serializedVersion: 2
-        x: 768
+        x: 896
         y: 896
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -357,19 +345,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27685c8b02b4c0530800000000000000
-      internalID: 3822512787641697906
+      spriteID: 5ffaa4ef00532b7f0800000000000000
+      internalID: -598357522104274955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_9
+      name: MiniBoss_FourArms-Sheet-Idle_9
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1344
         y: 896
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -378,19 +366,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d0c687a4aac3d250800000000000000
-      internalID: 5968336739730112727
+      spriteID: 0ad0f885fbb6054d0800000000000000
+      internalID: -3147897669963280992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_10
+      name: MiniBoss_FourArms-Sheet-Idle_10
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1792
         y: 896
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -399,19 +387,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97192ce532b48e960800000000000000
-      internalID: 7631432183865053561
+      spriteID: 564c802a85424f7f0800000000000000
+      internalID: -579798488929745819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_11
+      name: MiniBoss_FourArms-Sheet-Idle_11
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 2240
         y: 896
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -420,19 +408,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a111412033a9d410800000000000000
-      internalID: 1502411377816441257
+      spriteID: 3802ee087b3323290800000000000000
+      internalID: -7912204732101418877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_12
+      name: MiniBoss_FourArms-Sheet-Idle_12
       rect:
         serializedVersion: 2
         x: 0
         y: 448
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -441,19 +429,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad291c8134c122860800000000000000
-      internalID: 7503591003656393434
+      spriteID: 34e51c44ec7021730800000000000000
+      internalID: 3968242804165008963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_13
+      name: MiniBoss_FourArms-Sheet-Idle_13
       rect:
         serializedVersion: 2
-        x: 384
+        x: 448
         y: 448
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -462,19 +450,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32d8b8b8186565cf0800000000000000
-      internalID: -263928413762646749
+      spriteID: bf2e77e416e819420800000000000000
+      internalID: 2635043805567902459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_14
+      name: MiniBoss_FourArms-Sheet-Idle_14
       rect:
         serializedVersion: 2
-        x: 768
+        x: 896
         y: 448
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -483,19 +471,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50efdf99bf64eb4b0800000000000000
-      internalID: -5422818854873203195
+      spriteID: 04ad75d53b3893c20800000000000000
+      internalID: 3186723017729759808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_15
+      name: MiniBoss_FourArms-Sheet-Idle_15
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1344
         y: 448
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -504,19 +492,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0f8fe720ef6f54b0800000000000000
-      internalID: -5449514015561642225
+      spriteID: 1bc6c52eaf6d39250800000000000000
+      internalID: 5950335905714433201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_16
+      name: MiniBoss_FourArms-Sheet-Idle_16
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1792
         y: 448
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -525,19 +513,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 571fdb952d4929020800000000000000
-      internalID: 2347101986983113077
+      spriteID: 21e3e83aa6853a970800000000000000
+      internalID: 8764946514826903058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_17
+      name: MiniBoss_FourArms-Sheet-Idle_17
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 2240
         y: 448
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -546,19 +534,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c34be4879bc276d0800000000000000
-      internalID: -2994106950617447479
+      spriteID: f18b2499418ac9480800000000000000
+      internalID: -8891046757912102881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_18
+      name: MiniBoss_FourArms-Sheet-Idle_18
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -567,19 +555,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecc1024c572633020800000000000000
-      internalID: 2320306490967071950
+      spriteID: 0099f1ae769f9aec0800000000000000
+      internalID: -3555036206127408896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_19
+      name: MiniBoss_FourArms-Sheet-Idle_19
       rect:
         serializedVersion: 2
-        x: 384
+        x: 448
         y: 0
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -588,19 +576,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c83da3c226bca6900800000000000000
-      internalID: 678578316381967244
+      spriteID: 769732dd626d0b500800000000000000
+      internalID: 410063028497906023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_20
+      name: MiniBoss_FourArms-Sheet-Idle_20
       rect:
         serializedVersion: 2
-        x: 768
+        x: 896
         y: 0
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -609,19 +597,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 458eb60bc35a19bf0800000000000000
-      internalID: -319292418490111916
+      spriteID: 00c36641dd0f6b690800000000000000
+      internalID: -7586611689938338816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_21
+      name: MiniBoss_FourArms-Sheet-Idle_21
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1344
         y: 0
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -630,19 +618,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43af9c983926015c0800000000000000
-      internalID: -4246786062798947788
+      spriteID: a40ada8cf01076790800000000000000
+      internalID: -7537054284078276534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_22
+      name: MiniBoss_FourArms-Sheet-Idle_22
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1792
         y: 0
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -651,19 +639,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee074308b30892240800000000000000
-      internalID: 4767482673590726894
+      spriteID: 657a2ace0e3b46680800000000000000
+      internalID: -8762681196332013738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-Arms_Idle_23
+      name: MiniBoss_FourArms-Sheet-Idle_23
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 2240
         y: 0
-        width: 384
+        width: 448
         height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -672,8 +660,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97088b0c6f7e58150800000000000000
-      internalID: 5874356335955968121
+      spriteID: bc92a558634bd6c30800000000000000
+      internalID: 4354334560995649995
       vertices: []
       indices: 
       edges: []
