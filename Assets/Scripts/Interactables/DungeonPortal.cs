@@ -92,7 +92,7 @@ public class DungeonPortal : Interactable {
         Debug.Log(pos);
     }
     public override void Interact() {
-        DataStorage.saveValues["waxDungeonRoom"] = nextRoom + 1;
+        DataStorage.saveValues["waxDungeonRoom"] = nextRoom;
         DataStorage.saveValues["facingDirection"] = facingWay;
         DataStorage.saveValues["position"] = pos;
         DataStorage.saveValues["currScene"] = nextScene;
