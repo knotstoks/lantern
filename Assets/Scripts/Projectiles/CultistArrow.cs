@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CultistArrow : MonoBehaviour {
@@ -7,12 +6,11 @@ public class CultistArrow : MonoBehaviour {
     [SerializeField] private Animator animator;
     private Rigidbody2D rb;
 
-    private void Start() {
+    private IEnumerator Start() {
         rb = gameObject.GetComponent<Rigidbody2D>();
         StartCoroutine(DeathDelay());
-    }
 
-    private void FixedUpdate() {
+        yield return new WaitForSeconds(0.01f);
         float hori = rb.velocity.x;
         float vert = rb.velocity.y;
 
@@ -28,11 +26,16 @@ public class CultistArrow : MonoBehaviour {
     public void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player") { //Damages Player
             other.GetComponent<Player>().Damage(1);
-            Destroy(gameObject);
+            StartCoroutine(Death());
         }
 
         if (other.tag == "Invincible") { //Gets Destroyed when it hits something Invincible (eg. shields or walls)
-            Destroy(gameObject);
+            StartCoroutine(Death());
         }
+    }
+    private IEnumerator Death() {
+        animator.SetTrigger("Collide");
+        yield return new WaitForSeconds(0.2f);
+        Destroy(gameObject);
     }
 }
