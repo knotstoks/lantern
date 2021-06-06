@@ -33,6 +33,7 @@ public class Player : MonoBehaviour {
     public GameObject pauseMenu;
     public GameObject quitMenu;
     public Image blackBackground; //for pause menu
+    public bool isSpeeding; //For Fleet Foot Upgrade
     private float invulTime; //if its > 0, cannot be damaged. < 0 can be damaged.
     private Vector2 boxSize = new Vector2(1.8f, 1.8f); //Box for raycasting interactables
     private Rigidbody2D rb;
@@ -52,8 +53,6 @@ public class Player : MonoBehaviour {
     private AudioSource audioSource;
     private void Start() {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
-        // DataStorage.saveValues["upgrade"] = 0;
-        // DataStorage.saveValues["upgradeBar"] = 0;
         // DataStorage.saveValues["health"] = 6;
         // DataStorage.saveValues["maxHealth"] = 6;
         // DataStorage.saveValues["position"] = new Vector2(-9f, 2f);
@@ -64,9 +63,8 @@ public class Player : MonoBehaviour {
         // DataStorage.saveValues["tutorialDojo"] = 3;
         // DataStorage.saveValues["waxDungeonGolem"] = 0;
         // DataStorage.saveValues["completedWaxDungeon"] = 0;
-        // DataStorage.saveValues["blacksmith"] = 0;
+        // DataStorage.saveValues["blacksmith"] = 3;
         // DataStorage.saveValues["deaths"] = 3;
-        // DataStorage.saveValues["blessings"] = 2;
         // DataStorage.saveValues["waxDungeonFourArms"] = 0;
 
 
@@ -172,6 +170,8 @@ public class Player : MonoBehaviour {
         if (slowTime > 0) {
             slowTime -= Time.deltaTime;
             speed = slowSpeed;
+        } else if (isSpeeding) {
+            speed = 5;
         } else {
             speed = tempSpeed;
             spriteRenderer.color = Color.white;

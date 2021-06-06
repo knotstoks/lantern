@@ -965,8 +965,8 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 20
+  m_WholeNumbers: 1
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2434,7 +2434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99ec21aa4d4ba764694aa7ba9c74622c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  superNova: {fileID: 0}
+  superNova: {fileID: 7819961418834671624, guid: 51a66d80b3d61924680f3ac1f6e9c0ec,
+    type: 3}
   slider: {fileID: 8708920872767658247}
   sliderImage: {fileID: 5217385678658260517}
   sprites:
@@ -2446,7 +2447,6 @@ MonoBehaviour:
   - {fileID: 300355676413647978, guid: b8a965f2e3c9aa145b8a9f0b5d95ddbf, type: 3}
   - {fileID: 1141670571489492922, guid: b8a965f2e3c9aa145b8a9f0b5d95ddbf, type: 3}
   upgrade: 0
-  upgradeBar: 0
 --- !u!1 &6025488241683324180
 GameObject:
   m_ObjectHideFlags: 0

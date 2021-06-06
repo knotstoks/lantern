@@ -45,6 +45,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Wax Dungeon/BossGolem.unity
     guid: d171d97172e7de043a8a54802881a9a0
   - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/WD4.unity
+    guid: d14a0d08b279b58469addec6bcab8084
+  - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/WD5.unity
+    guid: 790c9d1843eee9e4fa0f91f87df64f1b
+  - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/WD6.unity
+    guid: 5a6244153573342438fd7c9fc8817ebd
+  - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/BossFourArms.unity
+    guid: 1ed1c8975e82a2146a23e28473c4b374
+  - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/WD7.unity
+    guid: e371fcf061df2f94a95830a117c645d7
+  - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/WD8.unity
+    guid: 022c3de35226b994a962f897d3957a32
+  - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/WD9.unity
+    guid: 9634dc9b481f1644da57f157d7f7adc1
+  - enabled: 1
     path: Assets/Scenes/Prototypes/PlayTestingMainMenu.unity
     guid: 5a6a43623e0702b479f7351d9266c8d6
   m_configObjects: {}

@@ -10342,6 +10342,16 @@ PrefabInstance:
       propertyPath: m_Value
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3944680900382940677, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944680900382940677, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4384639993287544603, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_Color.b
@@ -10391,6 +10401,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dungeon Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 9073585327298716945, guid: 417abc4556635314cafaafbfb5d05027,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9073585327298716946, guid: 417abc4556635314cafaafbfb5d05027,
         type: 3}

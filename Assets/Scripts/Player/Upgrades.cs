@@ -7,7 +7,6 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
     [SerializeField] private Image sliderImage;
     [SerializeField] private Sprite[] sprites; //1 - 2 for VE, 3 - 4 for FF, 5 - 6 for NI
     public int upgrade;
-    public int upgradeBar;
     private int[] progressNeeded = {
         0, 50, 20, 30
     };
@@ -17,28 +16,29 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
         player = GetComponentInParent<Player>();
         slider.GetComponent<Slider>().gameObject.SetActive(false);
         upgrade = (int) DataStorage.saveValues["upgrade"];
-        upgradeBar = (int) DataStorage.saveValues["upgradeBar"];
 
         if ((int) DataStorage.saveValues["blacksmith"] == 3) {
             if (upgrade != 0) {
                 slider.GetComponent<Slider>().gameObject.SetActive(true);
             }
-            slider.value = upgradeBar;
+            slider.value = (int) DataStorage.saveValues["upgradeBar"];
+            slider.maxValue = progressNeeded[upgrade];
         }
     }
     private void Update() {
-        if (upgradeBar == progressNeeded[upgrade] && Input.GetKeyDown(KeyCode.Space) && upgrade != 0) {
+        if ((int) DataStorage.saveValues["upgradeBar"] == progressNeeded[upgrade] && Input.GetKeyDown(KeyCode.Space) && upgrade != 0) {
             DoUpgrade();
             slider.value = 0;
-            upgradeBar = 0;
             DataStorage.saveValues["upgradeBar"] = 0;
         }
 
-        if (upgradeBar == progressNeeded[upgrade] && upgrade != 0) {
+        if ((int) DataStorage.saveValues["upgradeBar"] == progressNeeded[upgrade] && upgrade != 0) {
             sliderImage.sprite = sprites[upgrade * 2];
-        } else if (upgrade != 0 && upgradeBar < progressNeeded[upgrade]) {
+        } else if (upgrade != 0 && (int) DataStorage.saveValues["upgradeBar"] < progressNeeded[upgrade]) {
             sliderImage.sprite = sprites[upgrade * 2 - 1];
         }
+
+        slider.value = (int) DataStorage.saveValues["upgradeBar"];
     }
     public void ChangeUpgrade(int n) {
         if (n != 0) {
@@ -46,7 +46,6 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
                 slider.GetComponent<Slider>().gameObject.SetActive(true);
             }
             slider.maxValue = progressNeeded[n];
-            upgradeBar = 0;
             DataStorage.saveValues["upgradeBar"] = 0;
             upgrade = n;
             DataStorage.saveValues["upgrade"] = n;
@@ -58,16 +57,14 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
     }
     public void ChargeUpgradeBar() {
         if (upgrade != 0) {
-            if (upgradeBar < progressNeeded[upgrade]) {
-                upgradeBar++;
-                DataStorage.saveValues["upgradeBar"] = upgradeBar;
-                slider.value = upgradeBar;
+            if ((int) DataStorage.saveValues["upgradeBar"] < progressNeeded[upgrade]) {
+                DataStorage.saveValues["upgradeBar"] = (int) DataStorage.saveValues["upgradeBar"] + 1;
+                slider.value = (int) DataStorage.saveValues["upgradeBar"];
             }
         }
     }
     public void DoUpgrade() {
-        upgradeBar = 0;
-        DataStorage.saveValues["upgradeBar"] = upgradeBar;
+        DataStorage.saveValues["upgradeBar"] = 0;
 
         if (upgrade == 1) {
             StartCoroutine(VampricEmbrace());
@@ -78,12 +75,11 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
         }
     }
     public void LoseProgress() {
-        upgradeBar -= 10;
-        if (upgradeBar < 0) {
-            upgradeBar = 0;
+        DataStorage.saveValues["upgradeBar"] = (int) DataStorage.saveValues["upgradeBar"] - 10;
+        if ((int) DataStorage.saveValues["upgradeBar"] < 0) {
+            DataStorage.saveValues["upgradeBar"] = 0;
         }
-        DataStorage.saveValues["upgradeBar"] = upgradeBar;
-        slider.value = upgradeBar;
+        slider.value = (int) DataStorage.saveValues["upgradeBar"];
     }
     private IEnumerator VampricEmbrace() {
         player.Heal(2);
@@ -92,9 +88,9 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
         player.spriteRenderer.color = Color.white;
     }
     private IEnumerator FleetFoot() {
-        player.speed = 5;
+        player.isSpeeding = true;
         yield return new WaitForSeconds(5f);
-        player.speed = 3;
+        player.isSpeeding = false;
     }
     private void NovaImpact() {
         Instantiate(superNova, transform.position, Quaternion.identity);
