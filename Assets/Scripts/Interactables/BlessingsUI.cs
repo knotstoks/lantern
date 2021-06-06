@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BlessingsUI : Interactable {
+    [SerializeField] private GameObject noBlessing;
     [SerializeField] private GameObject blessingMenu;
     private bool isOpen;
     private Player player;
@@ -14,6 +15,8 @@ public class BlessingsUI : Interactable {
         isOpen = !isOpen;
         blessingMenu.SetActive(isOpen);
         player.inDialogue = isOpen;
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(noBlessing);
     }   
     public void GiveBlessing(int n) {
         player.SetMaxHealth(n);

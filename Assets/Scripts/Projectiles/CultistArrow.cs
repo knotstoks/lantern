@@ -34,6 +34,7 @@ public class CultistArrow : MonoBehaviour {
         }
     }
     private IEnumerator Death() {
+        rb.velocity = Vector2.zero;
         animator.SetTrigger("Collide");
         yield return new WaitForSeconds(0.2f);
         Destroy(gameObject);

@@ -2,17 +2,15 @@ using System.Collections;
 using UnityEngine;
 /**
 Animation References:
-Trigger: Melee - Tries to attack the player with a melee attack
-Trigger: Idle - Goes to Idle Mode
 Trigger: Death - Destroys Arm
+Trigger: Glow - Sets Arms to glowing
 
 Int: State - 1 for untouched, 2 for some cracked, 3 for very cracked
 **/
 
-public abstract class Arm : MonoBehaviour { //Tag as "Enemy"
+public abstract class Arm : MonoBehaviour { //Tag as "Arm"
     [SerializeField] protected int health;
     [SerializeField] protected int damage;
-    [SerializeField] protected float resetMeleeAttackTime;
     [SerializeField] protected int element; //0 for fire, 1 for water, 2 for air, 3 for earth
     protected SpriteRenderer spriteRenderer;
     protected Animator animator;
@@ -32,7 +30,7 @@ public abstract class Arm : MonoBehaviour { //Tag as "Enemy"
     private void Update() {
         if (health <= 0 && !dead) {
             dead = true;
-            Death();
+            StartCoroutine(Death());
         }
 
         if (health == 20) {
@@ -43,28 +41,27 @@ public abstract class Arm : MonoBehaviour { //Tag as "Enemy"
             animator.SetInteger("State", 3);
         }
 
-        if (attackTime <= 0) {
-            if (start && !dead) { //Melee if player comes too close
-                //TODO: Melee Attack
-                StartCoroutine(DoMeleeAttack());
-                attackTime = resetMeleeAttackTime;
+        if (dead) {
+            if (attackTime <= 0) {
+                if (start && dead) { //Do Special Attack
+                    StartCoroutine(SpecialAttack());
+                    attackTime = Random.Range(5f, 10f);
+                }
+            } else {
+                attackTime -= Time.deltaTime;
             }
+        }
 
-            if (start && dead) { //Do Special Attack
-                StartCoroutine(SpecialAttack());
-                attackTime = Random.Range(5f, 10f);
-            }
-        } else {
-            attackTime -= Time.deltaTime;
+        if (dead) {
+            GetComponent<BoxCollider2D>().isTrigger = true;
         }
     }
     public abstract IEnumerator SpecialAttack();
-    public IEnumerator DoMeleeAttack() {
-        yield return null;
-    }
-    protected void Death() {
+    protected IEnumerator Death() {
         fourArms.UnlockArms();
         animator.SetTrigger("Death");
+        yield return new WaitForSeconds(1.22f);
+        animator.SetTrigger("Glow");
     }
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Bullet" && !invulnerable) {

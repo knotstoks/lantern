@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 public class PauseMenu : MonoBehaviour{
+    public GameObject resumeGameButton, quitYesButton;
     private Player player;
     private bool isGamePaused; //boolean to check if game is paused
     private bool onQuitScreen; //boolean to check if player is on quit screen
@@ -24,6 +26,8 @@ public class PauseMenu : MonoBehaviour{
         player.blackBackground.enabled = true;
         player.pauseMenu.SetActive(true);
         Time.timeScale = 0f;
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(resumeGameButton);
     }
 
     public void Resume() {
@@ -37,6 +41,8 @@ public class PauseMenu : MonoBehaviour{
         player.pauseMenu.SetActive(false);
         player.quitMenu.SetActive(true);
         onQuitScreen = true;
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(quitYesButton);
     }
 
     //Function to quit game and go to Main Menu
@@ -49,6 +55,8 @@ public class PauseMenu : MonoBehaviour{
         onQuitScreen = false;
         player.quitMenu.SetActive(false);
         player.pauseMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(resumeGameButton);
     }
 
 }

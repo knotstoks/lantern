@@ -2,9 +2,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour {
     private bool hasSaveGame;
+    public GameObject newGameButton, optionsButton, creditsButton, quitButton;
+    public GameObject restartGameYesButton, optionsBackButton, creditsBackButton, quitYesButton, volSlider;
     [SerializeField] private Button loadGameButton;
     [SerializeField] private GameObject standardSet;
     [SerializeField] private GameObject newGameWarning;
@@ -49,6 +52,8 @@ public class MainMenu : MonoBehaviour {
         } else {
             standardSet.SetActive(false);
             newGameWarning.SetActive(true);
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(restartGameYesButton);
         }
     }
     private void RestartGame() {
@@ -121,6 +126,8 @@ public class MainMenu : MonoBehaviour {
     public void QuitScreenActive() {
         standardSet.SetActive(false);
         quitScreen.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(quitYesButton);
     }
     public void QuitGame() {
         StartCoroutine(ReallyQuitGame());
@@ -132,25 +139,37 @@ public class MainMenu : MonoBehaviour {
     public void CloseNewGameWarning() {
         newGameWarning.SetActive(false);
         standardSet.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(newGameButton);
     }
     public void CloseQuitScreen() {
         quitScreen.SetActive(false);
         standardSet.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(quitButton);
     }
     public void OpenCredits() {
         standardSet.SetActive(false);
         credits.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(creditsBackButton);
     }
     public void CloseCredits() {
         credits.SetActive(false);
         standardSet.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(creditsButton);
     }
     public void OpenOptions() {
         standardSet.SetActive(false);
         optionsMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(volSlider);
     }
     public void CloseOptions() {
         optionsMenu.SetActive(false);
         standardSet.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(optionsButton);
     }
 }

@@ -53,10 +53,6 @@ public class FastTravel : Interactable {
         if ((int) DataStorage.saveValues["maxHealth"] != 6 && (int) DataStorage.saveValues["usedBlessings"] == 0) {
             DataStorage.saveValues["usedBlessings"] = 1;
         }
-
-        for (int i = 0; i < randArray.Length; i++) {
-            Debug.Log(randArray[i]);
-        }
         SceneManager.LoadScene("LoadingScreen");
     }
     public override void Interact() {

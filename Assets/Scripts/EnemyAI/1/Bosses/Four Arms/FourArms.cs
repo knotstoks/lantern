@@ -16,9 +16,9 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     [SerializeField] private Slider slider;
     [SerializeField] private int health;
     [SerializeField] private float resetHomingTime;
-    [SerializeField] private AudioClip[] sounds;
     [SerializeField] private GameObject homingBullet;
     [SerializeField] private Vector2[] armPositions;
+    [SerializeField] private GameObject deadFourArms;
     //Four arms needed
     [SerializeField] private GameObject fire;
     [SerializeField] private GameObject water;
@@ -36,9 +36,11 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     private AirArm airArm;
     private EarthArm earthArm;
     public bool targeting;
+    private bool start;
     private void Start() {
         targeting = false;
         dead = false;
+        start = false;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         animator = GetComponent<Animator>();
         attacks = new int[0];
@@ -52,13 +54,15 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     private void Update() {
         if (!dead && health <= 0) {
             dead = true;
-            Death();
+            StartCoroutine(Death());
         }
 
-        if (homingTime <= 0) {
-            ShootHomingMissle();
-        } else {
-            homingTime = resetHomingTime;
+        if (start) {
+            if (homingTime <= 0) {
+                ShootHomingMissle();
+            } else {
+                homingTime = resetHomingTime;
+            }
         }
     }
     public void Damage(int n) {
@@ -81,6 +85,7 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
         }
     }
     public void StartBoss() {
+        start = true;
         for (int i = 0; i < 4; i++) {
             arms[i].start = true;
         }
@@ -92,11 +97,13 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
             }
         }
     }
-    private void Death() {
+    private IEnumerator Death() {
         Destroy(fireArm);
         Destroy(waterArm);
         Destroy(airArm);
         Destroy(earthArm);
         animator.SetTrigger("Death");
+        yield return new WaitForSeconds(2f);
+        Instantiate(deadFourArms, transform.position, Quaternion.identity);
     }
 }

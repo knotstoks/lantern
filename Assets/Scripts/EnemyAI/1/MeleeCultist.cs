@@ -20,10 +20,12 @@ public class MeleeCultist : Enemy {
     }
 
     private void FixedUpdate() {
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        if (!died) {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
-        animator.SetFloat("Hori", target.position.x - transform.position.x);
-        animator.SetFloat("Vert", target.position.y - transform.position.y);
+            animator.SetFloat("Hori", target.position.x - transform.position.x);
+            animator.SetFloat("Vert", target.position.y - transform.position.y);
+        }
     }
     private IEnumerator Death() {
         animator.SetTrigger("Death");
