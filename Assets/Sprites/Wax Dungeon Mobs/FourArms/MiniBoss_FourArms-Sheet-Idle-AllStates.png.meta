@@ -1,0 +1,1848 @@
+fileFormatVersion: 2
+guid: 97715bb4a798fd545839688b1e466577
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1470677216333534133
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_0
+  - first:
+      213: 3751999843953047100
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_1
+  - first:
+      213: -2845768872529987796
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_2
+  - first:
+      213: -3831234522453821101
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_3
+  - first:
+      213: 5464180458028851885
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_4
+  - first:
+      213: 6448570847876561804
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_5
+  - first:
+      213: -5738122289639832345
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_6
+  - first:
+      213: -517966206810742026
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_7
+  - first:
+      213: -3819102675454404228
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_8
+  - first:
+      213: -8743860190748974585
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_9
+  - first:
+      213: -1294847290423815993
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_10
+  - first:
+      213: -6541103748701427808
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_11
+  - first:
+      213: -7025854246471119099
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_12
+  - first:
+      213: -4582972180143651559
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_13
+  - first:
+      213: -3565587466915652929
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_14
+  - first:
+      213: 388196312393356692
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_15
+  - first:
+      213: -2293625028572753674
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_16
+  - first:
+      213: 7264609968394206671
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_17
+  - first:
+      213: -2943446201298668338
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_18
+  - first:
+      213: 8950553779638505645
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_19
+  - first:
+      213: -2931583120015779751
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_20
+  - first:
+      213: 5347842881889567868
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_21
+  - first:
+      213: 8463956077663656371
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_22
+  - first:
+      213: -6880390460849708919
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_23
+  - first:
+      213: 5290221474014078551
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_24
+  - first:
+      213: 7427854379739132377
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_25
+  - first:
+      213: 3776635971358176566
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_26
+  - first:
+      213: -8942678150401417508
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_27
+  - first:
+      213: 8825834527477368167
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_28
+  - first:
+      213: -4476820612542223378
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_29
+  - first:
+      213: 3160455005395472187
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_30
+  - first:
+      213: 3305016174282077099
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_31
+  - first:
+      213: -3679689821901356862
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_32
+  - first:
+      213: 2376854407604769586
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_33
+  - first:
+      213: 8041221782856837419
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_34
+  - first:
+      213: -3001855119518839739
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_35
+  - first:
+      213: 5146556481933819145
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_36
+  - first:
+      213: -6022541546298412025
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_37
+  - first:
+      213: 526364257852495383
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_38
+  - first:
+      213: -895321309125305239
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_39
+  - first:
+      213: 6520333625270601529
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_40
+  - first:
+      213: -806061734001604336
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_41
+  - first:
+      213: -3176102981865037667
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_42
+  - first:
+      213: -7279650904193164641
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_43
+  - first:
+      213: -2428296459482886582
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_44
+  - first:
+      213: 3665095351064553625
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_45
+  - first:
+      213: 6297804274054724507
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_46
+  - first:
+      213: 5752636798076696147
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_47
+  - first:
+      213: 3077806794348427991
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_48
+  - first:
+      213: 8137108473462894797
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_49
+  - first:
+      213: -1456955735257868230
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_50
+  - first:
+      213: 2506424097810593780
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_51
+  - first:
+      213: -2868195040076332102
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_52
+  - first:
+      213: -7234805206849108903
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_53
+  - first:
+      213: 135756105704573286
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_54
+  - first:
+      213: 3038447929018903298
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_55
+  - first:
+      213: 7949185869929022317
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_56
+  - first:
+      213: 3249214828999327924
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_57
+  - first:
+      213: 1487303812178350550
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_58
+  - first:
+      213: 6570647513157014311
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_59
+  - first:
+      213: 3358035595302085557
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_60
+  - first:
+      213: -2833670700707459547
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_61
+  - first:
+      213: 7433970185129368931
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_62
+  - first:
+      213: 9009384650489448362
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_63
+  - first:
+      213: 4012172658761762311
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_64
+  - first:
+      213: -2072836170594545739
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_65
+  - first:
+      213: -6901291906054262759
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_66
+  - first:
+      213: -5536463872111934734
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_67
+  - first:
+      213: 2920994448539471634
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_68
+  - first:
+      213: 3354576927575374751
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_69
+  - first:
+      213: 4806841595528864449
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_70
+  - first:
+      213: -8704826216844336241
+    second: MiniBoss_FourArms-Sheet-Idle-AllStates_71
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b312d2e225e86410800000000000000
+      internalID: 1470677216333534133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c367428aaf7c11430800000000000000
+      internalID: 3751999843953047100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c277cf7b94cc188d0800000000000000
+      internalID: -2845768872529987796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_3
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3593de52088b4dac0800000000000000
+      internalID: -3831234522453821101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_4
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2e0751d2ba4db40800000000000000
+      internalID: 5464180458028851885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_5
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b3f98250ded7950800000000000000
+      internalID: 6448570847876561804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e44440fd281e50b0800000000000000
+      internalID: -5738122289639832345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2a36daa70dfc8f0800000000000000
+      internalID: -517966206810742026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_8
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79dbc4e952dffac0800000000000000
+      internalID: -3819102675454404228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7026ab4cb7197a680800000000000000
+      internalID: -8743860190748974585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_10
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c059efef37c70ee0800000000000000
+      internalID: -1294847290423815993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_11
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7ecabfbc45935a0800000000000000
+      internalID: -6541103748701427808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f4b6399c62f7e90800000000000000
+      internalID: -7025854246471119099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9154a0375130660c0800000000000000
+      internalID: -4582972180143651559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_14
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba58e2171d748ec0800000000000000
+      internalID: -3565587466915652929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_15
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49592574d76236500800000000000000
+      internalID: 388196312393356692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0d9fb40386b20e0800000000000000
+      internalID: -2293625028572753674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_17
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcdf5e5d64411d460800000000000000
+      internalID: 7264609968394206671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4be146647c627d0800000000000000
+      internalID: -2943446201298668338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da012629d31c63c70800000000000000
+      internalID: 8950553779638505645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_20
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9589ded3face057d0800000000000000
+      internalID: -2931583120015779751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_21
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7401a954ca573a40800000000000000
+      internalID: 5347842881889567868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b996ab6533067570800000000000000
+      internalID: 8463956077663656371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_23
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98021196451f380a0800000000000000
+      internalID: -6880390460849708919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756a0cdd664aa6940800000000000000
+      internalID: 5290221474014078551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_25
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d13ea3343a051760800000000000000
+      internalID: 7427854379739132377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_26
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63534ce086e496430800000000000000
+      internalID: 3776635971358176566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_27
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde1da04a9935e380800000000000000
+      internalID: -8942678150401417508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_28
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7658aa0ddb9ab7a70800000000000000
+      internalID: 8825834527477368167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_29
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb26424f532fd1c0800000000000000
+      internalID: -4476820612542223378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3fc33525113cdb20800000000000000
+      internalID: 3160455005395472187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_31
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3f00523b6cddd20800000000000000
+      internalID: 3305016174282077099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_32
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c003f15a9d1fecc0800000000000000
+      internalID: -3679689821901356862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_33
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2339a189d784cf020800000000000000
+      internalID: 2376854407604769586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_34
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29a0577b98289f60800000000000000
+      internalID: 8041221782856837419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_35
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c44ed5ca44756d0800000000000000
+      internalID: -3001855119518839739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d362a4add3c6740800000000000000
+      internalID: 5146556481933819145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_37
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704f9d75f52ab6ca0800000000000000
+      internalID: -6022541546298412025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_38
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71692c3f0850e4700800000000000000
+      internalID: 526364257852495383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_39
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c9fb1530e2393f0800000000000000
+      internalID: -895321309125305239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_40
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9370a4fc2e0ec7a50800000000000000
+      internalID: 6520333625270601529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_41
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0198cc5af1b40d4f0800000000000000
+      internalID: -806061734001604336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9020eb6a273ce3d0800000000000000
+      internalID: -3176102981865037667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_43
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a17b6621c79fa90800000000000000
+      internalID: -7279650904193164641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_44
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e0f2b5c35fc4ed0800000000000000
+      internalID: -2428296459482886582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_45
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9986324adc80dd230800000000000000
+      internalID: 3665095351064553625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_46
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9bf7fbbe9b466750800000000000000
+      internalID: 6297804274054724507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_47
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356b33760b875df40800000000000000
+      internalID: 5752636798076696147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dafb68f8f096ba20800000000000000
+      internalID: 3077806794348427991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_49
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0b39b5b01dce070800000000000000
+      internalID: 8137108473462894797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_50
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a389c726a7ad7cbe0800000000000000
+      internalID: -1456955735257868230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_51
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7ba76ff6b98c220800000000000000
+      internalID: 2506424097810593780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_52
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab386b1becf1238d0800000000000000
+      internalID: -2868195040076332102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_53
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954cc9afefec89b90800000000000000
+      internalID: -7234805206849108903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6698c98757d42e100800000000000000
+      internalID: 135756105704573286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_55
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b61b50b4cba2a20800000000000000
+      internalID: 3038447929018903298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_56
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d638cae9e6e215e60800000000000000
+      internalID: 7949185869929022317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_57
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0cf610ca7871d20800000000000000
+      internalID: 3249214828999327924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_58
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d199f5efe6f3a410800000000000000
+      internalID: 1487303812178350550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_59
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7231706b911af2b50800000000000000
+      internalID: 6570647513157014311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3291115932a9e20800000000000000
+      internalID: 3358035595302085557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_61
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e46e9d287cca8d0800000000000000
+      internalID: -2833670700707459547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_62
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d1b7b1f74ca2760800000000000000
+      internalID: 7433970185129368931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_63
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7c7491b93c70d70800000000000000
+      internalID: 9009384650489448362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_64
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706870796c91ea730800000000000000
+      internalID: 4012172658761762311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_65
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf81263c7ecb33e0800000000000000
+      internalID: -2072836170594545739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9107b58739fa930a0800000000000000
+      internalID: -6901291906054262759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_67
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f20cf611778a23b0800000000000000
+      internalID: -5536463872111934734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_68
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f451099f4798820800000000000000
+      internalID: 2920994448539471634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_69
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bf9db31f9dd8e20800000000000000
+      internalID: 3354576927575374751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_70
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2e111a6f455b240800000000000000
+      internalID: 4806841595528864449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Idle-AllStates_71
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f836c790dae323780800000000000000
+      internalID: -8704826216844336241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -23,11 +23,12 @@ public abstract class Arm : MonoBehaviour { //Tag as "Arm"
         start = false;
         invulnerable = false;
         dead = false;
-        fourArms = GameObject.FindGameObjectWithTag("Boss").GetComponent<FourArms>();
+        fourArms = GameObject.FindGameObjectWithTag("FourArms").GetComponent<FourArms>();
         animator = GetComponent<Animator>();
         animator.SetInteger("State", 1);
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    private void Update() {
+    protected void Update() {
         if (health <= 0 && !dead) {
             dead = true;
             StartCoroutine(Death());
@@ -63,23 +64,13 @@ public abstract class Arm : MonoBehaviour { //Tag as "Arm"
         yield return new WaitForSeconds(1.22f);
         animator.SetTrigger("Glow");
     }
-    private void OnTriggerEnter2D(Collider2D other) {
+    protected void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Bullet" && !invulnerable) {
             Rigidbody2D bullet = other.GetComponent<Rigidbody2D>();
             StartCoroutine(FlashRed());
         }
     }
-    private void OnCollisionEnter2D(Collision2D other) {
-        if (other.gameObject.tag == "Player") {
-            other.gameObject.GetComponent<Player>().Damage(damage);
-        }
-    }
-    private void OnCollisionStay2D(Collision2D other) {
-        if (other.gameObject.tag == "Player") {
-            other.gameObject.GetComponent<Player>().Damage(damage);
-        }
-    }
-    private IEnumerator FlashRed() {
+    protected IEnumerator FlashRed() {
         spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.2f);
         spriteRenderer.color = Color.white;

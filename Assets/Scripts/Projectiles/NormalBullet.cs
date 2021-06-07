@@ -7,40 +7,40 @@ public class NormalBullet : MonoBehaviour {
     private Rigidbody2D rb;
     private void Start() {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        StartCoroutine(DeathDelay());
-    }
-
-    private void FixedUpdate() {
         float hori = rb.velocity.x;
         float vert = rb.velocity.y;
-
         animator.SetFloat("BHori", hori);
         animator.SetFloat("BVert", vert);
+        StartCoroutine(DeathDelay());
     }
-
     private IEnumerator DeathDelay() {
         yield return new WaitForSeconds(lifeTime);
         Destroy(gameObject);
     }
-
     public void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Enemy") { //Damages Enemies
             other.GetComponent<Enemy>().Damage(1);
-            Destroy(gameObject);
+            StartCoroutine(Collided());
         }
 
         if (other.tag == "Boss") { //Damages Bosses
             other.GetComponent<Boss>().Damage(1);
-            Destroy(gameObject);
+            StartCoroutine(Collided());
         }
 
         if (other.tag == "Arm") { //Damages Four Arms
             other.GetComponent<Arm>().Damage(1);
-            Destroy(gameObject);
+            StartCoroutine(Collided());
         }
 
         if (other.tag == "Invincible") { //Gets Destroyed when it hits something Invincible (eg. shields or walls)
-            Destroy(gameObject);
+            StartCoroutine(Collided());
         }
+    }
+    private IEnumerator Collided() {
+        animator.SetTrigger("Collide");
+        rb.velocity = Vector2.zero;
+        yield return new WaitForSeconds(0.22f);
+        Destroy(gameObject);
     }
 }

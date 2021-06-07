@@ -37,19 +37,27 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     private EarthArm earthArm;
     public bool targeting;
     private bool start;
-    private void Start() {
+    private IEnumerator Start() {
         targeting = false;
         dead = false;
         start = false;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         animator = GetComponent<Animator>();
         attacks = new int[0];
+        arms = new Arm[4];
 
         //Assigning the arms
         fireArm = fire.GetComponent<FireArm>();
         waterArm = water.GetComponent<WaterArm>();
         earthArm = earth.GetComponent<EarthArm>();
         airArm = air.GetComponent<AirArm>();
+
+        yield return new WaitForSeconds(0.02f);
+
+        arms[0] = fireArm;
+        arms[1] = waterArm;
+        arms[2] = earthArm;
+        arms[3] = airArm;
     }
     private void Update() {
         if (!dead && health <= 0) {

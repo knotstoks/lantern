@@ -24,22 +24,22 @@ public class FastTravel : Interactable {
     public void MoveToWaxDungeon() {
         //Generates the random array
         int[] randArray = new int[9]; //9 - 11, 13 - 15, 17 - 19 || Bosses: 12, 16, 20
-        randArray[0] = Random.Range(9, 11);
-        randArray[1] = Random.Range(9, 11);
+        randArray[0] = Random.Range(9, 12);
+        randArray[1] = Random.Range(9, 12);
         while (randArray[0] == randArray[1]) {
-            randArray[1] = Random.Range(9, 11);
+            randArray[1] = Random.Range(9, 12);
         }
         randArray[2] = 12;
-        randArray[3] = Random.Range(13, 15);
-        randArray[4] = Random.Range(13, 15);
+        randArray[3] = Random.Range(13, 16);
+        randArray[4] = Random.Range(13, 16);
         while (randArray[3] == randArray[4]) {
-            randArray[4] = Random.Range(13, 15);
+            randArray[4] = Random.Range(13, 16);
         }
         randArray[5] = 16;
-        randArray[6] = Random.Range(17, 19);
-        randArray[7] = Random.Range(17, 19);
+        randArray[6] = Random.Range(17, 20);
+        randArray[7] = Random.Range(17, 20);
         while (randArray[6] == randArray[7]) {
-            randArray[7] = Random.Range(17, 19);
+            randArray[7] = Random.Range(17, 20);
         }
         randArray[8] = 20;
         DataStorage.saveValues["waxDungeonRandomArray"] = randArray;

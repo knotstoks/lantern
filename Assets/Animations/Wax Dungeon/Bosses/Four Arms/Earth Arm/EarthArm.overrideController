@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EarthArm
+  m_Controller: {fileID: 9100000, guid: baa9f3e7a937936458e3827cfee5da88, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: f9c17f9512825fa4fb4006db5abf6389, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d3f6abb369f72bc489e50b9aa66d67f6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 83445e612aa6cca4f9e524d845a6ea8f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 491905dddce7de04881d266fca15c904, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e276d7574fd133049acbc762d1b7cf2c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5906cdb8abc7c184787ec7f4c6b4c528, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 74aa9ff177099394bb51d4a3ff51e62b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 923a75a196e484e4986f032406238ead, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c1883433a0e821a42be08cba65e43e84, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f67f5b4dc2a845b4d98bca916d980b4a, type: 2}

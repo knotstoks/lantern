@@ -7,6 +7,7 @@ public class GolemBossRoom : MonoBehaviour {
     [SerializeField] private Dialogue outroDialogue;
     [SerializeField] private GameObject bossHPBar;
     [SerializeField] private AudioClip[] music; //0 for boss theme, 1 for end theme
+    [SerializeField] private GameObject gate;
     private bool introDone;
     private bool fightCompleted;
     private Golem golemBoss;
@@ -86,5 +87,6 @@ public class GolemBossRoom : MonoBehaviour {
         }
         dialogueManager.StartDialogue(outroDialogue);
         doorOut.SetActive(true);
+        gate.GetComponent<Animator>().SetTrigger("Open");
     }
 }

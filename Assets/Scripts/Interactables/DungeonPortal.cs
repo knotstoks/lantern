@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class DungeonPortal : Interactable {
@@ -34,7 +35,8 @@ public class DungeonPortal : Interactable {
         //1.9
         //Final Boss
     };
-    private void Start() {
+    private IEnumerator Start() {
+        yield return new WaitForSeconds(0.5f);
         int[] array = (int[]) DataStorage.saveValues["waxDungeonRandomArray"];
         nextRoom = (int) DataStorage.saveValues["waxDungeonRoom"] + 1;
 

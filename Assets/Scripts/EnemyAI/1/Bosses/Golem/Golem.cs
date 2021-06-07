@@ -88,9 +88,9 @@ public class Golem : Boss {
     }
     private void DoRandomAttack() {
         if (start) {
-            int rand = Random.Range(1, 3);
+            int rand = Random.Range(1, 4);
             while (rand == lastAttack) { //Don't trigger the same attack twice
-                rand = Random.Range(1, 3);
+                rand = Random.Range(1, 4);
             }
             lastAttack = rand;
             if (rand == 1) {
