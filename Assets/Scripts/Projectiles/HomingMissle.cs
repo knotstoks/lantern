@@ -22,7 +22,7 @@ public class HomingMissle : MonoBehaviour {
     }
     public void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player") { //Damages Player
-            other.GetComponent<Enemy>().Damage(1);
+            other.GetComponent<Player>().Damage(1);
             StartCoroutine(Death());
         }
 

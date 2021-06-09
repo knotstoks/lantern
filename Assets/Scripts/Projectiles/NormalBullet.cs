@@ -5,15 +5,12 @@ public class NormalBullet : MonoBehaviour {
     [SerializeField] private float lifeTime;
     [SerializeField] private Animator animator;
     private Rigidbody2D rb;
-    private void Start() {
+    private IEnumerator Start() {
         rb = gameObject.GetComponent<Rigidbody2D>();
         float hori = rb.velocity.x;
         float vert = rb.velocity.y;
         animator.SetFloat("BHori", hori);
         animator.SetFloat("BVert", vert);
-        StartCoroutine(DeathDelay());
-    }
-    private IEnumerator DeathDelay() {
         yield return new WaitForSeconds(lifeTime);
         Destroy(gameObject);
     }

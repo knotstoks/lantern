@@ -1,0 +1,2712 @@
+fileFormatVersion: 2
+guid: b58ebbcaacb43024594dcacc594d3005
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4852104649417231000
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_0
+  - first:
+      213: 1339229817710831051
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_1
+  - first:
+      213: 2756089803170376673
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_2
+  - first:
+      213: -934988907808275791
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_3
+  - first:
+      213: 4336629649573505318
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_4
+  - first:
+      213: -1830618297001461574
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_5
+  - first:
+      213: 3330697932043784461
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_6
+  - first:
+      213: 4215283873256446992
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_7
+  - first:
+      213: -2673124579020626760
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_8
+  - first:
+      213: -2842886250072356930
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_9
+  - first:
+      213: -5563718418417255988
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_10
+  - first:
+      213: 8026957604739164461
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_11
+  - first:
+      213: -6782168429254263391
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_12
+  - first:
+      213: 6795450325436353643
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_13
+  - first:
+      213: -7418009137443680581
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_14
+  - first:
+      213: 1357406840137863027
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_15
+  - first:
+      213: 1997514824279467509
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_16
+  - first:
+      213: 7453538427478554320
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_17
+  - first:
+      213: 8136977846281230474
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_18
+  - first:
+      213: -1617326999752788811
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_19
+  - first:
+      213: -5294689198817806270
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_20
+  - first:
+      213: -6352594356211518549
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_21
+  - first:
+      213: -3703565689509375868
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_22
+  - first:
+      213: 3957878954073117240
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_23
+  - first:
+      213: 6548532757618052454
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_24
+  - first:
+      213: 2970040439794996456
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_25
+  - first:
+      213: 1912842529946678937
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_26
+  - first:
+      213: 5729067044595510208
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_27
+  - first:
+      213: 7554322808324653441
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_28
+  - first:
+      213: 1896160097969108200
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_29
+  - first:
+      213: 7856813213441564984
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_30
+  - first:
+      213: -6747555932149393948
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_31
+  - first:
+      213: 2281946124415370747
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_32
+  - first:
+      213: -7500492420854289531
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_33
+  - first:
+      213: 3689882407651025552
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_34
+  - first:
+      213: -7190568763075459935
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_35
+  - first:
+      213: -835932378467557901
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_36
+  - first:
+      213: -5817541446916180432
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_37
+  - first:
+      213: -7710740179884267400
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_38
+  - first:
+      213: 1759509099071837317
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_39
+  - first:
+      213: 5352568270157628114
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_40
+  - first:
+      213: -4801396105635770021
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_41
+  - first:
+      213: -7863929488971594973
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_42
+  - first:
+      213: 8999910179486128423
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_43
+  - first:
+      213: 9132165961647842035
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_44
+  - first:
+      213: -3982627846743188352
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_45
+  - first:
+      213: -6008523394711786405
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_46
+  - first:
+      213: 51443279644166011
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_47
+  - first:
+      213: -8380256015920694091
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_48
+  - first:
+      213: 249339218294701546
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_49
+  - first:
+      213: -6050010732353767255
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_50
+  - first:
+      213: 237924228882841157
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_51
+  - first:
+      213: -1473453247595002582
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_52
+  - first:
+      213: 4126272562482882062
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_53
+  - first:
+      213: 1406356653987512511
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_54
+  - first:
+      213: -2349439113619520946
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_55
+  - first:
+      213: 6042214990110347242
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_56
+  - first:
+      213: 6192804231983119873
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_57
+  - first:
+      213: 3829789720725581611
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_58
+  - first:
+      213: 4586563370809391795
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_59
+  - first:
+      213: 7504318723441938873
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_60
+  - first:
+      213: 1515439798919975764
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_61
+  - first:
+      213: 6217365892251652664
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_62
+  - first:
+      213: 8039723011610589835
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_63
+  - first:
+      213: -8483601398083986240
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_64
+  - first:
+      213: 4182334893967265227
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_65
+  - first:
+      213: 1768687386224437024
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_66
+  - first:
+      213: -2681439068247768304
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_67
+  - first:
+      213: -8345414987471146005
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_68
+  - first:
+      213: -3753949527759681866
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_69
+  - first:
+      213: -7800408978248069300
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_70
+  - first:
+      213: -6421780161778054706
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_71
+  - first:
+      213: -1732662400411548297
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_72
+  - first:
+      213: 1244306467739491303
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_73
+  - first:
+      213: -7180466007340445996
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_74
+  - first:
+      213: -3716444909341193108
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_75
+  - first:
+      213: -6440951785140833863
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_76
+  - first:
+      213: -3418025244828882979
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_77
+  - first:
+      213: -8415961430039074617
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_78
+  - first:
+      213: -4678461747297653788
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_79
+  - first:
+      213: 8167150850584344148
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_80
+  - first:
+      213: 4117594716943613958
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_81
+  - first:
+      213: -6073377723242640472
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_82
+  - first:
+      213: -2238530021272776591
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_83
+  - first:
+      213: 5542603513187538829
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_84
+  - first:
+      213: 7927100853534047697
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_85
+  - first:
+      213: 1046762843529027151
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_86
+  - first:
+      213: 6353755541093740167
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_87
+  - first:
+      213: -1292206954373361031
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_88
+  - first:
+      213: -325049004413274995
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_89
+  - first:
+      213: 7683013017612919876
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_90
+  - first:
+      213: -4229630961363199118
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_91
+  - first:
+      213: -8245350986647544622
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_92
+  - first:
+      213: -2263464784022751564
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_93
+  - first:
+      213: 5885983374148888239
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_94
+  - first:
+      213: 8358600700849201962
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_95
+  - first:
+      213: 6721526394208481321
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_96
+  - first:
+      213: -2017858772565090554
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_97
+  - first:
+      213: 3774673406365325686
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_98
+  - first:
+      213: 8847157961818557637
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_99
+  - first:
+      213: -5576288144457408932
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_100
+  - first:
+      213: 7555806348892317172
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_101
+  - first:
+      213: 1570401281933073082
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_102
+  - first:
+      213: -3049202174914265094
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_103
+  - first:
+      213: -8940290869299060138
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_104
+  - first:
+      213: 2408615977182065130
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_105
+  - first:
+      213: 6963623232949358737
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_106
+  - first:
+      213: 3662432177914316250
+    second: MiniBoss_FourArms-Sheet-Melee-allStates_107
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a09899873265340800000000000000
+      internalID: 4852104649417231000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5e3457c66e59210800000000000000
+      internalID: 1339229817710831051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebeb07d2199f3620800000000000000
+      internalID: 2756089803170376673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_3
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b24829ca804603f0800000000000000
+      internalID: -934988907808275791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_4
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629614990bdce2c30800000000000000
+      internalID: 4336629649573505318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_5
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8b5ef9b565896e0800000000000000
+      internalID: -1830618297001461574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_6
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0119955f14093e20800000000000000
+      internalID: 3330697932043784461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_7
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c12e46952bf7a30800000000000000
+      internalID: 4215283873256446992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_8
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 4928
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b42c13bb5727ead0800000000000000
+      internalID: -2673124579020626760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7489f840a0c88d0800000000000000
+      internalID: -2842886250072356930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9f0f78393b9c2b0800000000000000
+      internalID: -5563718418417255988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d292991b96b756f60800000000000000
+      internalID: 8026957604739164461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_12
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad3e6f3fb5e0e1a0800000000000000
+      internalID: -6782168429254263391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_13
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c4270311a4e4e50800000000000000
+      internalID: 6795450325436353643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_14
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe4116edffed0990800000000000000
+      internalID: -7418009137443680581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_15
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f4a1a445a76d210800000000000000
+      internalID: 1357406840137863027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_16
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f521ce362998bb10800000000000000
+      internalID: 1997514824279467509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_17
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 4480
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6359195b9407760800000000000000
+      internalID: 7453538427478554320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88d0d85d3a5ce070800000000000000
+      internalID: 8136977846281230474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b43616a9a91e89e0800000000000000
+      internalID: -1617326999752788811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_20
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248fd54e93c7586b0800000000000000
+      internalID: -5294689198817806270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_21
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba37cdb271d07d7a0800000000000000
+      internalID: -6352594356211518549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4801872b0aa4a9cc0800000000000000
+      internalID: -3703565689509375868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_23
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832d58160f53de630800000000000000
+      internalID: 3957878954073117240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_24
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d45d1f8df01ea50800000000000000
+      internalID: 6548532757618052454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_25
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e496864b04b73920800000000000000
+      internalID: 2970040439794996456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_26
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 4032
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9963bb47528cb8a10800000000000000
+      internalID: 1912842529946678937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb23878f1cb18f40800000000000000
+      internalID: 5729067044595510208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18182d4d19856d860800000000000000
+      internalID: 7554322808324653441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_29
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4f7b41093805a10800000000000000
+      internalID: 1896160097969108200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_30
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831a7cd8df1090d60800000000000000
+      internalID: 7856813213441564984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_31
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5d72a31addb52a0800000000000000
+      internalID: -6747555932149393948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_32
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf58b5ee8e91baf10800000000000000
+      internalID: 2281946124415370747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_33
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b687ee1e5e8e790800000000000000
+      internalID: -7500492420854289531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_34
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092a00bff78153330800000000000000
+      internalID: 3689882407651025552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_35
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3584
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a40ed7aec7f53c90800000000000000
+      internalID: -7190568763075459935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd91354eeb2664f0800000000000000
+      internalID: -835932378467557901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_37
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036f27e60e0f34fa0800000000000000
+      internalID: -5817541446916180432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_38
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878aaaed8a2fdf490800000000000000
+      internalID: -7710740179884267400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_39
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5849e3d04380b6810800000000000000
+      internalID: 1759509099071837317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_40
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2c5ca8b74284a40800000000000000
+      internalID: 5352568270157628114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_41
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51d2a94ea30e5db0800000000000000
+      internalID: -4801396105635770021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_42
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323012f6bc5bdd290800000000000000
+      internalID: -7863929488971594973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_43
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72951baef9a16ec70800000000000000
+      internalID: 8999910179486128423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_44
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3136
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2eeedce88fbbe70800000000000000
+      internalID: 9132165961647842035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c1b42031ddab8c0800000000000000
+      internalID: -3982627846743188352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_46
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c64999ecf6d9ca0800000000000000
+      internalID: -6008523394711786405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_47
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b778549e363c6b000800000000000000
+      internalID: 51443279644166011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_48
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc7734dd8953bb80800000000000000
+      internalID: -8380256015920694091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_49
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed770fa2b4d57300800000000000000
+      internalID: 249339218294701546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_50
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8b0c21b4b0a0ca0800000000000000
+      internalID: -6050010732353767255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_51
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e350a53d64d4300800000000000000
+      internalID: 237924228882841157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_52
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2544f7f31e3d8be0800000000000000
+      internalID: -1473453247595002582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_53
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2688
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06ab3d9807734930800000000000000
+      internalID: 4126272562482882062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0ce64fce1648310800000000000000
+      internalID: 1406356653987512511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_55
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42cc43f29d156fd0800000000000000
+      internalID: -2349439113619520946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_56
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef411e35824ad350800000000000000
+      internalID: 6042214990110347242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_57
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10eb3ea53a241f550800000000000000
+      internalID: 6192804231983119873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_58
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f6a4cb575262530800000000000000
+      internalID: 3829789720725581611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_59
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba79e8c51fb6af30800000000000000
+      internalID: 4586563370809391795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_60
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1d1109e12b42860800000000000000
+      internalID: 7504318723441938873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_61
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4535d1dc77ce70510800000000000000
+      internalID: 1515439798919975764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_62
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2240
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8321a468655884650800000000000000
+      internalID: 6217365892251652664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a35979b75d29f60800000000000000
+      internalID: 8039723011610589835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_64
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc523bf971344a80800000000000000
+      internalID: -8483601398083986240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_65
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdc3a65d63aa0a30800000000000000
+      internalID: 4182334893967265227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_66
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0272f9e8ec3ab8810800000000000000
+      internalID: 1768687386224437024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_67
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013cc32df5d99cad0800000000000000
+      internalID: -2681439068247768304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_68
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3bf88e8412f2c80800000000000000
+      internalID: -8345414987471146005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_69
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b683253bca47ebc0800000000000000
+      internalID: -3753949527759681866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_70
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f81c4dc516fb390800000000000000
+      internalID: -7800408978248069300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_71
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1792
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9819787f041e6a0800000000000000
+      internalID: -6421780161778054706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7754bc31ab854f7e0800000000000000
+      internalID: -1732662400411548297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_73
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb5559c32aa44110800000000000000
+      internalID: 1244306467739491303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_74
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de84b6c53cd95c90800000000000000
+      internalID: -7180466007340445996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_75
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cc867ab098c6cc0800000000000000
+      internalID: -3716444909341193108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_76
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1334f1a742d96a0800000000000000
+      internalID: -6440951785140833863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_77
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd728a8362cb090d0800000000000000
+      internalID: -3418025244828882979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_78
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8e1274baf743b80800000000000000
+      internalID: -8415961430039074617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_79
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ebe11114d3c21fb0800000000000000
+      internalID: -4678461747297653788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_80
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1344
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456fb1c5d6c875170800000000000000
+      internalID: 8167150850584344148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60003704492a42930800000000000000
+      internalID: 4117594716943613958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_82
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab0a5b832707bba0800000000000000
+      internalID: -6073377723242640472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_83
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1701dfe4ec42fe0e0800000000000000
+      internalID: -2238530021272776591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_84
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87106e77884bec40800000000000000
+      internalID: 5542603513187538829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_85
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ddb7990a38b20e60800000000000000
+      internalID: 7927100853534047697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_86
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e10ac9249d68e00800000000000000
+      internalID: 1046762843529027151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_87
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78eef8040031d2850800000000000000
+      internalID: 6353755541093740167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_88
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97259441f98211ee0800000000000000
+      internalID: -1292206954373361031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_89
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 896
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d843a5517a13d7bf0800000000000000
+      internalID: -325049004413274995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444258712ab8f9a60800000000000000
+      internalID: 7683013017612919876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_91
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bd3f8dc055d45c0800000000000000
+      internalID: -4229630961363199118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_92
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcd470a6f0a29d80800000000000000
+      internalID: -8245350986647544622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_93
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6b7b275ce8690e0800000000000000
+      internalID: -2263464784022751564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_94
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6eff981b63fa150800000000000000
+      internalID: 5885983374148888239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_95
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23a2793d07bff370800000000000000
+      internalID: 8358600700849201962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_96
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9207533b4a8a74d50800000000000000
+      internalID: 6721526394208481321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_97
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f1a5e23202ff3e0800000000000000
+      internalID: -2017858772565090554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_98
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 448
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679d489c675526430800000000000000
+      internalID: 3774673406365325686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_99
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ccc6f1ca4b67ca70800000000000000
+      internalID: 8847157961818557637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_100
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ed4602a7b0d92b0800000000000000
+      internalID: -5576288144457408932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_101
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f52e5987dd9bd860800000000000000
+      internalID: 7555806348892317172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_102
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba507445af2bc510800000000000000
+      internalID: 1570401281933073082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_103
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afff2ebf6ce0fa5d0800000000000000
+      internalID: -3049202174914265094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_104
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652e2c272d4bde380800000000000000
+      internalID: -8940290869299060138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_105
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae17448487f1d6120800000000000000
+      internalID: 2408615977182065130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_106
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1909a9d7f62c3a060800000000000000
+      internalID: 6963623232949358737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet-Melee-allStates_107
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 384
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad50b8259a293d230800000000000000
+      internalID: 3662432177914316250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

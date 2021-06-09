@@ -24,6 +24,7 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     [SerializeField] private GameObject water;
     [SerializeField] private GameObject air;
     [SerializeField] private GameObject earth;
+    private Upgrades upgradeManager;
     private int[] attacks;
     private Arm[] arms;
     private bool dead;
@@ -38,6 +39,7 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     public bool targeting;
     private bool start;
     private IEnumerator Start() {
+        upgradeManager = GameObject.FindGameObjectWithTag("Upgrades").GetComponent<Upgrades>();
         targeting = false;
         dead = false;
         start = false;
@@ -76,6 +78,7 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     public void Damage(int n) {
         health -= n;
         slider.value = health;
+        upgradeManager.ChargeUpgradeBar();
     }
     public void LockArms(int n) { //0 for fire, 1 for water, 2 for air, 3 for earth
         targeting = true;
