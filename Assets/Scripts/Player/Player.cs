@@ -40,6 +40,7 @@ public class Player : MonoBehaviour {
     private float lastFire;
     private Vector2 move; //for movement and animation
     private Vector2 shootVector; //for shooting and animation
+    private bool dead;
     private int[][] directions = new int[][] {
         new int[] {0, 1}, //North
         new int[] {1, 0}, //East
@@ -53,23 +54,22 @@ public class Player : MonoBehaviour {
     private AudioSource audioSource;
     private void Start() {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
-        DataStorage.saveValues["health"] = 6;
-        DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(9.5f, -19.6f);
-        DataStorage.saveValues["facingDirection"] = 0;
-        PlayerPrefs.SetFloat("volume", 1f);
-        DataStorage.saveValues["progress"] = 3;
-        DataStorage.saveValues["blessings"] = 1;
-        DataStorage.saveValues["tutorialDojo"] = 3;
-        DataStorage.saveValues["waxDungeonGolem"] = 0;
-        DataStorage.saveValues["completedWaxDungeon"] = 0;
-        DataStorage.saveValues["blacksmith"] = 3;
-        DataStorage.saveValues["deaths"] = 3;
-        DataStorage.saveValues["waxDungeonFourArms"] = 0;
-        DataStorage.saveValues["upgrade"] = 3;
-        DataStorage.saveValues["upgradeBar"] = 30;
-        DataStorage.saveValues["waxDungeonRandomArray"] = new int[] {1,1,1,1,1,1};
-        DataStorage.saveValues["waxDungeonRoom"] = 2;
+        // DataStorage.saveValues["health"] = 6;
+        // DataStorage.saveValues["maxHealth"] = 6;
+        // DataStorage.saveValues["position"] = new Vector2(9.5f, -19.6f);
+        // DataStorage.saveValues["facingDirection"] = 0;
+        // PlayerPrefs.SetFloat("volume", 1f);
+        // DataStorage.saveValues["progress"] = 3;
+        // DataStorage.saveValues["blessings"] = 1;
+        // DataStorage.saveValues["tutorialDojo"] = 3;
+        // DataStorage.saveValues["waxDungeonGolem"] = 0;
+        // DataStorage.saveValues["completedWaxDungeon"] = 0;
+        // DataStorage.saveValues["blacksmith"] = 3;
+        // DataStorage.saveValues["deaths"] = 3;
+        // DataStorage.saveValues["waxDungeonFourArms"] = 0;
+        // DataStorage.saveValues["upgrade"] = 0;
+        // DataStorage.saveValues["upgradeBar"] = 0;
+        // DataStorage.saveValues["waxDungeonRoom"] = 2;
 
         invulTime = 0.5f;
         rb = GetComponent<Rigidbody2D>();
@@ -94,6 +94,7 @@ public class Player : MonoBehaviour {
         canPause = true;
         slowTime = 0;
         tempSpeed = speed;
+        dead = false;
     }
     void Update() {
         if (blinking) {
@@ -136,7 +137,8 @@ public class Player : MonoBehaviour {
             CheckInteraction();
         }
 
-        if (health <= 0) {
+        if (health <= 0 && !dead) {
+            dead = true;
             animator.SetTrigger("Dead");
             StartCoroutine(KillPlayer());
         }
@@ -284,7 +286,8 @@ public class Player : MonoBehaviour {
     }
     //Coroutine to kill Player
     private IEnumerator KillPlayer() {
-        DataStorage.saveValues["deaths"] = (int) DataStorage.saveValues["deaths"] + 1;
+        int deaths = (int) DataStorage.saveValues["deaths"];
+        DataStorage.saveValues["deaths"] = deaths + 1;
         inDialogue = true;
         //ONLY FOR CURRENT BUILD!!!!!!!!!!
         if ((int) DataStorage.saveValues["completedWaxDungeon"] == 0) {
@@ -302,6 +305,9 @@ public class Player : MonoBehaviour {
         DataStorage.saveValues["facingDirection"] = 3;
         DataStorage.saveValues["currScene"] = "PriestOffice";
         DataStorage.saveValues["waxDungeonRoom"] = 0;
+
+        //DELETE AFTER!!!!!!!!!!!!!!!!!!
+        Debug.Log((int) DataStorage.saveValues["deaths"]);
         //Let the animation Play Out
         yield return new WaitForSeconds(2);
 

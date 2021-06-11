@@ -8,6 +8,7 @@ public class FourArmsBossRoom : MonoBehaviour {
     [SerializeField] private GameObject bossHPBar;
     [SerializeField] private AudioClip[] music; //0 for boss theme, 1 for end theme
     [SerializeField] private GameObject gate;
+    [SerializeField] private GameObject fourArmsBossObject;
     private bool introDone;
     private bool fightCompleted;
     private FourArms fourArmsBoss;
@@ -25,7 +26,7 @@ public class FourArmsBossRoom : MonoBehaviour {
         line = 0;
         bossHPBar.SetActive(false);
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        fourArmsBoss = GameObject.FindGameObjectWithTag("FourArms").GetComponent<FourArms>();
+        fourArmsBoss = fourArmsBossObject.GetComponent<FourArms>();
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
         audioSource = GetComponent<AudioSource>();
         audioSource.loop = true;

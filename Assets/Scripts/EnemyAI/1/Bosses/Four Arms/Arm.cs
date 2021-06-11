@@ -15,12 +15,15 @@ public abstract class Arm : MonoBehaviour { //Tag as "Arm"
     [SerializeField] protected int element; //0 for fire, 1 for water, 2 for air, 3 for earth
     [SerializeField] protected GameObject meleeArea;
     [SerializeField] protected float meleeResetTime;
+    [SerializeField] protected GameObject fourArmsObject;
+    [SerializeField] protected AudioClip hitSound;
+    protected AudioSource hitAudioSource;
     protected float meleeTime;
     protected SpriteRenderer spriteRenderer;
     protected Animator animator;
     protected float attackTime;
+    protected Player player;
     protected FourArms fourArms;
-    private Player player;
     public bool start;
     public bool dead;
     public bool invulnerable;
@@ -29,17 +32,19 @@ public abstract class Arm : MonoBehaviour { //Tag as "Arm"
         invulnerable = false;
         dead = false;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        fourArms = GameObject.FindGameObjectWithTag("FourArms").GetComponent<FourArms>();
+        fourArms = fourArmsObject.GetComponent<FourArms>();
         animator = GetComponent<Animator>();
         animator.SetInteger("State", 1);
         spriteRenderer = GetComponent<SpriteRenderer>();
         meleeTime = meleeResetTime;
+        attackTime = 5f;
+        hitAudioSource = GetComponent<AudioSource>();
     }
     protected void Update() {
         if (health <= 0 && !dead) {
             dead = true;
             StartCoroutine(Death());
-            RemoveCollider();
+            Destroy(gameObject.GetComponent<PolygonCollider2D>());
         }
 
         if (health == 20) {
@@ -52,10 +57,8 @@ public abstract class Arm : MonoBehaviour { //Tag as "Arm"
 
         if (dead) {
             if (attackTime <= 0) {
-                if (start && dead) { //Do Special Attack
-                    StartCoroutine(SpecialAttack());
-                    attackTime = Random.Range(5f, 10f);
-                }
+                SpecialAttack();
+                attackTime = Random.Range(8f, 15f);
             } else {
                 attackTime -= Time.deltaTime;
             }
@@ -63,14 +66,14 @@ public abstract class Arm : MonoBehaviour { //Tag as "Arm"
 
         if (!dead) {
             if (meleeTime <= 0) {
-                StartCoroutine(MeleeAttack());
                 meleeTime = meleeResetTime;
+                StartCoroutine(MeleeAttack());
             } else {
                 meleeTime -= Time.deltaTime;
             }
         }
     }
-    public abstract IEnumerator SpecialAttack();
+    public abstract void SpecialAttack();
     protected IEnumerator MeleeAttack() {
         animator.SetTrigger("Melee");
         //Wait for animation to finish
@@ -80,9 +83,6 @@ public abstract class Arm : MonoBehaviour { //Tag as "Arm"
         }
         yield return new WaitForSeconds(1.09f);
         animator.SetTrigger("FinishedMelee");
-    }
-    protected void RemoveCollider() {
-        Destroy(gameObject.GetComponent<PolygonCollider2D>());
     }
     protected IEnumerator Death() {
         fourArms.UnlockArms();
@@ -102,12 +102,14 @@ public abstract class Arm : MonoBehaviour { //Tag as "Arm"
     }
     public void Damage(int n) {
         if (!fourArms.targeting) {
+            fourArms.targeting = true;
             fourArms.LockArms(element);
         }
 
         if (!invulnerable) {
             health -= n;
             fourArms.Damage(n);
+            hitAudioSource.PlayOneShot(hitSound);
         }
     }
 }

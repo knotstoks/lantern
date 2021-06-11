@@ -7,26 +7,19 @@ public class HomingMissle : MonoBehaviour {
     private Transform target;
     private Rigidbody2D rb;
     private Animator animator;
-    private void Start() {
+    private IEnumerator Start() {
         animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
         rb = gameObject.GetComponent<Rigidbody2D>();
-        StartCoroutine(DeathDelay());
+        yield return new WaitForSeconds(lifeTime);
+        Destroy(gameObject);
     }
     private void FixedUpdate() {
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }
-    private IEnumerator DeathDelay() {
-        yield return new WaitForSeconds(lifeTime);
-        Destroy(gameObject);
-    }
     public void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player") { //Damages Player
             other.GetComponent<Player>().Damage(1);
-            StartCoroutine(Death());
-        }
-
-        if (other.tag == "Invincible") { //Gets Destroyed when it hits something Invincible (eg. shields or walls)
             StartCoroutine(Death());
         }
     }

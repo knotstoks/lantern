@@ -36,7 +36,6 @@ public class NormalBullet : MonoBehaviour {
     }
     private IEnumerator Collided() {
         animator.SetTrigger("Collide");
-        rb.velocity = Vector2.zero;
         yield return new WaitForSeconds(0.22f);
         Destroy(gameObject);
     }

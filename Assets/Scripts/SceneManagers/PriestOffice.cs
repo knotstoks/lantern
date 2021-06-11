@@ -8,17 +8,21 @@ public class PriestOffice : MonoBehaviour {
     [SerializeField] private GameObject blessingOrb;
     [SerializeField] private Dialogue blessingDialogue;
     [SerializeField] private Dialogue blacksmithDialogue;
+    [SerializeField] private GameObject blessingInstructions;
     private Player player;
     private DialogueManager dialogueManager;
     private int line;
+    private bool showingBlessingInstructions;
     private IEnumerator Start() {
         // DataStorage.saveValues["progress"] = 3; //DELETE AFTER!!!!!!!!!
         // DataStorage.saveValues["blessings"] = 1; //DELETE AFTER!!!!
         
         blessingMenu.SetActive(false);
+        blessingInstructions.SetActive(false);
         line = 0;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
+        showingBlessingInstructions = false;
         yield return new WaitForSeconds(0.1f);
 
         if ((int) DataStorage.saveValues["progress"] == 0) {
@@ -38,7 +42,7 @@ public class PriestOffice : MonoBehaviour {
             StartBlessingTutorial();
         }
 
-        if ((int) DataStorage.saveValues["deaths"] >= 3) {
+        if ((int) DataStorage.saveValues["deaths"] == 3) {
             if ((int) DataStorage.saveValues["blacksmith"] == 0) {
                 StartBlacksmithTutorial();
                 DataStorage.saveValues["blacksmith"] = 1;
@@ -49,8 +53,10 @@ public class PriestOffice : MonoBehaviour {
         //Blessing Tutorial
         if ((int) DataStorage.saveValues["blessings"] == 1 && Input.GetKeyDown(KeyCode.E)) {
             if (line == blessingDialogue.names.Length - 1) {
+                Debug.Log("hey!");
                 DataStorage.saveValues["blessings"] = 2;
                 dialogueManager.DisplayNextSentence();
+                StartCoroutine(ShowBlessingInstructions());
             } else {
                 line++;
                 dialogueManager.DisplayNextSentence();
@@ -72,6 +78,19 @@ public class PriestOffice : MonoBehaviour {
             DataStorage.saveValues["progress"] = 2;
             player.SaveGame(-11.2f, 2.2f, 3, "PriestOffice");
         }
+
+        if (showingBlessingInstructions && Input.GetKeyDown(KeyCode.E)) {
+            showingBlessingInstructions = false;
+            blessingInstructions.SetActive(false);
+            player.inDialogue = false;
+        }
+    }
+    private IEnumerator ShowBlessingInstructions() {
+        Debug.Log("this is fine");
+        yield return new WaitForSeconds(0.5f);
+        showingBlessingInstructions = true;
+        blessingInstructions.SetActive(true);
+        player.inDialogue = true;
     }
     private void StartBlessingTutorial() {
         dialogueManager.StartDialogue(blessingDialogue);

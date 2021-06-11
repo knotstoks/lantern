@@ -19,6 +19,7 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     [SerializeField] private GameObject homingBullet;
     [SerializeField] private Vector2[] armPositions;
     [SerializeField] private GameObject deadFourArms;
+    [SerializeField] private GameObject puddle;
     //Four arms needed
     [SerializeField] private GameObject fire;
     [SerializeField] private GameObject water;
@@ -31,6 +32,7 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     private Transform target;
     private Animator animator;
     private float homingTime;
+    private FourArmsBossRoom sceneManager;
     //Arms
     private FireArm fireArm;
     private WaterArm waterArm;
@@ -39,6 +41,7 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     public bool targeting;
     private bool start;
     private IEnumerator Start() {
+        sceneManager = GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<FourArmsBossRoom>();
         upgradeManager = GameObject.FindGameObjectWithTag("Upgrades").GetComponent<Upgrades>();
         targeting = false;
         dead = false;
@@ -58,8 +61,8 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
 
         arms[0] = fireArm;
         arms[1] = waterArm;
-        arms[2] = earthArm;
-        arms[3] = airArm;
+        arms[2] = airArm;
+        arms[3] = earthArm;
     }
     private void Update() {
         if (!dead && health <= 0) {
@@ -67,11 +70,12 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
             StartCoroutine(Death());
         }
 
-        if (start) {
+        if (start && !dead && arms[2].dead) {
             if (homingTime <= 0) {
-                ShootHomingMissle();
-            } else {
                 homingTime = resetHomingTime;
+                StartCoroutine(ShootHomingMissle());
+            } else {
+                homingTime -= Time.deltaTime;
             }
         }
     }
@@ -81,7 +85,6 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
         upgradeManager.ChargeUpgradeBar();
     }
     public void LockArms(int n) { //0 for fire, 1 for water, 2 for air, 3 for earth
-        targeting = true;
         for (int i = 0; i < 4; i++) {
             if (i != n && !arms[i].dead) {
                 arms[i].invulnerable = true;
@@ -89,6 +92,7 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
         }
     }
     public void UnlockArms() {
+        targeting = false;
         for (int i = 0; i < 4; i++) {
             if (!arms[i].dead) {
                 arms[i].invulnerable = false;
@@ -101,20 +105,32 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
             arms[i].start = true;
         }
     }
-    private void ShootHomingMissle() { //0 for fire, 1 for water, 2 for air, 3 for earth
+    private IEnumerator ShootHomingMissle() { //0 for fire, 1 for water, 2 for air, 3 for earth
         for (int i = 0; i < arms.Length; i++) {
+            yield return new WaitForSeconds(2f);
             if (arms[i].dead) {
                 Instantiate(homingBullet, armPositions[i], Quaternion.identity);
             }
         }
     }
     private IEnumerator Death() {
-        Destroy(fireArm);
-        Destroy(waterArm);
-        Destroy(airArm);
-        Destroy(earthArm);
+        GameObject[] bullets = GameObject.FindGameObjectsWithTag("Bullet");
+        GameObject[] homingMissles = GameObject.FindGameObjectsWithTag("HomingMissle");
+        for (int i = 0; i < bullets.Length; i ++) {
+            Destroy(bullets[i]);
+        }
+        for (int i = 0; i < homingMissles.Length; i++) {
+            Destroy(homingMissles[i]);
+        }
         animator.SetTrigger("Death");
+        sceneManager.CompleteFight();
         yield return new WaitForSeconds(2f);
+        Destroy(fire);
+        Destroy(water);
+        Destroy(air);
+        Destroy(earth);
+        Destroy(puddle);
         Instantiate(deadFourArms, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }
