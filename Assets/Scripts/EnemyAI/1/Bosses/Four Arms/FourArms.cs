@@ -25,6 +25,7 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     [SerializeField] private GameObject water;
     [SerializeField] private GameObject air;
     [SerializeField] private GameObject earth;
+    public GameObject blackHole;
     private Upgrades upgradeManager;
     private int[] attacks;
     private Arm[] arms;
@@ -41,6 +42,7 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     public bool targeting;
     private bool start;
     private IEnumerator Start() {
+        blackHole.SetActive(false);
         sceneManager = GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<FourArmsBossRoom>();
         upgradeManager = GameObject.FindGameObjectWithTag("Upgrades").GetComponent<Upgrades>();
         targeting = false;
@@ -130,6 +132,7 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
         Destroy(air);
         Destroy(earth);
         Destroy(puddle);
+        Destroy(blackHole);
         Instantiate(deadFourArms, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

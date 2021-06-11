@@ -15,7 +15,7 @@ public class DungeonPortal : Interactable {
         new Vector2(), //1.4
         new Vector2(), //1.5
         new Vector2(), //1.6
-        new Vector2(), //Four Arms
+        new Vector2(9.5f, -19.6f), //Four Arms
         new Vector2(), //1.7
         new Vector2(), //1.8
         new Vector2(), //1.9

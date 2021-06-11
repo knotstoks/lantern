@@ -54,22 +54,22 @@ public class Player : MonoBehaviour {
     private AudioSource audioSource;
     private void Start() {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
-        // DataStorage.saveValues["health"] = 6;
-        // DataStorage.saveValues["maxHealth"] = 6;
-        // DataStorage.saveValues["position"] = new Vector2(9.5f, -19.6f);
-        // DataStorage.saveValues["facingDirection"] = 0;
-        // PlayerPrefs.SetFloat("volume", 1f);
-        // DataStorage.saveValues["progress"] = 3;
-        // DataStorage.saveValues["blessings"] = 1;
-        // DataStorage.saveValues["tutorialDojo"] = 3;
-        // DataStorage.saveValues["waxDungeonGolem"] = 0;
-        // DataStorage.saveValues["completedWaxDungeon"] = 0;
-        // DataStorage.saveValues["blacksmith"] = 3;
-        // DataStorage.saveValues["deaths"] = 3;
-        // DataStorage.saveValues["waxDungeonFourArms"] = 0;
-        // DataStorage.saveValues["upgrade"] = 0;
-        // DataStorage.saveValues["upgradeBar"] = 0;
-        // DataStorage.saveValues["waxDungeonRoom"] = 2;
+        DataStorage.saveValues["health"] = 6;
+        DataStorage.saveValues["maxHealth"] = 6;
+        DataStorage.saveValues["position"] = new Vector2(9.5f, -19.6f);
+        DataStorage.saveValues["facingDirection"] = 0;
+        PlayerPrefs.SetFloat("volume", 1f);
+        DataStorage.saveValues["progress"] = 3;
+        DataStorage.saveValues["blessings"] = 1;
+        DataStorage.saveValues["tutorialDojo"] = 3;
+        DataStorage.saveValues["waxDungeonGolem"] = 0;
+        DataStorage.saveValues["completedWaxDungeon"] = 0;
+        DataStorage.saveValues["blacksmith"] = 3;
+        DataStorage.saveValues["deaths"] = 3;
+        DataStorage.saveValues["waxDungeonFourArms"] = 0;
+        DataStorage.saveValues["upgrade"] = 0;
+        DataStorage.saveValues["upgradeBar"] = 0;
+        DataStorage.saveValues["waxDungeonRoom"] = 2;
 
         invulTime = 0.5f;
         rb = GetComponent<Rigidbody2D>();
