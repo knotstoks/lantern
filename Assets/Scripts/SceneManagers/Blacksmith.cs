@@ -19,7 +19,19 @@ public class Blacksmith : MonoBehaviour {
             DataStorage.saveValues["blacksmith"] = 3;
         }
     }
-    public IEnumerator DisplayChangeUpgrade(string t) {
+    public IEnumerator DisplayChangeUpgrade(int n) {
+        string t = "";
+        if (n == 0) {
+            t = "[Upgrade Removed]";
+        } else if (n == 1) {
+            t = "[Upgraded] Vampric Embrace";
+        } else if (n == 2) {
+            t = "[Upgraded] Fleet Foot";
+        } else {
+            t = "[Upgraded] Nova Impact";
+        }
+
+
         upgradeText.text = t;
         yield return new WaitForSeconds(2f);
         upgradeText.text = "";

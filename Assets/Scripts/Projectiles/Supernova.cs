@@ -14,16 +14,16 @@ public class Supernova : MonoBehaviour {
         Destroy(gameObject);
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Enemy") {
+        if (other.gameObject.tag == "Enemy") {
             other.GetComponent<Enemy>().Damage(10);
         }
 
-        if (other.tag == "Boss") {
+        if (other.gameObject.tag == "Boss") {
             other.GetComponent<Boss>().Damage(10);
         }
 
-        if (other.tag == "Arm") {
-            other.GetComponent<Arm>().Damage(10);
+        if (other.gameObject.tag == "Arm") {
+            other.gameObject.GetComponent<Arm>().Damage(10);
         }
     }
 }
