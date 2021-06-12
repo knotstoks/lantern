@@ -61,7 +61,7 @@ public class Player : MonoBehaviour {
         PlayerPrefs.SetFloat("volume", 1f);
         DataStorage.saveValues["progress"] = 3;
         DataStorage.saveValues["blessings"] = 1;
-        DataStorage.saveValues["tutorialDojo"] = 3;
+        DataStorage.saveValues["tutorialDojo"] = 0;
         DataStorage.saveValues["waxDungeonGolem"] = 0;
         DataStorage.saveValues["completedWaxDungeon"] = 0;
         DataStorage.saveValues["blacksmith"] = 3;
