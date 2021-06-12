@@ -52,11 +52,13 @@ public class PriestOffice : MonoBehaviour {
     private void Update() {
         //Blessing Tutorial
         if ((int) DataStorage.saveValues["blessings"] == 1 && Input.GetKeyDown(KeyCode.E)) {
-            if (line == blessingDialogue.names.Length - 1) {
-                Debug.Log("hey!");
+            if (line == 7) {
+                StartCoroutine(ShowBlessingInstructions());
+                dialogueManager.DisplayNextSentence();
+                line++;
+            } else if (line == blessingDialogue.names.Length - 1) {
                 DataStorage.saveValues["blessings"] = 2;
                 dialogueManager.DisplayNextSentence();
-                StartCoroutine(ShowBlessingInstructions());
             } else {
                 line++;
                 dialogueManager.DisplayNextSentence();
@@ -82,15 +84,12 @@ public class PriestOffice : MonoBehaviour {
         if (showingBlessingInstructions && Input.GetKeyDown(KeyCode.E)) {
             showingBlessingInstructions = false;
             blessingInstructions.SetActive(false);
-            player.inDialogue = false;
         }
     }
     private IEnumerator ShowBlessingInstructions() {
-        Debug.Log("this is fine");
+        blessingInstructions.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         showingBlessingInstructions = true;
-        blessingInstructions.SetActive(true);
-        player.inDialogue = true;
     }
     private void StartBlessingTutorial() {
         dialogueManager.StartDialogue(blessingDialogue);

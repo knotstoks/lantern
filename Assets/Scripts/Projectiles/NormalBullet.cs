@@ -36,7 +36,7 @@ public class NormalBullet : MonoBehaviour {
     }
     private IEnumerator Collided() {
         animator.SetTrigger("Collide");
-        yield return new WaitForSeconds(0.22f);
+        yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
 }

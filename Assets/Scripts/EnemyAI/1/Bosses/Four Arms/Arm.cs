@@ -41,18 +41,14 @@ public abstract class Arm : MonoBehaviour { //Tag as "Arm"
         hitAudioSource = GetComponent<AudioSource>();
     }
     protected void Update() {
-        if (health <= 0 && !dead) {
+        if (health <= 20 && health >= 11) {
+            animator.SetInteger("State", 2);
+        } else if (health <= 10 && health >= 1) {
+            animator.SetInteger("State", 3);
+        } else if (health <= 0 && !dead) {
             dead = true;
             StartCoroutine(Death());
             Destroy(gameObject.GetComponent<PolygonCollider2D>());
-        }
-
-        if (health == 20) {
-            animator.SetInteger("State", 2);
-        }
-
-        if (health == 10) {
-            animator.SetInteger("State", 3);
         }
 
         if (dead) {
