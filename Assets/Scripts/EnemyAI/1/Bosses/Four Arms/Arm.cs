@@ -74,6 +74,7 @@ public abstract class Arm : MonoBehaviour { //Tag as "Arm"
         animator.SetTrigger("Melee");
         //Wait for animation to finish
         yield return new WaitForSeconds(1.72f);
+        StartCoroutine(meleeArea.GetComponent<MeleeArea>().Ripple());
         if (meleeArea.GetComponent<MeleeArea>().playerIn) {
             player.Damage(1);
         }

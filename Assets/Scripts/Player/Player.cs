@@ -209,8 +209,8 @@ public class Player : MonoBehaviour {
             animator.SetFloat("ShootSpeed", shootVector.sqrMagnitude);
 
             if ((shootVector.x != 0 || shootVector.y != 0) && Time.time > lastFire + fireDelay) {
-                    Shoot(shootVector.x, shootVector.y);
-                    lastFire = Time.time;
+                Shoot(shootVector.x, shootVector.y);
+                lastFire = Time.time;
             }
         }
     }
@@ -241,7 +241,7 @@ public class Player : MonoBehaviour {
         health = n;
         updateHealth();
     }
-    void Shoot(float x, float y) {
+    private void Shoot(float x, float y) {
         Vector2 tempVector = new Vector2(transform.position.x, transform.position.y - 0.3f);
         GameObject bullet = Instantiate(this.bullet, tempVector, transform.rotation) as GameObject;
         bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(
