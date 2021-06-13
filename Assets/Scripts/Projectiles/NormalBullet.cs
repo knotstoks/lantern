@@ -6,7 +6,7 @@ public class NormalBullet : MonoBehaviour {
     [SerializeField] private Animator animator;
     private Rigidbody2D rb;
     private IEnumerator Start() {
-        rb = gameObject.GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         float hori = rb.velocity.x;
         float vert = rb.velocity.y;
         animator.SetFloat("BHori", hori);
@@ -36,7 +36,7 @@ public class NormalBullet : MonoBehaviour {
     }
     private IEnumerator Collided() {
         animator.SetTrigger("Collide");
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.22f);
         Destroy(gameObject);
     }
 }

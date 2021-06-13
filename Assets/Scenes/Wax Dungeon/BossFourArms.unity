@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 140234559}
   - component: {fileID: 140234558}
   - component: {fileID: 140234560}
+  - component: {fileID: 140234561}
   m_Layer: 0
   m_Name: Melee Area Fire
   m_TagString: Untagged
@@ -322,6 +323,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIn: 0
+--- !u!95 &140234561
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140234556}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6eec0b76244206b4ca89e5079c2ae496, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &222105231
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,6 +950,7 @@ GameObject:
   - component: {fileID: 463841292}
   - component: {fileID: 463841291}
   - component: {fileID: 463841290}
+  - component: {fileID: 463841294}
   m_Layer: 0
   m_Name: Melee Area Water
   m_TagString: Untagged
@@ -1032,6 +1053,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &463841294
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463841289}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b9b27218a23bf0b4bb85894b11460572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &484214715
 GameObject:
   m_ObjectHideFlags: 0
@@ -10846,18 +10886,36 @@ MonoBehaviour:
   doorOut: {fileID: 1220458404}
   introDialogues:
   - names:
+    - ???
+    - Lumin
+    - Four Arms
+    - Lumin
+    - Four Arms
     - Four Arms
     sentences:
-    - Your mom lol
-  - names: []
-    sentences: []
-  - names: []
-    sentences: []
+    - ....
+    - What...
+    - "(\xB4\uFF61\u2022 \u03C9 \u2022\uFF61`) !"
+    - "What\u2019s up with this guy-"
+    - ...
+    - "grmbgh. (\u256C`\u76CA\xB4)"
+  - names:
+    - Lumin
+    - Four Arms
+    sentences:
+    - You again...Jack of all elements, master of none.
+    - "(\u51F8\u51F8\u0CA0\u76CA\u0CA0)\u51F8\u51F8"
+  - names:
+    - Four Arms
+    - Lumin
+    sentences:
+    - "(\u51F8\u51F8\u0CA0\u76CA\u0CA0)\u51F8\u51F8"
+    - Yes, yes, I remember you too.
   outroDialogue:
     names:
     - Lumin
     sentences:
-    - teehee
+    - "There. I hope there\u2019s no more monstrosities like these."
   bossHPBar: {fileID: 775072644}
   music:
   - {fileID: 8300000, guid: 917bdb16c1ec74949b12bdf235053ece, type: 3}
@@ -11804,6 +11862,7 @@ GameObject:
   - component: {fileID: 1014624712}
   - component: {fileID: 1014624711}
   - component: {fileID: 1014624710}
+  - component: {fileID: 1014624714}
   m_Layer: 0
   m_Name: Melee Area Earth
   m_TagString: Untagged
@@ -11906,6 +11965,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1014624714
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014624709}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab04a91b3cad64841b9bcf3797f126d9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1052006328
 GameObject:
   m_ObjectHideFlags: 0
@@ -13842,6 +13920,7 @@ GameObject:
   - component: {fileID: 1111573521}
   - component: {fileID: 1111573520}
   - component: {fileID: 1111573519}
+  - component: {fileID: 1111573523}
   m_Layer: 0
   m_Name: Melee Area Air
   m_TagString: Untagged
@@ -13944,6 +14023,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1111573523
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111573518}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d80a706cf4299f84a8b6e697b01f61b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1220458403
 PrefabInstance:
   m_ObjectHideFlags: 0
