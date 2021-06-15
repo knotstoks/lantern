@@ -17,28 +17,25 @@ public abstract class Arm : MonoBehaviour { //Tag as "Arm"
     [SerializeField] protected float meleeResetTime;
     [SerializeField] protected GameObject fourArmsObject;
     [SerializeField] protected AudioClip hitSound;
-    protected AudioSource hitAudioSource;
-    protected float meleeTime;
-    protected SpriteRenderer spriteRenderer;
-    protected Animator animator;
-    protected float attackTime;
-    protected Player player;
-    protected FourArms fourArms;
+    public AudioSource hitAudioSource;
+    public float meleeTime;
+    public SpriteRenderer spriteRenderer;
+    public Animator animator;
+    public float attackTime;
+    [HideInInspector] public Player player;
+    [HideInInspector] public FourArms fourArms;
     public bool start;
     public bool dead;
     public bool invulnerable;
     private void Start() {
+        fourArms = fourArmsObject.GetComponent<FourArms>();
         start = false;
         invulnerable = false;
         dead = false;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        fourArms = fourArmsObject.GetComponent<FourArms>();
-        animator = GetComponent<Animator>();
         animator.SetInteger("State", 1);
-        spriteRenderer = GetComponent<SpriteRenderer>();
         meleeTime = meleeResetTime;
         attackTime = 5f;
-        hitAudioSource = GetComponent<AudioSource>();
     }
     protected void Update() {
         if (health <= 20 && health >= 11) {

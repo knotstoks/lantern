@@ -1,46 +1,55 @@
 fileFormatVersion: 2
-guid: b2c6d29665546d4418e1f6d6b00e5cfb
+guid: 6c6a133028c66c54a9ab58c5bf0c45c9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4151283197276897984
-    second: MiniBoss_FourArms-Sheet-WaterAttack_0
+      213: -7254384431377588969
+    second: MiniBoss_FourArms-Sheet_0
   - first:
-      213: -5036544078252064387
-    second: MiniBoss_FourArms-Sheet-WaterAttack_1
+      213: 5631878083418136337
+    second: MiniBoss_FourArms-Sheet_1
   - first:
-      213: 7361983137497969772
-    second: MiniBoss_FourArms-Sheet-WaterAttack_2
+      213: 4872070611479068338
+    second: MiniBoss_FourArms-Sheet_2
   - first:
-      213: -8320413672483634098
-    second: MiniBoss_FourArms-Sheet-WaterAttack_3
+      213: 4512678874209695265
+    second: MiniBoss_FourArms-Sheet_3
   - first:
-      213: 3453097268717100713
-    second: MiniBoss_FourArms-Sheet-WaterAttack_4
+      213: 4327046349435631598
+    second: MiniBoss_FourArms-Sheet_4
   - first:
-      213: 4240231596400137211
-    second: MiniBoss_FourArms-Sheet-WaterAttack_5
+      213: -7934850970657648381
+    second: MiniBoss_FourArms-Sheet_5
   - first:
-      213: -7148330159923019529
-    second: MiniBoss_FourArms-Sheet-WaterAttack_6
+      213: -1285135869484683844
+    second: MiniBoss_FourArms-Sheet_6
   - first:
-      213: -541976143730657450
-    second: MiniBoss_FourArms-Sheet-WaterAttack_7
+      213: 6424331052838436237
+    second: MiniBoss_FourArms-Sheet_7
   - first:
-      213: 7645966003320500823
-    second: MiniBoss_FourArms-Sheet-WaterAttack_8
+      213: -3676966403802874722
+    second: MiniBoss_FourArms-Sheet_8
   - first:
-      213: -5357471821480561469
-    second: MiniBoss_FourArms-Sheet-WaterAttack_9
+      213: -6206574226645416609
+    second: MiniBoss_FourArms-Sheet_9
   - first:
-      213: 1738245126708146117
-    second: MiniBoss_FourArms-Sheet-WaterAttack_10
+      213: -3647716529988072103
+    second: MiniBoss_FourArms-Sheet_10
   - first:
-      213: -6728111978523498035
-    second: MiniBoss_FourArms-Sheet-WaterAttack_11
+      213: 5072410017084784387
+    second: MiniBoss_FourArms-Sheet_11
   - first:
-      213: -8793714260350556710
-    second: MiniBoss_FourArms-Sheet-WaterAttack_12
+      213: -3261007548524519963
+    second: MiniBoss_FourArms-Sheet_12
+  - first:
+      213: 8415669961691580168
+    second: MiniBoss_FourArms-Sheet_13
+  - first:
+      213: -2262821276083891401
+    second: MiniBoss_FourArms-Sheet_14
+  - first:
+      213: 3559438006001732792
+    second: MiniBoss_FourArms-Sheet_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -104,7 +113,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -116,7 +125,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 16384
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -128,7 +137,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -142,13 +151,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-WaterAttack_0
+      name: MiniBoss_FourArms-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 384
-        height: 448
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c2ccbfc2125c9930800000000000000
-      internalID: 4151283197276897984
+      spriteID: 71d5d978bcf335b90800000000000000
+      internalID: -7254384431377588969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-WaterAttack_1
+      name: MiniBoss_FourArms-Sheet_1
       rect:
         serializedVersion: 2
-        x: 384
+        x: 700
         y: 0
-        width: 384
-        height: 448
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d71403878d99a1ab0800000000000000
-      internalID: -5036544078252064387
+      spriteID: 11f12742743782e40800000000000000
+      internalID: 5631878083418136337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-WaterAttack_2
+      name: MiniBoss_FourArms-Sheet_2
       rect:
         serializedVersion: 2
-        x: 768
+        x: 1400
         y: 0
-        width: 384
-        height: 448
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c647bf878a40b2660800000000000000
-      internalID: 7361983137497969772
+      spriteID: 2be74d568621d9340800000000000000
+      internalID: 4872070611479068338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-WaterAttack_3
+      name: MiniBoss_FourArms-Sheet_3
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 2100
         y: 0
-        width: 384
-        height: 448
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e444f4b29d3f78c80800000000000000
-      internalID: -8320413672483634098
+      spriteID: 126bda2e68140ae30800000000000000
+      internalID: 4512678874209695265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-WaterAttack_4
+      name: MiniBoss_FourArms-Sheet_4
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 2800
         y: 0
-        width: 384
-        height: 448
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ae11ccabaddbef20800000000000000
-      internalID: 3453097268717100713
+      spriteID: ee7f2c8aab1cc0c30800000000000000
+      internalID: 4327046349435631598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-WaterAttack_5
+      name: MiniBoss_FourArms-Sheet_5
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 3500
         y: 0
-        width: 384
-        height: 448
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,20 +270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf351d4db2458da30800000000000000
-      internalID: 4240231596400137211
+      spriteID: 3019944351fb1e190800000000000000
+      internalID: -7934850970657648381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-WaterAttack_6
+      name: MiniBoss_FourArms-Sheet_6
       rect:
         serializedVersion: 2
-        x: 2304
+        x: 4200
         y: 0
-        width: 384
-        height: 448
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,20 +291,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f0c390d7970ccc90800000000000000
-      internalID: -7148330159923019529
+      spriteID: cbda0435cb74a2ee0800000000000000
+      internalID: -1285135869484683844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-WaterAttack_7
+      name: MiniBoss_FourArms-Sheet_7
       rect:
         serializedVersion: 2
-        x: 2688
+        x: 4900
         y: 0
-        width: 384
-        height: 448
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,20 +312,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 657b23c91938a78f0800000000000000
-      internalID: -541976143730657450
+      spriteID: d8d32f31e0fc72950800000000000000
+      internalID: 6424331052838436237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-WaterAttack_8
+      name: MiniBoss_FourArms-Sheet_8
       rect:
         serializedVersion: 2
-        x: 3072
+        x: 5600
         y: 0
-        width: 384
-        height: 448
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,20 +333,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 752b1a8e19deb1a60800000000000000
-      internalID: 7645966003320500823
+      spriteID: e9cb842898ac8fcc0800000000000000
+      internalID: -3676966403802874722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-WaterAttack_9
+      name: MiniBoss_FourArms-Sheet_9
       rect:
         serializedVersion: 2
-        x: 3456
+        x: 6300
         y: 0
-        width: 384
-        height: 448
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c47c7273cf66a5b0800000000000000
-      internalID: -5357471821480561469
+      spriteID: f5584bcef91ddd9a0800000000000000
+      internalID: -6206574226645416609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-WaterAttack_10
+      name: MiniBoss_FourArms-Sheet_10
       rect:
         serializedVersion: 2
-        x: 3840
+        x: 7000
         y: 0
-        width: 384
-        height: 448
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,20 +375,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cf2efdabbc7f1810800000000000000
-      internalID: 1738245126708146117
+      spriteID: 95d8db47425b06dc0800000000000000
+      internalID: -3647716529988072103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-WaterAttack_11
+      name: MiniBoss_FourArms-Sheet_11
       rect:
         serializedVersion: 2
-        x: 4224
+        x: 7700
         y: 0
-        width: 384
-        height: 448
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -387,20 +396,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc96e077dc1f0a2a0800000000000000
-      internalID: -6728111978523498035
+      spriteID: 30fb8772902d46640800000000000000
+      internalID: 5072410017084784387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniBoss_FourArms-Sheet-WaterAttack_12
+      name: MiniBoss_FourArms-Sheet_12
       rect:
         serializedVersion: 2
-        x: 4608
+        x: 8400
         y: 0
-        width: 384
-        height: 448
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -408,8 +417,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad5a487a87376f580800000000000000
-      internalID: -8793714260350556710
+      spriteID: 5ed145489e29eb2d0800000000000000
+      internalID: -3261007548524519963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 9100
+        y: 0
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8074d85fd377ac470800000000000000
+      internalID: 8415669961691580168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 9800
+        y: 0
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733d2d0d908d890e0800000000000000
+      internalID: -2262821276083891401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniBoss_FourArms-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 10500
+        y: 0
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc02cbf10aa56130800000000000000
+      internalID: 3559438006001732792
       vertices: []
       indices: 
       edges: []

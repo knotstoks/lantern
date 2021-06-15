@@ -66,6 +66,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Wax Dungeon/WD9.unity
     guid: 9634dc9b481f1644da57f157d7f7adc1
   - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/BossGabriel.unity
+    guid: 03ee1b9c037ca0c409f0e1ad9140368c
+  - enabled: 1
     path: Assets/Scenes/Prototypes/PlayTestingMainMenu.unity
     guid: 5a6a43623e0702b479f7351d9266c8d6
   m_configObjects: {}

@@ -51,6 +51,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -102,7 +103,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 1000
   m_AngularDrag: 1000
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -149,8 +150,6 @@ MonoBehaviour:
   health: 5
   speed: 0
   damage: 0
-  thrust: 0
-  knockTime: 0
   hitAudioSource: {fileID: 2784184311260725096}
   child: {fileID: 1110464256833252204, guid: 86664d6d0cbe9de418e89adba9d6c0ad, type: 3}
   respawnTime: 8

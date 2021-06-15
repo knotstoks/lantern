@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-public class UpgradeUI : Interactable {
+public class UpgradeUI : MonoBehaviour {
     [SerializeField] private GameObject upgradeMenu;
     [SerializeField] private GameObject firstBlessingButtonSelected;
+    [SerializeField] private GameObject enzioObject;
     private Player player;
     private Upgrades upgradeManager;
     private Blacksmith blacksmith;
     private DialogueManager dialogueManager;
+    private Enzio enzio;
     private bool isOpen;
     private void Start() {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
@@ -15,11 +17,7 @@ public class UpgradeUI : Interactable {
         blacksmith = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Blacksmith>();
         upgradeMenu.SetActive(false);
         isOpen = false;
-    }
-    public override void Interact() {
-        if (!isOpen) {
-            ToggleUpgradeMenu();
-        }
+        enzio = enzioObject.GetComponent<Enzio>();
     }
     public void ChangeUpgradeUsingButton(int n) {
         if (upgradeManager.upgrade != n) {
@@ -35,5 +33,12 @@ public class UpgradeUI : Interactable {
         player.inDialogue = isOpen;
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(firstBlessingButtonSelected);
+        if (!isOpen) {
+            enzio.menuOpen = false;
+            player.inDialogue = false;
+        }
+    }
+    public void OpenMenu() {
+        ToggleUpgradeMenu();
     }
 }

@@ -12,9 +12,9 @@ public class DungeonPortal : Interactable {
         new Vector2(-9, 0), //1.2
         new Vector2(0, -4), //1.3
         new Vector2(7, -8), //Golem
-        new Vector2(), //1.4
-        new Vector2(), //1.5
-        new Vector2(), //1.6
+        new Vector2(-0.5f, -5), //1.4
+        new Vector2(23, -6.5f), //1.5
+        new Vector2(-0.5f, -4), //1.6
         new Vector2(9.5f, -19.6f), //Four Arms
         new Vector2(), //1.7
         new Vector2(), //1.8
@@ -25,11 +25,11 @@ public class DungeonPortal : Interactable {
         1, //1.1
         1, //1.2
         0, //1.3
-        0 //Golem
-        //1.4
-        //1.5
-        //1.6
-        //Four Arms
+        0, //Golem
+        0, //1.4
+        3, //1.5
+        0, //1.6
+        0 //Four Arms
         //1.7
         //1.8
         //1.9

@@ -18,6 +18,7 @@ TagManager:
   - FourArms
   - Arm
   - HomingMissle
+  - UpgradeUI
   layers:
   - Default
   - TransparentFX

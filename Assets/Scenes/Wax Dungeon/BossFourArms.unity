@@ -744,6 +744,13 @@ MonoBehaviour:
   meleeResetTime: 10
   fourArmsObject: {fileID: 273409714}
   hitSound: {fileID: 8300000, guid: 32e00b8183f45ef4da1c412e3099c584, type: 3}
+  hitAudioSource: {fileID: 312800257}
+  meleeTime: 0
+  spriteRenderer: {fileID: 312800253}
+  animator: {fileID: 312800255}
+  attackTime: 0
+  player: {fileID: 0}
+  fourArms: {fileID: 0}
   start: 0
   dead: 0
   invulnerable: 0
@@ -10553,10 +10560,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 12, y: 14}
+  m_Size: {x: 21.88034, y: 21.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &606175368
@@ -10605,7 +10612,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.016382534, y: -0.83098966}
   serializedVersion: 2
-  m_Radius: 5.1169705
+  m_Radius: 8
 --- !u!850595691 &680462866
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -11139,6 +11146,13 @@ MonoBehaviour:
   meleeResetTime: 10
   fourArmsObject: {fileID: 273409714}
   hitSound: {fileID: 8300000, guid: 32e00b8183f45ef4da1c412e3099c584, type: 3}
+  hitAudioSource: {fileID: 802035503}
+  meleeTime: 0
+  spriteRenderer: {fileID: 802035499}
+  animator: {fileID: 802035501}
+  attackTime: 0
+  player: {fileID: 0}
+  fourArms: {fileID: 0}
   start: 0
   dead: 0
   invulnerable: 0
@@ -14233,6 +14247,13 @@ MonoBehaviour:
   meleeResetTime: 10
   fourArmsObject: {fileID: 273409714}
   hitSound: {fileID: 8300000, guid: 32e00b8183f45ef4da1c412e3099c584, type: 3}
+  hitAudioSource: {fileID: 1275867332}
+  meleeTime: 0
+  spriteRenderer: {fileID: 1275867328}
+  animator: {fileID: 1275867330}
+  attackTime: 0
+  player: {fileID: 0}
+  fourArms: {fileID: 0}
   start: 0
   dead: 0
   invulnerable: 0
@@ -19185,12 +19206,12 @@ PrefabInstance:
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.5
+      value: 18.61
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18
+      value: -12.84
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
@@ -19386,6 +19407,13 @@ MonoBehaviour:
   meleeResetTime: 10
   fourArmsObject: {fileID: 273409714}
   hitSound: {fileID: 8300000, guid: 32e00b8183f45ef4da1c412e3099c584, type: 3}
+  hitAudioSource: {fileID: 1909699018}
+  meleeTime: 0
+  spriteRenderer: {fileID: 1909699013}
+  animator: {fileID: 1909699016}
+  attackTime: 0
+  player: {fileID: 0}
+  fourArms: {fileID: 0}
   start: 0
   dead: 0
   invulnerable: 0
