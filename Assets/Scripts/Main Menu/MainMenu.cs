@@ -85,6 +85,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["completedWaxDungeon"] = 0;
         DataStorage.saveValues["waxDungeonGolem"] = 0;
         DataStorage.saveValues["waxDungeonFourArms"] = 0;
+        DataStorage.saveValues["waxDungeonGabriel"] = 0;
 
         yield return new WaitForSeconds(3);
 
@@ -118,6 +119,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["completedWaxDungeon"] = PlayerPrefs.GetInt("completedWaxDungeon");
         DataStorage.saveValues["waxDungeonGolem"] = PlayerPrefs.GetInt("waxDungeonGolem");
         DataStorage.saveValues["waxDungeonFourArms"] = PlayerPrefs.GetInt("waxDungeonFourArms");
+        DataStorage.saveValues["waxDungeonGabriel"] = PlayerPrefs.GetInt("waxDungeonGabriel");
 
         yield return new WaitForSeconds(3);
 

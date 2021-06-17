@@ -75,5 +75,10 @@ public class DataStorage : MonoBehaviour {
     0 - haven't seen four arms
     1 - fought and lost against four arms
     2 - fought and won four arms
+
+    int waxDungeonGabriel;
+    0 - haven't seen Gabriel
+    1 - fought and lost against Gabriel
+    2 - fought and won Gabriel
     */
 }

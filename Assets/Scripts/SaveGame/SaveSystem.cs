@@ -28,6 +28,7 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetInt("waxDungeonRoom", (int) DataStorage.saveValues["waxDungeonRoom"]);
         PlayerPrefs.SetInt("waxDungeonGolem", (int) DataStorage.saveValues["waxDungeonGolem"]);
         PlayerPrefs.SetInt("waxDungeonFourArms", (int) DataStorage.saveValues["waxDungeonFourArms"]);
+        PlayerPrefs.SetInt("waxDungeonGabriel", (int) DataStorage.saveValues["waxDungeonGabriel"]);
         PlayerPrefs.SetInt("completedWaxDungeon", (int) DataStorage.saveValues["completedWaxDungeon"]);
 
     }
