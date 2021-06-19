@@ -666,17 +666,20 @@ MonoBehaviour:
     - Priest Caecus
     - Priest Caecus
     - Lumin
+    - 
     sentences:
     - Lumin! Please say you're alright still!
     - They got me again Priest Caecus... I fear I may be too inexperienced to handle
       this situation...
-    - Fear not, young Warden! While you were gone, a travelling blacksmith came to
-      our town.
+    - Fear not, young Warden! While you were gone, Blacksmith Enzio has returned
+      from his journey!
     - "He has an interesting offer. He\u2019s able to upgrade our Lanterns to give
       them new powers."
     - "His upgrades will likely give you an advantage over our enemies. Go see him
       if you\u2019re interested. I hope this makes your life easier."
     - "Thank you Priest Caecus, I won\u2019t let you down."
+    - Blacksmith Enzio's workshop is located in the bottom left door of the Main
+      Hall.
   blessingInstructions: {fileID: 686383319}
 --- !u!1 &408452636
 GameObject:

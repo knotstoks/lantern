@@ -5,7 +5,9 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
     [SerializeField] private GameObject superNova;
     [SerializeField] private Slider slider;
     [SerializeField] private Image sliderImage;
-    [SerializeField] private Sprite[] sprites; //1 - 2 for VE, 3 - 4 for FF, 5 - 6 for NI
+    [SerializeField] private Image glowBox;
+    [SerializeField] private Sprite[] sprites; //1 for VE, 2 for FF, 3 for NI
+    [SerializeField] private Sprite[] glowSprites; //0 for not ready, 1 for ready
     public int upgrade;
     private int[] progressNeeded = {
         0, 50, 20, 30
@@ -33,9 +35,9 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
         }
 
         if ((int) DataStorage.saveValues["upgradeBar"] == progressNeeded[upgrade] && upgrade != 0) {
-            sliderImage.sprite = sprites[upgrade * 2];
+            glowBox.sprite = glowSprites[1];
         } else if (upgrade != 0 && (int) DataStorage.saveValues["upgradeBar"] < progressNeeded[upgrade]) {
-            sliderImage.sprite = sprites[upgrade * 2 - 1];
+            glowBox.sprite = glowSprites[0];
         }
 
         slider.value = (int) DataStorage.saveValues["upgradeBar"];
@@ -49,6 +51,7 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
             DataStorage.saveValues["upgradeBar"] = 0;
             upgrade = n;
             DataStorage.saveValues["upgrade"] = n;
+            sliderImage.sprite = sprites[n];
         } else {
             upgrade = n;
             DataStorage.saveValues["upgrade"] = n;
