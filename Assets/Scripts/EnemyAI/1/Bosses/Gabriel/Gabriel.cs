@@ -62,6 +62,7 @@ public class Gabriel : Boss {
             if (specialAttackTime < 0 && notAttacking) {
                 DoRandomAttack();
                 notAttacking = false;
+                specialAttackTime = specialAttackCooldown;
             } else {
                 specialAttackTime -= Time.deltaTime;
             }
@@ -77,11 +78,12 @@ public class Gabriel : Boss {
                 } else {
                     pos.x = Random.Range(minX, maxX);
                     pos.y = Random.Range(minY, maxY);
+                    moveTime = moveResetTime;
                 }
             }
 
             if (dashing) {
-                Vector2.MoveTowards(playerTarget.position, transform.position, 5 * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, playerTarget.position, 3 * Time.deltaTime);
             }
 
             //For Animations
@@ -121,10 +123,10 @@ public class Gabriel : Boss {
         dashing = true;
         yield return new WaitForSeconds(1.4f);
         //Resets to normal
+        dashing = false;
         animator.SetTrigger("Walking");
         specialAttackTime = specialAttackCooldown;
         notAttacking = true;
-        dashing = true;
     }
     private IEnumerator HomingShots() {
         //Charge up Homing Shots
@@ -153,6 +155,7 @@ public class Gabriel : Boss {
     private void ShootFeathers(Vector2 aim) {
         GameObject projectile = Instantiate(feather, transform.position, Quaternion.identity) as GameObject;
         projectile.GetComponent<Feather>().endPosition = aim;
+        projectile.GetComponent<Rigidbody2D>().velocity = new Vector2(aim.x - transform.position.x, aim.y - transform.position.y).normalized * featherSpeed;
     }
     //For the Intro Scene
     public IEnumerator TurnAround() {

@@ -35,13 +35,17 @@ public class GabrielBossRoom : MonoBehaviour {
                 line = 0;
                 dialogueManager.DisplayNextSentence();
                 DataStorage.saveValues["waxDungeonGabriel"] = 1;
+                audioSource.clip = music[1];
+                audioSource.Play();
+                player.allowCombat = true;
+                bossHPBar.SetActive(true);
                 //Start Gabriel Boss Fight
                 gabriel.StartBossBattle();
-            } else if (line == 11) { //Turn around
+            } else if (line == 21) { //Turn around
                 StartCoroutine(gabriel.TurnAround());
                 line++;
                 dialogueManager.DisplayNextSentence();
-            } else if (line == 21) {
+            } else if (line == 22) {
                 StartCoroutine(gabriel.WingsEmerge());
                 line++;
                 dialogueManager.DisplayNextSentence();
