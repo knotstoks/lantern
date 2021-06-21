@@ -16,9 +16,9 @@ public class DungeonPortal : Interactable {
         new Vector2(23, -6.5f), //1.5
         new Vector2(-0.5f, -4), //1.6
         new Vector2(9.5f, -19.6f), //Four Arms
-        new Vector2(), //1.7
-        new Vector2(), //1.8
-        new Vector2(), //1.9
+        new Vector2(-0.5f, -4), //1.7
+        new Vector2(-0.5f, -28.5f), //1.8
+        new Vector2(-5, -5), //1.9
         new Vector2() //Final Boss
     };
     private static int[] facingDirections = {
@@ -29,11 +29,11 @@ public class DungeonPortal : Interactable {
         0, //1.4
         3, //1.5
         0, //1.6
-        0 //Four Arms
-        //1.7
-        //1.8
-        //1.9
-        //Final Boss
+        0, //Four Arms
+        0, //1.7
+        0, //1.8
+        1, //1.9
+        0  //Final Boss
     };
     private IEnumerator Start() {
         yield return new WaitForSeconds(0.5f);
@@ -85,7 +85,7 @@ public class DungeonPortal : Interactable {
             pos = positions[10];
             facingWay = facingDirections[10];
         } else if (array[nextRoom] == 20) {
-            nextScene = "WD1"; //edit!!!!!!!!!!!!!
+            nextScene = "BossGabriel";
             pos = positions[11];
             facingWay = facingDirections[11];
         }
