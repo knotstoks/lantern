@@ -56,7 +56,7 @@ public class Player : MonoBehaviour {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
         DataStorage.saveValues["health"] = 6;
         DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(-7f, -2f);
+        DataStorage.saveValues["position"] = new Vector2(-1f, -3f);
         DataStorage.saveValues["facingDirection"] = 0;
         PlayerPrefs.SetFloat("volume", 1f);
         DataStorage.saveValues["progress"] = 3;
@@ -70,6 +70,7 @@ public class Player : MonoBehaviour {
         DataStorage.saveValues["upgrade"] = 2;
         DataStorage.saveValues["upgradeBar"] = 20;
         DataStorage.saveValues["waxDungeonRoom"] = 2;
+        DataStorage.saveValues["waxDungeonGabriel"] = 0;
 
         invulTime = 0.5f;
         rb = GetComponent<Rigidbody2D>();
