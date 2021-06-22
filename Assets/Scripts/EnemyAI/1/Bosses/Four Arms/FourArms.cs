@@ -16,7 +16,7 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     [SerializeField] private Slider slider;
     [SerializeField] private int health;
     [SerializeField] private float resetHomingTime;
-    [SerializeField] private GameObject homingBullet;
+    [SerializeField] private GameObject bloodBullet;
     [SerializeField] private Vector2[] armPositions;
     [SerializeField] private GameObject deadFourArms;
     [SerializeField] private GameObject puddle;
@@ -111,19 +111,13 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
         for (int i = 0; i < arms.Length; i++) {
             yield return new WaitForSeconds(2f);
             if (arms[i].dead) {
-                Instantiate(homingBullet, armPositions[i], Quaternion.identity);
+                GameObject projectile = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
+                projectile.GetComponent<Rigidbody2D>().velocity = new Vector2(target.position.x - transform.position.x, target.position.y - transform.position.y).normalized * 5;
             }
         }
     }
     private IEnumerator Death() {
-        GameObject[] bullets = GameObject.FindGameObjectsWithTag("Bullet");
-        GameObject[] homingMissles = GameObject.FindGameObjectsWithTag("HomingMissle");
-        for (int i = 0; i < bullets.Length; i ++) {
-            Destroy(bullets[i]);
-        }
-        for (int i = 0; i < homingMissles.Length; i++) {
-            Destroy(homingMissles[i]);
-        }
+        sceneManager.DestroyAll();
         animator.SetTrigger("Death");
         sceneManager.CompleteFight();
         yield return new WaitForSeconds(2f);

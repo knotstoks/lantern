@@ -54,23 +54,23 @@ public class Player : MonoBehaviour {
     private AudioSource audioSource;
     private void Start() {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
-        // DataStorage.saveValues["health"] = 6;
-        // DataStorage.saveValues["maxHealth"] = 6;
-        // DataStorage.saveValues["position"] = new Vector2(0f, -2f);
-        // DataStorage.saveValues["facingDirection"] = 0;
-        // PlayerPrefs.SetFloat("volume", 1f);
-        // DataStorage.saveValues["progress"] = 1;
-        // DataStorage.saveValues["blessings"] = 1;
-        // DataStorage.saveValues["tutorialDojo"] = 0;
-        // DataStorage.saveValues["waxDungeonGolem"] = 0;
-        // DataStorage.saveValues["completedWaxDungeon"] = 0;
-        // DataStorage.saveValues["blacksmith"] = 3;
-        // DataStorage.saveValues["deaths"] = 0;
-        // DataStorage.saveValues["waxDungeonFourArms"] = 0;
-        // DataStorage.saveValues["upgrade"] = 2;
-        // DataStorage.saveValues["upgradeBar"] = 20;
-        // DataStorage.saveValues["waxDungeonRoom"] = 2;
-        // DataStorage.saveValues["waxDungeonGabriel"] = 0;
+        DataStorage.saveValues["health"] = 6;
+        DataStorage.saveValues["maxHealth"] = 6;
+        DataStorage.saveValues["position"] = new Vector2(9.5f, -15f);
+        DataStorage.saveValues["facingDirection"] = 0;
+        PlayerPrefs.SetFloat("volume", 1f);
+        DataStorage.saveValues["progress"] = 1;
+        DataStorage.saveValues["blessings"] = 1;
+        DataStorage.saveValues["tutorialDojo"] = 0;
+        DataStorage.saveValues["waxDungeonGolem"] = 0;
+        DataStorage.saveValues["completedWaxDungeon"] = 0;
+        DataStorage.saveValues["blacksmith"] = 1;
+        DataStorage.saveValues["deaths"] = 0;
+        DataStorage.saveValues["waxDungeonFourArms"] = 0;
+        DataStorage.saveValues["upgrade"] = 1;
+        DataStorage.saveValues["upgradeBar"] = 20;
+        DataStorage.saveValues["waxDungeonRoom"] = 2;
+        DataStorage.saveValues["waxDungeonGabriel"] = 0;
 
         invulTime = 0.5f;
         rb = GetComponent<Rigidbody2D>();
