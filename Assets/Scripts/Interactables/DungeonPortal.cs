@@ -19,7 +19,7 @@ public class DungeonPortal : Interactable {
         new Vector2(-0.5f, -4), //1.7
         new Vector2(-0.5f, -28.5f), //1.8
         new Vector2(-5, -5), //1.9
-        new Vector2() //Final Boss
+        new Vector2(0, -2) //Final Boss
     };
     private static int[] facingDirections = {
         1, //1.1

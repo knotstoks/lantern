@@ -19,7 +19,7 @@ public class Enzio : Interactable {
             if (line == introDialogue.names.Length - 1) {
                 dialogueManager.DisplayNextSentence();
                 line = 0;
-                DataStorage.saveValues["blacksmith"] = 3;
+                DataStorage.saveValues["blacksmith"] = 1;
                 talking = false;
             } else {
                 dialogueManager.DisplayNextSentence();
@@ -27,12 +27,12 @@ public class Enzio : Interactable {
         }
     }
     public override void Interact() {
-        if ((int) DataStorage.saveValues["blacksmith"] == 2) {
+        if ((int) DataStorage.saveValues["blacksmith"] == 0 && !talking) {
             dialogueManager.StartDialogue(introDialogue);
             talking = true;
         }
 
-        if ((int) DataStorage.saveValues["blacksmith"] == 3 && !menuOpen) {
+        if ((int) DataStorage.saveValues["blacksmith"] == 1 && !menuOpen) {
             upgradeUI.OpenMenu();
             menuOpen = true;
             player.inDialogue = true;

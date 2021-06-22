@@ -69,6 +69,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Wax Dungeon/BossGabriel.unity
     guid: 03ee1b9c037ca0c409f0e1ad9140368c
   - enabled: 1
+    path: Assets/Scenes/Church Of Light/Blacksmith.unity
+    guid: 03a11043699e80341a422a1262787a44
+  - enabled: 1
     path: Assets/Scenes/Prototypes/PlayTestingMainMenu.unity
     guid: 5a6a43623e0702b479f7351d9266c8d6
   m_configObjects: {}

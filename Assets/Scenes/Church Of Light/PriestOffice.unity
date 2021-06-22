@@ -658,28 +658,6 @@ MonoBehaviour:
     - Thank you, Priest, for bringing me back safely. I will be departing now.
     - "Very well then. Good luck, Lumin. \rBe more careful this time and may the
       Light brighten your path ahead."
-  blacksmithDialogue:
-    names:
-    - Priest Caecus
-    - Lumin
-    - Priest Caecus
-    - Priest Caecus
-    - Priest Caecus
-    - Lumin
-    - 
-    sentences:
-    - Lumin! Please say you're alright still!
-    - They got me again Priest Caecus... I fear I may be too inexperienced to handle
-      this situation...
-    - Fear not, young Warden! While you were gone, Blacksmith Enzio has returned
-      from his journey!
-    - "He has an interesting offer. He\u2019s able to upgrade our Lanterns to give
-      them new powers."
-    - "His upgrades will likely give you an advantage over our enemies. Go see him
-      if you\u2019re interested. I hope this makes your life easier."
-    - "Thank you Priest Caecus, I won\u2019t let you down."
-    - Blacksmith Enzio's workshop is located in the bottom left door of the Main
-      Hall.
   blessingInstructions: {fileID: 686383319}
 --- !u!1 &408452636
 GameObject:
@@ -2049,6 +2027,7 @@ MonoBehaviour:
     - Priest Caecus
     - Priest Caecus
     - Priest Caecus
+    - Priest Caecus
     - Lumin
     - Priest Caecus
     sentences:
@@ -2065,6 +2044,8 @@ MonoBehaviour:
       night, some human, and some... less so.
     - "Please look into it, Lumin. If it poses a threat to the town\u2019s inhabitants,
       then please, do what you must to keep the people safe."
+    - Before you leave, you may want to visit Blacksmith Enzio. His workshop is through
+      the bottom left door of the Main Hall.
     - Thank you for all these years under your care. I will make the Light and you
       proud, Priest Caecus.
     - I know you will.

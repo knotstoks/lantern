@@ -20,7 +20,7 @@ public class DataStorage : MonoBehaviour {
     after 3 deaths, trigger blacksmith
 
     int blacksmith;
-    0 for haven't seen, 1 for in blacksmith dialogue with priest, 2 for Lumin haven't talked to blacksmith but talked to priest, 3 for seen blacksmith already
+    0 for Lumin haven't talked to blacksmith, 1 for seen blacksmith already
 
     int upgrade;
     0 for No Upgrade, 1 for Vampric Embrace, 2 for Fleet Foot, 3 for Nova Impact

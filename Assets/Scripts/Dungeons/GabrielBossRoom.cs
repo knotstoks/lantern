@@ -10,7 +10,6 @@ public class GabrielBossRoom : MonoBehaviour {
     [SerializeField] private AudioClip[] music; //0 for intro music, 1 for fight music, 2 for finished
     private int line;
     private bool inIntro;
-
     private Player player;
     private DialogueManager dialogueManager;
     private Gabriel gabriel;
@@ -41,11 +40,11 @@ public class GabrielBossRoom : MonoBehaviour {
                 bossHPBar.SetActive(true);
                 //Start Gabriel Boss Fight
                 gabriel.StartBossBattle();
-            } else if (line == 21) { //Turn around
+            } else if (line == 20) { //Turn around
                 StartCoroutine(gabriel.TurnAround());
                 line++;
                 dialogueManager.DisplayNextSentence();
-            } else if (line == 22) {
+            } else if (line == 21) {
                 StartCoroutine(gabriel.WingsEmerge());
                 line++;
                 dialogueManager.DisplayNextSentence();
