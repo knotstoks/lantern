@@ -91,6 +91,9 @@ public class DungeonPortal : Interactable {
         }
     }
     public override void Interact() {
+        if (SceneManager.GetActiveScene().buildIndex == 8) {
+            DataStorage.saveValues["timeTrial"] = 1200f;
+        }
         DataStorage.saveValues["waxDungeonRoom"] = nextRoom;
         DataStorage.saveValues["facingDirection"] = facingWay;
         DataStorage.saveValues["position"] = pos;

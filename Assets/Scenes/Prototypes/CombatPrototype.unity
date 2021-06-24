@@ -4402,6 +4402,11 @@ PrefabInstance:
       propertyPath: speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3002714659163028178, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: reversedControls
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3061103931029859939, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_FontData.m_FontSize

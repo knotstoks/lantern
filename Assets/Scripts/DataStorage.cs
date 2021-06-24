@@ -80,5 +80,14 @@ public class DataStorage : MonoBehaviour {
     0 - haven't seen Gabriel
     1 - fought and lost against Gabriel
     2 - fought and won Gabriel
+
+    bool reversedControls;
+
+    bool blackOut;
+
+    bool timeTrail
+
+    float timeTrialTime;
+    Keeps track of how much time you have left
     */
 }

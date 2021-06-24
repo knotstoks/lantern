@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GabrielBossRoom : MonoBehaviour {
     [SerializeField] private GameObject bossHPBar;
     [SerializeField] private Dialogue[] introDialogues; //0 for haven't seen, 1 for seen
-    [SerializeField] private Dialogue outroDialogue;
+    [SerializeField] private Dialogue outroDialogue; //0 for 
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip[] music; //0 for intro music, 1 for fight music, 2 for finished
     private int line;
