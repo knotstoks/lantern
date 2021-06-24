@@ -87,6 +87,11 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["waxDungeonFourArms"] = 0;
         DataStorage.saveValues["waxDungeonGabriel"] = 0;
 
+        //For Trials
+        DataStorage.saveValues["reversedControls"] = false;
+        DataStorage.saveValues["blackOut"] = false;
+        DataStorage.saveValues["timeTrial"] = false;
+
         yield return new WaitForSeconds(3);
 
         SceneManager.LoadScene("IntroCutscene");
@@ -120,6 +125,11 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["waxDungeonGolem"] = PlayerPrefs.GetInt("waxDungeonGolem");
         DataStorage.saveValues["waxDungeonFourArms"] = PlayerPrefs.GetInt("waxDungeonFourArms");
         DataStorage.saveValues["waxDungeonGabriel"] = PlayerPrefs.GetInt("waxDungeonGabriel");
+
+        //For Trials
+        DataStorage.saveValues["reversedControls"] = false;
+        DataStorage.saveValues["blackOut"] = false;
+        DataStorage.saveValues["timeTrial"] = false;
 
         yield return new WaitForSeconds(3);
 

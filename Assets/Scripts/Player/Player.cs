@@ -41,6 +41,8 @@ public class Player : MonoBehaviour {
     private Vector2 move; //for movement and animation
     private Vector2 shootVector; //for shooting and animation
     private bool dead;
+    //For Trials
+    public bool reversedControls;
     private int[][] directions = new int[][] {
         new int[] {0, 1}, //North
         new int[] {1, 0}, //East
@@ -56,7 +58,7 @@ public class Player : MonoBehaviour {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
         DataStorage.saveValues["health"] = 6;
         DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(9.5f, -15f);
+        DataStorage.saveValues["position"] = new Vector2(-9f, 0f);
         DataStorage.saveValues["facingDirection"] = 0;
         PlayerPrefs.SetFloat("volume", 1f);
         DataStorage.saveValues["progress"] = 1;
@@ -96,6 +98,7 @@ public class Player : MonoBehaviour {
         slowTime = 0;
         tempSpeed = speed;
         dead = false;
+        reversedControls = false;
     }
     void Update() {
         if (blinking) {
@@ -184,29 +187,52 @@ public class Player : MonoBehaviour {
         }
 
         if (!inDialogue) {
-            //Movement
-            move.x = Input.GetAxisRaw("Horizontal");
-            move.y = Input.GetAxisRaw("Vertical");
+            if (!reversedControls) {
+                //Movement
+                move.x = Input.GetAxisRaw("Horizontal");
+                move.y = Input.GetAxisRaw("Vertical");
 
-            animator.SetFloat("Horizontal", move.x);
-            animator.SetFloat("Vertical", move.y);
-            animator.SetFloat("Speed", move.sqrMagnitude);
+                animator.SetFloat("Horizontal", move.x);
+                animator.SetFloat("Vertical", move.y);
+                animator.SetFloat("Speed", move.sqrMagnitude);
 
-            if (move.x == -1f || move.x == 1f || move.y == 1f || move.y == -1f) {
-                animator.SetFloat("LastMoveX", move.x);
-                animator.SetFloat("LastMoveY", move.y);
+                if (move.x == -1f || move.x == 1f || move.y == 1f || move.y == -1f) {
+                    animator.SetFloat("LastMoveX", move.x);
+                    animator.SetFloat("LastMoveY", move.y);
+                }
+
+                Vector2 clampedMovement = Vector2.ClampMagnitude(move, 1);
+                rb.MovePosition(rb.position + (clampedMovement * speed * Time.fixedDeltaTime));
+            } else {
+                //Reversed Movement
+                move.x = -Input.GetAxisRaw("Horizontal");
+                move.y = -Input.GetAxisRaw("Vertical");
+
+                animator.SetFloat("Horizontal", move.x);
+                animator.SetFloat("Vertical", move.y);
+                animator.SetFloat("Speed", move.sqrMagnitude);
+
+                if (move.x == -1f || move.x == 1f || move.y == 1f || move.y == -1f) {
+                    animator.SetFloat("LastMoveX", move.x);
+                    animator.SetFloat("LastMoveY", move.y);
+                }
+
+                Vector2 clampedMovement = Vector2.ClampMagnitude(move, 1);
+                rb.MovePosition(rb.position + (clampedMovement * speed * Time.fixedDeltaTime));
             }
-
-            Vector2 clampedMovement = Vector2.ClampMagnitude(move, 1);
-            rb.MovePosition(rb.position + (clampedMovement * speed * Time.fixedDeltaTime));
         }
 
         if (allowCombat && !inDialogue) {
             shootVector.x = Input.GetAxisRaw("HorizontalShoot");
             shootVector.y = Input.GetAxisRaw("VerticalShoot");
 
-            animator.SetFloat("HoriShoot", shootVector.x);
-            animator.SetFloat("VertShoot", shootVector.y);
+            if (!reversedControls) {
+                animator.SetFloat("HoriShoot", shootVector.x);
+                animator.SetFloat("VertShoot", shootVector.y);
+            } else {
+                animator.SetFloat("HoriShoot", -shootVector.x);
+                animator.SetFloat("VertShoot", -shootVector.y);
+            }
             animator.SetFloat("ShootSpeed", shootVector.sqrMagnitude);
 
             if ((shootVector.x != 0 || shootVector.y != 0) && Time.time > lastFire + fireDelay) {
@@ -243,11 +269,21 @@ public class Player : MonoBehaviour {
         updateHealth();
     }
     private void Shoot(float x, float y) {
-        Vector2 tempVector = new Vector2(transform.position.x, transform.position.y - 0.3f);
-        GameObject bullet = Instantiate(this.bullet, tempVector, transform.rotation) as GameObject;
-        bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(
-            (x < 0) ? Mathf.Floor(x) * bulletSpeed : Mathf.Ceil(x) * bulletSpeed,
-            (y < 0) ? Mathf.Floor(y) * bulletSpeed : Mathf.Ceil(y) * bulletSpeed);
+        if (!reversedControls) {
+            //Normal Controls
+            Vector2 tempVector = new Vector2(transform.position.x, transform.position.y - 0.3f);
+            GameObject bullet = Instantiate(this.bullet, tempVector, transform.rotation) as GameObject;
+            bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(
+                (x < 0) ? Mathf.Floor(x) * bulletSpeed : Mathf.Ceil(x) * bulletSpeed,
+                (y < 0) ? Mathf.Floor(y) * bulletSpeed : Mathf.Ceil(y) * bulletSpeed);
+        } else {
+            //Reversed Controls
+            Vector2 tempVector = new Vector2(transform.position.x, transform.position.y - 0.3f);
+            GameObject bullet = Instantiate(this.bullet, tempVector, transform.rotation) as GameObject;
+            bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(
+                (x < 0) ? Mathf.Floor(x) * bulletSpeed * -1 : Mathf.Ceil(x) * bulletSpeed * -1,
+                (y < 0) ? Mathf.Floor(y) * bulletSpeed * -1 : Mathf.Ceil(y) * bulletSpeed * -1);
+        }
     }
     //Interactions Part
     public void OpenInteractableIcon() {

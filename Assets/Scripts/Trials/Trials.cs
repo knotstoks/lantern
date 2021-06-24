@@ -1,0 +1,42 @@
+using System.Collections;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class Trials : MonoBehaviour {
+    private Player player;
+    private PauseMenu pauseMenu;
+    private CameraFollow cameraFollow;
+    private float timeLeft;
+    [SerializeField] private GameObject timer;
+    [SerializeField] private Text mins;
+    [SerializeField] private Text seconds;
+    private IEnumerator Start() {
+        pauseMenu = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<PauseMenu>();
+        cameraFollow = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>();
+        timer.SetActive(false);
+        yield return new WaitForSeconds(0.1f);
+        if (SceneManager.GetActiveScene().buildIndex >= 9 && SceneManager.GetActiveScene().buildIndex <= 21) {
+            player.reversedControls = (bool) DataStorage.saveValues["reversedControls"];
+            cameraFollow.blackOut = (bool) DataStorage.saveValues["blackOut"];
+            if ((bool) DataStorage.saveValues["timeTrial"]) {
+                timer.SetActive(true);
+                timeLeft = (float) DataStorage.saveValues["timeTrialTime"];
+            }
+        }
+    }
+    private void Update() {
+        if (!pauseMenu.isGamePaused) {
+            if ((float) DataStorage.saveValues["timeTrialTime"] <= 0) {
+                player.Damage(100);
+            } else {
+                DataStorage.saveValues["timeTrialTime"] = (float) DataStorage.saveValues["timeTrial"] - Time.deltaTime;
+            }
+        }
+
+        if ((bool) DataStorage.saveValues["timeTrial"]) {
+            mins.text = ((float) DataStorage.saveValues["timeTrialTime"] / 60).ToString();
+            seconds.text = ((float) DataStorage.saveValues["timeTrialTime"] % 60).ToString();
+        }
+    }
+}

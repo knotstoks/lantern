@@ -8,11 +8,11 @@ Float: Hori, Vert - Controls the direction Gabriel is facing
 Trigger: Start - nothing...will stand in my way (spreads wings)
 Trigger: Walking - Walks to a random position on the map using blend trees
 
-
-
 Trigger: Dash - Dash Attack (1)
 Trigger: HomingShots - Homing Bullets attack (2)
 Trigger: Feathers - Feather attack (3)
+
+Trigger: Death - Plays the death animation
 **/
 
 public class Gabriel : Boss {
@@ -22,6 +22,7 @@ public class Gabriel : Boss {
     [SerializeField] private float featherSpeed;
     [SerializeField] private float specialAttackCooldown;
     [SerializeField] private float moveResetTime;
+    [SerializeField] private GameObject downedGabriel;
     private float specialAttackTime; // 1 for dash, 2 for homing, 3 for feathers
     private bool notAttacking;
     private Transform playerTarget;
@@ -57,6 +58,12 @@ public class Gabriel : Boss {
         animator.SetTrigger("Walking");
     }
     private void Update() {
+        if (health <= 0 && start) {
+            start = false;
+            animator.SetTrigger("Death");
+            gabrielBossRoom.CompleteFight();
+        }
+
         if (start) {
             //Attacks Randomly
             if (specialAttackTime < 0 && notAttacking) {

@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 public class PauseMenu : MonoBehaviour{
     public GameObject resumeGameButton, quitYesButton;
     private Player player;
-    private bool isGamePaused; //boolean to check if game is paused
+    public bool isGamePaused; //boolean to check if game is paused
     private bool onQuitScreen; //boolean to check if player is on quit screen
     private void Start() {
         isGamePaused = false;
