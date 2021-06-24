@@ -5232,6 +5232,7 @@ MonoBehaviour:
   featherSpeed: 5
   specialAttackCooldown: 8
   moveResetTime: 5
+  downedGabriel: {fileID: 0}
 --- !u!1 &1147557850
 GameObject:
   m_ObjectHideFlags: 0
@@ -8035,6 +8036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraDistance: 90
+  blackOut: 0
 --- !u!81 &1470806012
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8267,6 +8269,52 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1615319036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1615319038}
+  - component: {fileID: 1615319037}
+  m_Layer: 0
+  m_Name: Feather SPawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1615319037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615319036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3905490f696ea419aa0ff568884819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rhythmFeather: {fileID: 7633589075417459209, guid: d35ded9d316abd24786b27663d883b05,
+    type: 3}
+  resetTime: 0
+--- !u!4 &1615319038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615319036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.8862045, y: 2.7433035, z: -9.993719}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1695277866
 GameObject:
   m_ObjectHideFlags: 0

@@ -41,8 +41,6 @@ public class Player : MonoBehaviour {
     private Vector2 move; //for movement and animation
     private Vector2 shootVector; //for shooting and animation
     private bool dead;
-    //For Trials
-    public bool reversedControls;
     private int[][] directions = new int[][] {
         new int[] {0, 1}, //North
         new int[] {1, 0}, //East
@@ -73,6 +71,11 @@ public class Player : MonoBehaviour {
         DataStorage.saveValues["upgradeBar"] = 20;
         DataStorage.saveValues["waxDungeonRoom"] = 2;
         DataStorage.saveValues["waxDungeonGabriel"] = 0;
+        DataStorage.saveValues["introSceneDone"] = 0;
+        DataStorage.saveValues["waxDungeonRandomArray"] = new int[] {9, 10, 12, 13, 14, 16, 17, 18, 20};
+        DataStorage.saveValues["reversedControls"] = false;
+        DataStorage.saveValues["blackOut"] = false;
+        DataStorage.saveValues["timeTrial"] = false;
 
         invulTime = 0.5f;
         rb = GetComponent<Rigidbody2D>();
@@ -98,7 +101,6 @@ public class Player : MonoBehaviour {
         slowTime = 0;
         tempSpeed = speed;
         dead = false;
-        reversedControls = false;
     }
     void Update() {
         if (blinking) {
@@ -187,7 +189,7 @@ public class Player : MonoBehaviour {
         }
 
         if (!inDialogue) {
-            if (!reversedControls) {
+            if (!(bool) DataStorage.saveValues["reversedControls"]) {
                 //Movement
                 move.x = Input.GetAxisRaw("Horizontal");
                 move.y = Input.GetAxisRaw("Vertical");
@@ -226,7 +228,7 @@ public class Player : MonoBehaviour {
             shootVector.x = Input.GetAxisRaw("HorizontalShoot");
             shootVector.y = Input.GetAxisRaw("VerticalShoot");
 
-            if (!reversedControls) {
+            if (!(bool) DataStorage.saveValues["reversedControls"]) {
                 animator.SetFloat("HoriShoot", shootVector.x);
                 animator.SetFloat("VertShoot", shootVector.y);
             } else {
@@ -269,7 +271,7 @@ public class Player : MonoBehaviour {
         updateHealth();
     }
     private void Shoot(float x, float y) {
-        if (!reversedControls) {
+        if (!(bool) DataStorage.saveValues["reversedControls"]) {
             //Normal Controls
             Vector2 tempVector = new Vector2(transform.position.x, transform.position.y - 0.3f);
             GameObject bullet = Instantiate(this.bullet, tempVector, transform.rotation) as GameObject;

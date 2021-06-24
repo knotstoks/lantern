@@ -17,7 +17,6 @@ public class Trials : MonoBehaviour {
         timer.SetActive(false);
         yield return new WaitForSeconds(0.1f);
         if (SceneManager.GetActiveScene().buildIndex >= 9 && SceneManager.GetActiveScene().buildIndex <= 21) {
-            player.reversedControls = (bool) DataStorage.saveValues["reversedControls"];
             cameraFollow.blackOut = (bool) DataStorage.saveValues["blackOut"];
             if ((bool) DataStorage.saveValues["timeTrial"]) {
                 timer.SetActive(true);
@@ -26,17 +25,26 @@ public class Trials : MonoBehaviour {
         }
     }
     private void Update() {
-        if (!pauseMenu.isGamePaused) {
-            if ((float) DataStorage.saveValues["timeTrialTime"] <= 0) {
-                player.Damage(100);
-            } else {
-                DataStorage.saveValues["timeTrialTime"] = (float) DataStorage.saveValues["timeTrial"] - Time.deltaTime;
+        if ((bool) DataStorage.saveValues["timeTrial"]) {
+
+
+            if (!pauseMenu.isGamePaused && SceneManager.GetActiveScene().buildIndex >= 9 && SceneManager.GetActiveScene().buildIndex <= 21) {
+                if ((float) DataStorage.saveValues["timeTrialTime"] <= 0) {
+                    player.Damage(100);
+                } else {
+                    DataStorage.saveValues["timeTrialTime"] = (float) DataStorage.saveValues["timeTrialTime"] - Time.deltaTime;
+                }
             }
         }
 
         if ((bool) DataStorage.saveValues["timeTrial"]) {
-            mins.text = ((float) DataStorage.saveValues["timeTrialTime"] / 60).ToString();
-            seconds.text = ((float) DataStorage.saveValues["timeTrialTime"] % 60).ToString();
+            if (SceneManager.GetActiveScene().buildIndex == 8) {
+                mins.text = "20";
+                seconds.text = "00";
+            } else if (SceneManager.GetActiveScene().buildIndex >= 9 && SceneManager.GetActiveScene().buildIndex <= 21) {
+                mins.text = ((float) DataStorage.saveValues["timeTrialTime"] / 60).ToString();
+                seconds.text = ((float) DataStorage.saveValues["timeTrialTime"] % 60).ToString();
+            }
         }
     }
 }

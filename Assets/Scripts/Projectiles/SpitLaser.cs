@@ -32,10 +32,10 @@ public class SpitLaser : MonoBehaviour {
         animator.SetInteger("Direction", direction);
         yield return new WaitForSeconds(0.6f);
         animator.SetTrigger("Idle");
-        yield return new WaitForSeconds(onTime);
         if (playerIn) {
             player.Damage(1);
         }
+        yield return new WaitForSeconds(onTime);
         animator.SetTrigger("WindDown");
         yield return new WaitForSeconds(0.6f);
         animator.SetInteger("Direction", -1);
@@ -43,13 +43,13 @@ public class SpitLaser : MonoBehaviour {
         done = false;
         countdownTime = resetCountdownTime;
     }
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Player") { //Damages Player
+    private void OnTriggerStay2D(Collider2D other) {
+        if (other.gameObject.tag == "Player") {
             playerIn = true;
         }
     }
     private void OnTriggerExit2D(Collider2D other) {
-        if (other.tag == "Player") { //Damages Player
+        if (other.gameObject.tag == "Player") {
             playerIn = false;
         }
     }
