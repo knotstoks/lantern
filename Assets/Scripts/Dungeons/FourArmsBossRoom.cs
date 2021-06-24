@@ -82,4 +82,17 @@ public class FourArmsBossRoom : MonoBehaviour {
         doorOut.SetActive(true);
         gate.GetComponent<Animator>().SetTrigger("Open");
     }
+    public void DestroyAll() {
+        for (int i = 0; i < 10; i++) {
+            GameObject[] bullets = GameObject.FindGameObjectsWithTag("Bullet");
+            GameObject[] homingMissles = GameObject.FindGameObjectsWithTag("HomingMissle");
+            
+            for (int j = 0; j < bullets.Length; i ++) {
+                Destroy(bullets[i]);
+            }
+            for (int j = 0; j < homingMissles.Length; i++) {
+                Destroy(homingMissles[i]);
+            }
+        }
+    }
 }

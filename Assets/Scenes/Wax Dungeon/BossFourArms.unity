@@ -543,7 +543,7 @@ MonoBehaviour:
   slider: {fileID: 775072646}
   health: 120
   resetHomingTime: 5
-  homingBullet: {fileID: 7872577261518283662, guid: 98cfde122fa8b0643964f8f87768df08,
+  bloodBullet: {fileID: 2625608992931897471, guid: 5f2e6ff0d11535742b4080d0b613ba24,
     type: 3}
   armPositions:
   - {x: 7.4, y: -7}
@@ -10563,7 +10563,7 @@ SpriteRenderer:
   m_Size: {x: 21.88034, y: 21.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &606175368
@@ -19206,12 +19206,12 @@ PrefabInstance:
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.61
+      value: 9.5
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.84
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
