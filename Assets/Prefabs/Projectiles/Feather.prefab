@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7633589075417459208}
   - component: {fileID: 7633589075417459203}
   - component: {fileID: 7633589075417459212}
+  - component: {fileID: 3759940787884192509}
   m_Layer: 0
   m_Name: Feather
   m_TagString: Untagged
@@ -148,7 +149,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7633589075417459209}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -177,3 +178,29 @@ PolygonCollider2D:
       - {x: 0.2147138, y: -0.07760519}
       - {x: 0.31046966, y: 0.0176431}
       - {x: 0.2963552, y: 0.051406555}
+--- !u!61 &3759940787884192509
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7633589075417459209}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.020384878, y: -0.010976493}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.89650756, y: 0.84632933}
+  m_EdgeRadius: 0
