@@ -6,25 +6,34 @@ public class Blacksmith : MonoBehaviour {
     [SerializeField] private GameObject canvas;
     [SerializeField] private Text upgradeText;
     private Player player;
+    private float showTextTime;
+    private string textToShow;
+    private int currentUpgrade;
     private void Start() {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         upgradeText.text = "";
     }
-    public IEnumerator DisplayChangeUpgrade(int n) {
-        string t = "";
-        if (n == 0) {
-            t = "[Upgrade Removed]";
-        } else if (n == 1) {
-            t = "[Upgraded] Vampric Embrace";
-        } else if (n == 2) {
-            t = "[Upgraded] Fleet Foot";
+    private void Update() {
+        if (showTextTime <= 0) {
+            upgradeText.text = "";
         } else {
-            t = "[Upgraded] Nova Impact";
+            showTextTime -= Time.deltaTime;
+            upgradeText.text = textToShow;
+        }
+    }
+    public void DisplayChangeUpgrade(int n) {
+        //Hardcoding the texts
+        if (n == 0) {
+            textToShow = "[Upgrade Removed]";
+        } else if (n == 1) {
+            textToShow = "[Upgraded] Vampric Embrace";
+        } else if (n == 2) {
+            textToShow = "[Upgraded] Fleet Foot";
+        } else {
+            textToShow = "[Upgraded] Nova Impact";
         }
 
-
-        upgradeText.text = t;
-        yield return new WaitForSeconds(2f);
-        upgradeText.text = "";
+        showTextTime = 2f;
+        currentUpgrade = n;
     }
 }
