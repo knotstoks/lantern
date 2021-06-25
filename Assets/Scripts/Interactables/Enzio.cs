@@ -4,7 +4,7 @@ public class Enzio : Interactable {
     [SerializeField] private Dialogue introDialogue;
     private DialogueManager dialogueManager;
     private Player player;
-    private UpgradeUI upgradeUI;
+    [SerializeField] private UpgradeUI upgradeUI;
     private bool talking;
     private int line;
     [HideInInspector] public bool menuOpen;

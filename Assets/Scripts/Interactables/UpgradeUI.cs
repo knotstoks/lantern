@@ -4,6 +4,7 @@ public class UpgradeUI : MonoBehaviour {
     [SerializeField] private GameObject upgradeMenu;
     [SerializeField] private GameObject firstBlessingButtonSelected;
     [SerializeField] private GameObject enzioObject;
+    [SerializeField] private GameObject[] infoPics;
     private Player player;
     private Upgrades upgradeManager;
     private Blacksmith blacksmith;
@@ -22,12 +23,10 @@ public class UpgradeUI : MonoBehaviour {
     public void ChangeUpgradeUsingButton(int n) {
         if (upgradeManager.upgrade != n) {
             upgradeManager.ChangeUpgrade(n);
-            StartCoroutine(blacksmith.DisplayChangeUpgrade(n));
+            blacksmith.DisplayChangeUpgrade(n);
         }
-
-        ToggleUpgradeMenu();
     }
-    private void ToggleUpgradeMenu() {
+    public void ToggleUpgradeMenu() {
         isOpen = !isOpen;
         upgradeMenu.SetActive(isOpen);
         player.inDialogue = isOpen;
@@ -40,5 +39,14 @@ public class UpgradeUI : MonoBehaviour {
     }
     public void OpenMenu() {
         ToggleUpgradeMenu();
+    }
+    public void ChangeImage(int n) {
+        for (int i = 0; i < 4; i++) {
+            if (i != n) {
+                infoPics[i].SetActive(false);
+            } else {
+                infoPics[i].SetActive(true);
+            }
+        }
     }
 }
