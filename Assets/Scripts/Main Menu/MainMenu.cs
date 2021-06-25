@@ -91,6 +91,9 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["reversedControls"] = false;
         DataStorage.saveValues["blackOut"] = false;
         DataStorage.saveValues["timeTrial"] = false;
+        DataStorage.saveValues["completedReversedControls"] = 0;
+        DataStorage.saveValues["completedBlackOut"] = 0;
+        DataStorage.saveValues["completedTimeTrial"] = 0;
 
         yield return new WaitForSeconds(3);
 
@@ -130,6 +133,9 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["reversedControls"] = false;
         DataStorage.saveValues["blackOut"] = false;
         DataStorage.saveValues["timeTrial"] = false;
+        DataStorage.saveValues["completedReversedControls"] = PlayerPrefs.GetInt("completedReversedControls");
+        DataStorage.saveValues["completedBlackOut"] = PlayerPrefs.GetInt("completedBlackOut");
+        DataStorage.saveValues["completedTimeTrial"] = PlayerPrefs.GetInt("completedTimeTrial");
 
         yield return new WaitForSeconds(3);
 

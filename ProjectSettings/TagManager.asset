@@ -19,6 +19,7 @@ TagManager:
   - Arm
   - HomingMissle
   - UpgradeUI
+  - LightOrb
   layers:
   - Default
   - TransparentFX

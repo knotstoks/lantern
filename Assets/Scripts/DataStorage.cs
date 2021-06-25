@@ -81,13 +81,24 @@ public class DataStorage : MonoBehaviour {
     1 - fought and lost against Gabriel
     2 - fought and won Gabriel
 
+    //For end game//
+
+    int finalBossBeatenCount;
+    how many times you've beaten the final boss
+
     bool reversedControls;
 
     bool blackOut;
 
-    bool timeTrail
+    bool timeTrial
 
     float timeTrialTime;
     Keeps track of how much time you have left
+
+    int completedReversedControls
+
+    int completedBlackOut;
+
+    int completedTimeTrial
     */
 }

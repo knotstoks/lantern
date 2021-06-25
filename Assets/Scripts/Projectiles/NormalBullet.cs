@@ -33,6 +33,10 @@ public class NormalBullet : MonoBehaviour {
         if (other.tag == "Invincible") { //Gets Destroyed when it hits something Invincible (eg. shields or walls)
             StartCoroutine(Collided());
         }
+
+        if (other.tag == "LightOrb") { //for final phase of Gabriel
+            StartCoroutine(Collided());
+        }
     }
     private IEnumerator Collided() {
         animator.SetTrigger("Collide");

@@ -31,5 +31,10 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetInt("waxDungeonGabriel", (int) DataStorage.saveValues["waxDungeonGabriel"]);
         PlayerPrefs.SetInt("completedWaxDungeon", (int) DataStorage.saveValues["completedWaxDungeon"]);
 
+        //End Game
+        PlayerPrefs.SetInt("finalBossBeatenCount", (int) DataStorage.saveValues["finalBossBeatenCount"]);
+        PlayerPrefs.SetInt("completedReversedControls", (int) DataStorage.saveValues["completedReverseControls"]);
+        PlayerPrefs.SetInt("completedBlackOut", (int) DataStorage.saveValues["completedBlackOut"]);
+        PlayerPrefs.SetInt("completedTimeTrial", (int) DataStorage.saveValues["completedTimeTrial"]);
     }
 }
