@@ -14,8 +14,8 @@ public class RhythmFeatherSpawner : MonoBehaviour {
         projectile.GetComponent<Rigidbody2D>().velocity = new Vector2(shootWhere.x - transform.position.x, shootWhere.y - transform.position.y).normalized * 2;
     }
     private IEnumerator Demo1() {
-        Activate(new Vector2(-10, 0), new Vector2(1, 0));
-        Activate(new Vector2(10, 0), new Vector2(-1, 0));
+        Activate(new Vector2(-9, 0), new Vector2(8, 0));
+        Activate(new Vector2(8, 0), new Vector2(-9, 0));
         yield return new WaitForSeconds(1f);
     }
 }
