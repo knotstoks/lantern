@@ -6,7 +6,7 @@ using UnityEngine;
 Animation References
 Trigger: Idle - Flaps his wings at the top of the scene
 Trigger: Imprisoned - Imprisoned in the middle of the map
-
+Trigger: Death - Gabriel Dies
 */
 public class GabrielFinal : MonoBehaviour {
     public int health; //40
@@ -15,28 +15,34 @@ public class GabrielFinal : MonoBehaviour {
     private bool canDamage;
     private SpriteRenderer spriteRenderer;
     private GabrielFinalRoom sceneManager;
+    private Animator animator;
     private void Start() {
         sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<GabrielFinalRoom>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
         canDamage = false;
     }
     private void Update() {
         if (health <= 0 && !dead) {
+            Return();
             dead = true;
             sceneManager.FinishFight();
             //Animation for Gabriel Second form dying
-
+            animator.SetTrigger("Death");
+            
         }
     }
     public void Imprison() {
         canDamage = true;
         //Teleport Gabriel to center and imprison
-        //EDIT!!!!!!!!!!
+        transform.position = new Vector2(); //EDIT!!!!!!!!!
+        animator.SetTrigger("Imprisoned");
     }
     public void Return() {
         canDamage = false;
         //Teleport Gabriel back
-        //EDIT!!!!!!!!!!!
+        transform.position = new Vector2(); //EDIT!!!!!!!!!!
+        animator.SetTrigger("Idle");
     }
     private void OnCollisionStay2D(Collision2D other) {
         if (other.gameObject.tag == "Player") {

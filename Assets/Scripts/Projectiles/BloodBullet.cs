@@ -15,9 +15,5 @@ public class BloodBullet : MonoBehaviour {
             other.GetComponent<Player>().Damage(2);
             Destroy(gameObject);
         }
-
-        if (other.tag == "Invincible") { //Gets Destroyed when it hits something Invincible (eg. shields or walls)
-            Destroy(gameObject);
-        }
     }
 }
