@@ -176,6 +176,7 @@ public class Gabriel : Boss {
         animator.SetTrigger("WingsIdle");
     }
     private IEnumerator Collapse() {
+        gabrielBossRoom.CompleteFight();
         //Teleport the player and Gabriel to specific positions
         playerTarget.gameObject.transform.position = new Vector2(0, -2);
         transform.position = new Vector2(0, 3);
@@ -186,5 +187,4 @@ public class Gabriel : Boss {
         Instantiate(downedGabriel, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
-
 }

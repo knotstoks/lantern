@@ -20,6 +20,7 @@ TagManager:
   - HomingMissle
   - UpgradeUI
   - LightOrb
+  - BloodBullet
   layers:
   - Default
   - TransparentFX
