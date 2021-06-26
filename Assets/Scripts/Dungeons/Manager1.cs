@@ -33,7 +33,6 @@ public class Manager1 : MonoBehaviour {
     [SerializeField] private GameObject gate;
     private int spawnInt;
     private IEnumerator Start() {
-        doorOut.SetActive(false);
         spawnInt = 0;
         musicAudioSource.volume = PlayerPrefs.GetFloat("volume");
         sfx.volume = PlayerPrefs.GetFloat("volume");
@@ -47,6 +46,8 @@ public class Manager1 : MonoBehaviour {
         yield return new WaitForSeconds(0.2f);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().allowCombat = true;
         StartCoroutine(StartRoom());
+        yield return new WaitForSeconds(1);
+        doorOut.SetActive(false);
     }
     private void Update() {
         //Finish the whole room

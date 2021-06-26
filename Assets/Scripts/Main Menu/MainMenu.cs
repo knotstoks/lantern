@@ -88,6 +88,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["waxDungeonGabriel"] = 0;
 
         //For Trials
+        DataStorage.saveValues["finalBossBeatenCount"] = 0;
         DataStorage.saveValues["reversedControls"] = false;
         DataStorage.saveValues["blackOut"] = false;
         DataStorage.saveValues["timeTrial"] = false;
@@ -130,6 +131,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["waxDungeonGabriel"] = PlayerPrefs.GetInt("waxDungeonGabriel");
 
         //For Trials
+        DataStorage.saveValues["finalBossBeatenCount"] = PlayerPrefs.GetInt("finalBossBeatenCount");
         DataStorage.saveValues["reversedControls"] = false;
         DataStorage.saveValues["blackOut"] = false;
         DataStorage.saveValues["timeTrial"] = false;

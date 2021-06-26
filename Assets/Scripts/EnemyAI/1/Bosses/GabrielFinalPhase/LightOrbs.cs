@@ -3,7 +3,6 @@ using UnityEngine;
 public class LightOrbs : MonoBehaviour {
     [SerializeField] private GameObject chargedIcon;
     public int charge;
-    public bool orbCharged;
     private Light orbLight;
     private void Start() {
         charge = 0;
@@ -12,19 +11,15 @@ public class LightOrbs : MonoBehaviour {
     private void Update() {
         if (charge == 0) {
             orbLight.intensity = 0;
-        } else if (charge <= 10) {
+        } else if (charge <= 5) {
             orbLight.intensity = 0.5f;
-        } else if (charge <= 19) {
-            orbLight.intensity = 1;
         } else {
             orbLight.intensity = 2;
         }
 
-        if (charge == 20) {
-            orbCharged = true;
+        if (charge == 10) {
             chargedIcon.SetActive(true);
         } else {
-            orbCharged = false;
             chargedIcon.SetActive(false);
         }
     }
@@ -34,7 +29,7 @@ public class LightOrbs : MonoBehaviour {
         }
     }
     private void ChargeOrb() {
-        if (charge < 20) {
+        if (charge < 10) {
             charge++;
         }
     }

@@ -19,7 +19,8 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
         slider.GetComponent<Slider>().gameObject.SetActive(false);
         upgrade = (int) DataStorage.saveValues["upgrade"];
         sliderImage.sprite = sprites[(int) DataStorage.saveValues["upgrade"]];
-
+    }
+    private void Update() {
         if ((int) DataStorage.saveValues["blacksmith"] == 1) {
             if (upgrade != 0) {
                 slider.GetComponent<Slider>().gameObject.SetActive(true);
@@ -27,8 +28,7 @@ public class Upgrades : MonoBehaviour { //0 for No Upgrade, 1 for Vampric Embrac
             slider.value = (int) DataStorage.saveValues["upgradeBar"];
             slider.maxValue = progressNeeded[upgrade];
         }
-    }
-    private void Update() {
+        
         if ((int) DataStorage.saveValues["upgradeBar"] == progressNeeded[upgrade] && Input.GetKeyDown(KeyCode.Space) && upgrade != 0 && !player.inDialogue) {
             DoUpgrade();
             slider.value = 0;

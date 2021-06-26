@@ -17,11 +17,12 @@ public class Enzio : Interactable {
     private void Update() {
         if (talking && Input.GetKeyDown(KeyCode.E)) {
             if (line == introDialogue.names.Length - 1) {
-                dialogueManager.DisplayNextSentence();
                 line = 0;
+                dialogueManager.DisplayNextSentence();
                 DataStorage.saveValues["blacksmith"] = 1;
                 talking = false;
             } else {
+                line++;
                 dialogueManager.DisplayNextSentence();
             }
         }

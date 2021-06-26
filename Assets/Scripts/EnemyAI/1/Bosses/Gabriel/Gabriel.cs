@@ -177,15 +177,14 @@ public class Gabriel : Boss {
     }
     private IEnumerator Collapse() {
         //Teleport the player and Gabriel to specific positions
-        playerTarget.gameObject.transform.position = new Vector2(); //EDIT!!!!!!!!!
-        transform.position = new Vector2(); //EDIT!!!!!!!!!!!!!!!!
+        playerTarget.gameObject.transform.position = new Vector2(0, -2);
+        transform.position = new Vector2(0, 3);
         yield return new WaitForSeconds(0.2f);
         animator.SetTrigger("Death");
         yield return new WaitForSeconds(1.25f);
         animator.SetTrigger("DeathIdle");
+        Instantiate(downedGabriel, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
-    public void Vomit() {
-        //Plays the vomit animation
-        animator.SetTrigger("Vomit");
-    }
+
 }

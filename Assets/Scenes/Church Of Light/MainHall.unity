@@ -3585,7 +3585,7 @@ PrefabInstance:
     - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
         type: 3}
       propertyPath: objDesc
-      value: To Balcksmith
+      value: To Blacksmith
       objectReference: {fileID: 0}
     - target: {fileID: 288758185031170238, guid: 78d309fb46419e742be6e674b244d552,
         type: 3}
@@ -6280,7 +6280,7 @@ MonoBehaviour:
     - 
     sentences:
     - This is the workshop that Blacksmith Enzio uses.
-    - It appears to be locked
+    - It appears to be locked.
   changeDialogue: []
   changeOvertime: 0
   reference: 

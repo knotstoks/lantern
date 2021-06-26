@@ -8370,9 +8370,6 @@ MonoBehaviour:
     - "\u2026 will not stand in my way!"
   - names: []
     sentences: []
-  outroDialogue:
-    names: []
-    sentences: []
   audioSource: {fileID: 1695277869}
   music:
   - {fileID: 8300000, guid: a3b3fc452e098d444bbf69b2304f024b, type: 3}

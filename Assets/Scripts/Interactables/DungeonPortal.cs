@@ -36,10 +36,10 @@ public class DungeonPortal : Interactable {
         0  //Final Boss
     };
     private IEnumerator Start() {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1);
         int[] array = (int[]) DataStorage.saveValues["waxDungeonRandomArray"];
         nextRoom = (int) DataStorage.saveValues["waxDungeonRoom"] + 1;
-
+        Debug.Log(nextRoom);
         if (array[nextRoom] == 9) {
             nextScene = "WD1";
             pos = positions[0];
@@ -98,6 +98,7 @@ public class DungeonPortal : Interactable {
         DataStorage.saveValues["facingDirection"] = facingWay;
         DataStorage.saveValues["position"] = pos;
         DataStorage.saveValues["currScene"] = nextScene;
+        Debug.Log(nextScene);
         SceneManager.LoadScene("LoadingScreen");
     }
 }

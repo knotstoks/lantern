@@ -1,0 +1,2232 @@
+fileFormatVersion: 2
+guid: faaa26816b6ccbe4f9d7cfe885946ea0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6254696585929593008
+    second: Boss_Gabriel-revival_0
+  - first:
+      213: -5618769149821412118
+    second: Boss_Gabriel-revival_1
+  - first:
+      213: -5785233755659691339
+    second: Boss_Gabriel-revival_2
+  - first:
+      213: -4169347032157441425
+    second: Boss_Gabriel-revival_3
+  - first:
+      213: -5410926226865734332
+    second: Boss_Gabriel-revival_4
+  - first:
+      213: -8607248643625609553
+    second: Boss_Gabriel-revival_5
+  - first:
+      213: 4422026574601601633
+    second: Boss_Gabriel-revival_6
+  - first:
+      213: -4726842619531227389
+    second: Boss_Gabriel-revival_7
+  - first:
+      213: -8951293388692714223
+    second: Boss_Gabriel-revival_8
+  - first:
+      213: 7067340402353283470
+    second: Boss_Gabriel-revival_9
+  - first:
+      213: 2890216236343814057
+    second: Boss_Gabriel-revival_10
+  - first:
+      213: -136169993838342898
+    second: Boss_Gabriel-revival_11
+  - first:
+      213: -6352365733714520324
+    second: Boss_Gabriel-revival_12
+  - first:
+      213: -1490974443030078692
+    second: Boss_Gabriel-revival_13
+  - first:
+      213: 8476849614214376841
+    second: Boss_Gabriel-revival_14
+  - first:
+      213: 654032101208073759
+    second: Boss_Gabriel-revival_15
+  - first:
+      213: 7083404157263998446
+    second: Boss_Gabriel-revival_16
+  - first:
+      213: 973076326703216936
+    second: Boss_Gabriel-revival_17
+  - first:
+      213: 293272802688323008
+    second: Boss_Gabriel-revival_18
+  - first:
+      213: 1137394236144602193
+    second: Boss_Gabriel-revival_19
+  - first:
+      213: 1702761492107583508
+    second: Boss_Gabriel-revival_20
+  - first:
+      213: -5914112295139781985
+    second: Boss_Gabriel-revival_21
+  - first:
+      213: -6112939107221076304
+    second: Boss_Gabriel-revival_22
+  - first:
+      213: -6649068342506743313
+    second: Boss_Gabriel-revival_23
+  - first:
+      213: -61998006642127384
+    second: Boss_Gabriel-revival_24
+  - first:
+      213: 1109190026942989817
+    second: Boss_Gabriel-revival_25
+  - first:
+      213: 616833029839139759
+    second: Boss_Gabriel-revival_26
+  - first:
+      213: 6355698895396926928
+    second: Boss_Gabriel-revival_27
+  - first:
+      213: 1493833381013132241
+    second: Boss_Gabriel-revival_28
+  - first:
+      213: 7519893665024247035
+    second: Boss_Gabriel-revival_29
+  - first:
+      213: 964787676843437524
+    second: Boss_Gabriel-revival_30
+  - first:
+      213: 5514764878381625931
+    second: Boss_Gabriel-revival_31
+  - first:
+      213: -5194463514415149413
+    second: Boss_Gabriel-revival_32
+  - first:
+      213: -812208876830183754
+    second: Boss_Gabriel-revival_33
+  - first:
+      213: -619911325067835307
+    second: Boss_Gabriel-revival_34
+  - first:
+      213: 3597431784115823762
+    second: Boss_Gabriel-revival_35
+  - first:
+      213: 3451681854141205204
+    second: Boss_Gabriel-revival_36
+  - first:
+      213: -3584006674783118656
+    second: Boss_Gabriel-revival_37
+  - first:
+      213: 6887839929345804357
+    second: Boss_Gabriel-revival_38
+  - first:
+      213: -776877818299372485
+    second: Boss_Gabriel-revival_39
+  - first:
+      213: 5772067661729312790
+    second: Boss_Gabriel-revival_40
+  - first:
+      213: 6204311512787014818
+    second: Boss_Gabriel-revival_41
+  - first:
+      213: -5685512652915068
+    second: Boss_Gabriel-revival_42
+  - first:
+      213: -1350731286989608328
+    second: Boss_Gabriel-revival_43
+  - first:
+      213: -3435075986408940832
+    second: Boss_Gabriel-revival_44
+  - first:
+      213: 646443849423496946
+    second: Boss_Gabriel-revival_45
+  - first:
+      213: -6483589902939905625
+    second: Boss_Gabriel-revival_46
+  - first:
+      213: -3145323979329207770
+    second: Boss_Gabriel-revival_47
+  - first:
+      213: -1483780365821485280
+    second: Boss_Gabriel-revival_48
+  - first:
+      213: -4199646294840266880
+    second: Boss_Gabriel-revival_49
+  - first:
+      213: -4930029643973115411
+    second: Boss_Gabriel-revival_50
+  - first:
+      213: -1950250034501672455
+    second: Boss_Gabriel-revival_51
+  - first:
+      213: -2341671331195189155
+    second: Boss_Gabriel-revival_52
+  - first:
+      213: 5158014674956507406
+    second: Boss_Gabriel-revival_53
+  - first:
+      213: -4841181652153930737
+    second: Boss_Gabriel-revival_54
+  - first:
+      213: 2623365339929534811
+    second: Boss_Gabriel-revival_55
+  - first:
+      213: -2499547187059132254
+    second: Boss_Gabriel-revival_56
+  - first:
+      213: 2466874672994323410
+    second: Boss_Gabriel-revival_57
+  - first:
+      213: 6382437297731650173
+    second: Boss_Gabriel-revival_58
+  - first:
+      213: 5531471793524041520
+    second: Boss_Gabriel-revival_59
+  - first:
+      213: -162252048373834620
+    second: Boss_Gabriel-revival_60
+  - first:
+      213: -6288027874764927133
+    second: Boss_Gabriel-revival_61
+  - first:
+      213: -4156384888611397008
+    second: Boss_Gabriel-revival_62
+  - first:
+      213: -7102497893699875312
+    second: Boss_Gabriel-revival_63
+  - first:
+      213: 3169302922435677162
+    second: Boss_Gabriel-revival_64
+  - first:
+      213: 4685991602082625858
+    second: Boss_Gabriel-revival_65
+  - first:
+      213: 1482090860825401755
+    second: Boss_Gabriel-revival_66
+  - first:
+      213: -5889178855979251541
+    second: Boss_Gabriel-revival_67
+  - first:
+      213: -1972365634208538278
+    second: Boss_Gabriel-revival_68
+  - first:
+      213: -2955834753402128534
+    second: Boss_Gabriel-revival_69
+  - first:
+      213: 6774638793622650734
+    second: Boss_Gabriel-revival_70
+  - first:
+      213: 7870491657367203989
+    second: Boss_Gabriel-revival_71
+  - first:
+      213: 3703710127002562083
+    second: Boss_Gabriel-revival_72
+  - first:
+      213: -6834929440052274558
+    second: Boss_Gabriel-revival_73
+  - first:
+      213: -974842016407364764
+    second: Boss_Gabriel-revival_74
+  - first:
+      213: -7546112693410703493
+    second: Boss_Gabriel-revival_75
+  - first:
+      213: -8722894176403866451
+    second: Boss_Gabriel-revival_76
+  - first:
+      213: 5572592372900712369
+    second: Boss_Gabriel-revival_77
+  - first:
+      213: -8473586094706663883
+    second: Boss_Gabriel-revival_78
+  - first:
+      213: 631125817317580858
+    second: Boss_Gabriel-revival_79
+  - first:
+      213: -7065789156059227424
+    second: Boss_Gabriel-revival_80
+  - first:
+      213: 6526987094878177162
+    second: Boss_Gabriel-revival_81
+  - first:
+      213: 4738498369983517340
+    second: Boss_Gabriel-revival_82
+  - first:
+      213: -6730763093326936238
+    second: Boss_Gabriel-revival_83
+  - first:
+      213: 9190794624705321339
+    second: Boss_Gabriel-revival_84
+  - first:
+      213: 6079423498752690956
+    second: Boss_Gabriel-revival_85
+  - first:
+      213: 2082034538885667832
+    second: Boss_Gabriel-revival_86
+  - first:
+      213: -6707152584932286741
+    second: Boss_Gabriel-revival_87
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b09e26f7652dc650800000000000000
+      internalID: 6254696585929593008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec98fd4a3f1602b0800000000000000
+      internalID: -5618769149821412118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba1e4bfc88b6bfa0800000000000000
+      internalID: -5785233755659691339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f623de2e6f08326c0800000000000000
+      internalID: -4169347032157441425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44db2d5d34788e4b0800000000000000
+      internalID: -5410926226865734332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa69b3736f8ec8880800000000000000
+      internalID: -8607248643625609553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162477e9db13e5d30800000000000000
+      internalID: 4422026574601601633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_7
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f0aa17ea1e66eb0800000000000000
+      internalID: -4726842619531227389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d0ba6c61e96c380800000000000000
+      internalID: -8951293388692714223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81a80dc6ac341260800000000000000
+      internalID: 7067340402353283470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_10
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7e65b9a5c1c1820800000000000000
+      internalID: 2890216236343814057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_11
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0dc230bc1a3c1ef0800000000000000
+      internalID: -136169993838342898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_12
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6159e750dd7d7a0800000000000000
+      internalID: -6352365733714520324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_13
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b9102c4aefe4be0800000000000000
+      internalID: -1490974443030078692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_14
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98da7a5dfc1d3a570800000000000000
+      internalID: 8476849614214376841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_15
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16a5381bb6931900800000000000000
+      internalID: 654032101208073759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_16
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedee323d8e4d4260800000000000000
+      internalID: 7083404157263998446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_17
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829bc7873cf018d00800000000000000
+      internalID: 973076326703216936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_18
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd458a6f0ae11400800000000000000
+      internalID: 293272802688323008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_19
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cc9f61806d8cf00800000000000000
+      internalID: 1137394236144602193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_20
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41069423e8c61a710800000000000000
+      internalID: 1702761492107583508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_21
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f925c6ea33adceda0800000000000000
+      internalID: -5914112295139781985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_22
+      rect:
+        serializedVersion: 2
+        x: 3520
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b68e7c054a7a2ba0800000000000000
+      internalID: -6112939107221076304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_23
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9179d1293c9b3a0800000000000000
+      internalID: -6649068342506743313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_24
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed4055342db32ff0800000000000000
+      internalID: -61998006642127384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_25
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5c758e372a46f00800000000000000
+      internalID: 1109190026942989817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_26
+      rect:
+        serializedVersion: 2
+        x: 4160
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa33a4d5f5e6f8800800000000000000
+      internalID: 616833029839139759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_27
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5f97fa87af33850800000000000000
+      internalID: 6355698895396926928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_28
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d398ec9b892bb410800000000000000
+      internalID: 1493833381013132241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_29
+      rect:
+        serializedVersion: 2
+        x: 4640
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf40b7c32770c5860800000000000000
+      internalID: 7519893665024247035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_30
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd6de9c74d936d00800000000000000
+      internalID: 964787676843437524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_31
+      rect:
+        serializedVersion: 2
+        x: 4960
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42bcbb3071688c40800000000000000
+      internalID: 5514764878381625931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_32
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ece8084fe89e7b0800000000000000
+      internalID: -5194463514415149413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_33
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be2e1d64547ab4f0800000000000000
+      internalID: -812208876830183754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_34
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558071d2fe1a567f0800000000000000
+      internalID: -619911325067835307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_35
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2946cebc525ace130800000000000000
+      internalID: 3597431784115823762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_36
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da8fb9cb56d6ef20800000000000000
+      internalID: 3451681854141205204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_37
+      rect:
+        serializedVersion: 2
+        x: 5920
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca5cec0bec034ec0800000000000000
+      internalID: -3584006674783118656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_38
+      rect:
+        serializedVersion: 2
+        x: 6080
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54888622ce5869f50800000000000000
+      internalID: 6887839929345804357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_39
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ca2668db9f735f0800000000000000
+      internalID: -776877818299372485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_40
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61035e4e4f08a1050800000000000000
+      internalID: 5772067661729312790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_41
+      rect:
+        serializedVersion: 2
+        x: 6560
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a45983f2742a1650800000000000000
+      internalID: 6204311512787014818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_42
+      rect:
+        serializedVersion: 2
+        x: 6720
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ef4fd6e0dcbeff0800000000000000
+      internalID: -5685512652915068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_43
+      rect:
+        serializedVersion: 2
+        x: 6880
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a6afb0d0d314de0800000000000000
+      internalID: -1350731286989608328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_44
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eade9517982450d0800000000000000
+      internalID: -3435075986408940832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_45
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6af1c8141a8f800800000000000000
+      internalID: 646443849423496946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_46
+      rect:
+        serializedVersion: 2
+        x: 7360
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a125f5b559a506a0800000000000000
+      internalID: -6483589902939905625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_47
+      rect:
+        serializedVersion: 2
+        x: 7520
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622809461809954d0800000000000000
+      internalID: -3145323979329207770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_48
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02fd2826e9d886be0800000000000000
+      internalID: -1483780365821485280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_49
+      rect:
+        serializedVersion: 2
+        x: 7840
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fa2cd02fbd7b5c0800000000000000
+      internalID: -4199646294840266880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_50
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de146d2c824059bb0800000000000000
+      internalID: -4930029643973115411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_51
+      rect:
+        serializedVersion: 2
+        x: 8160
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1a55e2de15fe4e0800000000000000
+      internalID: -1950250034501672455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_52
+      rect:
+        serializedVersion: 2
+        x: 8320
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58056bb456b08fd0800000000000000
+      internalID: -2341671331195189155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_53
+      rect:
+        serializedVersion: 2
+        x: 8480
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09d80fb403f49740800000000000000
+      internalID: 5158014674956507406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_54
+      rect:
+        serializedVersion: 2
+        x: 8640
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ce932efeaa0dcb0800000000000000
+      internalID: -4841181652153930737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_55
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b516292a0e0186420800000000000000
+      internalID: 2623365339929534811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_56
+      rect:
+        serializedVersion: 2
+        x: 8960
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a873089313df4dd0800000000000000
+      internalID: -2499547187059132254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_57
+      rect:
+        serializedVersion: 2
+        x: 9120
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db0c3de1791c3220800000000000000
+      internalID: 2466874672994323410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_58
+      rect:
+        serializedVersion: 2
+        x: 9280
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72cf7c18e8f29850800000000000000
+      internalID: 6382437297731650173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_59
+      rect:
+        serializedVersion: 2
+        x: 9440
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037e71a0a4cb3cc40800000000000000
+      internalID: 5531471793524041520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_60
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c19942f909fbdf0800000000000000
+      internalID: -162252048373834620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_61
+      rect:
+        serializedVersion: 2
+        x: 9760
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fc1ea96ff6cb8a0800000000000000
+      internalID: -6288027874764927133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_62
+      rect:
+        serializedVersion: 2
+        x: 9920
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072248c17fd8156c0800000000000000
+      internalID: -4156384888611397008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_63
+      rect:
+        serializedVersion: 2
+        x: 10080
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e0f0cdbcbde6d90800000000000000
+      internalID: -7102497893699875312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_64
+      rect:
+        serializedVersion: 2
+        x: 10240
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebc26d5730abfb20800000000000000
+      internalID: 3169302922435677162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_65
+      rect:
+        serializedVersion: 2
+        x: 10400
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249399ed88cf70140800000000000000
+      internalID: 4685991602082625858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_66
+      rect:
+        serializedVersion: 2
+        x: 10560
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99d95419c1719410800000000000000
+      internalID: 1482090860825401755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_67
+      rect:
+        serializedVersion: 2
+        x: 10720
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba88d9e580f654ea0800000000000000
+      internalID: -5889178855979251541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_68
+      rect:
+        serializedVersion: 2
+        x: 10880
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51efcdd7efb0a4e0800000000000000
+      internalID: -1972365634208538278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_69
+      rect:
+        serializedVersion: 2
+        x: 11040
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6736b4d3f3caf6d0800000000000000
+      internalID: -2955834753402128534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_70
+      rect:
+        serializedVersion: 2
+        x: 11200
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f7577d61a540e50800000000000000
+      internalID: 6774638793622650734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_71
+      rect:
+        serializedVersion: 2
+        x: 11360
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5903c05767a993d60800000000000000
+      internalID: 7870491657367203989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_72
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e2107ccb8366330800000000000000
+      internalID: 3703710127002562083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_73
+      rect:
+        serializedVersion: 2
+        x: 11680
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a13d423e37521a0800000000000000
+      internalID: -6834929440052274558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_74
+      rect:
+        serializedVersion: 2
+        x: 11840
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bd9ebd95aa872f0800000000000000
+      internalID: -974842016407364764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_75
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7750328c72d64790800000000000000
+      internalID: -7546112693410703493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_76
+      rect:
+        serializedVersion: 2
+        x: 12160
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dacbf1266fd02f680800000000000000
+      internalID: -8722894176403866451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_77
+      rect:
+        serializedVersion: 2
+        x: 12320
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf4cc00d33d55d40800000000000000
+      internalID: 5572592372900712369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_78
+      rect:
+        serializedVersion: 2
+        x: 12480
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ed1538756c76a80800000000000000
+      internalID: -8473586094706663883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_79
+      rect:
+        serializedVersion: 2
+        x: 12640
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30eac5469532c800800000000000000
+      internalID: 631125817317580858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_80
+      rect:
+        serializedVersion: 2
+        x: 12800
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea584fd23641fd90800000000000000
+      internalID: -7065789156059227424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_81
+      rect:
+        serializedVersion: 2
+        x: 12960
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87c5cb6e24849a50800000000000000
+      internalID: 6526987094878177162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_82
+      rect:
+        serializedVersion: 2
+        x: 13120
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9292af692782c140800000000000000
+      internalID: 4738498369983517340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_83
+      rect:
+        serializedVersion: 2
+        x: 13280
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25740f2b0a68792a0800000000000000
+      internalID: -6730763093326936238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_84
+      rect:
+        serializedVersion: 2
+        x: 13440
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79512924034c8f70800000000000000
+      internalID: 9190794624705321339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_85
+      rect:
+        serializedVersion: 2
+        x: 13600
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b015246737e5450800000000000000
+      internalID: 6079423498752690956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_86
+      rect:
+        serializedVersion: 2
+        x: 13760
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbdf5cc16fd4ec10800000000000000
+      internalID: 2082034538885667832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gabriel-revival_87
+      rect:
+        serializedVersion: 2
+        x: 13920
+        y: 0
+        width: 160
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee94c092486be2a0800000000000000
+      internalID: -6707152584932286741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

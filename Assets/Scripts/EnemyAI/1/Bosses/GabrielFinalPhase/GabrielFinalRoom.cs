@@ -29,7 +29,7 @@ public class GabrielFinalRoom : MonoBehaviour {
     }
     private void Update() {
         //Imprisons Gabriel once the Orbs are charged
-        if (orbOne.charge == 20 && orbTwo.charge == 20 && orbThree.charge == 20 && orbFour.charge == 20 && !imprisoned) {
+        if (orbOne.charge == 10 && orbTwo.charge == 10 && orbThree.charge == 10 && orbFour.charge == 10 && !imprisoned) {
             imprisoned = true;
             StartCoroutine(ImprisonGabriel());
         }
@@ -45,8 +45,10 @@ public class GabrielFinalRoom : MonoBehaviour {
     }
     private IEnumerator ImprisonGabriel() {
         //Imprison Gabriel
-
+        gabrielFinal.Imprison();
         yield return new WaitForSeconds(4f);
+        //Resets Gabriel
+        gabrielFinal.Return();
         //Reset the orbs
         imprisoned = false;
         orbOne.ResetOrb();
