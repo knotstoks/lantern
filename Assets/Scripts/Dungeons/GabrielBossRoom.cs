@@ -5,17 +5,19 @@ using UnityEngine.SceneManagement;
 public class GabrielBossRoom : MonoBehaviour {
     [SerializeField] private GameObject bossHPBar;
     [SerializeField] private Dialogue[] introDialogues; //0 for haven't seen, 1 for seen
-    [SerializeField] private Dialogue outroDialogue; //0 for 
+    [SerializeField] private Dialogue outroDialogue;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip[] music; //0 for intro music, 1 for fight music, 2 for finished
     private int line;
     private bool inIntro;
+    private bool inOutro;
     private Player player;
     private DialogueManager dialogueManager;
     private Gabriel gabriel;
     private IEnumerator Start() {
         line = 0;
         inIntro = false;
+        inOutro = false;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
         gabriel = GameObject.FindGameObjectWithTag("Boss").GetComponent<Gabriel>();
@@ -53,15 +55,28 @@ public class GabrielBossRoom : MonoBehaviour {
                 dialogueManager.DisplayNextSentence();
             }
         }
+
+        if (inOutro && Input.GetKeyDown(KeyCode.E)) {
+            if (line == outroDialogue.names.Length - 1) {
+                StartCoroutine(GoFinalScene()); //Goes to the second phase
+            } else {
+                dialogueManager.DisplayNextSentence();
+            }
+        }
     }
     private void StartIntroDialogue() {
         inIntro = true;
         dialogueManager.StartDialogue(introDialogues[(int) DataStorage.saveValues["waxDungeonGabriel"]]);
     }
-    public void GoFinalScene() {
+    public IEnumerator GoFinalScene() {
+        dialogueManager.DisplayNextSentence();
+        player.inDialogue = true;
         DataStorage.saveValues["position"] = new Vector2(); //EDITTTT!!!!!!!!!!!!!
         DataStorage.saveValues["facingDirection"] = 0;
-        SceneManager.LoadScene("FinalFormGabriel");
+        //Plays vomit animation
+        gabriel.Vomit();
+        yield return new WaitForSeconds(0f); //EDIT!!!!!!!!!!!
+        SceneManager.LoadScene(""); //EDIT!!!!!!!!!!
     }
     public void CompleteFight() {
         audioSource.clip = music[1];
@@ -69,5 +84,6 @@ public class GabrielBossRoom : MonoBehaviour {
         audioSource.Play();
         bossHPBar.SetActive(false);
         dialogueManager.StartDialogue(outroDialogue);
+        inOutro = true;
     }
 }

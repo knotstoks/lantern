@@ -26,9 +26,7 @@ public class Trials : MonoBehaviour {
     }
     private void Update() {
         if ((bool) DataStorage.saveValues["timeTrial"]) {
-
-
-            if (!pauseMenu.isGamePaused && SceneManager.GetActiveScene().buildIndex >= 9 && SceneManager.GetActiveScene().buildIndex <= 21) {
+            if (!pauseMenu.isGamePaused && SceneManager.GetActiveScene().buildIndex >= 9 && SceneManager.GetActiveScene().buildIndex <= 21 && !player.inDialogue) {
                 if ((float) DataStorage.saveValues["timeTrialTime"] <= 0) {
                     player.Damage(100);
                 } else {

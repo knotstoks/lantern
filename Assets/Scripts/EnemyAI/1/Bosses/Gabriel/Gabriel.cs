@@ -60,7 +60,7 @@ public class Gabriel : Boss {
     private void Update() {
         if (health <= 0 && start) {
             start = false;
-            animator.SetTrigger("Death");
+            StartCoroutine(Collapse());
             gabrielBossRoom.CompleteFight();
         }
 
@@ -174,5 +174,18 @@ public class Gabriel : Boss {
         animator.SetTrigger("WingsEmerge");      
         yield return new WaitForSeconds(0.75f);
         animator.SetTrigger("WingsIdle");
+    }
+    private IEnumerator Collapse() {
+        //Teleport the player and Gabriel to specific positions
+        playerTarget.gameObject.transform.position = new Vector2(); //EDIT!!!!!!!!!
+        transform.position = new Vector2(); //EDIT!!!!!!!!!!!!!!!!
+        yield return new WaitForSeconds(0.2f);
+        animator.SetTrigger("Death");
+        yield return new WaitForSeconds(1.25f);
+        animator.SetTrigger("DeathIdle");
+    }
+    public void Vomit() {
+        //Plays the vomit animation
+        animator.SetTrigger("Vomit");
     }
 }
