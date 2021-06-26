@@ -2033,17 +2033,16 @@ MonoBehaviour:
     sentences:
     - Brightest morning, Lumin. I see the Llachar Lantern in your hand. I take it
       that your final training session went well.
-    - The work of a Warden is endless. The Darkness does not rest, so neither do
-      we.
-    - As you know, the Light was found by the first five wardens, and though they
-      have long since vanished, their legacy continues through young Wardens like
-      you.
+    - The work of a Warden is endless. Not only do we seek to rebuild the sun, but
+      we have to maintain order in society as well.
     - As such, I intend to send you out to investigate a disturbance just outside
       of town.
     - There have been reports of strange figures wandering outside the cemetery at
-      night, some human, and some... less so.
-    - "Please look into it, Lumin. If it poses a threat to the town\u2019s inhabitants,
-      then please, do what you must to keep the people safe."
+      night, some human, and some... less so. It is causing some unrest among the
+      people.
+    - Please look into it, Lumin.
+    - "If it poses a threat to the town\u2019s inhabitants, then please, do what
+      you must to keep the people safe."
     - Before you leave, you may want to visit Blacksmith Enzio. His workshop is through
       the bottom left door of the Main Hall.
     - Thank you for all these years under your care. I will make the Light and you
@@ -7454,6 +7453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraDistance: 90
+  blackOut: 0
 --- !u!114 &1611653632
 MonoBehaviour:
   m_ObjectHideFlags: 0
