@@ -5,9 +5,9 @@ public class SunShard : Interactable {
     [SerializeField] private Dialogue sunShardDialogue;
     private DialogueManager dialogueManager;
     private Player player;
-    private int line;
+    //private int line;
     private void Start() {
-        line = 0;
+        //line = 0;
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }

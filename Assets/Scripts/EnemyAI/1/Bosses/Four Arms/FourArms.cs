@@ -111,7 +111,6 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
         for (int i = 0; i < arms.Length; i++) {
             yield return new WaitForSeconds(2f);
             if (arms[i].dead) {
-                Debug.Log("shot");
                 GameObject projectile = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
                 projectile.GetComponent<Rigidbody2D>().velocity = new Vector2(target.position.x - transform.position.x, target.position.y - transform.position.y).normalized * 5;
             }

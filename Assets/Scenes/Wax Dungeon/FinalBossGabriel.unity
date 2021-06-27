@@ -528,7 +528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &251081115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3843,15 +3843,51 @@ MonoBehaviour:
   orbThreeObject: {fileID: 2085233441}
   orbFourObject: {fileID: 1958684785}
   outroDialogues:
-  - names: []
-    sentences: []
-  - names: []
-    sentences: []
-  - names: []
-    sentences: []
-  - names: []
-    sentences: []
-  sunShard: {fileID: 0}
+  - names:
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    sentences:
+    - WHY!? WHY MUST YOU MEDDLE WITH MY DESTINY!?
+    - YOU PATHETIC WARDENS!
+    - WHY RETURN THE SUN BACK TO THE SKY? WHY STAY MIRED IN THE PAST!
+    - THE WORLD HAS CHANGED!
+    - TRY AS YOU MIGHT, IT WILL NEVER-
+    - '*cough*'
+    - "never\u2026 be the same."
+  - names:
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    sentences:
+    - I remember now.
+    - "I remember you\u2026 killing me!"
+    - "Why\u2026 WHY!?"
+    - "You\u2019ve killed me once! And you do it again!"
+    - "I am so close\u2026 to attaining my goal\u2026 no\u2026"
+  - names:
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    sentences:
+    - My wax creatures, they are not monsters.
+    - "IT\u2019S YOU!"
+    - "YOU\u2019RE THE REAL MONSTER!"
+  - names:
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    sentences:
+    - I am begging you... let me be, Warden!
+    - You can have the Shards of the Sun.
+    - Just stop haunting me.
+  sunShard: {fileID: 136828966748171247, guid: dfd0e6a6ab4ede84590b2073fa9803b1, type: 3}
 --- !u!1 &1322776766
 GameObject:
   m_ObjectHideFlags: 0
@@ -7813,12 +7849,12 @@ PrefabInstance:
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.06
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028172, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
@@ -7863,6 +7899,11 @@ PrefabInstance:
     - target: {fileID: 3002714659163028173, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002714659163028174, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: m_Interpolate
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028177, guid: ff739d5aacc99f6469db80ad818d0730,
@@ -8024,6 +8065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d9f9893846c01446ac753feed406ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  feather: {fileID: 7633589075417459209, guid: d35ded9d316abd24786b27663d883b05, type: 3}
   health: 40
 --- !u!1 &1747791342 stripped
 GameObject:
@@ -8031,6 +8073,63 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1564822082}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1833487302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1833487304}
+  - component: {fileID: 1833487303}
+  m_Layer: 0
+  m_Name: Destroy Feathers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1833487303
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833487302}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.052280426, y: 4.5483665}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.311382, y: 26.512672}
+  m_EdgeRadius: 0
+--- !u!4 &1833487304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833487302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1877829284
 GameObject:
   m_ObjectHideFlags: 0

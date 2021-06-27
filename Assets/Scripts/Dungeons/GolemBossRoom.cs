@@ -16,10 +16,6 @@ public class GolemBossRoom : MonoBehaviour {
     private int line;
     private AudioSource audioSource;
     private IEnumerator Start() {
-        //DELETE AFTER!!!!!!!!!!!!!!!!
-        //DataStorage.saveValues["waxDungeonGolem"] = 0;
-
-        doorOut.SetActive(false);
         introDone = false;
         fightCompleted = false;
         line = 0;
@@ -33,6 +29,8 @@ public class GolemBossRoom : MonoBehaviour {
         audioSource.Play();
         yield return new WaitForSeconds(0.05f);
         StartGolemIntro();
+        yield return new WaitForSeconds(2f);
+        doorOut.SetActive(false);
     } 
     private void Update() {
         if (!introDone && Input.GetKeyDown(KeyCode.E)) { //Intro

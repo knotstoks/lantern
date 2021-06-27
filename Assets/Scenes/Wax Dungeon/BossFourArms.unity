@@ -20480,6 +20480,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3002714659163028178, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 4624609232528388582, guid: 22cb5e2dac840434aa0ccfdb63c42c7b,
+        type: 3}
     - target: {fileID: 3944680900382940677, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_AnchorMax.x
