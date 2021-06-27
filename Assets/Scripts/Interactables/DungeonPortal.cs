@@ -39,7 +39,6 @@ public class DungeonPortal : Interactable {
         yield return new WaitForSeconds(1);
         int[] array = (int[]) DataStorage.saveValues["waxDungeonRandomArray"];
         nextRoom = (int) DataStorage.saveValues["waxDungeonRoom"] + 1;
-        Debug.Log(nextRoom);
         if (array[nextRoom] == 9) {
             nextScene = "WD1";
             pos = positions[0];

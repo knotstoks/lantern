@@ -37,6 +37,8 @@ public class GabrielFinalRoom : MonoBehaviour {
         if (inOutro && line == outroDialogues[(int) DataStorage.saveValues["finalBossBeatenCount"]].names.Length - 1 && Input.GetKeyDown(KeyCode.E)) {
             line = 0;
             inOutro = false;
+            Destroy(gabrielFinal.gameObject);
+            SpawnSunShard();
             dialogueManager.DisplayNextSentence();
         } else {
             line++;
@@ -59,8 +61,10 @@ public class GabrielFinalRoom : MonoBehaviour {
     public void FinishFight() {
         //Start the Outro Dialogue
         dialogueManager.StartDialogue(outroDialogues[(int) DataStorage.saveValues["finalBossBeatenCount"]]);
+        DataStorage.saveValues["finalBossBeatenCount"] = (int) DataStorage.saveValues["finalBossBeatenCount"] + 1;
         inOutro = true;
         //Teleport Player to specific position
+        gabrielFinal.gameObject.transform.position = new Vector2(0.57f, 9.08f);
         playerObject.transform.position = new Vector2(); //EDIT!!!!!!!!!
         //Remove the Orbs' Colliders
         Destroy(orbOneObject.GetComponent<Collider2D>());

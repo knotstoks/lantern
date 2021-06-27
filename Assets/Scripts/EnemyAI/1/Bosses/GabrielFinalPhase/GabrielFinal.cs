@@ -29,20 +29,21 @@ public class GabrielFinal : MonoBehaviour {
             sceneManager.FinishFight();
             //Animation for Gabriel Second form dying
             animator.SetTrigger("Death");
-            
         }
     }
     public void Imprison() {
         canDamage = true;
         //Teleport Gabriel to center and imprison
-        transform.position = new Vector2(); //EDIT!!!!!!!!!
+        transform.position = new Vector2(0.57f, 8f);
         animator.SetTrigger("Imprisoned");
     }
     public void Return() {
-        canDamage = false;
-        //Teleport Gabriel back
-        transform.position = new Vector2(); //EDIT!!!!!!!!!!
-        animator.SetTrigger("Idle");
+        if (!dead) {
+            canDamage = false;
+            //Teleport Gabriel back
+            transform.position = new Vector2(0.57f, 9.08f);
+            animator.SetTrigger("Idle");
+        }
     }
     private void OnCollisionStay2D(Collision2D other) {
         if (other.gameObject.tag == "Player") {

@@ -69,6 +69,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Wax Dungeon/BossGabriel.unity
     guid: 03ee1b9c037ca0c409f0e1ad9140368c
   - enabled: 1
+    path: Assets/Scenes/Wax Dungeon/FinalBossGabriel.unity
+    guid: b15da18c7875b6b41a30c14b9e92a17b
+  - enabled: 1
     path: Assets/Scenes/Church Of Light/Blacksmith.unity
     guid: 03a11043699e80341a422a1262787a44
   - enabled: 1

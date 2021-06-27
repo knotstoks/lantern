@@ -8941,16 +8941,68 @@ MonoBehaviour:
     - "The answers to life\u2019s mysteries?"
     - A way of vanquishing the darkness for good?
     - Who knows? I have dedicated my life to uncovering this mystery.
-    - You Wardens think too small.
-    - Fighting of creatures one by one.
-    - Ineffectual.
-    - Under you, humans will spend their entire existence in fear of the Darkness.
-    - I will tear the Darkness out of the world by the roots.
+    - I know what you Wardens intend to do. Rebuild the Sun, and place it back in
+      the sky?
+    - No, that would place the Sun once again out of my reach.
+    - ' I will rebuild the Sun myself and keep it where I can study it.'
+    - ' I can finally discover what about it held Icarus in such awe!'
+    - I have waited too long.
     - Icarus will guide me.
     - "And you\u2026"
     - "\u2026 will not stand in my way!"
+  - names:
+    - Lumin
+    - Gabriel
+    - Lumin
+    - Gabriel
+    sentences:
+    - Gabriel! I won't fail this time!
+    - Oh? I'm surprised at your persistance, Warden.
+    - I'll stop you once and for all!
+    - We'll see about that...
+  endGameIntroDialogues:
   - names: []
     sentences: []
+  - names:
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    sentences:
+    - You...again?
+    - No, we have met before, I think. Or have we?
+    - It doesn't matter. I recognize your attire.
+    - You are a Warden!
+    - I know you Wardens! I know what you intend to do with the Shards of the Sun!
+      And I will not allow it!
+    - The Sun is mine!
+  - names:
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    sentences:
+    - You.
+    - I know you, Warden.
+    - And you killed me.
+    - It feels like a dream, but, yes, YES! I distinctly remember the feeling of
+      dying!
+    - I WILL NOT LET THAT DREAM BECOME REALITY!
+  - names:
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    sentences:
+    - WHY MUST YOU RETURN!?
+    - WHY MUST YOU TORMENT MY EXISTENCE!?
+    - I SEE YOU SHADOW AT EVERY CORNER!
+    - I AM A MERE SCHOLAR!
+    - JUST LEAVE ME BE!
   audioSource: {fileID: 1695277869}
   music:
   - {fileID: 8300000, guid: a3b3fc452e098d444bbf69b2304f024b, type: 3}
