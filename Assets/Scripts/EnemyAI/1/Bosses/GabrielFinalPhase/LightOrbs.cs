@@ -1,12 +1,13 @@
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class LightOrbs : MonoBehaviour {
     [SerializeField] private GameObject chargedIcon;
     public int charge;
-    private Light orbLight;
+    private Light2D orbLight;
     private void Start() {
         charge = 0;
-        orbLight = GetComponent<Light>();
+        orbLight = GetComponent<Light2D>();
     }
     private void Update() {
         if (charge == 0) {
@@ -14,7 +15,7 @@ public class LightOrbs : MonoBehaviour {
         } else if (charge <= 5) {
             orbLight.intensity = 0.5f;
         } else {
-            orbLight.intensity = 2;
+            orbLight.intensity = 1;
         }
 
         if (charge == 10) {

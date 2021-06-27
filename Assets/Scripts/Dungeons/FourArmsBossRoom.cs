@@ -73,6 +73,7 @@ public class FourArmsBossRoom : MonoBehaviour {
         fourArmsBoss.StartBoss();
     }
     public void CompleteFight() {
+        player.Heal(2);
         audioSource.clip = music[1];
         audioSource.loop = false;
         audioSource.Play();

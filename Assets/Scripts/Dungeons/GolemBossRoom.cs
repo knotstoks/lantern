@@ -74,6 +74,7 @@ public class GolemBossRoom : MonoBehaviour {
         
     }
     public void CompleteFight() {
+        player.Heal(2);
         audioSource.clip = music[1];
         audioSource.loop = false;
         audioSource.Play();

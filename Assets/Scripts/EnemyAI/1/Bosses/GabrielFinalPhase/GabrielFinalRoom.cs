@@ -67,6 +67,10 @@ public class GabrielFinalRoom : MonoBehaviour {
         gabrielFinal.gameObject.transform.position = new Vector2(0.57f, 9.08f);
         playerObject.transform.position = new Vector2(); //EDIT!!!!!!!!!
         //Remove the Orbs' Colliders
+        orbOne.ResetOrb();
+        orbTwo.ResetOrb();
+        orbThree.ResetOrb();
+        orbFour.ResetOrb();
         Destroy(orbOneObject.GetComponent<Collider2D>());
         Destroy(orbTwoObject.GetComponent<Collider2D>());
         Destroy(orbThreeObject.GetComponent<Collider2D>());

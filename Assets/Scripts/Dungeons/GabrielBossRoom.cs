@@ -94,6 +94,7 @@ public class GabrielBossRoom : MonoBehaviour {
         }
     }
     public void CompleteFight() {
+        player.Heal(6);
         audioSource.clip = music[1];
         audioSource.loop = false;
         audioSource.Play();

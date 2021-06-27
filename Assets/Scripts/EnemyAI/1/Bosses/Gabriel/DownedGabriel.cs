@@ -22,8 +22,8 @@ public class DownedGabriel : Interactable {
     }
     private IEnumerator EnterFinalPhase() {
         yield return new WaitForSeconds(8.8f);
-        DataStorage.saveValues["position"] = new Vector2(); //EDIT!!!!!!!!!!
+        DataStorage.saveValues["position"] = new Vector2(0, 0);
         DataStorage.saveValues["facingDirection"] = 0;
-        SceneManager.LoadScene(""); //EDIT!!!!!!!!!!!
+        SceneManager.LoadScene("FinalBossGabriel");
     }
 }

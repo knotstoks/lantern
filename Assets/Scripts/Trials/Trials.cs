@@ -16,7 +16,7 @@ public class Trials : MonoBehaviour {
         cameraFollow = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>();
         timer.SetActive(false);
         yield return new WaitForSeconds(0.1f);
-        if (SceneManager.GetActiveScene().buildIndex >= 9 && SceneManager.GetActiveScene().buildIndex <= 21) {
+        if (SceneManager.GetActiveScene().buildIndex >= 9 && SceneManager.GetActiveScene().buildIndex <= 20) {
             cameraFollow.blackOut = (bool) DataStorage.saveValues["blackOut"];
             if ((bool) DataStorage.saveValues["timeTrial"]) {
                 timer.SetActive(true);
