@@ -940,8 +940,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.32
-  m_Color: {r: 1, g: 0.8973468, b: 0.11859834, a: 1}
+  m_FalloffIntensity: 0.281
+  m_Color: {r: 1, g: 0.94829583, b: 0.5525606, a: 1}
   m_Intensity: 2
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: f3d1ad2e00000000
