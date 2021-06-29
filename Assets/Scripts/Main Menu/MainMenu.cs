@@ -18,7 +18,6 @@ public class MainMenu : MonoBehaviour {
     [SerializeField] private Slider volumeSlider;
     [SerializeField] private GameObject audioManager;
     private void Start() {
-        // PlayerPrefs.DeleteAll();
         standardSet.SetActive(true);
         hasSaveGame = PlayerPrefs.HasKey("savePresent");
         if (!hasSaveGame) {
@@ -26,7 +25,7 @@ public class MainMenu : MonoBehaviour {
             loadGameButton.GetComponentInChildren<Text>().text = "";
         } else {
             loadGameButton.enabled = true;
-            loadGameButton.GetComponentInChildren<Text>().text = "Load Game";
+            loadGameButton.GetComponentInChildren<Text>().text = "Resume Game";
         }
         newGameWarning.SetActive(false);
         quitScreen.SetActive(false);

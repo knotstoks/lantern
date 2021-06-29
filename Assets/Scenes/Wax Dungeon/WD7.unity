@@ -10991,12 +10991,19 @@ PrefabInstance:
         type: 3}
       propertyPath: waves.Array.data[1].smallEnemies.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 513805542070196737, guid: 0bfd57a1def16d649800ce3e9a7419d2,
+        type: 3}
     - target: {fileID: 7782576935869919905, guid: 9713cbc940e2fd249a99af349646b924,
         type: 3}
       propertyPath: waves.Array.data[1].smallEnemies.Array.data[1]
       value: 
       objectReference: {fileID: 6913372488123444881, guid: f94e3d056cac4f1499def97860555ea2,
+        type: 3}
+    - target: {fileID: 7782576935869919905, guid: 9713cbc940e2fd249a99af349646b924,
+        type: 3}
+      propertyPath: waves.Array.data[1].smallEnemies.Array.data[2]
+      value: 
+      objectReference: {fileID: 1110464256833252204, guid: 86664d6d0cbe9de418e89adba9d6c0ad,
         type: 3}
     - target: {fileID: 7782576935869919905, guid: 9713cbc940e2fd249a99af349646b924,
         type: 3}

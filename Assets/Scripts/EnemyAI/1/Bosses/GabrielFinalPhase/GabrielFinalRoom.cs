@@ -17,6 +17,7 @@ public class GabrielFinalRoom : MonoBehaviour {
     private bool imprisoned;
     private void Start() {
         featherDestroyer.SetActive(false);
+        player.allowCombat = true;
         imprisoned = false;
         inOutro = false;
         line = 0;

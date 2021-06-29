@@ -3889,7 +3889,7 @@ MonoBehaviour:
     - You can have the Shards of the Sun.
     - Just stop haunting me.
   sunShard: {fileID: 136828966748171247, guid: dfd0e6a6ab4ede84590b2073fa9803b1, type: 3}
-  featherDestroyer: {fileID: 0}
+  featherDestroyer: {fileID: 1833487302}
 --- !u!82 &951359662
 AudioSource:
   m_ObjectHideFlags: 0

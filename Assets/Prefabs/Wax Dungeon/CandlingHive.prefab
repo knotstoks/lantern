@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68bb902a2bae8dd4f9c4144a9e867418, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 7
   speed: 0
   damage: 0
   hitAudioSource: {fileID: 2784184311260725096}

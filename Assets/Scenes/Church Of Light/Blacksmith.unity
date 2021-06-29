@@ -1634,6 +1634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 626246001}
   - component: {fileID: 626246002}
+  - component: {fileID: 626246003}
   m_Layer: 0
   m_Name: BlackSmith ROOM-Sheet1_2
   m_TagString: Untagged
@@ -1707,6 +1708,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &626246003
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626246000}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.59375, y: 1.3125}
+    newSize: {x: 1.59375, y: 1.3125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.109375, y: 0.65625}
+      - {x: -0.796875, y: 0.375}
+      - {x: -0.796875, y: -0.5625}
+      - {x: -0.671875, y: -0.59375}
+      - {x: 0.265625, y: -0.59375}
+      - {x: 0.796875, y: 0.03125}
+      - {x: 0.796875, y: 0.4375}
+      - {x: 0.765625, y: 0.65625}
 --- !u!1001 &626642063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2782,7 +2816,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -6039806182362000699, guid: 3b70f1a216d7c9a4e878d8f1c081ff0a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3272,9 +3306,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 783143411
-  m_SortingLayer: -1
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1286561160402834458, guid: f297d8fd76081f448b49516f00994193,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3863,10 +3897,8 @@ MonoBehaviour:
     - Blacksmith Enzio
     - Blacksmith Enzio
     - Blacksmith Enzio
-    - Blacksmith Enzio
     - Lumin
     sentences:
-    - hehe
     - Ah! You must be Lumin! My name is Enzio.
     - "I had a chat with the Priest just now! He said he\u2019d send you to see me."
     - You know, a Warden saved my father when he was a teenager while he was out

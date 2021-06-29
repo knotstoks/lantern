@@ -9,9 +9,10 @@ public class SpitLaser : MonoBehaviour {
     private BoxCollider2D boxCollider;
     private float countdownTime;
     private bool done;
-    private bool playerIn;
+    private bool damaging;
     private Player player;
     private void Start() {
+        damaging = false;
         boxCollider = gameObject.GetComponent<BoxCollider2D>();
         countdownTime = resetCountdownTime;
         done = false;
@@ -32,10 +33,9 @@ public class SpitLaser : MonoBehaviour {
         animator.SetInteger("Direction", direction);
         yield return new WaitForSeconds(0.6f);
         animator.SetTrigger("Idle");
-        if (playerIn) {
-            player.Damage(1);
-        }
+        damaging = true;
         yield return new WaitForSeconds(onTime);
+        damaging = false;
         animator.SetTrigger("WindDown");
         yield return new WaitForSeconds(0.6f);
         animator.SetInteger("Direction", -1);
@@ -44,13 +44,8 @@ public class SpitLaser : MonoBehaviour {
         countdownTime = resetCountdownTime;
     }
     private void OnTriggerStay2D(Collider2D other) {
-        if (other.gameObject.tag == "Player") {
-            playerIn = true;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D other) {
-        if (other.gameObject.tag == "Player") {
-            playerIn = false;
+        if (other.gameObject.tag == "Player" && damaging) {
+            player.Damage(1);
         }
     }
 }

@@ -466,11 +466,11 @@ RectTransform:
   m_Children:
   - {fileID: 190797605}
   m_Father: {fileID: 1986891417}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -178.00003, y: 181}
+  m_AnchoredPosition: {x: -178, y: 75}
   m_SizeDelta: {x: 470.97, y: 105.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140347366
@@ -488,8 +488,8 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 1
-    m_SelectOnUp: {fileID: 1992684195}
-    m_SelectOnDown: {fileID: 485098726}
+    m_SelectOnUp: {fileID: 485098726}
+    m_SelectOnDown: {fileID: 1589889141}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -1038,11 +1038,11 @@ RectTransform:
   m_Children:
   - {fileID: 1507958377}
   m_Father: {fileID: 1986891417}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -166, y: 75}
+  m_AnchoredPosition: {x: -168, y: 181}
   m_SizeDelta: {x: 492.52, y: 107.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &485098726
@@ -1060,8 +1060,8 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 140347366}
-    m_SelectOnDown: {fileID: 1589889141}
+    m_SelectOnUp: {fileID: 1992684195}
+    m_SelectOnDown: {fileID: 140347366}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -2955,7 +2955,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Load Game
+  m_Text: Resume Game
 --- !u!222 &1507958379
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3082,7 +3082,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -295, y: -36}
+  m_AnchoredPosition: {x: -298, y: -36}
   m_SizeDelta: {x: 236.43, y: 82.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1589889141
@@ -3804,8 +3804,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 140347365}
   - {fileID: 485098725}
+  - {fileID: 140347365}
   - {fileID: 1589889140}
   - {fileID: 1673495996}
   - {fileID: 1992684194}

@@ -41,7 +41,7 @@ public class MiniWaxBomber : Enemy { //Super fast and explodes
     private IEnumerator Death() {
         animator.SetBool("Dead", true);
         GameObject.FindGameObjectWithTag("DungeonSceneManager").GetComponent<Manager1>().EnemiesNow(-1);
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
     }
 }
