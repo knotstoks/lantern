@@ -6,6 +6,7 @@ public class GabrielFinalRoom : MonoBehaviour {
     [SerializeField] private GameObject orbOneObject, orbTwoObject, orbThreeObject, orbFourObject;
     [SerializeField] private Dialogue[] outroDialogues;
     [SerializeField] private GameObject sunShard;
+    [SerializeField] private GameObject featherDestroyer;
     private LightOrbs orbOne, orbTwo, orbThree, orbFour;
     private GameObject playerObject;
     private Player player;
@@ -15,6 +16,7 @@ public class GabrielFinalRoom : MonoBehaviour {
     private bool inOutro;
     private bool imprisoned;
     private void Start() {
+        featherDestroyer.SetActive(false);
         imprisoned = false;
         inOutro = false;
         line = 0;
@@ -59,6 +61,7 @@ public class GabrielFinalRoom : MonoBehaviour {
         orbFour.ResetOrb();
     }
     public void FinishFight() {
+        featherDestroyer.SetActive(true);
         //Start the Outro Dialogue
         dialogueManager.StartDialogue(outroDialogues[(int) DataStorage.saveValues["finalBossBeatenCount"]]);
         DataStorage.saveValues["finalBossBeatenCount"] = (int) DataStorage.saveValues["finalBossBeatenCount"] + 1;

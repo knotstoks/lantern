@@ -21,6 +21,7 @@ TagManager:
   - UpgradeUI
   - LightOrb
   - BloodBullet
+  - Feather
   layers:
   - Default
   - TransparentFX
