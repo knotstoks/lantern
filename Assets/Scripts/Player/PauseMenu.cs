@@ -20,7 +20,6 @@ public class PauseMenu : MonoBehaviour{
             }
         }
     }
-
     public void Pause() {
         isGamePaused = true;
         player.blackBackground.enabled = true;

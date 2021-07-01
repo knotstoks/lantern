@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 /*
@@ -23,7 +22,7 @@ public class GabrielFinal : MonoBehaviour {
         animator = GetComponent<Animator>();
         canDamage = false;
         yield return new WaitForSeconds(1f);
-        StartFeatherPattern();
+        //StartFeatherPattern();
     }
     private void Update() {
         if (health <= 0 && !dead) {

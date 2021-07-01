@@ -17,7 +17,6 @@ public class GabrielFinalRoom : MonoBehaviour {
     private bool imprisoned;
     private void Start() {
         featherDestroyer.SetActive(false);
-        player.allowCombat = true;
         imprisoned = false;
         inOutro = false;
         line = 0;
@@ -29,6 +28,7 @@ public class GabrielFinalRoom : MonoBehaviour {
         orbTwo = orbTwoObject.GetComponent<LightOrbs>();
         orbThree = orbThreeObject.GetComponent<LightOrbs>();
         orbFour = orbFourObject.GetComponent<LightOrbs>();
+        player.allowCombat = true;
     }
     private void Update() {
         //Imprisons Gabriel once the Orbs are charged
@@ -52,16 +52,17 @@ public class GabrielFinalRoom : MonoBehaviour {
         //Imprison Gabriel
         gabrielFinal.Imprison();
         yield return new WaitForSeconds(4f);
-        //Resets Gabriel
-        gabrielFinal.Return();
         //Reset the orbs
-        imprisoned = false;
         orbOne.ResetOrb();
         orbTwo.ResetOrb();
         orbThree.ResetOrb();
         orbFour.ResetOrb();
+        imprisoned = false;
+        //Resets Gabriel
+        gabrielFinal.Return();
     }
     public void FinishFight() {
+        Debug.Log("finished");
         featherDestroyer.SetActive(true);
         //Start the Outro Dialogue
         dialogueManager.StartDialogue(outroDialogues[(int) DataStorage.saveValues["finalBossBeatenCount"]]);

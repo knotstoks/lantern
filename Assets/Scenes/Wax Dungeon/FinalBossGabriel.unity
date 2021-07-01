@@ -3475,6 +3475,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8685266686162842098, guid: 8ff8428517628354ca619b59eb5a771b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ff8428517628354ca619b59eb5a771b, type: 3}
 --- !u!1 &588188829 stripped
@@ -7732,6 +7737,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8685266686162842098, guid: 8ff8428517628354ca619b59eb5a771b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ff8428517628354ca619b59eb5a771b, type: 3}
 --- !u!1001 &1453447960
@@ -7801,6 +7811,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8685266686162842098, guid: 8ff8428517628354ca619b59eb5a771b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ff8428517628354ca619b59eb5a771b, type: 3}
 --- !u!1001 &1564822082
@@ -7868,6 +7883,11 @@ PrefabInstance:
     - target: {fileID: 5633649567349449287, guid: 8ff8428517628354ca619b59eb5a771b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685266686162842098, guid: 8ff8428517628354ca619b59eb5a771b,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8017,7 +8037,7 @@ PrefabInstance:
     - target: {fileID: 3002714659163028178, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: speed
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3002714659163028178, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
@@ -8025,6 +8045,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4624609232528388582, guid: 22cb5e2dac840434aa0ccfdb63c42c7b,
         type: 3}
+    - target: {fileID: 3002714659163028178, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: isSpeeding
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3944680900382940677, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -8060,6 +8085,7 @@ GameObject:
   - component: {fileID: 1742152421}
   - component: {fileID: 1742152420}
   - component: {fileID: 1742152422}
+  - component: {fileID: 1742152423}
   m_Layer: 0
   m_Name: Gabriel
   m_TagString: Boss
@@ -8140,7 +8166,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -8473586094706663883, guid: faaa26816b6ccbe4f9d7cfe885946ea0,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8148,7 +8175,7 @@ SpriteRenderer:
   m_Size: {x: 2.5, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1742152422
@@ -8165,6 +8192,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   feather: {fileID: 7633589075417459209, guid: d35ded9d316abd24786b27663d883b05, type: 3}
   health: 40
+--- !u!61 &1742152423
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742152418}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09841299, y: -0.33460405}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.5, y: 1.5}
+    newSize: {x: 2.5, y: 1.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.051237, y: 0.5316166}
+  m_EdgeRadius: 0
 --- !u!1 &1747791342 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 916874419257010158, guid: 8ff8428517628354ca619b59eb5a771b,

@@ -10,17 +10,11 @@ public class LightOrbs : MonoBehaviour {
         orbLight = GetComponent<Light2D>();
     }
     private void Update() {
-        if (charge == 0) {
-            orbLight.intensity = 0;
-        } else if (charge <= 5) {
-            orbLight.intensity = 0.5f;
-        } else {
-            orbLight.intensity = 1;
-        }
-
         if (charge == 10) {
+            orbLight.intensity = 100;
             chargedIcon.SetActive(true);
         } else {
+            orbLight.intensity = 0f;
             chargedIcon.SetActive(false);
         }
     }

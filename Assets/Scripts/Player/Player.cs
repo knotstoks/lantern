@@ -90,7 +90,7 @@ public class Player : MonoBehaviour {
         interactName.SetActive(false);
         dialogueBox.enabled = false;
         dialogueImage.enabled = false;
-        inDialogue = false;
+        inDialogue = true;
         allowCombat = false; // rmb change this back
         pauseMenu.SetActive(false);
         quitMenu.SetActive(false);
@@ -145,6 +145,7 @@ public class Player : MonoBehaviour {
         }
 
         if (health <= 0 && !dead) {
+            Debug.Log("Dead");
             dead = true;
             animator.SetTrigger("Dead");
             StartCoroutine(KillPlayer());
