@@ -54,29 +54,29 @@ public class Player : MonoBehaviour {
     private AudioSource audioSource;
     private void Start() {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
-        DataStorage.saveValues["health"] = 6;
-        DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(0f, 5f); // edited
-        DataStorage.saveValues["facingDirection"] = 0;
-        PlayerPrefs.SetFloat("volume", 1f);
-        DataStorage.saveValues["progress"] = 1;
-        DataStorage.saveValues["blessings"] = 1;
-        DataStorage.saveValues["tutorialDojo"] = 0;
-        DataStorage.saveValues["waxDungeonGolem"] = 0;
-        DataStorage.saveValues["completedWaxDungeon"] = 0;
-        DataStorage.saveValues["blacksmith"] = 0;
-        DataStorage.saveValues["deaths"] = 0;
-        DataStorage.saveValues["waxDungeonFourArms"] = 0;
-        DataStorage.saveValues["upgrade"] = 1;
-        DataStorage.saveValues["upgradeBar"] = 20;
-        DataStorage.saveValues["waxDungeonRoom"] = 2;
-        DataStorage.saveValues["waxDungeonGabriel"] = 1;
-        DataStorage.saveValues["finalBossBeatenCount"] = 1;
-        DataStorage.saveValues["introSceneDone"] = 0;
-        DataStorage.saveValues["waxDungeonRandomArray"] = new int[] {9, 10, 12, 13, 14, 16, 17, 18, 20};
-        DataStorage.saveValues["reversedControls"] = false;
-        DataStorage.saveValues["blackOut"] = false;
-        DataStorage.saveValues["timeTrial"] = false;
+        // DataStorage.saveValues["health"] = 6;
+        // DataStorage.saveValues["maxHealth"] = 6;
+        // DataStorage.saveValues["position"] = new Vector2(0f, 5f); // edited
+        // DataStorage.saveValues["facingDirection"] = 0;
+        // PlayerPrefs.SetFloat("volume", 1f);
+        // DataStorage.saveValues["progress"] = 1;
+        // DataStorage.saveValues["blessings"] = 1;
+        // DataStorage.saveValues["tutorialDojo"] = 0;
+        // DataStorage.saveValues["waxDungeonGolem"] = 0;
+        // DataStorage.saveValues["completedWaxDungeon"] = 0;
+        // DataStorage.saveValues["blacksmith"] = 0;
+        // DataStorage.saveValues["deaths"] = 0;
+        // DataStorage.saveValues["waxDungeonFourArms"] = 0;
+        // DataStorage.saveValues["upgrade"] = 1;
+        // DataStorage.saveValues["upgradeBar"] = 20;
+        // DataStorage.saveValues["waxDungeonRoom"] = 2;
+        // DataStorage.saveValues["waxDungeonGabriel"] = 1;
+        // DataStorage.saveValues["finalBossBeatenCount"] = 0;
+        // DataStorage.saveValues["introSceneDone"] = 0;
+        // DataStorage.saveValues["waxDungeonRandomArray"] = new int[] {9, 10, 12, 13, 14, 16, 17, 18, 20};
+        // DataStorage.saveValues["reversedControls"] = false;
+        // DataStorage.saveValues["blackOut"] = false;
+        // DataStorage.saveValues["timeTrial"] = false;
 
         invulTime = 0.5f;
         rb = GetComponent<Rigidbody2D>();
@@ -90,7 +90,7 @@ public class Player : MonoBehaviour {
         interactName.SetActive(false);
         dialogueBox.enabled = false;
         dialogueImage.enabled = false;
-        inDialogue = true;
+        inDialogue = false;
         allowCombat = false; // rmb change this back
         pauseMenu.SetActive(false);
         quitMenu.SetActive(false);
@@ -311,7 +311,7 @@ public class Player : MonoBehaviour {
         }
     }    
     //Toggles whether player is in dialogue or not
-    public void ToggleDialogue() {
+    public void ToggleDialogue(){
         if (!inDialogue) {
             interactIcon.enabled = false;
             dialogueBox.enabled = true;

@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,13 +23,13 @@ public class Blacksmith : MonoBehaviour {
     public void DisplayChangeUpgrade(int n) {
         //Hardcoding the texts
         if (n == 0) {
-            textToShow = "[Upgrade Removed]";
+            textToShow = "[SKill Removed]";
         } else if (n == 1) {
-            textToShow = "[Upgraded] Vampric Embrace";
+            textToShow = "[Skill Changed] Vampric Embrace";
         } else if (n == 2) {
-            textToShow = "[Upgraded] Fleet Foot";
+            textToShow = "[Skill Changed] Fleet Foot";
         } else {
-            textToShow = "[Upgraded] Nova Impact";
+            textToShow = "[Skill Changed] Nova Impact";
         }
 
         showTextTime = 2f;

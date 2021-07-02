@@ -22,6 +22,7 @@ TagManager:
   - LightOrb
   - BloodBullet
   - Feather
+  - Gabriel
   layers:
   - Default
   - TransparentFX

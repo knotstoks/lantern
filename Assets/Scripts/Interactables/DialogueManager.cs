@@ -19,7 +19,6 @@ public class DialogueManager : MonoBehaviour {
     }
 
     public void StartDialogue(Dialogue dialogue) {
-
         if (talkingTo != null) {
             talkingTo.animator.SetFloat("FacingHori", gameObjectPlayer.transform.position.x - talkingTo.transform.position.x);
             talkingTo.animator.SetFloat("FacingVert", gameObjectPlayer.transform.position.y - talkingTo.transform.position.y);

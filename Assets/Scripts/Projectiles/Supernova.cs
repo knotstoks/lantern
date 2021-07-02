@@ -25,5 +25,9 @@ public class Supernova : MonoBehaviour {
         if (other.gameObject.tag == "Arm") {
             other.gameObject.GetComponent<Arm>().Damage(10);
         }
+
+        if (other.gameObject.tag == "Gabriel") {
+            other.gameObject.GetComponent<GabrielFinal>().Damage(10);
+        }
     }
 }

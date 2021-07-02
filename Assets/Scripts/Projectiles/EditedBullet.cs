@@ -37,6 +37,10 @@ public class EditedBullet : MonoBehaviour {
         if (other.tag == "LightOrb") { //for final phase of Gabriel
             StartCoroutine(Collided());
         }
+
+        if (other.tag == "Gabriel") {
+            StartCoroutine(Collided());
+        }
     }
     private IEnumerator Collided() {
         animator.SetTrigger("Collide");

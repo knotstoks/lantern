@@ -9,25 +9,29 @@ Trigger: Death - Gabriel Dies
 */
 public class GabrielFinal : MonoBehaviour {
     [SerializeField] private GameObject feather;
-    public int health; //40
+    [SerializeField] private AudioClip audioClip;
+    public int health; //20
     private bool dead;
     private bool patternEnded;
-    private bool canDamage;
+    public bool canDamage;
     private SpriteRenderer spriteRenderer;
     private GabrielFinalRoom sceneManager;
     private Animator animator;
+    private AudioSource audioSource;
     private IEnumerator Start() {
         sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<GabrielFinalRoom>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         canDamage = false;
         yield return new WaitForSeconds(1f);
-        //StartFeatherPattern();
+        audioSource = GetComponent<AudioSource>();
+        StartFeatherPattern();
     }
     private void Update() {
         if (health <= 0 && !dead) {
-            Return();
+            StopAllCoroutines();
             dead = true;
+            Return();
             sceneManager.FinishFight();
             //Animation for Gabriel Second form dying
             animator.SetTrigger("Death");
@@ -54,14 +58,19 @@ public class GabrielFinal : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D other) {
         if (canDamage && other.tag == "Bullet") {
-            Rigidbody2D bullet = other.GetComponent<Rigidbody2D>();
             StartCoroutine(FlashRed());
+            Damage(1);
         }
     }
     private IEnumerator FlashRed() {
         spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.2f);
         spriteRenderer.color = Color.white;
+    }
+    public void Damage(int n) {
+        health -= n;
+        StartCoroutine(FlashRed());
+        audioSource.PlayOneShot(audioClip);
     }
     //Code for all the Feather Patterns
     private void StartFeatherPattern() {
