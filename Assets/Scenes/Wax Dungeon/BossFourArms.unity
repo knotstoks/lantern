@@ -143,7 +143,7 @@ PrefabInstance:
     - target: {fileID: 8796340936261643985, guid: afcae28512a118e4ca0ffc0a4ea9e997,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8796340936261643985, guid: afcae28512a118e4ca0ffc0a4ea9e997,
         type: 3}
@@ -703,7 +703,7 @@ Transform:
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &273409717
 MonoBehaviour:
@@ -826,9 +826,9 @@ GameObject:
   - component: {fileID: 312800253}
   - component: {fileID: 312800254}
   - component: {fileID: 312800255}
-  - component: {fileID: 312800256}
   - component: {fileID: 312800257}
   - component: {fileID: 312800258}
+  - component: {fileID: 312800256}
   m_Layer: 0
   m_Name: Water Arm
   m_TagString: Arm
@@ -848,7 +848,7 @@ Transform:
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &312800253
 SpriteRenderer:
@@ -976,35 +976,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5, y: -0.3125}
-      - {x: -0.53125, y: -0.1875}
-      - {x: -0.96875, y: 0.3125}
-      - {x: -1.375, y: 0.46875}
-      - {x: -2.4375, y: 0.75}
-      - {x: -2.71875, y: 1.0625}
-      - {x: -2.75, y: 1.5625}
-      - {x: -3.3125, y: 2.1875}
-      - {x: -3.5, y: 2.21875}
-      - {x: -4, y: 2.3125}
-      - {x: -4.28125, y: 2.3125}
-      - {x: -4.8125, y: 2}
-      - {x: -5.21875, y: 1.65625}
-      - {x: -5.21875, y: 1.1875}
-      - {x: -5.03125, y: 0.6875}
-      - {x: -4.8125, y: 0.53125}
-      - {x: -4.6875, y: 0.5}
-      - {x: -4.40625, y: 0.625}
-      - {x: -4.25, y: 0.625}
-      - {x: -3.90625, y: 0.21875}
-      - {x: -3.6875, y: -0.1875}
-      - {x: -3.09375, y: -0.71875}
-      - {x: -2.78125, y: -0.9375}
-      - {x: -2.0625, y: -1.5}
-      - {x: -1.65625, y: -1.6875}
-      - {x: -1.0625, y: -1.6875}
-      - {x: -0.6875, y: -1.3125}
-      - {x: -0.53125, y: -1.03125}
-      - {x: -0.5, y: -0.5625}
+    - - {x: -0.32010293, y: -3.3032928}
+      - {x: -0.35135365, y: -1.8065758}
+      - {x: -2.1380823, y: -0.6094732}
+      - {x: -2.7846358, y: -0.33012712}
+      - {x: -2.9857883, y: -0.5374916}
+      - {x: -3.1065116, y: -0.99291456}
 --- !u!82 &312800257
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10839,7 +10816,7 @@ Transform:
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &606175367
 SpriteRenderer:
@@ -11533,7 +11510,7 @@ Transform:
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &802035499
 SpriteRenderer:
@@ -11660,33 +11637,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 4.1875, y: 2.4375}
-      - {x: 4.75, y: 2.75}
-      - {x: 4.65625, y: 2.96875}
-      - {x: 4.5625, y: 3.21875}
-      - {x: 4.21875, y: 3.3125}
-      - {x: 4.5625, y: 3.4375}
-      - {x: 4.78125, y: 3.59375}
-      - {x: 4.78125, y: 3.8125}
-      - {x: 4.53125, y: 4.0625}
-      - {x: 4.03125, y: 4.375}
-      - {x: 3.53125, y: 4.5}
-      - {x: 3.1875, y: 4.5}
-      - {x: 2.84375, y: 4.21875}
-      - {x: 2.5, y: 3.78125}
-      - {x: 2.34375, y: 2.96875}
-      - {x: 2.40625, y: 2.40625}
-      - {x: 2.1875, y: 2.03125}
-      - {x: 1.46875, y: 1.03125}
-      - {x: 1.46875, y: 0.6875}
-      - {x: 1.5, y: 0.46875}
-      - {x: 2.1875, y: -0.15625}
-      - {x: 2.25, y: -0.1875}
-      - {x: 2.59375, y: -0.1875}
-      - {x: 2.84375, y: -0.125}
-      - {x: 3.21875, y: 0.6875}
-      - {x: 3.59375, y: 1.40625}
-      - {x: 4, y: 2.5625}
+    - - {x: 1.0949935, y: 0.8774514}
+      - {x: 2.3443928, y: -0.8110181}
+      - {x: 3.1516106, y: -1.0656599}
+      - {x: 2.6019957, y: 0.038852096}
+      - {x: 1.8320518, y: 1.3674467}
+      - {x: 0.8967713, y: 1.8530301}
 --- !u!82 &802035503
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12543,7 +12499,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1014624714
 Animator:
@@ -14601,7 +14557,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1111573523
 Animator:
@@ -14637,7 +14593,7 @@ PrefabInstance:
     - target: {fileID: 9073585327298716946, guid: 417abc4556635314cafaafbfb5d05027,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 9073585327298716946, guid: 417abc4556635314cafaafbfb5d05027,
         type: 3}
@@ -14867,35 +14823,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 3.46875, y: -0.40625}
-      - {x: 3.78125, y: -0.03125}
-      - {x: 3.90625, y: 0.21875}
-      - {x: 4, y: 0.59375}
-      - {x: 4.84375, y: 0.46875}
-      - {x: 5.09375, y: 0.875}
-      - {x: 4.96875, y: 1.09375}
-      - {x: 5.21875, y: 1.3125}
-      - {x: 5.21875, y: 1.6875}
-      - {x: 4.3125, y: 2.3125}
-      - {x: 3.875, y: 2.3125}
-      - {x: 3.3125, y: 2.1875}
-      - {x: 3, y: 1.84375}
-      - {x: 2.75, y: 1.46875}
-      - {x: 2.71875, y: 1.09375}
-      - {x: 2.25, y: 0.6875}
-      - {x: 1.28125, y: 0.4375}
-      - {x: 0.96875, y: 0.28125}
-      - {x: 0.625, y: -0.0625}
-      - {x: 0.5, y: -0.3125}
-      - {x: 0.5, y: -0.6875}
-      - {x: 0.53125, y: -0.90625}
-      - {x: 0.65625, y: -1.3125}
-      - {x: 1.09375, y: -1.6875}
-      - {x: 1.375, y: -1.6875}
-      - {x: 1.65625, y: -1.65625}
-      - {x: 2.0625, y: -1.46875}
-      - {x: 2.4375, y: -1.21875}
-      - {x: 3.125, y: -0.75}
+    - - {x: 0.30794364, y: -3.2376976}
+      - {x: 2.164495, y: -1.5755818}
+      - {x: 2.7693293, y: -0.9532232}
+      - {x: 2.5120468, y: -0.45586476}
+      - {x: 2.011949, y: -0.3865515}
+      - {x: 0.2221581, y: -1.6999395}
 --- !u!82 &1275867332
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20486,6 +20419,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4624609232528388582, guid: 22cb5e2dac840434aa0ccfdb63c42c7b,
         type: 3}
+    - target: {fileID: 3002714659163028178, guid: ff739d5aacc99f6469db80ad818d0730,
+        type: 3}
+      propertyPath: bulletSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3944680900382940677, guid: ff739d5aacc99f6469db80ad818d0730,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -20535,9 +20473,9 @@ GameObject:
   - component: {fileID: 1909699013}
   - component: {fileID: 1909699015}
   - component: {fileID: 1909699016}
-  - component: {fileID: 1909699017}
   - component: {fileID: 1909699018}
   - component: {fileID: 1909699019}
+  - component: {fileID: 1909699017}
   m_Layer: 0
   m_Name: Fire Arm
   m_TagString: Arm
@@ -20609,7 +20547,7 @@ Transform:
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1909699015
 MonoBehaviour:
@@ -20690,34 +20628,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.46875, y: 1.03125}
-      - {x: -1.75, y: 1.4375}
-      - {x: -1.96875, y: 1.65625}
-      - {x: -2.375, y: 2.40625}
-      - {x: -2.4375, y: 3.46875}
-      - {x: -2.5, y: 3.65625}
-      - {x: -2.6875, y: 4.125}
-      - {x: -3.09375, y: 4.5}
-      - {x: -3.75, y: 4.5}
-      - {x: -4.09375, y: 4.46875}
-      - {x: -4.78125, y: 3.875}
-      - {x: -4.78125, y: 3.59375}
-      - {x: -4.5625, y: 3.4375}
-      - {x: -4.21875, y: 3.3125}
-      - {x: -4.59375, y: 3.1875}
-      - {x: -4.65625, y: 2.9375}
-      - {x: -4.625, y: 2.8125}
-      - {x: -4.375, y: 2.5625}
-      - {x: -3.75, y: 2.53125}
-      - {x: -3.75, y: 1.875}
-      - {x: -3.65625, y: 1.46875}
-      - {x: -3.40625, y: 1.03125}
-      - {x: -2.8125, y: -0.09375}
-      - {x: -2.65625, y: -0.1875}
-      - {x: -2.3125, y: -0.1875}
-      - {x: -1.90625, y: 0.0625}
-      - {x: -1.5625, y: 0.46875}
-      - {x: -1.46875, y: 0.65625}
+    - - {x: -2.2228737, y: 0.7272828}
+      - {x: -0.7841017, y: 1.4867297}
+      - {x: -1.1089559, y: 0.31166202}
+      - {x: -1.6600511, y: -0.51888275}
+      - {x: -2.5555675, y: -1.3475444}
+      - {x: -2.8232617, y: -0.952261}
+      - {x: -2.4199739, y: 0.2924562}
 --- !u!82 &1909699018
 AudioSource:
   m_ObjectHideFlags: 0
