@@ -71,6 +71,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["blacksmith"] = 0;
         DataStorage.saveValues["upgrade"] = 0;
         DataStorage.saveValues["upgradeBar"] = 0;
+        DataStorage.saveValues["healAfterBosses"] = 2;
         DataStorage.saveValues["currScene"] = "Bedroom";
         DataStorage.saveValues["introSceneDone"] = 0;
         DataStorage.saveValues["messHall"] = 0;
@@ -88,12 +89,16 @@ public class MainMenu : MonoBehaviour {
 
         //For Trials
         DataStorage.saveValues["finalBossBeatenCount"] = 0;
-        DataStorage.saveValues["reversedControls"] = false;
-        DataStorage.saveValues["blackOut"] = false;
-        DataStorage.saveValues["timeTrial"] = false;
+        DataStorage.saveValues["reversedControls"] = 0;
+        DataStorage.saveValues["blackOut"] = 0;
+        DataStorage.saveValues["timeTrial"] = 0;
         DataStorage.saveValues["completedReversedControls"] = 0;
         DataStorage.saveValues["completedBlackOut"] = 0;
         DataStorage.saveValues["completedTimeTrial"] = 0;
+
+        //For End Game
+        DataStorage.saveValues["introToEnd"] = 0;
+        DataStorage.saveValues["sunShardsCollected"] = 0;
 
         yield return new WaitForSeconds(3);
 
@@ -114,6 +119,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["blacksmith"] = PlayerPrefs.GetInt("blacksmith");
         DataStorage.saveValues["upgrade"] = PlayerPrefs.GetInt("upgrade");
         DataStorage.saveValues["upgradeBar"] = PlayerPrefs.GetInt("upgradeBar");
+        DataStorage.saveValues["healAfterBosses"] = PlayerPrefs.GetInt("healAfterBosses");
         DataStorage.saveValues["currScene"] = PlayerPrefs.GetString("currScene");
         DataStorage.saveValues["introSceneDone"] = PlayerPrefs.GetInt("introSceneDone");
         DataStorage.saveValues["messHall"] = PlayerPrefs.GetInt("messHall");
@@ -137,6 +143,10 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["completedReversedControls"] = PlayerPrefs.GetInt("completedReversedControls");
         DataStorage.saveValues["completedBlackOut"] = PlayerPrefs.GetInt("completedBlackOut");
         DataStorage.saveValues["completedTimeTrial"] = PlayerPrefs.GetInt("completedTimeTrial");
+
+        //For End Game
+        DataStorage.saveValues["introToEnd"] = PlayerPrefs.GetInt("introToEnd");
+        DataStorage.saveValues["sunShardsCollected"] = PlayerPrefs.GetInt("sunShardsCollected");
 
         yield return new WaitForSeconds(3);
 

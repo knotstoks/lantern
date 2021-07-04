@@ -72,6 +72,7 @@ public class GabrielFinalRoom : MonoBehaviour {
         gabrielFinal.Return();
     }
     public void FinishFight() {
+        player.Heal((int) DataStorage.saveValues["healAfterBosses"]);
         audioSource.clip = audioClips[1];
         audioSource.loop = false;
         audioSource.Play();

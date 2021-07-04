@@ -11,7 +11,11 @@ public class CameraFollow : MonoBehaviour {
     private void Start() {
         playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        blackOut = (bool) DataStorage.saveValues["blackOut"];
+        if ((int) DataStorage.saveValues["blackOut"] == 1) {
+            blackOut = true;
+        } else {
+            blackOut = false;
+        }
     }
     private void FixedUpdate() {
         if (!inBlackOut) {

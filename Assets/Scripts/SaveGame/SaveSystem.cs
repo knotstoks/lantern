@@ -15,6 +15,7 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetInt("blacksmith", (int) DataStorage.saveValues["blacksmith"]);
         PlayerPrefs.SetInt("upgrade", (int) DataStorage.saveValues["upgrade"]);
         PlayerPrefs.SetInt("upgradeBar", (int) DataStorage.saveValues["upgradeBar"]);
+        PlayerPrefs.SetInt("healAfterBosses", (int) DataStorage.saveValues["healAfterBosses"]);
         PlayerPrefs.SetString("currScene", currScene);
         PlayerPrefs.SetInt("facingDirection", facingDirection);
         PlayerPrefs.SetInt("introSceneDone", (int) DataStorage.saveValues["introSceneDone"]);
@@ -36,5 +37,7 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetInt("completedReversedControls", (int) DataStorage.saveValues["completedReversedControls"]);
         PlayerPrefs.SetInt("completedBlackOut", (int) DataStorage.saveValues["completedBlackOut"]);
         PlayerPrefs.SetInt("completedTimeTrial", (int) DataStorage.saveValues["completedTimeTrial"]);
+        PlayerPrefs.SetInt("introToEnd", (int) DataStorage.saveValues["introToEnd"]);
+        PlayerPrefs.SetInt("sunShardsCollected", (int) DataStorage.saveValues["sunShardsCollected"]);
     }
 }

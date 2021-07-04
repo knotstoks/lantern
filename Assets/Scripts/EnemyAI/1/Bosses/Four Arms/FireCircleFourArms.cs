@@ -12,7 +12,7 @@ public class FireCircleFourArms : MonoBehaviour {
         Destroy(gameObject);
     }
     private IEnumerator Attack() {
-        yield return new WaitForSeconds(0.666f);
+        yield return new WaitForSeconds(1.5f);
         if (playerIn) {
             player.Damage(1);
         }
