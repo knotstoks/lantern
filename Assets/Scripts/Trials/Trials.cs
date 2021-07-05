@@ -17,15 +17,14 @@ public class Trials : MonoBehaviour {
         timer.SetActive(false);
         yield return new WaitForSeconds(0.1f);
         if (SceneManager.GetActiveScene().buildIndex >= 9 && SceneManager.GetActiveScene().buildIndex <= 20) {
-            cameraFollow.blackOut = (bool) DataStorage.saveValues["blackOut"];
-            if ((bool) DataStorage.saveValues["timeTrial"]) {
+            if ((int) DataStorage.saveValues["timeTrial"] == 1) {
                 timer.SetActive(true);
                 timeLeft = (float) DataStorage.saveValues["timeTrialTime"];
             }
         }
     }
     private void Update() {
-        if ((bool) DataStorage.saveValues["timeTrial"]) {
+        if ((int) DataStorage.saveValues["timeTrial"] == 1) {
             if (!pauseMenu.isGamePaused && SceneManager.GetActiveScene().buildIndex >= 9 && SceneManager.GetActiveScene().buildIndex <= 21 && !player.inDialogue) {
                 if ((float) DataStorage.saveValues["timeTrialTime"] <= 0) {
                     player.Damage(100);
@@ -35,7 +34,7 @@ public class Trials : MonoBehaviour {
             }
         }
 
-        if ((bool) DataStorage.saveValues["timeTrial"]) {
+        if ((int) DataStorage.saveValues["timeTrial"] == 1) {
             if (SceneManager.GetActiveScene().buildIndex == 8) {
                 mins.text = "20";
                 seconds.text = "00";

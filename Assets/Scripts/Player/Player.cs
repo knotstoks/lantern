@@ -191,7 +191,7 @@ public class Player : MonoBehaviour {
         }
 
         if (!inDialogue) {
-            if (!(bool) DataStorage.saveValues["reversedControls"]) {
+            if (!((int) DataStorage.saveValues["reversedControls"] == 1)) {
                 //Movement
                 move.x = Input.GetAxisRaw("Horizontal");
                 move.y = Input.GetAxisRaw("Vertical");
@@ -273,7 +273,7 @@ public class Player : MonoBehaviour {
         updateHealth();
     }
     private void Shoot(float x, float y) {
-        if (!(bool) DataStorage.saveValues["reversedControls"]) {
+        if (!((int) DataStorage.saveValues["reversedControls"] == 1)) {
             //Normal Controls
             Vector2 tempVector = new Vector2(transform.position.x, transform.position.y - 0.3f);
             GameObject bullet = Instantiate(this.bullet, tempVector, transform.rotation) as GameObject;

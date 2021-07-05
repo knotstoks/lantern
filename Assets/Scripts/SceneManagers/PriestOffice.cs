@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PriestOffice : MonoBehaviour {
@@ -7,6 +6,7 @@ public class PriestOffice : MonoBehaviour {
     [SerializeField] private GameObject blessingMenu;
     [SerializeField] private GameObject blessingOrb;
     [SerializeField] private Dialogue blessingDialogue;
+    [SerializeField] private Dialogue endGameDialogue;
     [SerializeField] private GameObject blessingInstructions;
     private Player player;
     private DialogueManager dialogueManager;
@@ -37,6 +37,11 @@ public class PriestOffice : MonoBehaviour {
             //Start Intro to Blessings cutscene
             StartBlessingTutorial();
         }
+
+        if ((int) DataStorage.saveValues["introToEnd"] == 1) {
+            //Start End Scene
+            StartEndGame();
+        }
     }
     private void Update() {
         //Blessing Tutorial
@@ -46,7 +51,19 @@ public class PriestOffice : MonoBehaviour {
                 dialogueManager.DisplayNextSentence();
                 line++;
             } else if (line == blessingDialogue.names.Length - 1) {
+                line = 0;
                 DataStorage.saveValues["blessings"] = 2;
+                dialogueManager.DisplayNextSentence();
+            } else {
+                line++;
+                dialogueManager.DisplayNextSentence();
+            }
+        }
+
+        if ((int) DataStorage.saveValues["introToEnd"] == 1 && Input.GetKeyDown(KeyCode.E)) {
+            if (line == endGameDialogue.sentences.Length - 1) {
+                line = 0;
+                DataStorage.saveValues["introToEnd"] = 2;
                 dialogueManager.DisplayNextSentence();
             } else {
                 line++;
@@ -69,6 +86,9 @@ public class PriestOffice : MonoBehaviour {
         blessingInstructions.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         showingBlessingInstructions = true;
+    }
+    private void StartEndGame() {
+        dialogueManager.StartDialogue(endGameDialogue);
     }
     private void StartBlessingTutorial() {
         dialogueManager.StartDialogue(blessingDialogue);

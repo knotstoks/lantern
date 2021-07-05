@@ -19,6 +19,8 @@ public class DataStorage : MonoBehaviour {
     int deaths;
     after 3 deaths, trigger blacksmith
 
+    //Upgrades and Blacksmith stuff
+
     int blacksmith;
     0 for Lumin haven't talked to blacksmith, 1 for seen blacksmith already
 
@@ -27,6 +29,10 @@ public class DataStorage : MonoBehaviour {
 
     int upgradeBar;
     tracks upgrade progress till can trigger upgrade
+
+    int healAfterBosses;
+    how much health do you heal after every boss - default is 2 (1 heart) from 0 to 10.
+    //
 
     int introSceneDone;
     0 for not done, 1 for done: triggers bedroom tutorial
@@ -86,11 +92,19 @@ public class DataStorage : MonoBehaviour {
     int finalBossBeatenCount;
     how many times you've beaten the final boss
 
-    bool reversedControls;
+    int introToEnd
+    0 - havent introed to end yet
+    1 - finished last boss but havent introed
+    2 - introed to end already
 
-    bool blackOut;
+    int sunShardsCollected
+    0 - 4 depending on how many shards you have
 
-    bool timeTrial
+    int reversedControls;
+
+    int blackOut;
+
+    int timeTrial
 
     float timeTrialTime;
     Keeps track of how much time you have left
