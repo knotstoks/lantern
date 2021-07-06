@@ -92,19 +92,21 @@ public class DataStorage : MonoBehaviour {
     int finalBossBeatenCount;
     how many times you've beaten the final boss
 
-    int introToEnd
+    int introToEnd;
     0 - havent introed to end yet
     1 - finished last boss but havent introed
     2 - introed to end already
 
-    int sunShardsCollected
+    int sunShardsCollected;
     0 - 4 depending on how many shards you have
+
+    int sunShardsInserted;
 
     int reversedControls;
 
     int blackOut;
 
-    int timeTrial
+    int timeTrial;
 
     float timeTrialTime;
     Keeps track of how much time you have left
@@ -113,6 +115,11 @@ public class DataStorage : MonoBehaviour {
 
     int completedBlackOut;
 
-    int completedTimeTrial
+    int completedTimeTrial;
+
+    
+
+    //Achievements//
+
     */
 }

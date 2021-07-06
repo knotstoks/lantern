@@ -71,12 +71,13 @@ public class Player : MonoBehaviour {
         DataStorage.saveValues["upgradeBar"] = 20;
         DataStorage.saveValues["waxDungeonRoom"] = 2;
         DataStorage.saveValues["waxDungeonGabriel"] = 1;
-        DataStorage.saveValues["finalBossBeatenCount"] = 0;
+        DataStorage.saveValues["finalBossBeatenCount"] = 3;
         DataStorage.saveValues["introSceneDone"] = 0;
         DataStorage.saveValues["waxDungeonRandomArray"] = new int[] {9, 10, 12, 13, 14, 16, 17, 18, 20};
         DataStorage.saveValues["reversedControls"] = false;
         DataStorage.saveValues["blackOut"] = false;
         DataStorage.saveValues["timeTrial"] = false;
+        DataStorage.saveValues["healAfterBosses"] = 1;
 
         invulTime = 0.5f;
         rb = GetComponent<Rigidbody2D>();
@@ -191,7 +192,7 @@ public class Player : MonoBehaviour {
         }
 
         if (!inDialogue) {
-            if (!((int) DataStorage.saveValues["reversedControls"] == 1)) {
+            if (!((bool) DataStorage.saveValues["reversedControls"])) {
                 //Movement
                 move.x = Input.GetAxisRaw("Horizontal");
                 move.y = Input.GetAxisRaw("Vertical");
@@ -273,7 +274,7 @@ public class Player : MonoBehaviour {
         updateHealth();
     }
     private void Shoot(float x, float y) {
-        if (!((int) DataStorage.saveValues["reversedControls"] == 1)) {
+        if (!(bool) DataStorage.saveValues["reversedControls"]) {
             //Normal Controls
             Vector2 tempVector = new Vector2(transform.position.x, transform.position.y - 0.3f);
             GameObject bullet = Instantiate(this.bullet, tempVector, transform.rotation) as GameObject;

@@ -109,7 +109,7 @@ public class FourArms : MonoBehaviour { //0 for fire, 1 for water, 2 for air, 3 
     }
     private IEnumerator ShootHomingMissle() { //0 for fire, 1 for water, 2 for air, 3 for earth
         for (int i = 0; i < arms.Length; i++) {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(5f);
             if (arms[i].dead) {
                 GameObject projectile = Instantiate(bloodBullet, transform.position, Quaternion.identity) as GameObject;
                 projectile.GetComponent<Rigidbody2D>().velocity = new Vector2(target.position.x - transform.position.x, target.position.y - transform.position.y).normalized * 5;

@@ -99,6 +99,7 @@ public class MainMenu : MonoBehaviour {
         //For End Game
         DataStorage.saveValues["introToEnd"] = 0;
         DataStorage.saveValues["sunShardsCollected"] = 0;
+        DataStorage.saveValues["sunShardsInserted"] = 0;
 
         yield return new WaitForSeconds(3);
 
@@ -147,6 +148,7 @@ public class MainMenu : MonoBehaviour {
         //For End Game
         DataStorage.saveValues["introToEnd"] = PlayerPrefs.GetInt("introToEnd");
         DataStorage.saveValues["sunShardsCollected"] = PlayerPrefs.GetInt("sunShardsCollected");
+        DataStorage.saveValues["sunShardsInserted"] = PlayerPrefs.GetInt("sunShardsInserted");
 
         yield return new WaitForSeconds(3);
 

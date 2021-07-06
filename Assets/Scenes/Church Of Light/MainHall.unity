@@ -6528,7 +6528,8 @@ MonoBehaviour:
     - Painting
     - Lumin
     sentences:
-    - Its a painting depicting the Wardens of Light fighting against the Darkness.
+    - It's a painting depicting a metaphor of the Wardens of Light fighting against
+      the Darkness.
     - One day, I'll be just like them.
   changeDialogue: []
   changeOvertime: 0
@@ -7342,8 +7343,11 @@ MonoBehaviour:
   noChangeDialogue:
     names:
     - Lumin
+    - Lumin
     sentences:
-    - Wonder what's behind this.
+    - This door has been locked for as long as I can remember.
+    - It goes into the basement, where we keep our Shards of the Sun, but only the
+      Priest and some Senior Wardens are allowed down there.
   changeDialogue: []
   changeOvertime: 0
   reference: 

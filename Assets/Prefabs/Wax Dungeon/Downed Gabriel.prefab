@@ -73,6 +73,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objDesc: The End..?
+  dialogues:
+  - names:
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    sentences:
+    - NO! I HAVE COME TOO FAR TO FAIL NOW!
+    - I WILL CONTROL THE SUN! IT IS FATE!
+    - BEHOLD, THE POWER OF THE SUN IN THE PALM OF MY HAND!
+    - GRAAAARRRRGH!
+    - YOU ARE NOW POWERLESS TO STOP ME, INSIPID INSECT!
+    - I WILL BURN YOU DOWN TO NOTHING MORE THAN A CHARRED HUSK!
+  - names:
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    sentences:
+    - No, I will not go down so easily!
+    - Yes, see this?
+    - A Shard of the Sun.
+    - Ancient civilizations used the Sun as a source of light and heat, but the Sun
+      was so much more than that.
+    - It was also a source of power.
+  - names:
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    sentences:
+    - YOU'RE GOING TO KILL ME AGAIN, I KNOW IT!
+    - I WILL NOT LET THIS GO ON ANY LONGER!
+    - I WILL PUT AN END TO THIS!
+    - Whatever it takes.
+  - names:
+    - Gabriel
+    - Gabriel
+    - Gabriel
+    sentences:
+    - NO! NO! NO!
+    - I WILL NOT LET YOU KILL ME!
+    - NOT AGAIN!
 --- !u!212 &3953987548271761463
 SpriteRenderer:
   m_ObjectHideFlags: 0

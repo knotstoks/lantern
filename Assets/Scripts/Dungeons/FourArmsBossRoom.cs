@@ -9,6 +9,7 @@ public class FourArmsBossRoom : MonoBehaviour {
     [SerializeField] private AudioClip[] music; //0 for boss theme, 1 for end theme
     [SerializeField] private GameObject gate;
     [SerializeField] private GameObject fourArmsBossObject;
+    [SerializeField] private GameObject fourArmsLight;
     private bool introDone;
     private bool fightCompleted;
     private FourArms fourArmsBoss;
@@ -82,6 +83,7 @@ public class FourArmsBossRoom : MonoBehaviour {
         gate.GetComponent<Animator>().SetTrigger("Open");
     }
     public void DestroyAll() {
+        Destroy(fourArmsLight);
         GameObject[] bullets = GameObject.FindGameObjectsWithTag("Bullet");
         GameObject[] bloodBullets = GameObject.FindGameObjectsWithTag("BloodBullet");
         if (bullets != null) {

@@ -8201,6 +8201,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   feather: {fileID: 7633589075417459209, guid: d35ded9d316abd24786b27663d883b05, type: 3}
   audioClip: {fileID: 8300000, guid: 32e00b8183f45ef4da1c412e3099c584, type: 3}
+  orbDialogue:
+    names:
+    - Gabriel
+    - Lumin
+    - Lumin
+    sentences:
+    - Foolish Warden. Learn the power of the Sun.
+    - I can't hit him from down here...
+    - But what are those orbs..?
   health: 20
   canDamage: 0
 --- !u!61 &1742152423

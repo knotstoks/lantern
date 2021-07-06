@@ -39,5 +39,6 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetInt("completedTimeTrial", (int) DataStorage.saveValues["completedTimeTrial"]);
         PlayerPrefs.SetInt("introToEnd", (int) DataStorage.saveValues["introToEnd"]);
         PlayerPrefs.SetInt("sunShardsCollected", (int) DataStorage.saveValues["sunShardsCollected"]);
+        PlayerPrefs.SetInt("sunShardsCollected", (int) DataStorage.saveValues["sunShardsInserted"]);
     }
 }

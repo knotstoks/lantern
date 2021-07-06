@@ -3897,6 +3897,7 @@ MonoBehaviour:
     - Blacksmith Enzio
     - Blacksmith Enzio
     - Blacksmith Enzio
+    - 
     - Lumin
     sentences:
     - Ah! You must be Lumin! My name is Enzio.
@@ -3907,6 +3908,9 @@ MonoBehaviour:
       smithing techniques, and I can upgrade your Lantern to make it even more powerful."
     - You can talk to me to view the possible upgrades that I can give your lantern.
       I can also help remove your upgrades if you want that extra challenge.
+    - Charge up your upgrade bar by hitting enemies! Getting damaged by enemies will
+      make you lose progress. When the bar is fully charged, press 'Space' to use
+      your upgrade.
     - Thank you for your help Enzio!
   upgradeUI: {fileID: 1864569768}
   menuOpen: 0

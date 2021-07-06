@@ -10,6 +10,7 @@ Trigger: Death - Gabriel Dies
 public class GabrielFinal : MonoBehaviour {
     [SerializeField] private GameObject feather;
     [SerializeField] private AudioClip audioClip;
+    [SerializeField] private Dialogue orbDialogue;
     public int health; //20
     private bool dead;
     private bool patternEnded;
@@ -18,6 +19,9 @@ public class GabrielFinal : MonoBehaviour {
     private GabrielFinalRoom sceneManager;
     private Animator animator;
     private AudioSource audioSource;
+    private int line;
+    private DialogueManager dialogueManager;
+    private bool inIntro;
     private IEnumerator Start() {
         sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<GabrielFinalRoom>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -25,7 +29,10 @@ public class GabrielFinal : MonoBehaviour {
         canDamage = false;
         yield return new WaitForSeconds(1f);
         audioSource = GetComponent<AudioSource>();
-        StartFeatherPattern();
+        line = 0;
+        dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
+        inIntro = false;
+        StartOrbDialogue();
     }
     private void Update() {
         if (health <= 0 && !dead) {
@@ -36,6 +43,25 @@ public class GabrielFinal : MonoBehaviour {
             //Animation for Gabriel Second form dying
             animator.SetTrigger("Death");
         }
+
+        if (inIntro && Input.GetKeyDown(KeyCode.E)) {
+            if (line == orbDialogue.sentences.Length - 1) {
+                inIntro = false;
+                dialogueManager.DisplayNextSentence();
+                line = 0;
+                Begin();
+            } else {
+                dialogueManager.DisplayNextSentence();
+                line++;
+            }
+        }
+    }
+    private void Begin() {
+        StartFeatherPattern();
+    }
+    private void StartOrbDialogue() {
+        dialogueManager.StartDialogue(orbDialogue);
+        inIntro = true;
     }
     public void Imprison() {
         canDamage = true;

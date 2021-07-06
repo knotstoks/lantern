@@ -8,15 +8,14 @@ public class GabrielBossRoom : MonoBehaviour {
     [SerializeField] private Dialogue[] endGameIntroDialogues;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip[] music; //0 for intro music, 1 for fight music, 2 for finished
-    private int[] turnAroundLine = new int[] {20, 1};
-    private int[] wingsEmergeLine = new int[] {21, 3};
-    private int[] endGameTurnAroundLine = new int[] {2, 1, 1};
-    private int[] endGameEmergeLine = new int[] {5, 4, 4};
+    private int[] endGameTurnAroundLine = new int[] {0, 2, 1, 1};
+    private int[] endGameEmergeLine = new int[] {0, 4, 3, 3};
     private int line;
     private bool inIntro;
     private Player player;
     private DialogueManager dialogueManager;
     private Gabriel gabriel;
+    private bool moreThanThree;
     private IEnumerator Start() {
         line = 0;
         inIntro = false;
@@ -28,58 +27,121 @@ public class GabrielBossRoom : MonoBehaviour {
         audioSource.loop = true;
         audioSource.clip = music[0];
         audioSource.Play();
+        if ((int) DataStorage.saveValues["finalBossBeatenCount"] > 3) {
+            moreThanThree = true;
+        } else {
+            moreThanThree = false;
+        }
         yield return new WaitForSeconds(0.05f);
         StartIntroDialogue();
     }
     private void Update() {
-        if (inIntro && Input.GetKeyDown(KeyCode.E) && (int) DataStorage.saveValues["finalBossBeatenCount"] == 0) {
-            if (line == introDialogues[(int) DataStorage.saveValues["waxDungeonGabriel"]].names.Length - 1) {
-                inIntro = false;
-                line = 0;
-                dialogueManager.DisplayNextSentence();
-                DataStorage.saveValues["waxDungeonGabriel"] = 1;
-                audioSource.clip = music[1];
-                audioSource.Play();
-                player.allowCombat = true;
-                bossHPBar.SetActive(true);
-                //Start Gabriel Boss Fight
-                gabriel.StartBossBattle();
-            } else if (line == turnAroundLine[(int) DataStorage.saveValues["waxDungeonGabriel"]]) { //Turn around
-                StartCoroutine(gabriel.TurnAround());
-                line++;
-                dialogueManager.DisplayNextSentence();
-            } else if (line == wingsEmergeLine[(int) DataStorage.saveValues["waxDungeonGabriel"]]) {
-                StartCoroutine(gabriel.WingsEmerge());
-                line++;
-                dialogueManager.DisplayNextSentence();
-            } else {
-                line++;
-                dialogueManager.DisplayNextSentence();
+        if (!moreThanThree) {
+            if (inIntro && Input.GetKeyDown(KeyCode.E) && (int) DataStorage.saveValues["finalBossBeatenCount"] == 0) { //not seen yet
+                if (line == introDialogues[(int) DataStorage.saveValues["waxDungeonGabriel"]].names.Length - 1) {
+                    inIntro = false;
+                    line = 0;
+                    dialogueManager.DisplayNextSentence();
+                    DataStorage.saveValues["waxDungeonGabriel"] = 1;
+                    audioSource.clip = music[1];
+                    audioSource.Play();
+                    player.allowCombat = true;
+                    bossHPBar.SetActive(true);
+                    //Start Gabriel Boss Fight
+                    gabriel.StartBossBattle();
+                } else if (line == 20) { //Turn around
+                    StartCoroutine(gabriel.TurnAround());
+                    line++;
+                    dialogueManager.DisplayNextSentence();
+                } else if (line == 21) {
+                    StartCoroutine(gabriel.WingsEmerge());
+                    line++;
+                    dialogueManager.DisplayNextSentence();
+                } else {
+                    line++;
+                    dialogueManager.DisplayNextSentence();
+                }
             }
         }
 
-        if (inIntro && Input.GetKeyDown(KeyCode.E) && (int) DataStorage.saveValues["finalBossBeatenCount"] > 0) {
-            if (line == endGameIntroDialogues[(int) DataStorage.saveValues["finalBossBeatenCount"]].names.Length - 1) {
-                inIntro = false;
-                line = 0;
-                dialogueManager.DisplayNextSentence();
-                audioSource.clip = music[1];
-                audioSource.Play();
-                player.allowCombat = true;
-                bossHPBar.SetActive(true);
-                //Start Gabriel Boss Fight
-                gabriel.StartBossBattle();
-            } else if (line == endGameTurnAroundLine[(int) DataStorage.saveValues["finalBossBeatenCount"]]) { //Turn around
-                StartCoroutine(gabriel.TurnAround());
-                line++;
-                dialogueManager.DisplayNextSentence();
-            } else if (line == endGameEmergeLine[(int) DataStorage.saveValues["finalBossBeatenCount"]]) {
-                StartCoroutine(gabriel.WingsEmerge());
-                line++;
-                dialogueManager.DisplayNextSentence();
-            } else {
-                line++;
-                dialogueManager.DisplayNextSentence();
+        if (!moreThanThree) {
+            if (inIntro && Input.GetKeyDown(KeyCode.E) && (int) DataStorage.saveValues["waxDungeonGabriel"] == 1 && (int) DataStorage.saveValues["finalBossBeatenCount"] == 0) { //met haven't beaten
+                if (line == introDialogues[(int) DataStorage.saveValues["waxDungeonGabriel"]].names.Length - 1) {
+                    inIntro = false;
+                    line = 0;
+                    dialogueManager.DisplayNextSentence();
+                    audioSource.clip = music[1];
+                    audioSource.Play();
+                    player.allowCombat = true;
+                    bossHPBar.SetActive(true);
+                    //Start Gabriel Boss Fight
+                    gabriel.StartBossBattle();
+                } else if (line == 1) { //Turn around
+                    StartCoroutine(gabriel.TurnAround());
+                    line++;
+                    dialogueManager.DisplayNextSentence();
+                } else if (line == 3) {
+                    StartCoroutine(gabriel.WingsEmerge());
+                    line++;
+                    dialogueManager.DisplayNextSentence();
+                } else {
+                    line++;
+                    dialogueManager.DisplayNextSentence();
+                }
+            }
+        }
+
+        if (!moreThanThree) {
+            if (inIntro && Input.GetKeyDown(KeyCode.E) && (int) DataStorage.saveValues["finalBossBeatenCount"] > 0) {
+                if (line == endGameIntroDialogues[(int) DataStorage.saveValues["finalBossBeatenCount"]].names.Length - 1) {
+                    inIntro = false;
+                    line = 0;
+                    dialogueManager.DisplayNextSentence();
+                    audioSource.clip = music[1];
+                    audioSource.Play();
+                    player.allowCombat = true;
+                    bossHPBar.SetActive(true);
+                    //Start Gabriel Boss Fight
+                    gabriel.StartBossBattle();
+                } else if (line == endGameTurnAroundLine[(int) DataStorage.saveValues["finalBossBeatenCount"]]) { //Turn around
+                    StartCoroutine(gabriel.TurnAround());
+                    line++;
+                    dialogueManager.DisplayNextSentence();
+                } else if (line == endGameEmergeLine[(int) DataStorage.saveValues["finalBossBeatenCount"]]) {
+                    StartCoroutine(gabriel.WingsEmerge());
+                    line++;
+                    dialogueManager.DisplayNextSentence();
+                } else {
+                    line++;
+                    dialogueManager.DisplayNextSentence();
+                }
+            }
+        }
+
+        if (moreThanThree) {
+            if (inIntro && Input.GetKeyDown(KeyCode.E)) { //beaten already
+                if (line == endGameIntroDialogues[3].names.Length - 1) {
+                    inIntro = false;
+                    line = 0;
+                    dialogueManager.DisplayNextSentence();
+                    audioSource.clip = music[1];
+                    audioSource.Play();
+                    player.allowCombat = true;
+                    bossHPBar.SetActive(true);
+                    //Start Gabriel Boss Fight
+                    gabriel.StartBossBattle();
+                } else if (line == endGameTurnAroundLine[3]) { //Turn around
+                    StartCoroutine(gabriel.TurnAround());
+                    line++;
+                    dialogueManager.DisplayNextSentence();
+                } else if (line == endGameEmergeLine[3]) {
+                    StartCoroutine(gabriel.WingsEmerge());
+                    line++;
+                    dialogueManager.DisplayNextSentence();
+                } else {
+                    line++;
+                    dialogueManager.DisplayNextSentence();
+                }
             }
         }
     }
