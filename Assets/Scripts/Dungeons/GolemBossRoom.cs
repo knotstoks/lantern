@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class GolemBossRoom : MonoBehaviour {
@@ -8,6 +9,8 @@ public class GolemBossRoom : MonoBehaviour {
     [SerializeField] private GameObject bossHPBar;
     [SerializeField] private AudioClip[] music; //0 for boss theme, 1 for end theme
     [SerializeField] private GameObject gate;
+    [SerializeField] private GameObject golemObject;
+    [SerializeField] private GameObject savePoint;
     private bool introDone;
     private bool fightCompleted;
     private Golem golemBoss;
@@ -16,21 +19,31 @@ public class GolemBossRoom : MonoBehaviour {
     private int line;
     private AudioSource audioSource;
     private IEnumerator Start() {
-        introDone = false;
-        fightCompleted = false;
-        line = 0;
-        bossHPBar.SetActive(false);
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        golemBoss = GameObject.FindGameObjectWithTag("Boss").GetComponent<Golem>();
-        dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
-        audioSource = GetComponent<AudioSource>();
-        audioSource.loop = true;
-        audioSource.clip = music[0];
-        audioSource.Play();
-        yield return new WaitForSeconds(0.05f);
-        StartGolemIntro();
-        yield return new WaitForSeconds(2f);
-        doorOut.SetActive(false);
+        yield return new WaitForSeconds(0.01f);
+        if (!Convert.ToBoolean((int) DataStorage.saveValues["savedWaxGolem"])) {
+            introDone = false;
+            fightCompleted = false;
+            line = 0;
+            bossHPBar.SetActive(false);
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+            golemBoss = GameObject.FindGameObjectWithTag("Boss").GetComponent<Golem>();
+            dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
+            audioSource = GetComponent<AudioSource>();
+            audioSource.loop = true;
+            audioSource.clip = music[0];
+            audioSource.Play();
+            yield return new WaitForSeconds(0.05f);
+            StartGolemIntro();
+            yield return new WaitForSeconds(2f);
+            doorOut.SetActive(false);
+        } else {
+            savePoint.GetComponent<SavePoint>().Activate();
+            introDone = true;
+            Destroy(golemObject);
+            bossHPBar.SetActive(false);
+            doorOut.SetActive(true);
+            gate.GetComponent<Animator>().SetTrigger("Open");
+        }
     } 
     private void Update() {
         if (!introDone && Input.GetKeyDown(KeyCode.E)) { //Intro
@@ -87,5 +100,6 @@ public class GolemBossRoom : MonoBehaviour {
         dialogueManager.StartDialogue(outroDialogue);
         doorOut.SetActive(true);
         gate.GetComponent<Animator>().SetTrigger("Open");
+        savePoint.GetComponent<SavePoint>().Activate();
     }
 }

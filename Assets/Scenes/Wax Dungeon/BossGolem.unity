@@ -13151,6 +13151,11 @@ PrefabInstance:
       objectReference: {fileID: 775072644}
     - target: {fileID: 1301654517245915170, guid: e64bfecbcdef4ce4e8c53e31d3be7423,
         type: 3}
+      propertyPath: golemObject
+      value: 
+      objectReference: {fileID: 1903626945}
+    - target: {fileID: 1301654517245915170, guid: e64bfecbcdef4ce4e8c53e31d3be7423,
+        type: 3}
       propertyPath: music.Array.size
       value: 2
       objectReference: {fileID: 0}

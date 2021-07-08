@@ -84,7 +84,9 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["waxDungeonRoom"] = -1;
         DataStorage.saveValues["completedWaxDungeon"] = 0;
         DataStorage.saveValues["waxDungeonGolem"] = 0;
+        DataStorage.saveValues["savedWaxGolem"] = 0;
         DataStorage.saveValues["waxDungeonFourArms"] = 0;
+        DataStorage.saveValues["savedFourArms"] = 0;
         DataStorage.saveValues["waxDungeonGabriel"] = 0;
 
         //For Trials
@@ -95,6 +97,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["completedReversedControls"] = 0;
         DataStorage.saveValues["completedBlackOut"] = 0;
         DataStorage.saveValues["completedTimeTrial"] = 0;
+        DataStorage.saveValues["introToTrials"] = 0;
 
         //For End Game
         DataStorage.saveValues["introToEnd"] = 0;
@@ -133,7 +136,9 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["waxDungeonRoom"] = PlayerPrefs.GetInt("waxDungeonRoom");
         DataStorage.saveValues["completedWaxDungeon"] = PlayerPrefs.GetInt("completedWaxDungeon");
         DataStorage.saveValues["waxDungeonGolem"] = PlayerPrefs.GetInt("waxDungeonGolem");
+        DataStorage.saveValues["savedWaxGolem"] = PlayerPrefs.GetInt("savedWaxGolem");
         DataStorage.saveValues["waxDungeonFourArms"] = PlayerPrefs.GetInt("waxDungeonFourArms");
+        DataStorage.saveValues["savedFourArms"] = PlayerPrefs.GetInt("savedFourArms");
         DataStorage.saveValues["waxDungeonGabriel"] = PlayerPrefs.GetInt("waxDungeonGabriel");
 
         //For Trials
@@ -144,6 +149,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["completedReversedControls"] = PlayerPrefs.GetInt("completedReversedControls");
         DataStorage.saveValues["completedBlackOut"] = PlayerPrefs.GetInt("completedBlackOut");
         DataStorage.saveValues["completedTimeTrial"] = PlayerPrefs.GetInt("completedTimeTrial");
+        DataStorage.saveValues["introToTrials"] = PlayerPrefs.GetInt("introToTrials");
 
         //For End Game
         DataStorage.saveValues["introToEnd"] = PlayerPrefs.GetInt("introToEnd");

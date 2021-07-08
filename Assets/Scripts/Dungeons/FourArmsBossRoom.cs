@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -10,6 +11,8 @@ public class FourArmsBossRoom : MonoBehaviour {
     [SerializeField] private GameObject gate;
     [SerializeField] private GameObject fourArmsBossObject;
     [SerializeField] private GameObject fourArmsLight;
+    [SerializeField] private GameObject[] stuffToKill;
+    [SerializeField] private GameObject savePoint;
     private bool introDone;
     private bool fightCompleted;
     private FourArms fourArmsBoss;
@@ -18,21 +21,32 @@ public class FourArmsBossRoom : MonoBehaviour {
     private int line;
     private AudioSource audioSource;
     private IEnumerator Start() {
-        introDone = false;
-        fightCompleted = false;
-        line = 0;
-        bossHPBar.SetActive(false);
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        fourArmsBoss = fourArmsBossObject.GetComponent<FourArms>();
-        dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
-        audioSource = GetComponent<AudioSource>();
-        audioSource.loop = true;
-        audioSource.clip = music[0];
-        audioSource.Play();
-        yield return new WaitForSeconds(0.05f);
-        StartFourArmsIntro();
-        yield return new WaitForSeconds(2f);
-        doorOut.SetActive(false);
+        yield return new WaitForSeconds(0.01f);
+        if (Convert.ToBoolean((int) DataStorage.saveValues["savedFourArms"])) {
+            savePoint.GetComponent<SavePoint>().Activate();
+            introDone = true;
+            for (int i = 0; i < stuffToKill.Length; i++) {
+                Destroy(stuffToKill[i]);
+            }
+            doorOut.SetActive(true);
+            gate.GetComponent<Animator>().SetTrigger("Open");
+        } else {
+            introDone = false;
+            fightCompleted = false;
+            line = 0;
+            bossHPBar.SetActive(false);
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+            fourArmsBoss = fourArmsBossObject.GetComponent<FourArms>();
+            dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
+            audioSource = GetComponent<AudioSource>();
+            audioSource.loop = true;
+            audioSource.clip = music[0];
+            audioSource.Play();
+            yield return new WaitForSeconds(0.05f);
+            StartFourArmsIntro();
+            yield return new WaitForSeconds(2f);
+            doorOut.SetActive(false);
+        }
     } 
     private void Update() {
         if (!introDone && Input.GetKeyDown(KeyCode.E)) { //Intro
@@ -81,6 +95,7 @@ public class FourArmsBossRoom : MonoBehaviour {
         dialogueManager.StartDialogue(outroDialogue);
         doorOut.SetActive(true);
         gate.GetComponent<Animator>().SetTrigger("Open");
+        savePoint.GetComponent<SavePoint>().Activate();
     }
     public void DestroyAll() {
         Destroy(fourArmsLight);

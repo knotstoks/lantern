@@ -87,6 +87,14 @@ public class DataStorage : MonoBehaviour {
     1 - fought and lost against Gabriel
     2 - fought and won Gabriel
 
+    int savedWaxGolem
+    0 - did not save at Golem
+    1 - saved at Golem
+
+    int savedFourArms
+    0 - did not save at Four Arms
+    1 - saved at Four Arms
+
     //For end game//
 
     int finalBossBeatenCount;
@@ -117,7 +125,10 @@ public class DataStorage : MonoBehaviour {
 
     int completedTimeTrial;
 
-    
+    int introToTrials
+    0 - Not reached end game yet
+    1 - In intro to trials
+    2 - Finished trials intro
 
     //Achievements//
 

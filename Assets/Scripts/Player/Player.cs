@@ -78,6 +78,9 @@ public class Player : MonoBehaviour {
         DataStorage.saveValues["blackOut"] = false;
         DataStorage.saveValues["timeTrial"] = false;
         DataStorage.saveValues["healAfterBosses"] = 1;
+        DataStorage.saveValues["savedFourArms"] = 1;
+        DataStorage.saveValues["savedWaxGolem"] = 1;
+        DataStorage.saveValues["introToEnd"] = 0;
 
         invulTime = 0.5f;
         rb = GetComponent<Rigidbody2D>();
@@ -348,8 +351,6 @@ public class Player : MonoBehaviour {
         DataStorage.saveValues["currScene"] = "PriestOffice";
         DataStorage.saveValues["waxDungeonRoom"] = 0;
 
-        //DELETE AFTER!!!!!!!!!!!!!!!!!!
-        Debug.Log((int) DataStorage.saveValues["deaths"]);
         //Let the animation Play Out
         yield return new WaitForSeconds(2);
 

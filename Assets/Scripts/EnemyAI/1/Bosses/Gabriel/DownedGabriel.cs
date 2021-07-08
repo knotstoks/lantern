@@ -50,21 +50,17 @@ public class DownedGabriel : Interactable {
                     line = 0;
                     player.GetComponent<Player>().inDialogue = true;
                     StartCoroutine(EnterFinalPhase());
-                    Debug.Log("end");
                 } else if (line == takeOutShardNumber[(int) DataStorage.saveValues["finalBossBeatenCount"]]) {
                     animator.SetTrigger("TakeOutShard");
                     dialogueManager.DisplayNextSentence();
                     line++;
-                    Debug.Log("take out");
                 } else if (line == eatNumber[(int) DataStorage.saveValues["finalBossBeatenCount"]]) {
                     animator.SetTrigger("Eat");
                     dialogueManager.DisplayNextSentence();
                     line++;
-                    Debug.Log("eat");
                 } else {
                     dialogueManager.DisplayNextSentence();
                     line++;
-                    Debug.Log("else");
                 }
             }
         }

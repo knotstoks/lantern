@@ -11267,6 +11267,15 @@ MonoBehaviour:
   gate: {fileID: 41722035}
   fourArmsBossObject: {fileID: 273409714}
   fourArmsLight: {fileID: 1626822596}
+  stuffToKill:
+  - {fileID: 1909699012}
+  - {fileID: 312800251}
+  - {fileID: 802035497}
+  - {fileID: 1275867326}
+  - {fileID: 273409714}
+  - {fileID: 606175365}
+  - {fileID: 1626822596}
+  - {fileID: 222105231}
 --- !u!4 &782074274
 Transform:
   m_ObjectHideFlags: 0

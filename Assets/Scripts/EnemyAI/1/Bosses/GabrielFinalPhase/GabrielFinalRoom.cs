@@ -7,6 +7,7 @@ public class GabrielFinalRoom : MonoBehaviour {
     [SerializeField] private GameObject sunShard;
     [SerializeField] private GameObject featherDestroyer;
     [SerializeField] private AudioClip[] audioClips; //0 for normal, 1 for done
+    [SerializeField] private FadeToWhite fadeToWhite;
     private AudioSource audioSource;
     private LightOrbs orbOne, orbTwo, orbThree, orbFour;
     private GameObject playerObject;
@@ -97,5 +98,8 @@ public class GabrielFinalRoom : MonoBehaviour {
     }
     public void SpawnSunShard() {
         Instantiate(sunShard, new Vector2(0, 5), Quaternion.identity);
+    }
+    public void FadeOut() {
+        StartCoroutine(fadeToWhite.FadeNow());
     }
 }
