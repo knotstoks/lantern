@@ -129,6 +129,7 @@ public class DataStorage : MonoBehaviour {
     0 - Not reached end game yet
     1 - In intro to trials
     2 - Finished trials intro
+    3 - Finished trials intro and panel intro
 
     //Achievements//
 

@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class WaxDungeonIntro : MonoBehaviour {
     [SerializeField] private Dialogue[] dialogues; //0 & 1 for tutorial (start and end), 2 for repeating it
+    [SerializeField] private Dialogue trialIntro;
     [SerializeField] private GameObject spawnling;
     [SerializeField] private Vector2 spawnLocation;
     private bool inTutorialIntro;
@@ -42,13 +43,14 @@ public class WaxDungeonIntro : MonoBehaviour {
         }
         randArray[8] = 20;
         DataStorage.saveValues["waxDungeonRandomArray"] = randArray;
-        for (int i = 0; i < randArray.Length; i++) {
-            Debug.Log(randArray[i]);
-        }
         yield return new WaitForSeconds(0.2f);
 
         if ((int) DataStorage.saveValues["completedWaxDungeon"] == 0) { //Trigger first time
             StartDungeonTutorial();
+        }
+
+        if ((int) DataStorage.saveValues["introToTrials"] == 1) { //Trigger Trials Intro
+            StartTrialIntro();
         }
     }
     private void Update() {
@@ -85,6 +87,20 @@ public class WaxDungeonIntro : MonoBehaviour {
             tutorialInt = 1;
             EndDungeonTutorial();
         }
+
+        if ((int) DataStorage.saveValues["introToTrials"] == 1 && Input.GetKeyDown(KeyCode.E)) {
+            if (line == trialIntro.sentences.Length - 1) {
+                dialogueManager.DisplayNextSentence();
+                line = 0;
+                DataStorage.saveValues["introToTrials"] = 2;
+            } else {
+                dialogueManager.DisplayNextSentence();
+                line++;
+            }
+        }
+    }
+    private void StartTrialIntro() {
+        dialogueManager.StartDialogue(trialIntro);
     }
     private void StartDungeonTutorial() {
         inTutorialIntro = true;
@@ -95,6 +111,6 @@ public class WaxDungeonIntro : MonoBehaviour {
         inTutorialOutro = true;
     }
     public void KillCandling() {
-        tutorialInt -=1 ;
+        tutorialInt -= 1;
     }
 }

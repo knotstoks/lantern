@@ -56,14 +56,14 @@ public class Player : MonoBehaviour {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
         DataStorage.saveValues["health"] = 6;
         DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(0f, 0f);
+        DataStorage.saveValues["position"] = new Vector2(10f, 0f);
         DataStorage.saveValues["facingDirection"] = 0;
         PlayerPrefs.SetFloat("volume", 1f);
         DataStorage.saveValues["progress"] = 1;
         DataStorage.saveValues["blessings"] = 1;
         DataStorage.saveValues["tutorialDojo"] = 0;
         DataStorage.saveValues["waxDungeonGolem"] = 0;
-        DataStorage.saveValues["completedWaxDungeon"] = 0;
+        DataStorage.saveValues["completedWaxDungeon"] = 1;
         DataStorage.saveValues["blacksmith"] = 0;
         DataStorage.saveValues["deaths"] = 0;
         DataStorage.saveValues["waxDungeonFourArms"] = 0;
@@ -74,13 +74,17 @@ public class Player : MonoBehaviour {
         DataStorage.saveValues["finalBossBeatenCount"] = 3;
         DataStorage.saveValues["introSceneDone"] = 0;
         DataStorage.saveValues["waxDungeonRandomArray"] = new int[] {9, 10, 12, 13, 14, 16, 17, 18, 20};
-        DataStorage.saveValues["reversedControls"] = false;
-        DataStorage.saveValues["blackOut"] = false;
-        DataStorage.saveValues["timeTrial"] = false;
-        DataStorage.saveValues["healAfterBosses"] = 1;
+        DataStorage.saveValues["reversedControls"] = 0;
+        DataStorage.saveValues["blackOut"] = 0;
+        DataStorage.saveValues["timeTrial"] = 0;
+        DataStorage.saveValues["completedReversedControls"] = 0;
+        DataStorage.saveValues["completedBlackOut"] = 0;
+        DataStorage.saveValues["completedTimeTrial"] = 0;
+        DataStorage.saveValues["healAfterBosses"] = 2;
         DataStorage.saveValues["savedFourArms"] = 1;
         DataStorage.saveValues["savedWaxGolem"] = 1;
         DataStorage.saveValues["introToEnd"] = 0;
+        DataStorage.saveValues["introToTrials"] = 1;
 
         invulTime = 0.5f;
         rb = GetComponent<Rigidbody2D>();
@@ -195,7 +199,7 @@ public class Player : MonoBehaviour {
         }
 
         if (!inDialogue) {
-            if (!((bool) DataStorage.saveValues["reversedControls"])) {
+            if (!((int) DataStorage.saveValues["reversedControls"] == 1)) {
                 //Movement
                 move.x = Input.GetAxisRaw("Horizontal");
                 move.y = Input.GetAxisRaw("Vertical");
@@ -234,7 +238,7 @@ public class Player : MonoBehaviour {
             shootVector.x = Input.GetAxisRaw("HorizontalShoot");
             shootVector.y = Input.GetAxisRaw("VerticalShoot");
 
-            if (!(bool) DataStorage.saveValues["reversedControls"]) {
+            if (!((int) DataStorage.saveValues["reversedControls"] == 1)) {
                 animator.SetFloat("HoriShoot", shootVector.x);
                 animator.SetFloat("VertShoot", shootVector.y);
             } else {
