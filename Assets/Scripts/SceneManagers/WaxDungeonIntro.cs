@@ -6,6 +6,7 @@ public class WaxDungeonIntro : MonoBehaviour {
     [SerializeField] private Dialogue trialIntro;
     [SerializeField] private GameObject spawnling;
     [SerializeField] private Vector2 spawnLocation;
+    [SerializeField] private GameObject trialPanel;
     private bool inTutorialIntro;
     private bool inTutorialOutro;
     private int line;
@@ -14,6 +15,11 @@ public class WaxDungeonIntro : MonoBehaviour {
     private int tutorialInt;
     private AudioSource audioSource;
     private IEnumerator Start() {
+        if ((int) DataStorage.saveValues["introToTrials"] > 0) {
+            trialPanel.SetActive(true);
+        } else {
+            trialPanel.SetActive(false);
+        }
         tutorialInt = 1;
         line = 0;
         inTutorialIntro = false;

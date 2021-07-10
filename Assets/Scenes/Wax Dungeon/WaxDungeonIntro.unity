@@ -9188,6 +9188,7 @@ MonoBehaviour:
   spawnling: {fileID: 3181964280402282851, guid: 9aad32d429a4f9447b53e008419d6103,
     type: 3}
   spawnLocation: {x: 4.2, y: 1}
+  trialPanel: {fileID: 924695500}
 --- !u!4 &1655776491
 Transform:
   m_ObjectHideFlags: 0

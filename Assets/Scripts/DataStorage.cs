@@ -103,12 +103,14 @@ public class DataStorage : MonoBehaviour {
     int introToEnd;
     0 - havent introed to end yet
     1 - finished last boss but havent introed
-    2 - introed to end already
+    2 - priest walking phase
+    3 - introed to end already
 
     int sunShardsCollected;
     0 - 4 depending on how many shards you have
 
     int sunShardsInserted;
+    depends on number of shard inserted
 
     int reversedControls;
 
