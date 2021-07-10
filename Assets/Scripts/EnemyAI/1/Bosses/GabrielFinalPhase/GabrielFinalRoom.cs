@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GabrielFinalRoom : MonoBehaviour {
     [SerializeField] private GameObject orbOneObject, orbTwoObject, orbThreeObject, orbFourObject;
@@ -96,10 +97,57 @@ public class GabrielFinalRoom : MonoBehaviour {
         //Stop Player from attacking
         player.allowCombat = false;
     }
+    //Test to see if the sun shard can spawn, if not just leave
     public void SpawnSunShard() {
-        Instantiate(sunShard, new Vector2(0, 5), Quaternion.identity);
+        bool spawn = false;
+        if ((int) DataStorage.saveValues["introToEnd"] == 0) { //First time
+            DataStorage.saveValues["sunShardsCollected"] = (int) DataStorage.saveValues["sunShardsCollected"] + 1;
+            spawn = true;
+        }
+
+        if ((int) DataStorage.saveValues["completedReversedControls"] == 0 && (int) DataStorage.saveValues["reversedControls"] == 1) {
+            DataStorage.saveValues["completedReversedControls"] = 1;
+            DataStorage.saveValues["sunShardsCollected"] = (int) DataStorage.saveValues["sunShardsCollected"] + 1;
+            spawn = true;
+        }
+        
+        if ((int) DataStorage.saveValues["completedBlackOut"] == 0 && (int) DataStorage.saveValues["blackOut"] == 1) {
+            DataStorage.saveValues["completedBlackOut"] = 1;
+            DataStorage.saveValues["sunShardsCollected"] = (int) DataStorage.saveValues["sunShardsCollected"] + 1;
+            spawn = true;
+        }
+
+        if ((int) DataStorage.saveValues["completedTimeTrial"] == 0 && (int) DataStorage.saveValues["timeTrial"] == 1) {
+            DataStorage.saveValues["completedTimeTrial"] = 1;
+            DataStorage.saveValues["sunShardsCollected"] = (int) DataStorage.saveValues["sunShardsCollected"] + 1;
+            spawn = true;
+        }
+
+        if (spawn) {
+            Instantiate(sunShard, new Vector2(0, 5), Quaternion.identity);
+        } else {
+            StartCoroutine(FadeOut());
+        }
     }
-    public void FadeOut() {
+    public IEnumerator FadeOut() {
+        if ((int) DataStorage.saveValues["introToEnd"] == 0) {
+            DataStorage.saveValues["introToEnd"] = 1;
+        }
+        DataStorage.saveValues["position"] = new Vector2(-9.8f, 2.2f);
+        DataStorage.saveValues["currScene"] = "PriestOffice";
+        DataStorage.saveValues["facingDirection"] = 3f;
+        DataStorage.saveValues["savedWaxGolem"] = 0;
+        DataStorage.saveValues["savedFourArms"] = 0;
+        DataStorage.saveValues["reversedControls"] = 0;
+        DataStorage.saveValues["blackOut"] = 0;
+        DataStorage.saveValues["timeTrial"] = 0;
+        //player.SaveGame(-9.8f, 2.2f, 3, "PriestOffice"); MAKE SURE TO FUCKING CLEAR THIS COMMENT
+
+        //Fade to White
         StartCoroutine(fadeToWhite.FadeNow());
+        yield return new WaitForSeconds(1.6f);
+
+        SceneManager.LoadScene("LoadingScreen");
+        
     }
 }

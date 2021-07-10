@@ -8,17 +8,19 @@ public class PriestOffice : MonoBehaviour {
     [SerializeField] private Dialogue blessingDialogue;
     [SerializeField] private Dialogue endGameDialogue;
     [SerializeField] private GameObject blessingInstructions;
+    [SerializeField] private GameObject walkingPriest;
     private Player player;
     private DialogueManager dialogueManager;
     private int line;
     private bool showingBlessingInstructions;
-    private IEnumerator Start() {        
+    private IEnumerator Start() {
         blessingMenu.SetActive(false);
         blessingInstructions.SetActive(false);
         line = 0;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
         showingBlessingInstructions = false;
+        walkingPriest.SetActive(false);
         yield return new WaitForSeconds(0.1f);
 
         if ((int) DataStorage.saveValues["progress"] == 0) {
@@ -60,11 +62,15 @@ public class PriestOffice : MonoBehaviour {
             }
         }
 
+        //Intro to end
         if ((int) DataStorage.saveValues["introToEnd"] == 1 && Input.GetKeyDown(KeyCode.E)) {
             if (line == endGameDialogue.sentences.Length - 1) {
                 line = 0;
                 DataStorage.saveValues["introToEnd"] = 2;
                 dialogueManager.DisplayNextSentence();
+                headPriest.SetActive(false);
+                walkingPriest.SetActive(true);
+                //Animation of priest walking
             } else {
                 line++;
                 dialogueManager.DisplayNextSentence();
