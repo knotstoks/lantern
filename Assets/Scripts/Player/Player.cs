@@ -56,7 +56,7 @@ public class Player : MonoBehaviour {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
         DataStorage.saveValues["health"] = 6;
         DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(-9.8f, 2.2f);
+        DataStorage.saveValues["position"] = new Vector2(0f, 1.5f);
         DataStorage.saveValues["facingDirection"] = 0;
         PlayerPrefs.SetFloat("volume", 1f);
         DataStorage.saveValues["progress"] = 1;
@@ -79,6 +79,7 @@ public class Player : MonoBehaviour {
         DataStorage.saveValues["timeTrial"] = 0;
         DataStorage.saveValues["timeTrialTime"] = 1200f;
         DataStorage.saveValues["sunShardsCollected"] = 0;
+        DataStorage.saveValues["sunShardsInserted"] = 3;
         DataStorage.saveValues["completedReversedControls"] = 0;
         DataStorage.saveValues["completedBlackOut"] = 0;
         DataStorage.saveValues["completedTimeTrial"] = 0;

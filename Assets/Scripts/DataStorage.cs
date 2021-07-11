@@ -133,7 +133,14 @@ public class DataStorage : MonoBehaviour {
     2 - Finished trials intro
     3 - Finished trials intro and panel intro
 
-    //Achievements//
+    int newMission
+    0 - End Game not started
+    1 - End Game started
+    2 - End Game bedroom done
+
+    //Achievements// (Achievements are in PlayerPrefs and do not get overriden if you reset the game)
+    
+
 
     */
 }

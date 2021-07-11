@@ -1,18 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class SunShardRoom : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class SunShardRoom : MonoBehaviour {
+    [SerializeField] private GameObject talkingPriest;
+    [SerializeField] private GameObject walkingPriest;
+    [SerializeField] private GameObject portalOut;
+    private DialogueManager dialogueManager;
+    private Player player;
+    private void Start() {
+        walkingPriest.SetActive(false);
+        talkingPriest.SetActive(false);
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //Disable the way out and make priest appear
+        if ((int) DataStorage.saveValues["introToEnd"] == 2) {
+            talkingPriest.SetActive(true);
+            portalOut.SetActive(false);
+        }
     }
 }

@@ -40,6 +40,7 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetInt("completedBlackOut", (int) DataStorage.saveValues["completedBlackOut"]);
         PlayerPrefs.SetInt("completedTimeTrial", (int) DataStorage.saveValues["completedTimeTrial"]);
         PlayerPrefs.SetInt("introToEnd", (int) DataStorage.saveValues["introToEnd"]);
+        PlayerPrefs.SetInt("newMission", (int) DataStorage.saveValues["newMission"]);
         PlayerPrefs.SetInt("sunShardsCollected", (int) DataStorage.saveValues["sunShardsCollected"]);
         PlayerPrefs.SetInt("sunShardsCollected", (int) DataStorage.saveValues["sunShardsInserted"]);
         PlayerPrefs.SetInt("introToTrials", (int) DataStorage.saveValues["introToTrials"]);

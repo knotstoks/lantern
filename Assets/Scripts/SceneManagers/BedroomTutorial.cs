@@ -7,6 +7,7 @@ public class BedroomTutorial : MonoBehaviour {
     private Player player;
     private DialogueManager dialogueManager;
     [SerializeField] private Dialogue lines;
+    [SerializeField] private Dialogue endGameMonologue;
     private int line;
 
     private IEnumerator Start() {
@@ -19,12 +20,28 @@ public class BedroomTutorial : MonoBehaviour {
             //Start the Intro Cutscene and bedroom starting dialogue
             StartBedRoomTutorial();
         }
+
+        if ((int) DataStorage.saveValues["newMission"] == 1) {
+            dialogueManager.StartDialogue(endGameMonologue);
+        } 
     } 
 
     private void Update() {
         if ((int) DataStorage.saveValues["introSceneDone"] == 0 && Input.GetKeyDown(KeyCode.E)) {
             if (line == 2) {
+                line = 0;
                 DataStorage.saveValues["introSceneDone"] = 1;
+                dialogueManager.DisplayNextSentence();
+            } else {
+                line++;
+                dialogueManager.DisplayNextSentence();
+            }
+        }
+
+        if ((int) DataStorage.saveValues["newMission"] == 1 && Input.GetKeyDown(KeyCode.E)) {
+            if (line == endGameMonologue.sentences.Length - 1) {
+                line = 0;
+                DataStorage.saveValues["newMission"] = 2;
                 dialogueManager.DisplayNextSentence();
             } else {
                 line++;

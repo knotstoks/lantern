@@ -101,6 +101,7 @@ public class MainMenu : MonoBehaviour {
 
         //For End Game
         DataStorage.saveValues["introToEnd"] = 0;
+        DataStorage.saveValues["newMission"] = 0;
         DataStorage.saveValues["sunShardsCollected"] = 0;
         DataStorage.saveValues["sunShardsInserted"] = 0;
 
@@ -153,6 +154,7 @@ public class MainMenu : MonoBehaviour {
 
         //For End Game
         DataStorage.saveValues["introToEnd"] = PlayerPrefs.GetInt("introToEnd");
+        DataStorage.saveValues["newMission"] = PlayerPrefs.GetInt("newMission");
         DataStorage.saveValues["sunShardsCollected"] = PlayerPrefs.GetInt("sunShardsCollected");
         DataStorage.saveValues["sunShardsInserted"] = PlayerPrefs.GetInt("sunShardsInserted");
 

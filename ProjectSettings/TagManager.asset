@@ -23,6 +23,7 @@ TagManager:
   - BloodBullet
   - Feather
   - Gabriel
+  - SunEmblem
   layers:
   - Default
   - TransparentFX

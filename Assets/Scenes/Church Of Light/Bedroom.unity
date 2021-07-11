@@ -600,7 +600,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 783143411
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1630,7 +1630,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 783143411
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 672783727776313401, guid: b0f6d6f8e7999204b943f4f465680566, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1837,7 +1837,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 783143411
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -2388,6 +2388,23 @@ MonoBehaviour:
     - "Head to the dojo. It\u2019s in the east wing of the lower level of the church.
       Senior Warden Frankie should be there waiting for you. Use the WASD keys to
       move around."
+  endGameMonologue:
+    names:
+    - Lumin
+    - ???
+    - Lumin
+    - ???
+    - Lumin
+    - ???
+    - Lumin
+    sentences:
+    - I should go see the Priest if he has anything for me.
+    - No. Go back to the mausoleum.
+    - Wha-what? A voice in my head?
+    - Go back to the mausoleum. It is important.
+    - Okay, I will. But I should tell the Priest before I go.
+    - No time. Go now!
+    - Alright, alright. Why am I even listening to a voice in my head?
 --- !u!1 &1301983890
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,7 +3003,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 783143411
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}

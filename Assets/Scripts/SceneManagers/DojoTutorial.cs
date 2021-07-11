@@ -11,7 +11,6 @@ public class DojoTutorial : MonoBehaviour {
     public GameObject seniorWardenFrankie;
     private Player player;
     private IEnumerator Start() {
-        // DataStorage.saveValues["tutorialDojo"] = 0; //Delete after!
         yield return 0.2;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         if ((int) DataStorage.saveValues["tutorialDojo"] == 0) {
