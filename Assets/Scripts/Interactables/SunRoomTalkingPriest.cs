@@ -34,7 +34,7 @@ public class SunRoomTalkingPriest : Interactable {
                 if (line == dialogue.sentences.Length - 1) { //Delete priest and go to bed and save
                     DataStorage.saveValues["introToEnd"] = 3;
                     DataStorage.saveValues["introToTrials"] = 1;
-                    player.SaveGame(3, -0.45f, 0, "Bedroom");
+                    //player.SaveGame(3, -0.45f, 0, "Bedroom");
                     DataStorage.saveValues["position"] = new Vector2(3, -0.45f);
                     DataStorage.saveValues["facingDirection"] = 0;
                     DataStorage.saveValues["currScene"] = "Bedroom";
@@ -52,6 +52,7 @@ public class SunRoomTalkingPriest : Interactable {
         yield return new WaitForSeconds(1);
         player.inDialogue = false;
         dialogueManager.StartDialogue(dialogue);
+        delay = false;
     }
     private IEnumerator GoSleep() {
         yield return new WaitForSeconds(1.6f);

@@ -6,14 +6,15 @@ using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour {
     private bool hasSaveGame;
-    public GameObject newGameButton, optionsButton, creditsButton, quitButton;
-    public GameObject restartGameYesButton, optionsBackButton, creditsBackButton, quitYesButton, volSlider;
+    public GameObject newGameButton, optionsButton, creditsButton, quitButton, achievementsButton;
+    public GameObject restartGameYesButton, optionsBackButton, creditsBackButton, quitYesButton, volSlider, firstAchievement;
     [SerializeField] private Button loadGameButton;
     [SerializeField] private GameObject standardSet;
     [SerializeField] private GameObject newGameWarning;
     [SerializeField] private GameObject quitScreen;
     [SerializeField] private GameObject optionsMenu;
     [SerializeField] private GameObject credits;
+    [SerializeField] private GameObject achievementsMenu;
     [SerializeField] private Animator animator;
     [SerializeField] private Slider volumeSlider;
     [SerializeField] private GameObject audioManager;
@@ -94,6 +95,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["reversedControls"] = 0;
         DataStorage.saveValues["blackOut"] = 0;
         DataStorage.saveValues["timeTrial"] = 0;
+        DataStorage.saveValues["timeTrialTime"] = 1200;
         DataStorage.saveValues["completedReversedControls"] = 0;
         DataStorage.saveValues["completedBlackOut"] = 0;
         DataStorage.saveValues["completedTimeTrial"] = 0;
@@ -210,5 +212,17 @@ public class MainMenu : MonoBehaviour {
         standardSet.SetActive(true);
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(optionsButton);
+    }
+    public void OpenAchievements() {
+        standardSet.SetActive(false);
+        achievementsMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(firstAchievement);
+    }
+    public void CloseAchievements() {
+        achievementsMenu.SetActive(false);
+        standardSet.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(achievementsButton);
     }
 }

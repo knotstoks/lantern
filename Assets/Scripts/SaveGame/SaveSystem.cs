@@ -36,6 +36,10 @@ public class SaveSystem : MonoBehaviour {
 
         //End Game
         PlayerPrefs.SetInt("finalBossBeatenCount", (int) DataStorage.saveValues["finalBossBeatenCount"]);
+        PlayerPrefs.SetInt("reversedControls", (int) DataStorage.saveValues["reversedControls"]);
+        PlayerPrefs.SetInt("blackOut", (int) DataStorage.saveValues["blackOut"]);
+        PlayerPrefs.SetInt("timeTrial", (int) DataStorage.saveValues["timeTrial"]);
+        PlayerPrefs.SetFloat("timeTrialTime", (float) DataStorage.saveValues["timeTrialTime"]);
         PlayerPrefs.SetInt("completedReversedControls", (int) DataStorage.saveValues["completedReversedControls"]);
         PlayerPrefs.SetInt("completedBlackOut", (int) DataStorage.saveValues["completedBlackOut"]);
         PlayerPrefs.SetInt("completedTimeTrial", (int) DataStorage.saveValues["completedTimeTrial"]);

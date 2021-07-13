@@ -2,12 +2,10 @@ using UnityEngine;
 
 public class SunShardRoom : MonoBehaviour {
     [SerializeField] private GameObject talkingPriest;
-    [SerializeField] private GameObject walkingPriest;
     [SerializeField] private GameObject portalOut;
     private DialogueManager dialogueManager;
     private Player player;
     private void Start() {
-        walkingPriest.SetActive(false);
         talkingPriest.SetActive(false);
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();

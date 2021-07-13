@@ -18,6 +18,7 @@ public class SunEmblem : Interactable {
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private void Start() {
+        dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
         interacting = false;
         spriteRenderer = GetComponent<SpriteRenderer>();
         inCutscene = false;
