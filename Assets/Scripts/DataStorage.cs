@@ -140,7 +140,53 @@ public class DataStorage : MonoBehaviour {
 
     //Achievements// (Achievements are in PlayerPrefs and do not get overriden if you reset the game)
     
+    int golemSlain; ###
+    You have defeated the Wax Golem. 
 
+    int fourArmsSlain; ###
+    You have defeated Four Arms.
 
+    int gabrielSlain; ###
+    Dewinged
+    You have defeated Gabriel.
+
+    int reverseControlsTrialed; ###
+    You have completed the Reverse Controls Challenge.
+
+    int blackOutTrialed; ###
+    You have completed the Black Out Challenge.
+
+    int timeTrialTrialed; ###
+    You have completed the Timed Trial Challenge.
+
+    int endGame; ###
+    You have completed the game.
+
+    int noUpgradeRun; ###
+    You have completed a run with no upgrades.
+
+    int threeHeartsRun; ###
+    You have completed a run on 3 hearts.
+
+    int noHeal; ###
+    You have completed a run without healing after every boss.
+
+    int hardMode; ###
+    You have completed a run with no upgrades, 3 hearts and without healing after every boss.
+
+    int kill50; ###
+    You have slain 50 enemies.
+
+    int kill100; ###
+    You have slain 100 enemies.
+
+    int kill500; ###
+    You have slain 500 enemies.
+
+    int died10; ###
+    You have died 10 times.
+
+    int died20; ###
+    You have died 20 times.
     */
 }
