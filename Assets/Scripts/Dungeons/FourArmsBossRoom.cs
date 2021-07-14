@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -22,7 +21,7 @@ public class FourArmsBossRoom : MonoBehaviour {
     private AudioSource audioSource;
     private IEnumerator Start() {
         yield return new WaitForSeconds(0.01f);
-        if (Convert.ToBoolean((int) DataStorage.saveValues["savedFourArms"])) {
+        if ((int) DataStorage.saveValues["savedFourArms"] == 0) {
             savePoint.GetComponent<SavePoint>().Activate();
             introDone = true;
             for (int i = 0; i < stuffToKill.Length; i++) {
@@ -86,6 +85,10 @@ public class FourArmsBossRoom : MonoBehaviour {
         fourArmsBoss.StartBoss();
     }
     public void CompleteFight() {
+        if (!PlayerPrefs.HasKey("fourArmsSlain")) {
+            PlayerPrefs.SetInt("fourArmsSlain", 1);
+            GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(1);
+        }
         player.Heal((int) DataStorage.saveValues["healAfterBosses"]);
         audioSource.clip = music[1];
         audioSource.loop = false;

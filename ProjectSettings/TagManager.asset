@@ -24,6 +24,7 @@ TagManager:
   - Feather
   - Gabriel
   - SunEmblem
+  - AchievementManager
   layers:
   - Default
   - TransparentFX

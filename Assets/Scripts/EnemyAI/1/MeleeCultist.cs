@@ -16,6 +16,7 @@ public class MeleeCultist : Enemy {
             died = true;
             damage = 0;
             StartCoroutine(Death());
+            GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().CheckKills();
         }
     }
 

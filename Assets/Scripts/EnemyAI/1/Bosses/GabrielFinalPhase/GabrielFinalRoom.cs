@@ -74,6 +74,40 @@ public class GabrielFinalRoom : MonoBehaviour {
         gabrielFinal.Return();
     }
     public void FinishFight() {
+        if (!PlayerPrefs.HasKey("gabrielSlain")) {
+            PlayerPrefs.SetInt("gabrielSlain", 1);
+            GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(2);
+        }
+
+        if (GameObject.FindGameObjectWithTag("Upgrades").GetComponent<Upgrades>().upgrade == 0) { 
+            if (!PlayerPrefs.HasKey("noUpgradeRun")) {
+                PlayerPrefs.SetInt("noUpgradeRun", 1);
+                GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(7);
+            }
+        }
+
+        if ((int) DataStorage.saveValues["maxHealth"] == 6) { 
+            if (!PlayerPrefs.HasKey("threeHeartsRun")) {
+                PlayerPrefs.SetInt("threeHeartsRun", 1);
+                GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(8);
+            }
+        }
+
+        if ((int) DataStorage.saveValues["healAfterBosses"] == 0) { 
+            if (!PlayerPrefs.HasKey("noHeal")) {
+                PlayerPrefs.SetInt("noHeal", 1);
+                GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(9);
+            }
+        }
+
+        if (GameObject.FindGameObjectWithTag("Upgrades").GetComponent<Upgrades>().upgrade == 0 && (int) DataStorage.saveValues["maxHealth"] == 6
+            && (int) DataStorage.saveValues["healAfterBosses"] == 0) {
+            if (!PlayerPrefs.HasKey("hardMode")) {
+                PlayerPrefs.SetInt("hardMode", 1);
+                GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(10);
+            }  
+        }
+
         player.Heal((int) DataStorage.saveValues["healAfterBosses"]);
         audioSource.clip = audioClips[1];
         audioSource.loop = false;
@@ -101,27 +135,46 @@ public class GabrielFinalRoom : MonoBehaviour {
     public void SpawnSunShard() {
         bool spawn = false;
         if ((int) DataStorage.saveValues["introToEnd"] == 0) { //First time
+            if (!PlayerPrefs.HasKey("endGame")) {
+                PlayerPrefs.SetInt("endGame", 1);
+                GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(6);
+            }
             DataStorage.saveValues["sunShardsCollected"] = (int) DataStorage.saveValues["sunShardsCollected"] + 1;
             spawn = true;
         }
 
         if ((int) DataStorage.saveValues["completedReversedControls"] == 0 && (int) DataStorage.saveValues["reversedControls"] == 1) {
+            if (!PlayerPrefs.HasKey("reverseControlsTrialed")) {
+                PlayerPrefs.SetInt("reverseControlsTrialed", 1);
+                GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(3);
+            }
             DataStorage.saveValues["completedReversedControls"] = 1;
             DataStorage.saveValues["sunShardsCollected"] = (int) DataStorage.saveValues["sunShardsCollected"] + 1;
             spawn = true;
         }
         
         if ((int) DataStorage.saveValues["completedBlackOut"] == 0 && (int) DataStorage.saveValues["blackOut"] == 1) {
+            if (!PlayerPrefs.HasKey("blackOutTrialed")) {
+                PlayerPrefs.SetInt("blackOutTrialed", 1);
+                GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(4);
+            }
             DataStorage.saveValues["completedBlackOut"] = 1;
             DataStorage.saveValues["sunShardsCollected"] = (int) DataStorage.saveValues["sunShardsCollected"] + 1;
             spawn = true;
         }
 
         if ((int) DataStorage.saveValues["completedTimeTrial"] == 0 && (int) DataStorage.saveValues["timeTrial"] == 1) {
+            if (!PlayerPrefs.HasKey("timeTrialTrialed")) {
+                PlayerPrefs.SetInt("timeTrialTrialed", 1);
+                GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(5);
+            }
             DataStorage.saveValues["completedTimeTrial"] = 1;
             DataStorage.saveValues["sunShardsCollected"] = (int) DataStorage.saveValues["sunShardsCollected"] + 1;
             spawn = true;
         }
+
+        DataStorage.saveValues["savedWaxGolem"] = 0;
+        DataStorage.saveValues["savedFourArms"] = 0;
 
         if (spawn) {
             Instantiate(sunShard, new Vector2(0, 5), Quaternion.identity);
@@ -141,7 +194,7 @@ public class GabrielFinalRoom : MonoBehaviour {
         DataStorage.saveValues["reversedControls"] = 0;
         DataStorage.saveValues["blackOut"] = 0;
         DataStorage.saveValues["timeTrial"] = 0;
-        //player.SaveGame(-9.8f, 2.2f, 3, "PriestOffice"); MAKE SURE TO FUCKING CLEAR THIS COMMENT
+        player.SaveGame(-9.8f, 2.2f, 3, "PriestOffice");
 
         //Fade to White
         StartCoroutine(fadeToWhite.FadeNow());

@@ -32,6 +32,7 @@ public class MainMenu : MonoBehaviour {
         quitScreen.SetActive(false);
         optionsMenu.SetActive(false);
         credits.SetActive(false);
+        achievementsMenu.SetActive(false);
 
         if (PlayerPrefs.HasKey("volume")) {
             //Set the Options volume slider to that value
@@ -146,9 +147,9 @@ public class MainMenu : MonoBehaviour {
 
         //For Trials
         DataStorage.saveValues["finalBossBeatenCount"] = PlayerPrefs.GetInt("finalBossBeatenCount");
-        DataStorage.saveValues["reversedControls"] = false;
-        DataStorage.saveValues["blackOut"] = false;
-        DataStorage.saveValues["timeTrial"] = false;
+        DataStorage.saveValues["reversedControls"] = PlayerPrefs.GetInt("reversedControls");
+        DataStorage.saveValues["blackOut"] = PlayerPrefs.GetInt("blackOut");
+        DataStorage.saveValues["timeTrial"] = PlayerPrefs.GetInt("timeTrial");
         DataStorage.saveValues["completedReversedControls"] = PlayerPrefs.GetInt("completedReversedControls");
         DataStorage.saveValues["completedBlackOut"] = PlayerPrefs.GetInt("completedBlackOut");
         DataStorage.saveValues["completedTimeTrial"] = PlayerPrefs.GetInt("completedTimeTrial");

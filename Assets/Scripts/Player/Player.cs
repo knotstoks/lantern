@@ -341,6 +341,20 @@ public class Player : MonoBehaviour {
     private IEnumerator KillPlayer() {
         int deaths = (int) DataStorage.saveValues["deaths"];
         DataStorage.saveValues["deaths"] = deaths + 1;
+        if (deaths + 1 == 5) {
+            if (!PlayerPrefs.HasKey("died5")) {
+                GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(13);
+                PlayerPrefs.SetInt("died5", 1);
+            }
+        }
+
+        if (deaths + 1 == 10) {
+            if (!PlayerPrefs.HasKey("died10")) {
+                GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(14);
+                PlayerPrefs.SetInt("died10", 1);
+            }
+        }
+        
         inDialogue = true;
         //ONLY FOR CURRENT BUILD!!!!!!!!!!
         if ((int) DataStorage.saveValues["completedWaxDungeon"] == 0) {

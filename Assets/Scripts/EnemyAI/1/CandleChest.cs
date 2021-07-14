@@ -34,6 +34,7 @@ public class CandleChest : Enemy {
             died = true;
             damage = 0;
             StartCoroutine(Death());
+            GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().CheckKills();
         }
 
         if (fireTime > 0) {

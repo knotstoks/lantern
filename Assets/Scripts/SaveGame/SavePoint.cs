@@ -10,6 +10,9 @@ public class SavePoint : Interactable {
     private SpriteRenderer spriteRenderer;
     private Player player;
     private void Start() {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        objDesc = "";
+        spriteRenderer.sprite = sprites[0];
         activated = false;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
@@ -19,6 +22,7 @@ public class SavePoint : Interactable {
         }
     }
     public void Activate() {
+        objDesc = "Save Game";
         spriteRenderer.sprite = sprites[1];
         activated = true;
     }

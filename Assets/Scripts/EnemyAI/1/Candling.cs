@@ -18,6 +18,7 @@ public class Candling : Enemy {
             died = true;
             damage = 0;
             StartCoroutine(Death());
+            GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().CheckKills();
         }
     }
     private void FixedUpdate() {

@@ -140,53 +140,64 @@ public class DataStorage : MonoBehaviour {
 
     //Achievements// (Achievements are in PlayerPrefs and do not get overriden if you reset the game)
     
-    int golemSlain; ###
+    int golemSlain;
+    Bigger they are, harder they fall
     You have defeated the Wax Golem. 
 
-    int fourArmsSlain; ###
+    int fourArmsSlain;
+    Handicapable
     You have defeated Four Arms.
 
-    int gabrielSlain; ###
+    int gabrielSlain;
     Dewinged
     You have defeated Gabriel.
 
-    int reverseControlsTrialed; ###
+    int reverseControlsTrialed;
+    Topsy Turvy
     You have completed the Reverse Controls Challenge.
 
-    int blackOutTrialed; ###
+    int blackOutTrialed;
+    Night Vision
     You have completed the Black Out Challenge.
 
-    int timeTrialTrialed; ###
+    int timeTrialTrialed;
+    Mister Sandman
     You have completed the Timed Trial Challenge.
 
-    int endGame; ###
+    int endGame;
+    The End
     You have completed the game.
 
-    int noUpgradeRun; ###
+    int noUpgradeRun;
+    By your own Strength
     You have completed a run with no upgrades.
 
-    int threeHeartsRun; ###
+    int threeHeartsRun;
+    No Blessing Needed
     You have completed a run on 3 hearts.
 
-    int noHeal; ###
+    int noHeal;
+    Heal Blocked
     You have completed a run without healing after every boss.
 
-    int hardMode; ###
+    int hardMode;
+    God of Gaming
     You have completed a run with no upgrades, 3 hearts and without healing after every boss.
 
-    int kill50; ###
-    You have slain 50 enemies.
-
-    int kill100; ###
+    int kill100;
+    Cut 'em Down
     You have slain 100 enemies.
 
-    int kill500; ###
+    int kill500;
+    Slayer of Worlds
     You have slain 500 enemies.
 
-    int died10; ###
+    int died5;
+    Grave Hugger
     You have died 10 times.
 
-    int died20; ###
+    int died10;
+    Grave Lover
     You have died 20 times.
     */
 }

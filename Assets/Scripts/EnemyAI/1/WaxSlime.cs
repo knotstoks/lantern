@@ -41,6 +41,7 @@ public class WaxSlime : Enemy {
             died = true;
             damage = 0;
             StartCoroutine(Death());
+            GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().CheckKills();
         }
 
         if (((Vector2) transform.position - pos).magnitude < 0.01) { 

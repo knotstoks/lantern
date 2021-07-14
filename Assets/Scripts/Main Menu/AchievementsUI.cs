@@ -5,9 +5,6 @@ using UnityEngine.EventSystems;
 public class AchievementsUI : MonoBehaviour {
     [SerializeField] private Text nameText;
     [SerializeField] private Text descText;
-    private void Start() {
-
-    }
     private void Update() {
         if (EventSystem.current.currentSelectedGameObject.GetComponent<Achievement>() != null) {
             if (EventSystem.current.currentSelectedGameObject.GetComponent<Achievement>().gotIt) {
@@ -15,11 +12,11 @@ public class AchievementsUI : MonoBehaviour {
                 descText.text = EventSystem.current.currentSelectedGameObject.GetComponent<Achievement>().description;
             } else {
                 nameText.text = "???";
-                descText.text = "???";
+                descText.text = "This achievement is locked.";
             }
         } else {
             nameText.text = "";
             descText.text = "";
         }
-    }   
+    }
 }

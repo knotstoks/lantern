@@ -18,6 +18,7 @@ public class CandlingHive : Enemy {
             died = true;
             damage = 0;
             StartCoroutine(Death());
+            GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().CheckKills();
         }
 
         if (spawnTime > 0) {

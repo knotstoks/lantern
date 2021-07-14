@@ -46,6 +46,7 @@ public class MotherWaxSlime : Enemy {
             damage = 0;
             StartCoroutine(Death());
             spawned = true;
+            GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().CheckKills();
         }
 
         if (((Vector2) transform.position - pos).magnitude < 0.01) { 

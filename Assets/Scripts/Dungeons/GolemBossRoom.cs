@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class GolemBossRoom : MonoBehaviour {
@@ -20,7 +19,7 @@ public class GolemBossRoom : MonoBehaviour {
     private AudioSource audioSource;
     private IEnumerator Start() {
         yield return new WaitForSeconds(0.01f);
-        if (!Convert.ToBoolean((int) DataStorage.saveValues["savedWaxGolem"])) {
+        if ((int) DataStorage.saveValues["savedWaxGolem"] == 0) {
             introDone = false;
             fightCompleted = false;
             line = 0;
@@ -85,6 +84,10 @@ public class GolemBossRoom : MonoBehaviour {
         
     }
     public void CompleteFight() {
+        if (!PlayerPrefs.HasKey("golemSlain")) {
+            PlayerPrefs.SetInt("golemSlain", 1);
+            GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(0);
+        }
         player.Heal((int) DataStorage.saveValues["healAfterBosses"]);
         audioSource.clip = music[1];
         audioSource.loop = false;

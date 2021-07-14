@@ -18,6 +18,7 @@ public class MiniWaxBomber : Enemy { //Super fast and explodes
             died = true;
             StartCoroutine(Explosion());
             StartCoroutine(Death());
+            GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().CheckKills();
         }
 
         if (!died && Vector2.Distance(transform.position, target.position) > 0) {
