@@ -107,6 +107,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["newMission"] = 0;
         DataStorage.saveValues["sunShardsCollected"] = 0;
         DataStorage.saveValues["sunShardsInserted"] = 0;
+        DataStorage.saveValues["finishGame"] = 0;
 
         yield return new WaitForSeconds(3);
 
@@ -160,6 +161,7 @@ public class MainMenu : MonoBehaviour {
         DataStorage.saveValues["newMission"] = PlayerPrefs.GetInt("newMission");
         DataStorage.saveValues["sunShardsCollected"] = PlayerPrefs.GetInt("sunShardsCollected");
         DataStorage.saveValues["sunShardsInserted"] = PlayerPrefs.GetInt("sunShardsInserted");
+        DataStorage.saveValues["finishGame"] = PlayerPrefs.GetInt("finishGame");
 
         yield return new WaitForSeconds(3);
 

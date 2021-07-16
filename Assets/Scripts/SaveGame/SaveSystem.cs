@@ -48,5 +48,8 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetInt("sunShardsCollected", (int) DataStorage.saveValues["sunShardsCollected"]);
         PlayerPrefs.SetInt("sunShardsCollected", (int) DataStorage.saveValues["sunShardsInserted"]);
         PlayerPrefs.SetInt("introToTrials", (int) DataStorage.saveValues["introToTrials"]);
+        PlayerPrefs.SetInt("finishGame", (int) DataStorage.saveValues["finishGame"]);
+
+        PlayerPrefs.Save();
     }
 }

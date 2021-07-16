@@ -56,7 +56,7 @@ public class Player : MonoBehaviour {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
         DataStorage.saveValues["health"] = 6;
         DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(0f, 4.5f);
+        DataStorage.saveValues["position"] = new Vector2(0f, -4.5f);
         DataStorage.saveValues["facingDirection"] = 0;
         PlayerPrefs.SetFloat("volume", 1f);
         DataStorage.saveValues["progress"] = 1;
@@ -78,7 +78,7 @@ public class Player : MonoBehaviour {
         DataStorage.saveValues["blackOut"] = 0;
         DataStorage.saveValues["timeTrial"] = 0;
         DataStorage.saveValues["timeTrialTime"] = 1200f;
-        DataStorage.saveValues["sunShardsCollected"] = 1;
+        DataStorage.saveValues["sunShardsCollected"] = 0;
         DataStorage.saveValues["sunShardsInserted"] = 0;
         DataStorage.saveValues["completedReversedControls"] = 0;
         DataStorage.saveValues["completedBlackOut"] = 0;
@@ -86,9 +86,10 @@ public class Player : MonoBehaviour {
         DataStorage.saveValues["healAfterBosses"] = 2;
         DataStorage.saveValues["savedFourArms"] = 1;
         DataStorage.saveValues["savedWaxGolem"] = 1;
-        DataStorage.saveValues["introToEnd"] = 2;
+        DataStorage.saveValues["introToEnd"] = 3;
         DataStorage.saveValues["introToTrials"] = 0;
         DataStorage.saveValues["newMission"] = 1;
+        DataStorage.saveValues["finishGame"] = 1;
 
         invulTime = 0.5f;
         rb = GetComponent<Rigidbody2D>();

@@ -138,6 +138,11 @@ public class DataStorage : MonoBehaviour {
     1 - End Game started
     2 - End Game bedroom done
 
+    int finishGame
+    0 - havent finished game
+    1 - just need to put 1 shard in
+    2 - finished game already
+
     //Achievements// (Achievements are in PlayerPrefs and do not get overriden if you reset the game)
     
     int golemSlain;

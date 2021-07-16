@@ -194,6 +194,9 @@ public class GabrielFinalRoom : MonoBehaviour {
         DataStorage.saveValues["reversedControls"] = 0;
         DataStorage.saveValues["blackOut"] = 0;
         DataStorage.saveValues["timeTrial"] = 0;
+        if ((int) DataStorage.saveValues["finishGame"] == 0 && (int) DataStorage.saveValues["sunShardsCollected"] == 4) {
+            DataStorage.saveValues["finishGame"] = 1;
+        }
         player.SaveGame(-9.8f, 2.2f, 3, "PriestOffice");
 
         //Fade to White

@@ -11,7 +11,13 @@ public class DojoTutorial : MonoBehaviour {
     public GameObject seniorWardenFrankie;
     private Player player;
     private IEnumerator Start() {
-        yield return 0.2;
+        if ((int) DataStorage.saveValues["finishGame"] == 0) {
+            seniorWardenFrankie.SetActive(true);
+        } else {
+            seniorWardenFrankie.SetActive(false);
+        }
+
+        yield return new WaitForSeconds(0.2f);
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         if ((int) DataStorage.saveValues["tutorialDojo"] == 0) {
             triggerDummies = false;

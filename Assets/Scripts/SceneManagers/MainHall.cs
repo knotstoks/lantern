@@ -11,8 +11,19 @@ public class MainHall : MonoBehaviour {
     [SerializeField] private GameObject barricadedDoorDesc;
     [SerializeField] private GameObject barricadedDoorSprite;
     [SerializeField] private Sprite[] doorSprites; //0 for closed, 1 for open
+    [SerializeField] private GameObject[] finalChars;
     private Player player;
     private void Start() {
+        if ((int) DataStorage.saveValues["finishGame"] == 0) {
+            for (int i = 0; i < finalChars.Length; i++) {
+                finalChars[i].SetActive(true);
+            }
+        } else {
+            for (int i = 0; i < finalChars.Length; i++) {
+                finalChars[i].SetActive(true);
+            }
+        }
+
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         fastTravelUI.SetActive(false);
 

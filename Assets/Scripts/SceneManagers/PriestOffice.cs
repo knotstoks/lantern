@@ -14,6 +14,11 @@ public class PriestOffice : MonoBehaviour {
     private int line;
     private bool showingBlessingInstructions;
     private IEnumerator Start() {
+        if ((int) DataStorage.saveValues["finishGame"] == 0) {
+            headPriest.SetActive(true);
+        } else {
+            headPriest.SetActive(false);
+        }
         blessingMenu.SetActive(false);
         blessingInstructions.SetActive(false);
         line = 0;
