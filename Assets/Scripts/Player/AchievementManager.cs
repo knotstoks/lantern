@@ -38,9 +38,12 @@ public class AchievementManager : MonoBehaviour {
     [SerializeField] private GameObject imageObject;
     [SerializeField] private Image image;
     [SerializeField] private GameObject text;
+    [SerializeField] private GameObject everything;
+    private Animator animator;
     private void Start() {
         imageObject.SetActive(false);
         text.SetActive(false);
+        animator = everything.GetComponent<Animator>();
     }
     public void NewAchievement(int n) {
         StartCoroutine(DisplayAchievement(n));
@@ -50,7 +53,15 @@ public class AchievementManager : MonoBehaviour {
         imageObject.SetActive(true);
         text.SetActive(true);
 
-        yield return new WaitForSeconds(2);
+        animator.SetTrigger("In");
+
+        yield return new WaitForSeconds(3);
+
+        animator.SetTrigger("Out");
+
+        yield return new WaitForSeconds(1);
+
+        animator.SetTrigger("Done");
 
         imageObject.SetActive(false);
         text.SetActive(false);
