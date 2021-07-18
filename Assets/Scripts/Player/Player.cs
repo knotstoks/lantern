@@ -56,7 +56,7 @@ public class Player : MonoBehaviour {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
         DataStorage.saveValues["health"] = 6;
         DataStorage.saveValues["maxHealth"] = 6;
-        DataStorage.saveValues["position"] = new Vector2(0f, -4.5f);
+        DataStorage.saveValues["position"] = new Vector2(0f, 0f);
         DataStorage.saveValues["facingDirection"] = 0;
         PlayerPrefs.SetFloat("volume", 1f);
         DataStorage.saveValues["progress"] = 1;
@@ -70,8 +70,8 @@ public class Player : MonoBehaviour {
         DataStorage.saveValues["upgrade"] = 1;
         DataStorage.saveValues["upgradeBar"] = 20;
         DataStorage.saveValues["waxDungeonRoom"] = 2;
-        DataStorage.saveValues["waxDungeonGabriel"] = 1;
-        DataStorage.saveValues["finalBossBeatenCount"] = 3;
+        DataStorage.saveValues["waxDungeonGabriel"] = 0;
+        DataStorage.saveValues["finalBossBeatenCount"] = 0;
         DataStorage.saveValues["introSceneDone"] = 0;
         DataStorage.saveValues["waxDungeonRandomArray"] = new int[] {9, 10, 12, 13, 14, 16, 17, 18, 20};
         DataStorage.saveValues["reversedControls"] = 0;

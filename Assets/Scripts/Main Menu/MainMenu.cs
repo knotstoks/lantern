@@ -8,17 +8,20 @@ public class MainMenu : MonoBehaviour {
     private bool hasSaveGame;
     public GameObject newGameButton, optionsButton, creditsButton, quitButton, achievementsButton;
     public GameObject restartGameYesButton, optionsBackButton, creditsBackButton, quitYesButton, volSlider, firstAchievement;
+    [SerializeField] private GameObject lantern;
+    [SerializeField] private Canvas originalCanvas;
     [SerializeField] private Button loadGameButton;
     [SerializeField] private GameObject standardSet;
     [SerializeField] private GameObject newGameWarning;
     [SerializeField] private GameObject quitScreen;
     [SerializeField] private GameObject optionsMenu;
     [SerializeField] private GameObject credits;
-    [SerializeField] private GameObject achievementsMenu;
+    [SerializeField] private Canvas achievementsMenu;
     [SerializeField] private Animator animator;
     [SerializeField] private Slider volumeSlider;
     [SerializeField] private GameObject audioManager;
     private void Start() {
+        PlayerPrefs.SetInt("hardMode", 1);
         standardSet.SetActive(true);
         hasSaveGame = PlayerPrefs.HasKey("savePresent");
         if (!hasSaveGame) {
@@ -32,7 +35,7 @@ public class MainMenu : MonoBehaviour {
         quitScreen.SetActive(false);
         optionsMenu.SetActive(false);
         credits.SetActive(false);
-        achievementsMenu.SetActive(false);
+        achievementsMenu.enabled = false;
 
         if (PlayerPrefs.HasKey("volume")) {
             //Set the Options volume slider to that value
@@ -217,14 +220,20 @@ public class MainMenu : MonoBehaviour {
         EventSystem.current.SetSelectedGameObject(optionsButton);
     }
     public void OpenAchievements() {
+        originalCanvas.enabled = false;
         standardSet.SetActive(false);
-        achievementsMenu.SetActive(true);
+        achievementsMenu.enabled = true;
+        lantern.SetActive(false);
+        GetComponent<AchievementsUI>().isOpen = true;
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(firstAchievement);
     }
     public void CloseAchievements() {
-        achievementsMenu.SetActive(false);
+        GetComponent<AchievementsUI>().isOpen = false;
+        originalCanvas.enabled = true;
+        achievementsMenu.enabled = false;
         standardSet.SetActive(true);
+        lantern.SetActive(true);
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(achievementsButton);
     }
