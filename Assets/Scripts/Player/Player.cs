@@ -366,13 +366,15 @@ public class Player : MonoBehaviour {
         if ((int) DataStorage.saveValues["blessings"] == 0) {
             DataStorage.saveValues["blessings"] = 1;
         }
-        //Go to "You Lose" screen #TODO: Track where the Player died
+
         DataStorage.saveValues["health"] = DataStorage.saveValues["maxHealth"];
-        SaveGame(-9.8f, 2.2f, 3, "PriestOffice");
         DataStorage.saveValues["position"] = new Vector2(-9.8f, 2.2f);
         DataStorage.saveValues["facingDirection"] = 3;
         DataStorage.saveValues["currScene"] = "PriestOffice";
         DataStorage.saveValues["waxDungeonRoom"] = 0;
+        DataStorage.saveValues["savedWaxGolem"] = 0;
+        DataStorage.saveValues["savedFourArms"] = 0;
+        SaveGame(-9.8f, 2.2f, 3, "PriestOffice");
 
         //Let the animation Play Out
         yield return new WaitForSeconds(2);
