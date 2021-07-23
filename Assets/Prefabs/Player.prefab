@@ -2275,9 +2275,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: '
-
-'
+  m_Text: 
 --- !u!1 &5039090703858147387
 GameObject:
   m_ObjectHideFlags: 0
@@ -3912,7 +3910,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: Weird Looking Poster
+  m_Text: 
 --- !u!1 &6992502930535164671
 GameObject:
   m_ObjectHideFlags: 0

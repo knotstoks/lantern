@@ -1500,6 +1500,156 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objDesc: Examine Glowing Tree
+  endGameDialogue:
+    names:
+    - ???
+    - Lumin
+    - ???
+    - ???
+    - Lumin
+    - ???
+    - Lumin
+    - ???
+    - ???
+    - Lumin
+    - ???
+    - Lumin
+    - Lumin
+    - ???
+    - ???
+    - Lumin
+    - The Sun
+    - The Sun
+    - Lumin
+    - The Sun
+    - The Sun
+    - The Sun
+    - The Sun
+    - The Sun
+    - Lumin
+    - The Sun
+    - The Sun
+    - Lumin
+    - The Sun
+    - Lumin
+    - The Sun
+    - The Sun
+    - The Sun
+    - The Sun
+    - Lumin
+    - The Sun
+    - The Sun
+    - Lumin
+    - Lumin
+    - The Sun
+    - Lumin
+    - The Sun
+    - The Sun
+    - The Sun
+    - The Sun
+    - The Sun
+    - Lumin
+    - The Sun
+    - The Sun
+    - The Sun
+    - The Sun
+    - The Sun
+    - Lumin
+    - The Sun
+    - The Sun
+    - The Sun
+    - The Sun
+    - The Sun
+    - Lumin
+    - Lumin
+    - The Sun
+    - The Sun
+    - Lumin
+    - Lumin
+    - Lumin
+    sentences:
+    - Well, well, so we finally meet.
+    - Who said that?
+    - How hard you tried to reach me all those years ago, only to fail.
+    - If you were whole, you would have been exhilarated to be talking to me.
+    - Who are you?
+    - I find it more appropriate for you to know who you are first, before I tell
+      you who I am.
+    - I'm Lumin. I'm a Warden of Light.
+    - True, true. That is what you are now.
+    - But let me tell what you are were, in the past.
+    - Me? In the past?
+    - That's right. In as past life, you were Icarus.
+    - The boy who flew too close to the Sun?
+    - The one the Acolyte told me about?
+    - That's right. The boy who flew too close-
+    - -to me.
+    - You're the Sun!?
+    - The one and only, that's me.
+    - And you, are a reincarnation of Icarus
+    - How is that possible?
+    - Well, you did say fate was on your side.
+    - That is somewhat true.
+    - It was you that caused my shattering.
+    - You tried to use Forbidden Arts to absorb my power. Though you failed, you
+      did destabilize my existence, which ultimately led to my shattering.
+    - The Fates brought you back to fix your mistake.
+    - I see, I am truly sorry for that, but my job is done now , is it not?
+    - "Yes, it is. I brought you here at least to give you some explanation on\u2026
+      your recent experiences."
+    - I imagine it has been confusing for you.
+    - Ah yes, it was.
+    - I have been the voice in your head, prodding you to go and gather my Shards.
+    - So, it was you.
+    - It was after you gathered my fifth shard, that I was able to exert a little
+      more control on events, as I now had more than half of my power returned to
+      me.
+    - I rewrote fragments of reality. After seeing you defeat the Acolytes of Icarus
+      once, I knew that you could do it again.
+    - I brought the cult back into existence, and placed more Shards in the ownership
+      of the Head Acolyte, Gabriel.
+    - Then, I encouraged you to return to the mausoleum.
+    - So, you were pulling the strings.
+    - "Correct, but can you blame me?\rI've been in pieces for millenia. \r"
+    - "It is a hollow feeling that I cannot begin to describe. \rI wanted to be whole
+      again.\r"
+    - When you put it that way, I suppose not.
+    - "Wait, you said just now, something about me being whole.\r What did you mean
+      by that?\r\n"
+    - Oh, you may not like to hear this.
+    - Just tell me.
+    - Very well, then.
+    - When I said that you are a reincarnation of Icarus, that was only partially
+      true.
+    - You are a reincarnation of half of Icarus.
+    - You are a rebirth of his childhood fascination with myself, the Sun.
+    - His interest, his captivation.
+    - And what about the other half?
+    - That would be none other than the Head Acolyte, Gabriel.
+    - Gabriel is the embodiment of Icarus when he was older.
+    - His unhealthy obsession with claiming his power for myself, his candid willingness
+      to resort to Forbidden Arts.
+    - 'It makes sense, doesn''t it? Why else would Gabriel be so transfixed on gathering
+      my Shards for himself? '
+    - He wanted my power. Just as Icarus did.
+    - "What\u2026?"
+    - Yes, the reason why Gabriel recognized you after your first encounter with
+      him, was not because he remembered you killing him before.
+    - "However, the true reason why he recognized you, was because he was looking
+      at the other half of himself. He just didn\u2019t realize it."
+    - "Nevertheless, he had an inkling that he knew you from somewhere, but just
+      couldn\u2019t figure it out. Like an itch you can't scratch."
+    - "To make matters worse you were wearing a Warden\u2019s attire, which made
+      him see you as an enemy with the intention to kill him."
+    - "All these combined caused him to conclude that you must\u2019ve been the one
+      who killed him before."
+    - Okay, then.
+    - What now?
+    - What do you mean, what now?
+    - "We\u2019ve gathered your Shards and rebuilt you."
+    - "That was the Wardens\u2019 purpose."
+    - "Now that it\u2019s fulfilled, what now?"
+    - "That\u2019s easy, Lumin.\r Continue making the world a better place.\r\n"
   sprites:
   - {fileID: -5313735681830216458, guid: 44311280685bbeb43b9494866c886a18, type: 3}
   - {fileID: 9083140365314783213, guid: 9239b35e922e6494fa16749555409867, type: 3}

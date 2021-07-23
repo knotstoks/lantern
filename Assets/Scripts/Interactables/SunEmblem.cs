@@ -9,15 +9,18 @@ EndGameCutscene2
 EndGameCutsceneFinal
 */
 public class SunEmblem : Interactable {
+    [SerializeField] private Dialogue endGameDialogue;
     [SerializeField] private Sprite[] sprites; //0 for 4 shards missing, 1 for 3, 2 for 2, 3 for 1, 4 for complete
     [SerializeField] private Dialogue interactDialogue;
     [SerializeField] private GameObject fadeToWhiteObject;
     private DialogueManager dialogueManager;
     private bool inCutscene;
+    private bool inDialogue;
     private Player player;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private FadeToWhite fadeToWhite;
+    private int line;
     private void Start() {
         dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -27,6 +30,7 @@ public class SunEmblem : Interactable {
         animator = GetComponent<Animator>();
         animator.SetInteger("shardsIn", (int) DataStorage.saveValues["sunShardsInserted"]);
         fadeToWhite = fadeToWhiteObject.GetComponent<FadeToWhite>();
+        line = 0;
 
         if ((int) DataStorage.saveValues["sunShardsCollected"] < (int) DataStorage.saveValues["sunShardsInserted"]) { //cant insert shard
             objDesc = "Examine Glowing Tree";
@@ -44,22 +48,25 @@ public class SunEmblem : Interactable {
         DataStorage.saveValues["currScene"] = "SunShardRoom";
 
         //Fade to White
-        StartCoroutine(fadeToWhite.FadeNow());
-        yield return new WaitForSeconds(1.5f);
         if ((int) DataStorage.saveValues["sunShardsInserted"] == 2) {
+            StartCoroutine(fadeToWhite.FadeNow());
+            yield return new WaitForSeconds(1.5f);
             player.SaveGame(0, -1.5f, 0, "SunShardRoom");
             SceneManager.LoadScene("EndGameCutscene1");
         }
 
         if ((int) DataStorage.saveValues["sunShardsInserted"] == 3) {
+            StartCoroutine(fadeToWhite.FadeNow());
+            yield return new WaitForSeconds(1.5f);
             player.SaveGame(0, -1.5f, 0, "SunShardRoom");
             SceneManager.LoadScene("EndGameCutscene2");
         }
 
         if ((int) DataStorage.saveValues["sunShardsInserted"] == 4) {
+            inDialogue = true;
             DataStorage.saveValues["finishGame"] = 2;
             player.SaveGame(0, -1.5f, 0, "SunShardRoom");
-            SceneManager.LoadScene("EndGameCutsceneFinal");
+            dialogueManager.StartDialogue(endGameDialogue);
         }
     }
     public override void Interact() {
@@ -73,6 +80,15 @@ public class SunEmblem : Interactable {
             } else { //Got shards
                 inCutscene = true;
                 InsertShard();
+            }
+        }
+
+        if (inDialogue) {
+            if (line == endGameDialogue.sentences.Length - 1) {
+                SceneManager.LoadScene("Credits");
+            } else {
+                line++;
+                dialogueManager.DisplayNextSentence();
             }
         }
     }
