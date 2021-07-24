@@ -50,6 +50,6 @@ public class BlessingsUI : Interactable {
         }
     }
     public void ChangeHealAfterBosses() {
-        DataStorage.saveValues["healAfterBosses"] = healSlider.value;
+        DataStorage.saveValues["healAfterBosses"] = (int) healSlider.value;
     }
 }
