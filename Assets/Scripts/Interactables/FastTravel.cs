@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class FastTravel : Interactable {
     [SerializeField] private GameObject fastTravelUI;
+    [SerializeField] private GameObject firstButton;
     private bool isOpen;
     private Player player;
 
@@ -20,6 +22,11 @@ public class FastTravel : Interactable {
         isOpen = !isOpen;
         fastTravelUI.SetActive(isOpen);
         player.inDialogue = isOpen;
+
+        if (isOpen) {
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(firstButton);
+        }
     }
     public void MoveToWaxDungeon() {
         DataStorage.saveValues["waxDungeonRoom"] = -1;
