@@ -352,6 +352,10 @@ public class Player : MonoBehaviour {
             }
         }
 
+        if ((int) DataStorage.saveValues["progress"] == 2) {
+            DataStorage.saveValues["progress"] = 3;
+        }
+
         if (deaths + 1 == 10) {
             if (!PlayerPrefs.HasKey("died10")) {
                 GameObject.FindGameObjectWithTag("AchievementManager").GetComponent<AchievementManager>().NewAchievement(14);

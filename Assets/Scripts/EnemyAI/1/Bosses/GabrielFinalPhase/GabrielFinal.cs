@@ -20,9 +20,11 @@ public class GabrielFinal : MonoBehaviour {
     private Animator animator;
     private AudioSource audioSource;
     private int line;
+    private Player player;
     private DialogueManager dialogueManager;
     private bool inIntro;
     private IEnumerator Start() {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<GabrielFinalRoom>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -46,6 +48,7 @@ public class GabrielFinal : MonoBehaviour {
 
         if (inIntro && Input.GetKeyDown(KeyCode.E)) {
             if (line == orbDialogue.sentences.Length - 1) {
+                player.allowCombat = true;
                 inIntro = false;
                 dialogueManager.DisplayNextSentence();
                 line = 0;

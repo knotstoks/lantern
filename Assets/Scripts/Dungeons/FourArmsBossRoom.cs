@@ -21,7 +21,7 @@ public class FourArmsBossRoom : MonoBehaviour {
     private AudioSource audioSource;
     private IEnumerator Start() {
         yield return new WaitForSeconds(0.01f);
-        if ((int) DataStorage.saveValues["savedFourArms"] == 0) {
+        if ((int) DataStorage.saveValues["savedFourArms"] == 1) {
             savePoint.GetComponent<SavePoint>().Activate();
             introDone = true;
             for (int i = 0; i < stuffToKill.Length; i++) {

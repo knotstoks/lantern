@@ -20,12 +20,12 @@ public class IntroCutscene : MonoBehaviour {
     }
     //Coroutine to wait for the video to finish and then load the next scene
     private IEnumerator DelayForVideo() {
-        yield return new WaitForSeconds(50); //Wait for cutscene to play out
+        yield return new WaitForSeconds(108); //Wait for cutscene to play out
         SceneManager.LoadScene("Bedroom");
     }
     //After 30s, fade the skip text away and disable skipping cutscene
     private IEnumerator FadeSkipText() {
-        yield return new WaitForSeconds(108);
+        yield return new WaitForSeconds(50);
         skipText.enabled = false;
         canSkip = false;
     }

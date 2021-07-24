@@ -31,7 +31,6 @@ public class GabrielFinalRoom : MonoBehaviour {
         orbTwo = orbTwoObject.GetComponent<LightOrbs>();
         orbThree = orbThreeObject.GetComponent<LightOrbs>();
         orbFour = orbFourObject.GetComponent<LightOrbs>();
-        player.allowCombat = true;
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = audioClips[0];
         audioSource.loop = true;
