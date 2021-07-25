@@ -4,10 +4,12 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class LightOrbs : MonoBehaviour {
     [SerializeField] private GameObject chargedIcon;
     [SerializeField] private AudioClip audioClip;
+    private Upgrades upgradeManager;
     private AudioSource audioSource;
     public int charge;
     private Light2D orbLight;
     private void Start() {
+        upgradeManager = GameObject.FindGameObjectWithTag("Upgrades").GetComponent<Upgrades>();
         charge = 0;
         orbLight = GetComponent<Light2D>();
         audioSource = GetComponent<AudioSource>();
@@ -30,6 +32,7 @@ public class LightOrbs : MonoBehaviour {
     private void ChargeOrb() {
         if (charge < 5) {
             charge++;
+            upgradeManager.ChargeUpgradeBar();
         }
     }
     public void ResetOrb() {

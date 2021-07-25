@@ -8,7 +8,7 @@ public class FireCircleFourArms : MonoBehaviour {
     private IEnumerator Start() {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         StartCoroutine(Attack());
-        yield return new WaitForSeconds(1.07f);
+        yield return new WaitForSeconds(2.6f);
         Destroy(gameObject);
     }
     private IEnumerator Attack() {

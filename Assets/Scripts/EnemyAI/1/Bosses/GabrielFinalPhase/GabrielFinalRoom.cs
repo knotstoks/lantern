@@ -62,7 +62,7 @@ public class GabrielFinalRoom : MonoBehaviour {
     private IEnumerator ImprisonGabriel() {
         //Imprison Gabriel
         gabrielFinal.Imprison();
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(15);
         //Reset the orbs
         orbOne.ResetOrb();
         orbTwo.ResetOrb();

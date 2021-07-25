@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 /*
 Animation References
@@ -11,7 +12,10 @@ public class GabrielFinal : MonoBehaviour {
     [SerializeField] private GameObject feather;
     [SerializeField] private AudioClip audioClip;
     [SerializeField] private Dialogue orbDialogue;
-    public int health; //20
+    [SerializeField] private GameObject bossHPBar;
+    [SerializeField] private Slider slider;
+    private Upgrades upgradeManager;
+    public int health; //40
     private bool dead;
     private bool patternEnded;
     public bool canDamage;
@@ -24,6 +28,7 @@ public class GabrielFinal : MonoBehaviour {
     private DialogueManager dialogueManager;
     private bool inIntro;
     private IEnumerator Start() {
+        bossHPBar.SetActive(false);
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<GabrielFinalRoom>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -39,6 +44,7 @@ public class GabrielFinal : MonoBehaviour {
     private void Update() {
         if (health <= 0 && !dead) {
             StopAllCoroutines();
+            bossHPBar.SetActive(false);
             dead = true;
             Return();
             sceneManager.FinishFight();
@@ -60,6 +66,7 @@ public class GabrielFinal : MonoBehaviour {
         }
     }
     private void Begin() {
+        bossHPBar.SetActive(true);
         StartFeatherPattern();
     }
     private void StartOrbDialogue() {
@@ -97,7 +104,9 @@ public class GabrielFinal : MonoBehaviour {
         spriteRenderer.color = Color.white;
     }
     public void Damage(int n) {
+        upgradeManager.ChargeUpgradeBar();
         health -= n;
+        slider.value = health;
         StartCoroutine(FlashRed());
         audioSource.PlayOneShot(audioClip);
     }
