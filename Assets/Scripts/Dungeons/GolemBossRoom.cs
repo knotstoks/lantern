@@ -10,6 +10,7 @@ public class GolemBossRoom : MonoBehaviour {
     [SerializeField] private GameObject gate;
     [SerializeField] private GameObject golemObject;
     [SerializeField] private GameObject savePoint;
+    [SerializeField] private GameObject savePointInstructions;
     private bool introDone;
     private bool fightCompleted;
     private Golem golemBoss;
@@ -17,7 +18,10 @@ public class GolemBossRoom : MonoBehaviour {
     private DialogueManager dialogueManager;
     private int line;
     private AudioSource audioSource;
+    private bool inInstructions;
     private IEnumerator Start() {
+        inInstructions = false;
+        savePointInstructions.SetActive(false);
         yield return new WaitForSeconds(0.01f);
         if ((int) DataStorage.saveValues["savedWaxGolem"] == 0) {
             introDone = false;
@@ -67,11 +71,25 @@ public class GolemBossRoom : MonoBehaviour {
                 fightCompleted = false;
                 dialogueManager.DisplayNextSentence();
                 line = 0;
+                if ((int) DataStorage.saveValues["seenSavePoint"] == 0) {
+                    StartCoroutine(StartSavePointIntro());
+                }
             } else {
                 line++;
                 dialogueManager.DisplayNextSentence();
             }
         }
+
+        if (inInstructions && Input.GetKeyDown(KeyCode.E)) {
+            savePointInstructions.SetActive(false);
+            inInstructions = false;
+            DataStorage.saveValues["seenSavePoint"] = 1;
+        }
+    }
+    private IEnumerator StartSavePointIntro() {
+        savePointInstructions.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        inInstructions = true;
     }
     private void StartGolemIntro() {
         dialogueManager.StartDialogue(introDialogues[(int) DataStorage.saveValues["waxDungeonGolem"]]);

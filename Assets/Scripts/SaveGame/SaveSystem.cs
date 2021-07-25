@@ -24,6 +24,7 @@ public class SaveSystem : MonoBehaviour {
         PlayerPrefs.SetInt("progress", (int) DataStorage.saveValues["progress"]);
         PlayerPrefs.SetInt("blessings", (int) DataStorage.saveValues["blessings"]);
         PlayerPrefs.SetInt("usedBlessings", (int) DataStorage.saveValues["usedBlessings"]);
+        PlayerPrefs.SetInt("seenSavePoint", (int) DataStorage.saveValues["seenSavePoint"]);
 
         //For Wax Dungeon
         PlayerPrefs.SetInt("waxDungeonRoom", (int) DataStorage.saveValues["waxDungeonRoom"]);

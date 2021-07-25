@@ -13956,6 +13956,11 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 5dfcdd1a8cf032c4faa2b86840cc02ef, type: 3}
     - target: {fileID: 1301654517245915170, guid: e64bfecbcdef4ce4e8c53e31d3be7423,
         type: 3}
+      propertyPath: savePointInstructions
+      value: 
+      objectReference: {fileID: 2139392918}
+    - target: {fileID: 1301654517245915170, guid: e64bfecbcdef4ce4e8c53e31d3be7423,
+        type: 3}
       propertyPath: introDialogues.Array.size
       value: 3
       objectReference: {fileID: 0}

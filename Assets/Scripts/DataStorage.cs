@@ -87,6 +87,10 @@ public class DataStorage : MonoBehaviour {
     1 - fought and lost against Gabriel
     2 - fought and won Gabriel
 
+    int seenSavePoint;
+    0 - haven't seen Save Point
+    1 - Seen Save Point
+
     int savedWaxGolem
     0 - did not save at Golem
     1 - saved at Golem
