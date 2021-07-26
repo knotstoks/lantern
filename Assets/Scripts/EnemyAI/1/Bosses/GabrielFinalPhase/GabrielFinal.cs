@@ -28,6 +28,7 @@ public class GabrielFinal : MonoBehaviour {
     private DialogueManager dialogueManager;
     private bool inIntro;
     private IEnumerator Start() {
+        upgradeManager = GameObject.FindGameObjectWithTag("Upgrades").GetComponent<Upgrades>();
         bossHPBar.SetActive(false);
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<GabrielFinalRoom>();
