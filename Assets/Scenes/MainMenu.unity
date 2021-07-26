@@ -1597,7 +1597,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5.81, y: -0}
+  m_AnchoredPosition: {x: 5.8099976, y: 0}
   m_SizeDelta: {x: 31.62, y: 11.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &268846661
@@ -7246,8 +7246,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 219, y: 351}
-  m_SizeDelta: {x: 761.58, y: 752.54}
+  m_AnchoredPosition: {x: 224, y: 380.13}
+  m_SizeDelta: {x: 863.33, y: 835.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1809089715
 MonoBehaviour:
@@ -7301,7 +7301,12 @@ MonoBehaviour:
     Voice Overs:
 
     Bread#2243
-    and Pocrash Mason'
+    and Pocrash Mason
+
+
+    Art Credits:
+
+    https://pastebin.com/vaPrQdrB'
 --- !u!222 &1809089716
 CanvasRenderer:
   m_ObjectHideFlags: 0
