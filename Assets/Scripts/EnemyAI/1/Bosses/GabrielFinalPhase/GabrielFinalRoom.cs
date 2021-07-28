@@ -187,7 +187,7 @@ public class GabrielFinalRoom : MonoBehaviour {
         }
         DataStorage.saveValues["position"] = new Vector2(-9.8f, 2.2f);
         DataStorage.saveValues["currScene"] = "PriestOffice";
-        DataStorage.saveValues["facingDirection"] = 3f;
+        DataStorage.saveValues["facingDirection"] = 3;
         DataStorage.saveValues["savedWaxGolem"] = 0;
         DataStorage.saveValues["savedFourArms"] = 0;
         DataStorage.saveValues["reversedControls"] = 0;

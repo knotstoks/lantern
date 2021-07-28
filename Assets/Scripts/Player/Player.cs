@@ -56,8 +56,8 @@ public class Player : MonoBehaviour {
         //Destroy Later!!!!!!!!!!!!!!!!!!!!!!!!!
         // DataStorage.saveValues["health"] = 6;
         // DataStorage.saveValues["maxHealth"] = 6;
-        // DataStorage.saveValues["position"] = new Vector2(0f, 0f);
-        // DataStorage.saveValues["facingDirection"] = 0;
+        // DataStorage.saveValues["position"] = new Vector2(-9.8f, 2.2f);
+        // DataStorage.saveValues["facingDirection"] = 3;
         // PlayerPrefs.SetFloat("volume", 1f);
         // DataStorage.saveValues["progress"] = 1;
         // DataStorage.saveValues["blessings"] = 2;
@@ -70,8 +70,8 @@ public class Player : MonoBehaviour {
         // DataStorage.saveValues["upgrade"] = 1;
         // DataStorage.saveValues["upgradeBar"] = 20;
         // DataStorage.saveValues["waxDungeonRoom"] = 2;
-        // DataStorage.saveValues["waxDungeonGabriel"] = 0;
-        // DataStorage.saveValues["finalBossBeatenCount"] = 0;
+        // DataStorage.saveValues["waxDungeonGabriel"] = 2;
+        // DataStorage.saveValues["finalBossBeatenCount"] = 1;
         // DataStorage.saveValues["introSceneDone"] = 0;
         // DataStorage.saveValues["waxDungeonRandomArray"] = new int[] {9, 10, 12, 13, 14, 16, 17, 18, 20};
         // DataStorage.saveValues["reversedControls"] = 0;
@@ -86,11 +86,11 @@ public class Player : MonoBehaviour {
         // DataStorage.saveValues["healAfterBosses"] = 2;
         // DataStorage.saveValues["savedFourArms"] = 1;
         // DataStorage.saveValues["savedWaxGolem"] = 0;
-        // DataStorage.saveValues["introToEnd"] = 3;
+        // DataStorage.saveValues["introToEnd"] = 1;
         // DataStorage.saveValues["introToTrials"] = 0;
         // DataStorage.saveValues["newMission"] = 1;
         // DataStorage.saveValues["finishGame"] = 1;
-        // DataStorage.saveValues["seenSavePoint"] = 0;
+        // DataStorage.saveValues["seenSavePoint"] = 1;
 
         invulTime = 0.5f;
         rb = GetComponent<Rigidbody2D>();
@@ -117,7 +117,7 @@ public class Player : MonoBehaviour {
         tempSpeed = speed;
         dead = false;
     }
-    void Update() {
+    private void Update() {
         if (blinking) {
             if (invulTime > resetInvulTime * 0.99f) {
                 spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0f);
