@@ -159,6 +159,7 @@ public class Golem : Boss {
         yield return null;
     }
     private IEnumerator Death() {
+        StopAllCoroutines();
         speed = 0f;
         chargeSpeed = 0f;
         if ((int) DataStorage.saveValues["waxDungeonGolem"] == 1) {

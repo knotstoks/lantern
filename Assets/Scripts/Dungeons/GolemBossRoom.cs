@@ -112,6 +112,12 @@ public class GolemBossRoom : MonoBehaviour {
         audioSource.Play();
         fightCompleted = true;
         bossHPBar.SetActive(false);
+        GameObject[] bullets = GameObject.FindGameObjectsWithTag("BloodBullet");
+        if (bullets.Length != 0) {
+            for (int i = 0; i < bullets.Length; i++) {
+                Destroy(bullets[i]);
+            }
+        }
         GameObject[] candlings = GameObject.FindGameObjectsWithTag("Enemy");
         if (candlings.Length != 0) {
             for (int i = 0; i < candlings.Length; i++) {

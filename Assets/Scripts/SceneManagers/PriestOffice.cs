@@ -75,6 +75,7 @@ public class PriestOffice : MonoBehaviour {
                 dialogueManager.DisplayNextSentence();
                 headPriest.SetActive(false);
                 walkingPriest.SetActive(true);
+                player.inDialogue = false;
                 //Animation of priest walking
             } else {
                 line++;
