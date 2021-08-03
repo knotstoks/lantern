@@ -1517,7 +1517,7 @@ MonoBehaviour:
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 829282450}
     m_SelectOnLeft: {fileID: 952949115}
-    m_SelectOnRight: {fileID: 223601529}
+    m_SelectOnRight: {fileID: 2119215082}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -5461,6 +5461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 832602023}
   descText: {fileID: 126912704}
+  lastSelected: {fileID: 0}
   isOpen: 0
 --- !u!1 &1353789421
 GameObject:

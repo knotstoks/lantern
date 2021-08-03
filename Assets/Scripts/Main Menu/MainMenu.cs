@@ -226,6 +226,7 @@ public class MainMenu : MonoBehaviour {
         achievementsMenu.enabled = true;
         lantern.SetActive(false);
         GetComponent<AchievementsUI>().isOpen = true;
+        GetComponent<AchievementsUI>().lastSelected = firstAchievement;
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(firstAchievement);
     }

@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 public class AchievementsUI : MonoBehaviour {
     [SerializeField] private Text nameText;
     [SerializeField] private Text descText;
+    public GameObject lastSelected;
     public bool isOpen;
     private void Start() {
         isOpen = false;
@@ -24,9 +25,10 @@ public class AchievementsUI : MonoBehaviour {
                     nameText.text = "";
                     descText.text = "";
                 }
+
+                lastSelected = EventSystem.current.currentSelectedGameObject;
             } else {
-                nameText.text = "";
-                descText.text = "";
+                EventSystem.current.SetSelectedGameObject(lastSelected);
             }
         }
     }
